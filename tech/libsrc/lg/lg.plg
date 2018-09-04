@@ -1,0 +1,89 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: lg - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\Infernus\AppData\Local\Temp\RSP6283.tmp" with contents
+[
+/nologo /Zp1 /MT /W3 /GX /O2 /I "." /I "..\..\h" /I "..\lg" /I "..\actmovie" /I "..\appcore" /I "..\arq" /I "..\compapis" /I "..\comtools" /I "..\config" /I "..\cpptools" /I "..\darkloop" /I "..\dev2d" /I "..\dispdev" /I "..\dstruct" /I "..\dump" /I "..\fix" /I "..\font" /I "..\g2" /I "..\gadget" /I "..\gameshel" /I "..\gfile" /I "..\inputbnd" /I "..\lgalloc" /I "..\lgd3d" /I "..\matrix" /I "..\md" /I "..\mm" /I "..\mp" /I "..\mprintf" /I "..\namedres" /I "..\net" /I "..\prof" /I "..\r3d" /I "..\random" /I "..\recorder" /I "..\ref" /I "..\res" /I "..\rnd" /I "..\script" /I "..\sdesc" /I "..\skel" /I "..\sndsrc" /I "..\sndutil" /I "..\sound" /I "..\star" /I "..\tagfile" /I "..\templgen" /I "..\timer" /I "..\ui" /I "..\vec2" /I "..\..\winsrc\input" /D "NDEBUG" /D "_MBCS" /D "_LIB" /FR"..\_Bins\Release/" /Fp"..\_Bins\Release/lg.pch" /YX"..\..\types.h" /Fo"..\_Bins\Release/" /FI "..\..\h\types.h" /c 
+"D:\Source\DarkEngine\prj\tech\libsrc\lg\appagg.cpp"
+"D:\Source\DarkEngine\prj\tech\libsrc\lg\breakkey.cpp"
+"D:\Source\DarkEngine\prj\tech\libsrc\lg\bugtrak.c"
+"D:\Source\DarkEngine\prj\tech\libsrc\lg\codewrit.cpp"
+"D:\Source\DarkEngine\prj\tech\libsrc\lg\dbg.c"
+"D:\Source\DarkEngine\prj\tech\libsrc\lg\dbgcfg.c"
+"D:\Source\DarkEngine\prj\tech\libsrc\lg\dpathdir.c"
+"D:\Source\DarkEngine\prj\tech\libsrc\lg\exit.c"
+"D:\Source\DarkEngine\prj\tech\libsrc\lg\hashfns.cpp"
+"D:\Source\DarkEngine\prj\tech\libsrc\lg\lgassert.cpp"
+"D:\Source\DarkEngine\prj\tech\libsrc\lg\lglog.cpp"
+"D:\Source\DarkEngine\prj\tech\libsrc\lg\lgprntf.c"
+"D:\Source\DarkEngine\prj\tech\libsrc\lg\memreq.cpp"
+"D:\Source\DarkEngine\prj\tech\libsrc\lg\memstat.c"
+"D:\Source\DarkEngine\prj\tech\libsrc\lg\stack.c"
+"D:\Source\DarkEngine\prj\tech\libsrc\lg\thrdtool.cpp"
+"D:\Source\DarkEngine\prj\tech\libsrc\lg\tmpalloc.c"
+]
+Creating command line "cl.exe @C:\Users\Infernus\AppData\Local\Temp\RSP6283.tmp" 
+Creating temporary file "C:\Users\Infernus\AppData\Local\Temp\RSP6284.tmp" with contents
+[
+/nologo /out:"..\_Libs\Release\lg.lib" 
+\Source\DarkEngine\prj\tech\libsrc\_Bins\Release\appagg.obj
+\Source\DarkEngine\prj\tech\libsrc\_Bins\Release\breakkey.obj
+\Source\DarkEngine\prj\tech\libsrc\_Bins\Release\bugtrak.obj
+\Source\DarkEngine\prj\tech\libsrc\_Bins\Release\codewrit.obj
+\Source\DarkEngine\prj\tech\libsrc\_Bins\Release\coremutx.obj
+\Source\DarkEngine\prj\tech\libsrc\_Bins\Release\crc32.obj
+\Source\DarkEngine\prj\tech\libsrc\_Bins\Release\datapath.obj
+\Source\DarkEngine\prj\tech\libsrc\_Bins\Release\dbg.obj
+\Source\DarkEngine\prj\tech\libsrc\_Bins\Release\dbgcfg.obj
+\Source\DarkEngine\prj\tech\libsrc\_Bins\Release\dpathdir.obj
+\Source\DarkEngine\prj\tech\libsrc\_Bins\Release\exit.obj
+\Source\DarkEngine\prj\tech\libsrc\_Bins\Release\findfile.obj
+\Source\DarkEngine\prj\tech\libsrc\_Bins\Release\hashfns.obj
+\Source\DarkEngine\prj\tech\libsrc\_Bins\Release\lgassert.obj
+\Source\DarkEngine\prj\tech\libsrc\_Bins\Release\lglog.obj
+\Source\DarkEngine\prj\tech\libsrc\_Bins\Release\lgprntf.obj
+\Source\DarkEngine\prj\tech\libsrc\_Bins\Release\lgsprntf.obj
+\Source\DarkEngine\prj\tech\libsrc\_Bins\Release\memgrow.obj
+\Source\DarkEngine\prj\tech\libsrc\_Bins\Release\memreq.obj
+\Source\DarkEngine\prj\tech\libsrc\_Bins\Release\memstat.obj
+\Source\DarkEngine\prj\tech\libsrc\_Bins\Release\stack.obj
+\Source\DarkEngine\prj\tech\libsrc\_Bins\Release\stktrace.obj
+\Source\DarkEngine\prj\tech\libsrc\_Bins\Release\thrdtool.obj
+\Source\DarkEngine\prj\tech\libsrc\_Bins\Release\timings.obj
+\Source\DarkEngine\prj\tech\libsrc\_Bins\Release\tmpalloc.obj
+]
+Creating command line "link.exe -lib @C:\Users\Infernus\AppData\Local\Temp\RSP6284.tmp"
+<h3>Output Window</h3>
+Compiling...
+appagg.cpp
+breakkey.cpp
+bugtrak.c
+codewrit.cpp
+dbg.c
+dbgcfg.c
+dpathdir.c
+exit.c
+hashfns.cpp
+read the comment dated 02-24-98!
+lgassert.cpp
+lglog.cpp
+lgprntf.c
+memreq.cpp
+memstat.c
+stack.c
+thrdtool.cpp
+tmpalloc.c
+Creating library...
+
+
+
+<h3>Results</h3>
+lg.lib - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
