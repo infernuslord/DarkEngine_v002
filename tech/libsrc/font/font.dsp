@@ -41,8 +41,8 @@ RSC=rc.exe
 # PROP Intermediate_Dir "..\_Bins\Release"
 # PROP Target_Dir ""
 # ADD BASE CPP /nologo /W3 /GX /O2 /D "NDEBUG" /D "_MBCS" /D "_LIB" /YX /FD /c
-# ADD CPP /nologo /Zp1 /MT /W3 /GX /O2 /I "." /I "..\..\h" /I "..\lg" /I "..\actmovie" /I "..\appcore" /I "..\arq" /I "..\compapis" /I "..\comtools" /I "..\config" /I "..\cpptools" /I "..\darkloop" /I "..\dev2d" /I "..\dispdev" /I "..\dstruct" /I "..\dump" /I "..\fix" /I "..\font" /I "..\g2" /I "..\gadget" /I "..\gameshel" /I "..\gfile" /I "..\inputbnd" /I "..\lgalloc" /I "..\lgd3d" /I "..\matrix" /I "..\md" /I "..\mm" /I "..\mp" /I "..\mprintf" /I "..\namedres" /I "..\net" /I "..\prof" /I "..\r3d" /I "..\random" /I "..\recorder" /I "..\ref" /I "..\res" /I "..\rnd" /I "..\script" /I "..\sdesc" /I "..\skel" /I "..\sndsrc" /I "..\sndutil" /I "..\sound" /I "..\star" /I "..\tagfile" /I "..\templgen" /I "..\timer" /I "..\ui" /I "..\vec2" /I "..\..\winsrc\input" /D "NDEBUG" /D "_MBCS" /D "_LIB" /FR /FI "..\..\h\types.h" /c
-# SUBTRACT CPP /X /u
+# ADD CPP /nologo /Zp1 /MT /W3 /GX /O2 /I "." /I "..\..\h" /I "..\lg" /I "..\actmovie" /I "..\appcore" /I "..\arq" /I "..\compapis" /I "..\comtools" /I "..\config" /I "..\cpptools" /I "..\darkloop" /I "..\dev2d" /I "..\dispdev" /I "..\dstruct" /I "..\dump" /I "..\fix" /I "..\font" /I "..\g2" /I "..\gadget" /I "..\gameshel" /I "..\gfile" /I "..\inputbnd" /I "..\lgalloc" /I "..\lgd3d" /I "..\matrix" /I "..\md" /I "..\mm" /I "..\mp" /I "..\mprintf" /I "..\namedres" /I "..\net" /I "..\prof" /I "..\r3d" /I "..\random" /I "..\recorder" /I "..\ref" /I "..\res" /I "..\rnd" /I "..\script" /I "..\sdesc" /I "..\skel" /I "..\sndsrc" /I "..\sndutil" /I "..\sound" /I "..\star" /I "..\tagfile" /I "..\templgen" /I "..\timer" /I "..\ui" /I "..\vec2" /I "..\..\winsrc\input" /D "NDEBUG" /D "_MBCS" /D "_LIB" /FI "..\..\h\lg_types.h" /c
+# SUBTRACT CPP /X /u /Fr
 # ADD BASE RSC /l 0x816 /d "NDEBUG"
 # ADD RSC /l 0x809 /d "NDEBUG"
 BSC32=bscmake.exe
@@ -65,7 +65,7 @@ LIB32=link.exe -lib
 # PROP Intermediate_Dir "..\_Bins\Debug"
 # PROP Target_Dir ""
 # ADD BASE CPP /nologo /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_WIN32" /D "_WINDOWS" /D "_DEBUG" /D "_MBCS" /D "_LIB" /YX /FD /GZ /c
-# ADD CPP /nologo /Zp1 /ML /W3 /Gm /GX /ZI /Od /I ".\\" /I "..\..\h" /I "..\actmovie" /I "..\appcore" /I "..\arq" /I "..\compapis" /I "..\comtools" /I "..\config" /I "..\cpptools" /I "..\darkloop" /I "..\dev2d" /I "..\dispdev" /I "..\dstruct" /I "..\dump" /I "..\fix" /I "..\font" /I "..\g2" /I "..\gadget" /I "..\gameshel" /I "..\gfile" /I "..\inputbnd" /I "..\lg" /I "..\lgalloc" /I "..\lgd3d" /I "..\matrix" /I "..\md" /I "..\mm" /I "..\mp" /I "..\mprintf" /I "..\namedres" /I "..\net" /I "..\prof" /I "..\r3d" /I "..\random" /I "..\recorder" /I "..\ref" /I "..\res" /I "..\rnd" /I "..\script" /I "..\sdesc" /I "..\skel" /I ".\sndsrc" /I "..\sndutil" /I "..\sound" /I "..\star" /I "..\tagfile" /I "..\templgen" /I "..\timer" /I "..\ui" /I "..\vec2" /I "..\..\winsrc\input" /D "_DEBUG" /D "_MBCS" /D "_LIB" /D "_WINDOWS" /FD /GZ /FI "..\..\h\types.h" /c
+# ADD CPP /nologo /Zp1 /ML /W3 /Gm /GX /ZI /Od /I ".\\" /I "..\..\h" /I "..\actmovie" /I "..\appcore" /I "..\arq" /I "..\compapis" /I "..\comtools" /I "..\config" /I "..\cpptools" /I "..\darkloop" /I "..\dev2d" /I "..\dispdev" /I "..\dstruct" /I "..\dump" /I "..\fix" /I "..\font" /I "..\g2" /I "..\gadget" /I "..\gameshel" /I "..\gfile" /I "..\inputbnd" /I "..\lg" /I "..\lgalloc" /I "..\lgd3d" /I "..\matrix" /I "..\md" /I "..\mm" /I "..\mp" /I "..\mprintf" /I "..\namedres" /I "..\net" /I "..\prof" /I "..\r3d" /I "..\random" /I "..\recorder" /I "..\ref" /I "..\res" /I "..\rnd" /I "..\script" /I "..\sdesc" /I "..\skel" /I ".\sndsrc" /I "..\sndutil" /I "..\sound" /I "..\star" /I "..\tagfile" /I "..\templgen" /I "..\timer" /I "..\ui" /I "..\vec2" /I "..\..\winsrc\input" /D "_DEBUG" /D "_MBCS" /D "_LIB" /D "_WINDOWS" /FD /GZ /FI "..\..\h\lg_types.h" /c
 # ADD BASE RSC /l 0x816 /d "_DEBUG"
 # ADD RSC /l 0x816 /d "_DEBUG"
 BSC32=bscmake.exe
@@ -88,6 +88,7 @@ LIB32=link.exe -lib
 
 SOURCE=.\chr.c
 DEP_CPP_CHR_C=\
+	"..\..\h\lg_types.h"\
 	"..\dev2d\dev2d.h"\
 	"..\fix\fix.h"\
 	"..\matrix\matrixs.h"\
@@ -106,6 +107,7 @@ DEP_CPP_CHR_C=\
 
 SOURCE=.\chrclr.c
 DEP_CPP_CHRCL=\
+	"..\..\h\lg_types.h"\
 	"..\dev2d\dev2d.h"\
 	"..\fix\fix.h"\
 	"..\matrix\matrixs.h"\
@@ -125,6 +127,7 @@ DEP_CPP_CHRCL=\
 
 SOURCE=.\chrsiz.c
 DEP_CPP_CHRSI=\
+	"..\..\h\lg_types.h"\
 	"..\dev2d\dev2d.h"\
 	"..\fix\fix.h"\
 	"..\matrix\matrixs.h"\
@@ -143,6 +146,7 @@ DEP_CPP_CHRSI=\
 
 SOURCE=.\f16fl8t.c
 DEP_CPP_F16FL=\
+	"..\..\h\lg_types.h"\
 	"..\dev2d\dev2d.h"\
 	"..\fix\fix.h"\
 	"..\matrix\matrixs.h"\
@@ -161,6 +165,7 @@ DEP_CPP_F16FL=\
 SOURCE=.\ftest.c
 DEP_CPP_FTEST=\
 	"..\..\h\grtb.h"\
+	"..\..\h\lg_types.h"\
 	"..\dev2d\dev2d.h"\
 	"..\fix\fix.h"\
 	"..\g2\g2.h"\
@@ -181,6 +186,7 @@ DEP_CPP_FTEST=\
 
 SOURCE=.\setup.c
 DEP_CPP_SETUP=\
+	"..\..\h\lg_types.h"\
 	"..\dev2d\dev2d.h"\
 	"..\fix\fix.h"\
 	"..\matrix\matrixs.h"\
@@ -199,6 +205,7 @@ DEP_CPP_SETUP=\
 
 SOURCE=.\str.c
 DEP_CPP_STR_C=\
+	"..\..\h\lg_types.h"\
 	"..\dev2d\dev2d.h"\
 	"..\fix\fix.h"\
 	"..\matrix\matrixs.h"\
@@ -218,6 +225,7 @@ DEP_CPP_STR_C=\
 
 SOURCE=.\strclr.c
 DEP_CPP_STRCL=\
+	"..\..\h\lg_types.h"\
 	"..\dev2d\dev2d.h"\
 	"..\fix\fix.h"\
 	"..\matrix\matrixs.h"\
@@ -237,6 +245,7 @@ DEP_CPP_STRCL=\
 
 SOURCE=.\strscl.c
 DEP_CPP_STRSC=\
+	"..\..\h\lg_types.h"\
 	"..\dev2d\dev2d.h"\
 	"..\fix\fix.h"\
 	"..\g2\g2.h"\
@@ -258,6 +267,7 @@ DEP_CPP_STRSC=\
 
 SOURCE=.\strsiz.c
 DEP_CPP_STRSI=\
+	"..\..\h\lg_types.h"\
 	"..\dev2d\dev2d.h"\
 	"..\fix\fix.h"\
 	"..\matrix\matrixs.h"\
@@ -277,6 +287,7 @@ DEP_CPP_STRSI=\
 
 SOURCE=.\strwrap.c
 DEP_CPP_STRWR=\
+	"..\..\h\lg_types.h"\
 	"..\dev2d\dev2d.h"\
 	"..\fix\fix.h"\
 	"..\matrix\matrixs.h"\

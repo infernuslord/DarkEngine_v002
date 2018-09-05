@@ -7,7 +7,7 @@
 #include "tagfile_.h"
 
 #include <malloc.h>
-#include <types.h>
+#include "lg_types.h"
 
 #ifndef NO_DB_MEM
 // Must be last header

@@ -41,8 +41,8 @@ RSC=rc.exe
 # PROP Intermediate_Dir "..\_Bins\Release"
 # PROP Target_Dir ""
 # ADD BASE CPP /nologo /W3 /GX /O2 /D "NDEBUG" /D "_MBCS" /D "_LIB" /YX /FD /c
-# ADD CPP /nologo /Zp1 /MT /W3 /GX /O2 /I "." /I "..\..\h" /I "..\lg" /I "..\actmovie" /I "..\appcore" /I "..\arq" /I "..\compapis" /I "..\comtools" /I "..\config" /I "..\cpptools" /I "..\darkloop" /I "..\dev2d" /I "..\dispdev" /I "..\dstruct" /I "..\dump" /I "..\fix" /I "..\font" /I "..\g2" /I "..\gadget" /I "..\gameshel" /I "..\gfile" /I "..\inputbnd" /I "..\lgalloc" /I "..\lgd3d" /I "..\matrix" /I "..\md" /I "..\mm" /I "..\mp" /I "..\mprintf" /I "..\namedres" /I "..\net" /I "..\prof" /I "..\r3d" /I "..\random" /I "..\recorder" /I "..\ref" /I "..\res" /I "..\rnd" /I "..\script" /I "..\sdesc" /I "..\skel" /I "..\sndsrc" /I "..\sndutil" /I "..\sound" /I "..\star" /I "..\tagfile" /I "..\templgen" /I "..\timer" /I "..\ui" /I "..\vec2" /I "..\..\winsrc\input" /D "NDEBUG" /D "_MBCS" /D "_LIB" /FR /FI "..\..\h\types.h" /c
-# SUBTRACT CPP /X /u
+# ADD CPP /nologo /Zp1 /MT /W3 /GX /O2 /I "." /I "..\..\h" /I "..\lg" /I "..\actmovie" /I "..\appcore" /I "..\arq" /I "..\compapis" /I "..\comtools" /I "..\config" /I "..\cpptools" /I "..\darkloop" /I "..\dev2d" /I "..\dispdev" /I "..\dstruct" /I "..\dump" /I "..\fix" /I "..\font" /I "..\g2" /I "..\gadget" /I "..\gameshel" /I "..\gfile" /I "..\inputbnd" /I "..\lgalloc" /I "..\lgd3d" /I "..\matrix" /I "..\md" /I "..\mm" /I "..\mp" /I "..\mprintf" /I "..\namedres" /I "..\net" /I "..\prof" /I "..\r3d" /I "..\random" /I "..\recorder" /I "..\ref" /I "..\res" /I "..\rnd" /I "..\script" /I "..\sdesc" /I "..\skel" /I "..\sndsrc" /I "..\sndutil" /I "..\sound" /I "..\star" /I "..\tagfile" /I "..\templgen" /I "..\timer" /I "..\ui" /I "..\vec2" /I "..\..\winsrc\input" /D "NDEBUG" /D "_MBCS" /D "_LIB" /FI "..\..\h\lg_types.h" /c
+# SUBTRACT CPP /X /u /Fr
 # ADD BASE RSC /l 0x816 /d "NDEBUG"
 # ADD RSC /l 0x809 /d "NDEBUG"
 BSC32=bscmake.exe
@@ -65,7 +65,7 @@ LIB32=link.exe -lib
 # PROP Intermediate_Dir "..\_Bins\Debug"
 # PROP Target_Dir ""
 # ADD BASE CPP /nologo /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_WIN32" /D "_WINDOWS" /D "_DEBUG" /D "_MBCS" /D "_LIB" /YX /FD /GZ /c
-# ADD CPP /nologo /Zp1 /ML /W3 /Gm /GX /ZI /Od /I "..\comtools" /I ".\\" /I "..\..\h" /I "..\actmovie" /I "..\appcore" /I "..\arq" /I "..\compapis" /I "..\config" /I "..\cpptools" /I "..\darkloop" /I "..\dev2d" /I "..\dispdev" /I "..\dstruct" /I "..\dump" /I "..\fix" /I "..\font" /I "..\g2" /I "..\gadget" /I "..\gameshel" /I "..\gfile" /I "..\inputbnd" /I "..\lg" /I "..\lgalloc" /I "..\lgd3d" /I "..\matrix" /I "..\md" /I "..\mm" /I "..\mp" /I "..\mprintf" /I "..\namedres" /I "..\net" /I "..\prof" /I "..\r3d" /I "..\random" /I "..\recorder" /I "..\ref" /I "..\res" /I "..\rnd" /I "..\script" /I "..\sdesc" /I "..\skel" /I ".\sndsrc" /I "..\sndutil" /I "..\sound" /I "..\star" /I "..\tagfile" /I "..\templgen" /I "..\timer" /I "..\ui" /I "..\vec2" /I "..\..\winsrc\input" /D "_DEBUG" /D "_MBCS" /D "_LIB" /D "_WINDOWS" /FD /GZ /FI "..\..\h\types.h" /c
+# ADD CPP /nologo /Zp1 /ML /W3 /Gm /GX /ZI /Od /I "..\comtools" /I ".\\" /I "..\..\h" /I "..\actmovie" /I "..\appcore" /I "..\arq" /I "..\compapis" /I "..\config" /I "..\cpptools" /I "..\darkloop" /I "..\dev2d" /I "..\dispdev" /I "..\dstruct" /I "..\dump" /I "..\fix" /I "..\font" /I "..\g2" /I "..\gadget" /I "..\gameshel" /I "..\gfile" /I "..\inputbnd" /I "..\lg" /I "..\lgalloc" /I "..\lgd3d" /I "..\matrix" /I "..\md" /I "..\mm" /I "..\mp" /I "..\mprintf" /I "..\namedres" /I "..\net" /I "..\prof" /I "..\r3d" /I "..\random" /I "..\recorder" /I "..\ref" /I "..\res" /I "..\rnd" /I "..\script" /I "..\sdesc" /I "..\skel" /I ".\sndsrc" /I "..\sndutil" /I "..\sound" /I "..\star" /I "..\tagfile" /I "..\templgen" /I "..\timer" /I "..\ui" /I "..\vec2" /I "..\..\winsrc\input" /D "_DEBUG" /D "_MBCS" /D "_LIB" /D "_WINDOWS" /FD /GZ /FI "..\..\h\lg_types.h" /c
 # ADD BASE RSC /l 0x816 /d "_DEBUG"
 # ADD RSC /l 0x816 /d "_DEBUG"
 BSC32=bscmake.exe
@@ -88,6 +88,7 @@ LIB32=link.exe -lib
 
 SOURCE=.\appagg.cpp
 DEP_CPP_APPAG=\
+	"..\..\h\lg_types.h"\
 	"..\compapis\appagg.h"\
 	"..\comtools\comtools.h"\
 	"..\lgalloc\memall.h"\
@@ -114,6 +115,7 @@ NODEP_CPP_APPAG=\
 
 SOURCE=.\breakkey.cpp
 DEP_CPP_BREAK=\
+	"..\..\h\lg_types.h"\
 	"..\lgalloc\memall.h"\
 	".\breakkey.h"\
 	".\dbg.h"\
@@ -139,7 +141,8 @@ NODEP_CPP_BREAK=\
 
 SOURCE=.\bugtrak.c
 DEP_CPP_BUGTR=\
-	"..\..\h\lgerror.h"\
+	"..\..\h\error.h"\
+	"..\..\h\lg_types.h"\
 	"..\dstruct\array.h"\
 	"..\lgalloc\memall.h"\
 	".\bugtrak.h"\
@@ -168,6 +171,7 @@ NODEP_CPP_BUGTR=\
 
 SOURCE=.\codewrit.cpp
 DEP_CPP_CODEW=\
+	"..\..\h\lg_types.h"\
 	"..\lgalloc\memall.h"\
 	".\codewrit.h"\
 	".\dbg.h"\
@@ -221,6 +225,7 @@ DEP_CPP_CRC32=\
 
 SOURCE=.\datapath.cpp
 DEP_CPP_DATAP=\
+	"..\..\h\lg_types.h"\
 	"..\lgalloc\memall.h"\
 	".\dbg.h"\
 	".\lg.h"\
@@ -246,7 +251,8 @@ NODEP_CPP_DATAP=\
 
 SOURCE=.\dbg.c
 DEP_CPP_DBG_C=\
-	"..\..\h\lgerror.h"\
+	"..\..\h\error.h"\
+	"..\..\h\lg_types.h"\
 	"..\..\h\nameconv.h"\
 	"..\..\winsrc\input\kb.h"\
 	"..\..\winsrc\input\kbcook.h"\
@@ -275,7 +281,8 @@ NODEP_CPP_DBG_C=\
 
 SOURCE=.\dbgcfg.c
 DEP_CPP_DBGCF=\
-	"..\..\h\lgerror.h"\
+	"..\..\h\error.h"\
+	"..\..\h\lg_types.h"\
 	"..\..\winsrc\input\kb.h"\
 	"..\..\winsrc\input\kbcook.h"\
 	"..\..\winsrc\input\keydefs.h"\
@@ -302,6 +309,7 @@ SOURCE=.\dbgpp.cc
 
 SOURCE=.\dpathdir.c
 DEP_CPP_DPATH=\
+	"..\..\h\lg_types.h"\
 	"..\lgalloc\memall.h"\
 	".\dbg.h"\
 	".\lg.h"\
@@ -340,6 +348,7 @@ SOURCE=.\dptest.cpp
 
 SOURCE=.\exit.c
 DEP_CPP_EXIT_=\
+	"..\..\h\lg_types.h"\
 	"..\lgalloc\memall.h"\
 	".\dbg.h"\
 	".\lg.h"\
@@ -378,6 +387,7 @@ DEP_CPP_FINDF=\
 
 SOURCE=.\hashfns.cpp
 DEP_CPP_HASHF=\
+	"..\..\h\lg_types.h"\
 	"..\lgalloc\memall.h"\
 	".\dbg.h"\
 	".\hashfns.h"\
@@ -403,6 +413,7 @@ NODEP_CPP_HASHF=\
 
 SOURCE=.\lgassert.cpp
 DEP_CPP_LGASS=\
+	"..\..\h\lg_types.h"\
 	"..\lgalloc\memall.h"\
 	"..\mprintf\mprintf.h"\
 	".\coremutx.h"\
@@ -429,6 +440,7 @@ NODEP_CPP_LGASS=\
 
 SOURCE=.\lglog.cpp
 DEP_CPP_LGLOG=\
+	"..\..\h\lg_types.h"\
 	"..\lgalloc\memall.h"\
 	"..\mprintf\mprintf.h"\
 	".\coremutx.h"\
@@ -455,6 +467,7 @@ NODEP_CPP_LGLOG=\
 
 SOURCE=.\lgprntf.c
 DEP_CPP_LGPRN=\
+	"..\..\h\lg_types.h"\
 	"..\lgalloc\memall.h"\
 	".\dbg.h"\
 	".\lgsprntf.h"\
@@ -476,6 +489,7 @@ NODEP_CPP_LGPRN=\
 
 SOURCE=.\lgsprntf.c
 DEP_CPP_LGSPR=\
+	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
 	
 
@@ -501,6 +515,7 @@ SOURCE=.\memgrow.c
 
 SOURCE=.\memreq.cpp
 DEP_CPP_MEMRE=\
+	"..\..\h\lg_types.h"\
 	"..\lgalloc\memall.h"\
 	".\dbg.h"\
 	".\lg.h"\
@@ -528,6 +543,7 @@ SOURCE=.\memstat.c
 DEP_CPP_MEMST=\
 	"..\..\h\_lg.h"\
 	"..\..\h\dpmi.h"\
+	"..\..\h\lg_types.h"\
 	"..\lgalloc\memall.h"\
 	"..\mprintf\mprintf.h"\
 	".\dbg.h"\
@@ -554,6 +570,7 @@ NODEP_CPP_MEMST=\
 
 SOURCE=.\stack.c
 DEP_CPP_STACK=\
+	"..\..\h\lg_types.h"\
 	"..\lgalloc\memall.h"\
 	".\dbg.h"\
 	
@@ -573,6 +590,7 @@ NODEP_CPP_STACK=\
 
 SOURCE=.\stktrace.cpp
 DEP_CPP_STKTR=\
+	"..\..\h\lg_types.h"\
 	".\stktrace.h"\
 	
 
@@ -587,6 +605,7 @@ DEP_CPP_STKTR=\
 
 SOURCE=.\thrdtool.cpp
 DEP_CPP_THRDT=\
+	"..\..\h\lg_types.h"\
 	"..\lgalloc\memall.h"\
 	".\dbg.h"\
 	".\lg.h"\
@@ -628,6 +647,7 @@ DEP_CPP_TIMIN=\
 SOURCE=.\tmpalloc.c
 DEP_CPP_TMPAL=\
 	"..\..\h\_lg.h"\
+	"..\..\h\lg_types.h"\
 	"..\lgalloc\memall.h"\
 	".\dbg.h"\
 	".\tmpalloc.h"\
@@ -747,7 +767,24 @@ SOURCE=.\tmpalloc.h
 # Begin Source File
 
 SOURCE=.\oheapwal.asm
-# PROP Exclude_From_Build 1
+
+!IF  "$(CFG)" == "lg - Win32 Release"
+
+# PROP Ignore_Default_Tool 1
+# Begin Custom Build
+IntDir=.\..\_Bins\Release
+InputPath=.\oheapwal.asm
+InputName=oheapwal
+
+"$(IntDir)\$(InputName).obj" : $(SOURCE) "$(INTDIR)" "$(OUTDIR)"
+	"C:\Program Files (x86)\Microsoft Visual Studio\VC98\Bin\ml.exe" /nologo /c /Zi /Fo$(IntDir)\$(InputName).obj $(InputName).asm
+
+# End Custom Build
+
+!ELSEIF  "$(CFG)" == "lg - Win32 Debug"
+
+!ENDIF 
+
 # End Source File
 # End Group
 # Begin Group "Asm Inc Files"

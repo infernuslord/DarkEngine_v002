@@ -75,7 +75,7 @@
 #include <io.h>
 #endif
 
-#include <types.h>
+#include "lg_types.h"
 
 #ifdef __cplusplus
 extern "C"  {

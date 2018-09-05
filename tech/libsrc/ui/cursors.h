@@ -14,7 +14,7 @@ struct _ui_slab;
 #include <rect.h>
 #include <region.h> 
 #include <mouse.h> 
-#include <lgerror.h>
+#include "..\..\h\error.h"
 
 // Defines
 

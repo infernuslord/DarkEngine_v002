@@ -12,7 +12,7 @@
 #pragma message ("Compiling precompiled header...")
 #pragma message ("")
 
-#include <types.h>
+#include "lg_types.h"
 #ifdef _WIN32
 #include <windows.h>
 #endif

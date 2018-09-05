@@ -18,7 +18,7 @@
 #ifndef SLIST_H
 #define SLIST_H
 
-#include "types.h"
+#include "lg_types.h"
 
 #ifdef __cplusplus
 extern "C"  {

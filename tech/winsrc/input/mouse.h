@@ -75,7 +75,7 @@
 #define MOUSE_H
 
 #include "lg.h"
-#include "lgerror.h"
+#include "..\..\h\error.h"
 
 #ifdef __cplusplus
 extern "C"  {

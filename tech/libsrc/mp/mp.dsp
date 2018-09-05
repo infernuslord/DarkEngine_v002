@@ -41,8 +41,8 @@ RSC=rc.exe
 # PROP Intermediate_Dir "..\_Bins\Release"
 # PROP Target_Dir ""
 # ADD BASE CPP /nologo /W3 /GX /O2 /D "NDEBUG" /D "_MBCS" /D "_LIB" /YX /FD /c
-# ADD CPP /nologo /Zp1 /MT /W3 /GX /O2 /I "." /I "..\..\h" /I "..\lg" /I "..\actmovie" /I "..\appcore" /I "..\arq" /I "..\compapis" /I "..\comtools" /I "..\config" /I "..\cpptools" /I "..\darkloop" /I "..\dev2d" /I "..\dispdev" /I "..\dstruct" /I "..\dump" /I "..\fix" /I "..\font" /I "..\g2" /I "..\gadget" /I "..\gameshel" /I "..\gfile" /I "..\inputbnd" /I "..\lgalloc" /I "..\lgd3d" /I "..\matrix" /I "..\md" /I "..\mm" /I "..\mp" /I "..\mprintf" /I "..\namedres" /I "..\net" /I "..\prof" /I "..\r3d" /I "..\random" /I "..\recorder" /I "..\ref" /I "..\res" /I "..\rnd" /I "..\script" /I "..\sdesc" /I "..\skel" /I "..\sndsrc" /I "..\sndutil" /I "..\sound" /I "..\star" /I "..\tagfile" /I "..\templgen" /I "..\timer" /I "..\ui" /I "..\vec2" /I "..\..\winsrc\input" /D "NDEBUG" /D "_MBCS" /D "_LIB" /FR /FI "..\..\h\types.h" /c
-# SUBTRACT CPP /X /u
+# ADD CPP /nologo /Zp1 /MT /W3 /GX /O2 /I "." /I "..\..\h" /I "..\lg" /I "..\actmovie" /I "..\appcore" /I "..\arq" /I "..\compapis" /I "..\comtools" /I "..\config" /I "..\cpptools" /I "..\darkloop" /I "..\dev2d" /I "..\dispdev" /I "..\dstruct" /I "..\dump" /I "..\fix" /I "..\font" /I "..\g2" /I "..\gadget" /I "..\gameshel" /I "..\gfile" /I "..\inputbnd" /I "..\lgalloc" /I "..\lgd3d" /I "..\matrix" /I "..\md" /I "..\mm" /I "..\mp" /I "..\mprintf" /I "..\namedres" /I "..\net" /I "..\prof" /I "..\r3d" /I "..\random" /I "..\recorder" /I "..\ref" /I "..\res" /I "..\rnd" /I "..\script" /I "..\sdesc" /I "..\skel" /I "..\sndsrc" /I "..\sndutil" /I "..\sound" /I "..\star" /I "..\tagfile" /I "..\templgen" /I "..\timer" /I "..\ui" /I "..\vec2" /I "..\..\winsrc\input" /D "NDEBUG" /D "_MBCS" /D "_LIB" /FI "..\..\h\lg_types.h" /c
+# SUBTRACT CPP /X /u /Fr
 # ADD BASE RSC /l 0x816 /d "NDEBUG"
 # ADD RSC /l 0x809 /d "NDEBUG"
 BSC32=bscmake.exe
@@ -65,7 +65,7 @@ LIB32=link.exe -lib
 # PROP Intermediate_Dir "..\_Bins\Debug"
 # PROP Target_Dir ""
 # ADD BASE CPP /nologo /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_WIN32" /D "_WINDOWS" /D "_DEBUG" /D "_MBCS" /D "_LIB" /YX /FD /GZ /c
-# ADD CPP /nologo /Zp1 /ML /W3 /Gm /GX /ZI /Od /I ".\\" /I "..\..\h" /I "..\actmovie" /I "..\appcore" /I "..\arq" /I "..\compapis" /I "..\comtools" /I "..\config" /I "..\cpptools" /I "..\darkloop" /I "..\dev2d" /I "..\dispdev" /I "..\dstruct" /I "..\dump" /I "..\fix" /I "..\font" /I "..\g2" /I "..\gadget" /I "..\gameshel" /I "..\gfile" /I "..\inputbnd" /I "..\lg" /I "..\lgalloc" /I "..\lgd3d" /I "..\matrix" /I "..\md" /I "..\mm" /I "..\mp" /I "..\mprintf" /I "..\namedres" /I "..\net" /I "..\prof" /I "..\r3d" /I "..\random" /I "..\recorder" /I "..\ref" /I "..\res" /I "..\rnd" /I "..\script" /I "..\sdesc" /I "..\skel" /I ".\sndsrc" /I "..\sndutil" /I "..\sound" /I "..\star" /I "..\tagfile" /I "..\templgen" /I "..\timer" /I "..\ui" /I "..\vec2" /I "..\..\winsrc\input" /D "_DEBUG" /D "_MBCS" /D "_LIB" /D "_WINDOWS" /FD /GZ /FI "..\..\h\types.h" /c
+# ADD CPP /nologo /Zp1 /ML /W3 /Gm /GX /ZI /Od /I ".\\" /I "..\..\h" /I "..\actmovie" /I "..\appcore" /I "..\arq" /I "..\compapis" /I "..\comtools" /I "..\config" /I "..\cpptools" /I "..\darkloop" /I "..\dev2d" /I "..\dispdev" /I "..\dstruct" /I "..\dump" /I "..\fix" /I "..\font" /I "..\g2" /I "..\gadget" /I "..\gameshel" /I "..\gfile" /I "..\inputbnd" /I "..\lg" /I "..\lgalloc" /I "..\lgd3d" /I "..\matrix" /I "..\md" /I "..\mm" /I "..\mp" /I "..\mprintf" /I "..\namedres" /I "..\net" /I "..\prof" /I "..\r3d" /I "..\random" /I "..\recorder" /I "..\ref" /I "..\res" /I "..\rnd" /I "..\script" /I "..\sdesc" /I "..\skel" /I ".\sndsrc" /I "..\sndutil" /I "..\sound" /I "..\star" /I "..\tagfile" /I "..\templgen" /I "..\timer" /I "..\ui" /I "..\vec2" /I "..\..\winsrc\input" /D "_DEBUG" /D "_MBCS" /D "_LIB" /D "_WINDOWS" /FD /GZ /FI "..\..\h\lg_types.h" /c
 # ADD BASE RSC /l 0x816 /d "_DEBUG"
 # ADD RSC /l 0x816 /d "_DEBUG"
 BSC32=bscmake.exe
@@ -114,6 +114,7 @@ SOURCE=.\abvm.c
 
 SOURCE=.\mpinit.c
 DEP_CPP_MPINI=\
+	"..\..\h\lg_types.h"\
 	"..\..\h\prikind.h"\
 	"..\comtools\comtools.h"\
 	"..\lg\dbg.h"\
@@ -152,6 +153,7 @@ NODEP_CPP_MPINI=\
 
 SOURCE=.\mplist.c
 DEP_CPP_MPLIS=\
+	"..\..\h\lg_types.h"\
 	"..\..\h\prikind.h"\
 	"..\comtools\comtools.h"\
 	"..\lg\dbg.h"\
@@ -189,6 +191,7 @@ NODEP_CPP_MPLIS=\
 
 SOURCE=.\mploco.c
 DEP_CPP_MPLOC=\
+	"..\..\h\lg_types.h"\
 	"..\..\h\prikind.h"\
 	"..\comtools\comtools.h"\
 	"..\lg\dbg.h"\
@@ -226,6 +229,7 @@ NODEP_CPP_MPLOC=\
 
 SOURCE=.\mpmot.c
 DEP_CPP_MPMOT=\
+	"..\..\h\lg_types.h"\
 	"..\..\h\prikind.h"\
 	"..\comtools\comtools.h"\
 	"..\lg\dbg.h"\
@@ -263,6 +267,7 @@ NODEP_CPP_MPMOT=\
 
 SOURCE=.\mpstack.c
 DEP_CPP_MPSTA=\
+	"..\..\h\lg_types.h"\
 	"..\..\h\prikind.h"\
 	"..\comtools\comtools.h"\
 	"..\fix\fix.h"\
@@ -301,6 +306,7 @@ NODEP_CPP_MPSTA=\
 
 SOURCE=.\mpupdate.c
 DEP_CPP_MPUPD=\
+	"..\..\h\lg_types.h"\
 	"..\..\h\prikind.h"\
 	"..\comtools\comtools.h"\
 	"..\lg\dbg.h"\
@@ -339,6 +345,7 @@ NODEP_CPP_MPUPD=\
 
 SOURCE=.\mpvm.c
 DEP_CPP_MPVM_=\
+	"..\..\h\lg_types.h"\
 	"..\..\h\prikind.h"\
 	"..\comtools\comtools.h"\
 	"..\lg\dbg.h"\
@@ -377,6 +384,7 @@ NODEP_CPP_MPVM_=\
 SOURCE=.\multiped.c
 DEP_CPP_MULTI=\
 	"..\..\h\3d.h"\
+	"..\..\h\lg_types.h"\
 	"..\..\h\prikind.h"\
 	"..\..\h\schedstr.h"\
 	"..\compapis\2d.h"\
@@ -421,6 +429,7 @@ NODEP_CPP_MULTI=\
 
 SOURCE=.\qt.c
 DEP_CPP_QT_C10=\
+	"..\..\h\lg_types.h"\
 	"..\lg\dbg.h"\
 	"..\matrix\matrix.h"\
 	"..\matrix\matrixs.h"\

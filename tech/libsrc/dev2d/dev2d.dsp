@@ -41,8 +41,8 @@ RSC=rc.exe
 # PROP Intermediate_Dir "..\_Bins\Release"
 # PROP Target_Dir ""
 # ADD BASE CPP /nologo /W3 /GX /O2 /D "NDEBUG" /D "_MBCS" /D "_LIB" /YX /FD /c
-# ADD CPP /nologo /Zp1 /MT /W3 /GX /O2 /I "." /I "..\..\h" /I "..\lg" /I "..\actmovie" /I "..\appcore" /I "..\arq" /I "..\compapis" /I "..\comtools" /I "..\config" /I "..\cpptools" /I "..\darkloop" /I "..\dev2d" /I "..\dispdev" /I "..\dstruct" /I "..\dump" /I "..\fix" /I "..\font" /I "..\g2" /I "..\gadget" /I "..\gameshel" /I "..\gfile" /I "..\inputbnd" /I "..\lgalloc" /I "..\lgd3d" /I "..\matrix" /I "..\md" /I "..\mm" /I "..\mp" /I "..\mprintf" /I "..\namedres" /I "..\net" /I "..\prof" /I "..\r3d" /I "..\random" /I "..\recorder" /I "..\ref" /I "..\res" /I "..\rnd" /I "..\script" /I "..\sdesc" /I "..\skel" /I "..\sndsrc" /I "..\sndutil" /I "..\sound" /I "..\star" /I "..\tagfile" /I "..\templgen" /I "..\timer" /I "..\ui" /I "..\vec2" /I "..\..\winsrc\input" /D "NDEBUG" /D "_MBCS" /D "_LIB" /FR /FI "..\..\h\types.h" /c
-# SUBTRACT CPP /X /u
+# ADD CPP /nologo /Zp1 /MT /W3 /GX /O2 /I "." /I "..\..\h" /I "..\lg" /I "..\actmovie" /I "..\appcore" /I "..\arq" /I "..\compapis" /I "..\comtools" /I "..\config" /I "..\cpptools" /I "..\darkloop" /I "..\dev2d" /I "..\dispdev" /I "..\dstruct" /I "..\dump" /I "..\fix" /I "..\font" /I "..\g2" /I "..\gadget" /I "..\gameshel" /I "..\gfile" /I "..\inputbnd" /I "..\lgalloc" /I "..\lgd3d" /I "..\matrix" /I "..\md" /I "..\mm" /I "..\mp" /I "..\mprintf" /I "..\namedres" /I "..\net" /I "..\prof" /I "..\r3d" /I "..\random" /I "..\recorder" /I "..\ref" /I "..\res" /I "..\rnd" /I "..\script" /I "..\sdesc" /I "..\skel" /I "..\sndsrc" /I "..\sndutil" /I "..\sound" /I "..\star" /I "..\tagfile" /I "..\templgen" /I "..\timer" /I "..\ui" /I "..\vec2" /I "..\..\winsrc\input" /D "NDEBUG" /D "_MBCS" /D "_LIB" /FI "..\..\h\lg_types.h" /c
+# SUBTRACT CPP /X /u /Fr
 # ADD BASE RSC /l 0x816 /d "NDEBUG"
 # ADD RSC /l 0x809 /d "NDEBUG"
 BSC32=bscmake.exe
@@ -65,7 +65,7 @@ LIB32=link.exe -lib
 # PROP Intermediate_Dir "..\_Bins\Debug"
 # PROP Target_Dir ""
 # ADD BASE CPP /nologo /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_WIN32" /D "_WINDOWS" /D "_DEBUG" /D "_MBCS" /D "_LIB" /YX /FD /GZ /c
-# ADD CPP /nologo /Zp1 /ML /W3 /Gm /GX /ZI /Od /I ".\\" /I "..\..\h" /I "..\actmovie" /I "..\appcore" /I "..\arq" /I "..\compapis" /I "..\comtools" /I "..\config" /I "..\cpptools" /I "..\darkloop" /I "..\dev2d" /I "..\dispdev" /I "..\dstruct" /I "..\dump" /I "..\fix" /I "..\font" /I "..\g2" /I "..\gadget" /I "..\gameshel" /I "..\gfile" /I "..\inputbnd" /I "..\lg" /I "..\lgalloc" /I "..\lgd3d" /I "..\matrix" /I "..\md" /I "..\mm" /I "..\mp" /I "..\mprintf" /I "..\namedres" /I "..\net" /I "..\prof" /I "..\r3d" /I "..\random" /I "..\recorder" /I "..\ref" /I "..\res" /I "..\rnd" /I "..\script" /I "..\sdesc" /I "..\skel" /I ".\sndsrc" /I "..\sndutil" /I "..\sound" /I "..\star" /I "..\tagfile" /I "..\templgen" /I "..\timer" /I "..\ui" /I "..\vec2" /I "..\..\winsrc\input" /D "_DEBUG" /D "_MBCS" /D "_LIB" /D "_WINDOWS" /FD /GZ /FI "..\..\h\types.h" /c
+# ADD CPP /nologo /Zp1 /ML /W3 /Gm /GX /ZI /Od /I ".\\" /I "..\..\h" /I "..\actmovie" /I "..\appcore" /I "..\arq" /I "..\compapis" /I "..\comtools" /I "..\config" /I "..\cpptools" /I "..\darkloop" /I "..\dev2d" /I "..\dispdev" /I "..\dstruct" /I "..\dump" /I "..\fix" /I "..\font" /I "..\g2" /I "..\gadget" /I "..\gameshel" /I "..\gfile" /I "..\inputbnd" /I "..\lg" /I "..\lgalloc" /I "..\lgd3d" /I "..\matrix" /I "..\md" /I "..\mm" /I "..\mp" /I "..\mprintf" /I "..\namedres" /I "..\net" /I "..\prof" /I "..\r3d" /I "..\random" /I "..\recorder" /I "..\ref" /I "..\res" /I "..\rnd" /I "..\script" /I "..\sdesc" /I "..\skel" /I ".\sndsrc" /I "..\sndutil" /I "..\sound" /I "..\star" /I "..\tagfile" /I "..\templgen" /I "..\timer" /I "..\ui" /I "..\vec2" /I "..\..\winsrc\input" /D "_DEBUG" /D "_MBCS" /D "_LIB" /D "_WINDOWS" /FD /GZ /FI "..\..\h\lg_types.h" /c
 # ADD BASE RSC /l 0x816 /d "_DEBUG"
 # ADD RSC /l 0x816 /d "_DEBUG"
 BSC32=bscmake.exe
@@ -113,6 +113,7 @@ SOURCE=.\bank.c
 
 SOURCE=.\bitmap.c
 DEP_CPP_BITMA=\
+	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
 	"..\lg\dbg.h"\
 	".\bitmap.h"\
@@ -138,6 +139,7 @@ NODEP_CPP_BITMA=\
 
 SOURCE=.\bk8bm.c
 DEP_CPP_BK8BM=\
+	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
 	".\bitmap.h"\
 	".\bmftype.h"\
@@ -160,6 +162,7 @@ DEP_CPP_BK8BM=\
 
 SOURCE=.\bk8fl8.c
 DEP_CPP_BK8FL=\
+	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
 	".\bank.h"\
 	".\emode.h"\
@@ -180,6 +183,7 @@ DEP_CPP_BK8FL=\
 
 SOURCE=.\bk8hlin.c
 DEP_CPP_BK8HL=\
+	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
 	".\bank.h"\
 	".\emode.h"\
@@ -200,6 +204,7 @@ DEP_CPP_BK8HL=\
 
 SOURCE=.\bk8lin.c
 DEP_CPP_BK8LI=\
+	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
 	".\emode.h"\
 	".\grd.h"\
@@ -219,6 +224,7 @@ DEP_CPP_BK8LI=\
 
 SOURCE=.\bk8pix.c
 DEP_CPP_BK8PI=\
+	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
 	".\emode.h"\
 	".\grd.h"\
@@ -238,6 +244,7 @@ DEP_CPP_BK8PI=\
 
 SOURCE=.\bk8pix8.c
 DEP_CPP_BK8PIX=\
+	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
 	".\bank.h"\
 	".\emode.h"\
@@ -258,6 +265,7 @@ DEP_CPP_BK8PIX=\
 
 SOURCE=.\bk8vlin.c
 DEP_CPP_BK8VL=\
+	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
 	".\bank.h"\
 	".\emode.h"\
@@ -278,6 +286,7 @@ DEP_CPP_BK8VL=\
 
 SOURCE=.\blend.c
 DEP_CPP_BLEND=\
+	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
 	"..\lg\dbg.h"\
 	"..\matrix\matrixs.h"\
@@ -302,6 +311,7 @@ NODEP_CPP_BLEND=\
 
 SOURCE=.\canvas.c
 DEP_CPP_CANVA=\
+	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
 	"..\lg\dbg.h"\
 	".\bitmap.h"\
@@ -329,6 +339,7 @@ NODEP_CPP_CANVA=\
 
 SOURCE=.\clpfl8.c
 DEP_CPP_CLPFL=\
+	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
 	".\clip.h"\
 	".\emode.h"\
@@ -348,6 +359,7 @@ DEP_CPP_CLPFL=\
 
 SOURCE=.\clut16.c
 DEP_CPP_CLUT1=\
+	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
 	"..\lg\dbg.h"\
 	"..\matrix\matrixs.h"\
@@ -372,6 +384,7 @@ NODEP_CPP_CLUT1=\
 
 SOURCE=.\cominit.c
 DEP_CPP_COMIN=\
+	"..\..\h\lg_types.h"\
 	"..\compapis\appagg.h"\
 	"..\compapis\dispapi.h"\
 	"..\compapis\dispguid.h"\
@@ -414,6 +427,7 @@ DEP_CPP_CPAL_=\
 
 SOURCE=.\ddevblt.c
 DEP_CPP_DDEVB=\
+	"..\..\h\lg_types.h"\
 	"..\compapis\appagg.h"\
 	"..\compapis\dispapi.h"\
 	"..\compapis\dispguid.h"\
@@ -469,6 +483,7 @@ DEP_CPP_DEVST=\
 
 SOURCE=.\f16bm.c
 DEP_CPP_F16BM=\
+	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
 	".\bitmap.h"\
 	".\bmftype.h"\
@@ -491,6 +506,7 @@ DEP_CPP_F16BM=\
 
 SOURCE=.\f16f16.c
 DEP_CPP_F16F1=\
+	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
 	"..\lg\dbg.h"\
 	".\astring.h"\
@@ -517,6 +533,7 @@ NODEP_CPP_F16F1=\
 
 SOURCE=.\f16fl8.c
 DEP_CPP_F16FL=\
+	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
 	"..\lg\dbg.h"\
 	".\emode.h"\
@@ -540,6 +557,7 @@ NODEP_CPP_F16FL=\
 
 SOURCE=.\f16hlin.c
 DEP_CPP_F16HL=\
+	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
 	".\emode.h"\
 	".\f16il.h"\
@@ -559,6 +577,7 @@ DEP_CPP_F16HL=\
 
 SOURCE=.\f16lin.c
 DEP_CPP_F16LI=\
+	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
 	".\bitmap.h"\
 	".\context.h"\
@@ -583,6 +602,7 @@ DEP_CPP_F16LI=\
 
 SOURCE=.\f16mono.c
 DEP_CPP_F16MO=\
+	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
 	".\bitmap.h"\
 	".\emode.h"\
@@ -602,6 +622,7 @@ DEP_CPP_F16MO=\
 
 SOURCE=.\f16pix.c
 DEP_CPP_F16PI=\
+	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
 	".\emode.h"\
 	".\grd.h"\
@@ -621,6 +642,7 @@ DEP_CPP_F16PI=\
 
 SOURCE=.\f16pix16.c
 DEP_CPP_F16PIX=\
+	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
 	".\emode.h"\
 	".\grd.h"\
@@ -639,6 +661,7 @@ DEP_CPP_F16PIX=\
 
 SOURCE=.\f16pix8.c
 DEP_CPP_F16PIX8=\
+	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
 	".\emode.h"\
 	".\grd.h"\
@@ -657,6 +680,7 @@ DEP_CPP_F16PIX8=\
 
 SOURCE=.\f16rsd8.c
 DEP_CPP_F16RS=\
+	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
 	".\emode.h"\
 	".\f16il.h"\
@@ -677,6 +701,7 @@ DEP_CPP_F16RS=\
 
 SOURCE=.\f16vlin.c
 DEP_CPP_F16VL=\
+	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
 	".\emode.h"\
 	".\f16il.h"\
@@ -696,6 +721,7 @@ DEP_CPP_F16VL=\
 
 SOURCE=.\fcolor.c
 DEP_CPP_FCOLO=\
+	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
 	"..\lg\dbg.h"\
 	".\emode.h"\
@@ -724,6 +750,7 @@ NODEP_CPP_FCOLO=\
 
 SOURCE=.\fl8bk8.c
 DEP_CPP_FL8BK=\
+	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
 	".\bank.h"\
 	".\emode.h"\
@@ -744,6 +771,7 @@ DEP_CPP_FL8BK=\
 
 SOURCE=.\fl8bm.c
 DEP_CPP_FL8BM=\
+	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
 	".\bitmap.h"\
 	".\bmftype.h"\
@@ -766,6 +794,7 @@ DEP_CPP_FL8BM=\
 
 SOURCE=.\fl8fl8.c
 DEP_CPP_FL8FL=\
+	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
 	"..\lg\dbg.h"\
 	".\astring.h"\
@@ -791,6 +820,7 @@ NODEP_CPP_FL8FL=\
 
 SOURCE=.\fl8hlin.c
 DEP_CPP_FL8HL=\
+	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
 	".\emode.h"\
 	".\grd.h"\
@@ -809,6 +839,7 @@ DEP_CPP_FL8HL=\
 
 SOURCE=.\fl8lin.c
 DEP_CPP_FL8LI=\
+	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
 	".\emode.h"\
 	".\grd.h"\
@@ -828,6 +859,7 @@ DEP_CPP_FL8LI=\
 
 SOURCE=.\fl8mono.c
 DEP_CPP_FL8MO=\
+	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
 	".\bitmap.h"\
 	".\emode.h"\
@@ -847,6 +879,7 @@ DEP_CPP_FL8MO=\
 
 SOURCE=.\fl8mx.c
 DEP_CPP_FL8MX=\
+	"..\..\h\lg_types.h"\
 	"..\..\h\nameconv.h"\
 	"..\fix\fix.h"\
 	".\emode.h"\
@@ -868,6 +901,7 @@ DEP_CPP_FL8MX=\
 
 SOURCE=.\fl8pix.c
 DEP_CPP_FL8PI=\
+	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
 	".\emode.h"\
 	".\grd.h"\
@@ -887,6 +921,7 @@ DEP_CPP_FL8PI=\
 
 SOURCE=.\fl8pix8.c
 DEP_CPP_FL8PIX=\
+	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
 	".\emode.h"\
 	".\grd.h"\
@@ -905,6 +940,7 @@ DEP_CPP_FL8PIX=\
 
 SOURCE=.\fl8rsd8.c
 DEP_CPP_FL8RS=\
+	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
 	".\emode.h"\
 	".\grd.h"\
@@ -923,6 +959,7 @@ DEP_CPP_FL8RS=\
 
 SOURCE=.\fl8vlin.c
 DEP_CPP_FL8VL=\
+	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
 	".\emode.h"\
 	".\grd.h"\
@@ -941,6 +978,7 @@ DEP_CPP_FL8VL=\
 
 SOURCE=.\gdbm.c
 DEP_CPP_GDBM_=\
+	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
 	".\bmftype.h"\
 	".\clip.h"\
@@ -963,6 +1001,7 @@ DEP_CPP_GDBM_=\
 
 SOURCE=.\gdgbm.c
 DEP_CPP_GDGBM=\
+	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
 	".\bitmap.h"\
 	".\bmftype.h"\
@@ -986,6 +1025,7 @@ DEP_CPP_GDGBM=\
 
 SOURCE=.\gdlin.c
 DEP_CPP_GDLIN=\
+	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
 	".\clip.h"\
 	".\emode.h"\
@@ -1008,6 +1048,7 @@ DEP_CPP_GDLIN=\
 
 SOURCE=.\gdpix.c
 DEP_CPP_GDPIX=\
+	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
 	".\bitmap.h"\
 	".\clip.h"\
@@ -1032,6 +1073,7 @@ DEP_CPP_GDPIX=\
 
 SOURCE=.\gdrect.c
 DEP_CPP_GDREC=\
+	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
 	".\bitmap.h"\
 	".\clip.h"\
@@ -1056,6 +1098,7 @@ DEP_CPP_GDREC=\
 
 SOURCE=.\gdtest.c
 DEP_CPP_GDTES=\
+	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
 	"..\matrix\matrixs.h"\
 	"..\matrix\mxang.h"\
@@ -1074,6 +1117,7 @@ DEP_CPP_GDTES=\
 
 SOURCE=.\genbm.c
 DEP_CPP_GENBM=\
+	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
 	".\bitmap.h"\
 	".\context.h"\
@@ -1095,6 +1139,7 @@ DEP_CPP_GENBM=\
 
 SOURCE=.\genf16.c
 DEP_CPP_GENF1=\
+	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
 	".\bmftype.h"\
 	".\clip.h"\
@@ -1115,6 +1160,7 @@ DEP_CPP_GENF1=\
 
 SOURCE=.\genf16u.c
 DEP_CPP_GENF16=\
+	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
 	".\bitmap.h"\
 	".\context.h"\
@@ -1138,6 +1184,7 @@ DEP_CPP_GENF16=\
 
 SOURCE=.\genfl8.c
 DEP_CPP_GENFL=\
+	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
 	".\bmftype.h"\
 	".\clip.h"\
@@ -1158,6 +1205,7 @@ DEP_CPP_GENFL=\
 
 SOURCE=.\genfl8u.c
 DEP_CPP_GENFL8=\
+	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
 	".\bitmap.h"\
 	".\context.h"\
@@ -1182,6 +1230,7 @@ DEP_CPP_GENFL8=\
 
 SOURCE=.\genlin.c
 DEP_CPP_GENLI=\
+	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
 	".\bitmap.h"\
 	".\context.h"\
@@ -1205,6 +1254,7 @@ DEP_CPP_GENLI=\
 
 SOURCE=.\genmono.c
 DEP_CPP_GENMO=\
+	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
 	".\bmftype.h"\
 	".\clip.h"\
@@ -1225,6 +1275,7 @@ DEP_CPP_GENMO=\
 
 SOURCE=.\genmonou.c
 DEP_CPP_GENMON=\
+	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
 	".\bitmap.h"\
 	".\context.h"\
@@ -1248,6 +1299,7 @@ DEP_CPP_GENMON=\
 
 SOURCE=.\genmx.c
 DEP_CPP_GENMX=\
+	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
 	".\bmftype.h"\
 	".\clip.h"\
@@ -1268,6 +1320,7 @@ DEP_CPP_GENMX=\
 
 SOURCE=.\genrsd8.c
 DEP_CPP_GENRS=\
+	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
 	".\bitmap.h"\
 	".\bmftype.h"\
@@ -1292,6 +1345,7 @@ DEP_CPP_GENRS=\
 
 SOURCE=.\gpal.c
 DEP_CPP_GPAL_=\
+	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
 	".\gpal.h"\
 	".\pal_.h"\
@@ -1308,6 +1362,7 @@ DEP_CPP_GPAL_=\
 
 SOURCE=.\gpix.c
 DEP_CPP_GPIX_=\
+	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
 	".\bitmap.h"\
 	".\emode.h"\
@@ -1338,6 +1393,7 @@ SOURCE=.\gr.c
 SOURCE=.\grd.c
 DEP_CPP_GRD_C=\
 	"..\..\h\dpmi.h"\
+	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
 	".\emode.h"\
 	".\grs.h"\
@@ -1365,6 +1421,7 @@ SOURCE=.\grmalloc.c
 
 SOURCE=.\grnull.c
 DEP_CPP_GRNUL=\
+	"..\..\h\lg_types.h"\
 	"..\lg\dbg.h"\
 	
 NODEP_CPP_GRNUL=\
@@ -1382,6 +1439,7 @@ NODEP_CPP_GRNUL=\
 
 SOURCE=.\hflip.c
 DEP_CPP_HFLIP=\
+	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
 	".\bitmap.h"\
 	".\emode.h"\
@@ -1399,6 +1457,7 @@ DEP_CPP_HFLIP=\
 
 SOURCE=.\init.c
 DEP_CPP_INIT_=\
+	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
 	"..\lg\dbg.h"\
 	"..\lg\tmpalloc.h"\
@@ -1429,6 +1488,7 @@ NODEP_CPP_INIT_=\
 
 SOURCE=.\ipal.c
 DEP_CPP_IPAL_=\
+	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
 	".\emode.h"\
 	".\grd.h"\
@@ -1448,6 +1508,7 @@ DEP_CPP_IPAL_=\
 
 SOURCE=.\lpix.c
 DEP_CPP_LPIX_=\
+	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
 	".\emode.h"\
 	".\grd.h"\
@@ -1467,6 +1528,7 @@ DEP_CPP_LPIX_=\
 
 SOURCE=.\ltab.c
 DEP_CPP_LTAB_=\
+	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
 	"..\lg\dbg.h"\
 	".\emode.h"\
@@ -1488,6 +1550,7 @@ NODEP_CPP_LTAB_=\
 
 SOURCE=.\mode.c
 DEP_CPP_MODE_=\
+	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
 	".\emode.h"\
 	".\grd.h"\
@@ -1507,6 +1570,7 @@ DEP_CPP_MODE_=\
 
 SOURCE=.\mxbm.c
 DEP_CPP_MXBM_=\
+	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
 	".\bitmap.h"\
 	".\bmftype.h"\
@@ -1529,6 +1593,7 @@ DEP_CPP_MXBM_=\
 
 SOURCE=.\mxfl8.c
 DEP_CPP_MXFL8=\
+	"..\..\h\lg_types.h"\
 	"..\..\h\nameconv.h"\
 	"..\fix\fix.h"\
 	".\emode.h"\
@@ -1550,6 +1615,7 @@ DEP_CPP_MXFL8=\
 
 SOURCE=.\mxhlin.c
 DEP_CPP_MXHLI=\
+	"..\..\h\lg_types.h"\
 	"..\..\h\nameconv.h"\
 	"..\fix\fix.h"\
 	".\emode.h"\
@@ -1570,6 +1636,9 @@ DEP_CPP_MXHLI=\
 # Begin Source File
 
 SOURCE=.\mxlatch.c
+DEP_CPP_MXLAT=\
+	"..\..\h\lg_types.h"\
+	
 
 !IF  "$(CFG)" == "dev2d - Win32 Release"
 
@@ -1582,6 +1651,7 @@ SOURCE=.\mxlatch.c
 
 SOURCE=.\mxlin.c
 DEP_CPP_MXLIN=\
+	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
 	".\emode.h"\
 	".\grd.h"\
@@ -1601,6 +1671,7 @@ DEP_CPP_MXLIN=\
 
 SOURCE=.\mxpix.c
 DEP_CPP_MXPIX=\
+	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
 	".\emode.h"\
 	".\grd.h"\
@@ -1620,6 +1691,7 @@ DEP_CPP_MXPIX=\
 
 SOURCE=.\mxpix8.c
 DEP_CPP_MXPIX8=\
+	"..\..\h\lg_types.h"\
 	"..\..\h\nameconv.h"\
 	"..\fix\fix.h"\
 	".\emode.h"\
@@ -1641,6 +1713,7 @@ DEP_CPP_MXPIX8=\
 
 SOURCE=.\mxvlin.c
 DEP_CPP_MXVLI=\
+	"..\..\h\lg_types.h"\
 	"..\..\h\nameconv.h"\
 	"..\fix\fix.h"\
 	".\emode.h"\
@@ -1662,6 +1735,7 @@ DEP_CPP_MXVLI=\
 
 SOURCE=.\novinit.c
 DEP_CPP_NOVIN=\
+	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
 	".\devtab.h"\
 	".\dftctab.h"\
@@ -1696,6 +1770,7 @@ DEP_CPP_NULCN=\
 
 SOURCE=.\nulldfcn.c
 DEP_CPP_NULLD=\
+	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
 	".\emode.h"\
 	".\grd.h"\
@@ -1716,6 +1791,7 @@ DEP_CPP_NULLD=\
 
 SOURCE=.\pal.c
 DEP_CPP_PAL_C=\
+	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
 	"..\lg\tmpalloc.h"\
 	"..\lgalloc\memall.h"\
@@ -1747,6 +1823,7 @@ NODEP_CPP_PAL_C=\
 
 SOURCE=.\pal16.c
 DEP_CPP_PAL16=\
+	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
 	".\emode.h"\
 	".\grd.h"\
@@ -1767,6 +1844,7 @@ DEP_CPP_PAL16=\
 
 SOURCE=.\rsdcvt.c
 DEP_CPP_RSDCV=\
+	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
 	"..\lg\dbg.h"\
 	"..\lg\lgassert.h"\
@@ -1799,6 +1877,7 @@ NODEP_CPP_RSDCV=\
 
 SOURCE=.\screen.c
 DEP_CPP_SCREE=\
+	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
 	"..\lg\dbg.h"\
 	"..\lg\lg.h"\
@@ -1837,6 +1916,7 @@ NODEP_CPP_SCREE=\
 
 SOURCE=.\sfoc.c
 DEP_CPP_SFOC_=\
+	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
 	".\bitmap.h"\
 	".\emode.h"\
@@ -1857,6 +1937,7 @@ DEP_CPP_SFOC_=\
 
 SOURCE=.\smode.c
 DEP_CPP_SMODE=\
+	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
 	".\emode.h"\
 	".\grd.h"\
@@ -1879,6 +1960,7 @@ DEP_CPP_SMODE=\
 
 SOURCE=.\stastk.c
 DEP_CPP_STAST=\
+	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
 	".\emode.h"\
 	".\grd.h"\
@@ -1900,6 +1982,7 @@ DEP_CPP_STAST=\
 
 SOURCE=.\svgainit.c
 DEP_CPP_SVGAI=\
+	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
 	".\devtab.h"\
 	".\dftctab.h"\
@@ -1922,6 +2005,7 @@ DEP_CPP_SVGAI=\
 
 SOURCE=.\tluctab.c
 DEP_CPP_TLUCT=\
+	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
 	".\emode.h"\
 	".\grd.h"\
@@ -1940,6 +2024,7 @@ DEP_CPP_TLUCT=\
 
 SOURCE=.\valloc.c
 DEP_CPP_VALLO=\
+	"..\..\h\lg_types.h"\
 	"..\compapis\dispapi.h"\
 	"..\compapis\dispguid.h"\
 	"..\comtools\comtools.h"\
@@ -1963,6 +2048,7 @@ DEP_CPP_VALLO=\
 SOURCE=.\vesac.c
 DEP_CPP_VESAC=\
 	"..\..\h\dpmi.h"\
+	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
 	"..\lg\dbg.h"\
 	"..\lgalloc\memall.h"\
@@ -1997,6 +2083,7 @@ NODEP_CPP_VESAC=\
 SOURCE=.\vgastate.c
 DEP_CPP_VGAST=\
 	"..\..\h\dpmi.h"\
+	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
 	".\dpmidat.h"\
 	".\emode.h"\
@@ -2021,6 +2108,7 @@ DEP_CPP_VGAST=\
 SOURCE=.\vsastate.c
 DEP_CPP_VSAST=\
 	"..\..\h\dpmi.h"\
+	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
 	".\dpmidat.h"\
 	".\emode.h"\

@@ -11,7 +11,7 @@
 #ifndef FNAME_H
 #define FNAME_H
 
-#include "types.h"
+#include "lg_types.h"
 
 #define MAXLEN_FNAME_PATH 113
 #define MAXLEN_FNAME_NAME 8

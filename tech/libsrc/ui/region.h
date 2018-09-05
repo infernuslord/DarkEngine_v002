@@ -13,7 +13,7 @@ struct _Region;
 #endif // __cplusplus
 
 #include <rect.h>
-#include <lgerror.h>
+#include "..\..\h\error.h"
 
 #define INVISIBLE_FLAG 0x80000000
 

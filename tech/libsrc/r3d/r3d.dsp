@@ -41,8 +41,8 @@ RSC=rc.exe
 # PROP Intermediate_Dir "..\_Bins\Release"
 # PROP Target_Dir ""
 # ADD BASE CPP /nologo /W3 /GX /O2 /D "NDEBUG" /D "_MBCS" /D "_LIB" /YX /FD /c
-# ADD CPP /nologo /Zp1 /MT /W3 /GX /O2 /I "." /I "..\..\h" /I "..\lg" /I "..\actmovie" /I "..\appcore" /I "..\arq" /I "..\compapis" /I "..\comtools" /I "..\config" /I "..\cpptools" /I "..\darkloop" /I "..\dev2d" /I "..\dispdev" /I "..\dstruct" /I "..\dump" /I "..\fix" /I "..\font" /I "..\g2" /I "..\gadget" /I "..\gameshel" /I "..\gfile" /I "..\inputbnd" /I "..\lgalloc" /I "..\lgd3d" /I "..\matrix" /I "..\md" /I "..\mm" /I "..\mp" /I "..\mprintf" /I "..\namedres" /I "..\net" /I "..\prof" /I "..\r3d" /I "..\random" /I "..\recorder" /I "..\ref" /I "..\res" /I "..\rnd" /I "..\script" /I "..\sdesc" /I "..\skel" /I "..\sndsrc" /I "..\sndutil" /I "..\sound" /I "..\star" /I "..\tagfile" /I "..\templgen" /I "..\timer" /I "..\ui" /I "..\vec2" /I "..\..\winsrc\input" /D "NDEBUG" /D "_MBCS" /D "_LIB" /FR /FI "..\..\h\types.h" /c
-# SUBTRACT CPP /X /u
+# ADD CPP /nologo /Zp1 /MT /W3 /GX /O2 /I "." /I "..\..\h" /I "..\lg" /I "..\actmovie" /I "..\appcore" /I "..\arq" /I "..\compapis" /I "..\comtools" /I "..\config" /I "..\cpptools" /I "..\darkloop" /I "..\dev2d" /I "..\dispdev" /I "..\dstruct" /I "..\dump" /I "..\fix" /I "..\font" /I "..\g2" /I "..\gadget" /I "..\gameshel" /I "..\gfile" /I "..\inputbnd" /I "..\lgalloc" /I "..\lgd3d" /I "..\matrix" /I "..\md" /I "..\mm" /I "..\mp" /I "..\mprintf" /I "..\namedres" /I "..\net" /I "..\prof" /I "..\r3d" /I "..\random" /I "..\recorder" /I "..\ref" /I "..\res" /I "..\rnd" /I "..\script" /I "..\sdesc" /I "..\skel" /I "..\sndsrc" /I "..\sndutil" /I "..\sound" /I "..\star" /I "..\tagfile" /I "..\templgen" /I "..\timer" /I "..\ui" /I "..\vec2" /I "..\..\winsrc\input" /D "NDEBUG" /D "_MBCS" /D "_LIB" /FI "..\..\h\lg_types.h" /c
+# SUBTRACT CPP /X /u /Fr
 # ADD BASE RSC /l 0x816 /d "NDEBUG"
 # ADD RSC /l 0x809 /d "NDEBUG"
 BSC32=bscmake.exe
@@ -65,7 +65,7 @@ LIB32=link.exe -lib
 # PROP Intermediate_Dir "..\_Bins\Debug"
 # PROP Target_Dir ""
 # ADD BASE CPP /nologo /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_WIN32" /D "_WINDOWS" /D "_DEBUG" /D "_MBCS" /D "_LIB" /YX /FD /GZ /c
-# ADD CPP /nologo /Zp1 /ML /W3 /Gm /GX /ZI /Od /I ".\\" /I "..\..\h" /I "..\actmovie" /I "..\appcore" /I "..\arq" /I "..\compapis" /I "..\comtools" /I "..\config" /I "..\cpptools" /I "..\darkloop" /I "..\dev2d" /I "..\dispdev" /I "..\dstruct" /I "..\dump" /I "..\fix" /I "..\font" /I "..\g2" /I "..\gadget" /I "..\gameshel" /I "..\gfile" /I "..\inputbnd" /I "..\lg" /I "..\lgalloc" /I "..\lgd3d" /I "..\matrix" /I "..\md" /I "..\mm" /I "..\mp" /I "..\mprintf" /I "..\namedres" /I "..\net" /I "..\prof" /I "..\r3d" /I "..\random" /I "..\recorder" /I "..\ref" /I "..\res" /I "..\rnd" /I "..\script" /I "..\sdesc" /I "..\skel" /I ".\sndsrc" /I "..\sndutil" /I "..\sound" /I "..\star" /I "..\tagfile" /I "..\templgen" /I "..\timer" /I "..\ui" /I "..\vec2" /I "..\..\winsrc\input" /D "_DEBUG" /D "_MBCS" /D "_LIB" /D "_WINDOWS" /FD /GZ /FI "..\..\h\types.h" /c
+# ADD CPP /nologo /Zp1 /ML /W3 /Gm /GX /ZI /Od /I ".\\" /I "..\..\h" /I "..\actmovie" /I "..\appcore" /I "..\arq" /I "..\compapis" /I "..\comtools" /I "..\config" /I "..\cpptools" /I "..\darkloop" /I "..\dev2d" /I "..\dispdev" /I "..\dstruct" /I "..\dump" /I "..\fix" /I "..\font" /I "..\g2" /I "..\gadget" /I "..\gameshel" /I "..\gfile" /I "..\inputbnd" /I "..\lg" /I "..\lgalloc" /I "..\lgd3d" /I "..\matrix" /I "..\md" /I "..\mm" /I "..\mp" /I "..\mprintf" /I "..\namedres" /I "..\net" /I "..\prof" /I "..\r3d" /I "..\random" /I "..\recorder" /I "..\ref" /I "..\res" /I "..\rnd" /I "..\script" /I "..\sdesc" /I "..\skel" /I ".\sndsrc" /I "..\sndutil" /I "..\sound" /I "..\star" /I "..\tagfile" /I "..\templgen" /I "..\timer" /I "..\ui" /I "..\vec2" /I "..\..\winsrc\input" /D "_DEBUG" /D "_MBCS" /D "_LIB" /D "_WINDOWS" /FD /GZ /FI "..\..\h\lg_types.h" /c
 # ADD BASE RSC /l 0x816 /d "_DEBUG"
 # ADD RSC /l 0x816 /d "_DEBUG"
 BSC32=bscmake.exe
@@ -89,6 +89,7 @@ LIB32=link.exe -lib
 SOURCE=.\block.c
 DEP_CPP_BLOCK=\
 	"..\..\h\grspoint.h"\
+	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
 	"..\lg\dbg.h"\
 	"..\lg\lg.h"\
@@ -128,6 +129,7 @@ NODEP_CPP_BLOCK=\
 SOURCE=.\clip.c
 DEP_CPP_CLIP_=\
 	"..\..\h\grspoint.h"\
+	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
 	"..\matrix\matrixs.h"\
 	"..\matrix\mxang.h"\
@@ -155,6 +157,7 @@ DEP_CPP_CLIP_=\
 SOURCE=.\clipclip.c
 DEP_CPP_CLIPC=\
 	"..\..\h\grspoint.h"\
+	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
 	"..\lg\dbg.h"\
 	"..\lg\lg.h"\
@@ -195,6 +198,7 @@ NODEP_CPP_CLIPC=\
 SOURCE=.\clipglob.c
 DEP_CPP_CLIPG=\
 	"..\..\h\grspoint.h"\
+	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
 	"..\lg\dbg.h"\
 	"..\lg\lg.h"\
@@ -240,6 +244,7 @@ NODEP_CPP_CLIPG=\
 SOURCE=.\clipplan.c
 DEP_CPP_CLIPP=\
 	"..\..\h\grspoint.h"\
+	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
 	"..\lg\dbg.h"\
 	"..\lg\lg.h"\
@@ -279,6 +284,7 @@ NODEP_CPP_CLIPP=\
 SOURCE=.\clipproj.c
 DEP_CPP_CLIPPR=\
 	"..\..\h\grspoint.h"\
+	"..\..\h\lg_types.h"\
 	"..\dev2d\dev2d.h"\
 	"..\fix\fix.h"\
 	"..\lg\dbg.h"\
@@ -321,6 +327,7 @@ NODEP_CPP_CLIPPR=\
 SOURCE=.\cliptest.c
 DEP_CPP_CLIPT=\
 	"..\..\h\grspoint.h"\
+	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
 	"..\matrix\matrix.h"\
 	"..\matrix\matrixs.h"\
@@ -350,6 +357,7 @@ DEP_CPP_CLIPT=\
 SOURCE=.\clipunsc.c
 DEP_CPP_CLIPU=\
 	"..\..\h\grspoint.h"\
+	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
 	"..\lg\dbg.h"\
 	"..\lg\lg.h"\
@@ -390,6 +398,7 @@ NODEP_CPP_CLIPU=\
 SOURCE=.\ctxtguts.c
 DEP_CPP_CTXTG=\
 	"..\..\h\grspoint.h"\
+	"..\..\h\lg_types.h"\
 	"..\dev2d\dev2d.h"\
 	"..\fix\fix.h"\
 	"..\lg\dbg.h"\
@@ -433,6 +442,7 @@ NODEP_CPP_CTXTG=\
 SOURCE=.\ctxtmang.c
 DEP_CPP_CTXTM=\
 	"..\..\h\grspoint.h"\
+	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
 	"..\lg\dbg.h"\
 	"..\lg\lg.h"\
@@ -472,6 +482,7 @@ NODEP_CPP_CTXTM=\
 SOURCE=.\ctxtmult.c
 DEP_CPP_CTXTMU=\
 	"..\..\h\grspoint.h"\
+	"..\..\h\lg_types.h"\
 	"..\dev2d\dev2d.h"\
 	"..\fix\fix.h"\
 	"..\matrix\matrixs.h"\
@@ -500,6 +511,7 @@ DEP_CPP_CTXTMU=\
 SOURCE=.\frame.c
 DEP_CPP_FRAME=\
 	"..\..\h\grspoint.h"\
+	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
 	"..\lg\dbg.h"\
 	"..\lg\lg.h"\
@@ -538,6 +550,7 @@ NODEP_CPP_FRAME=\
 SOURCE=.\init.c
 DEP_CPP_INIT_=\
 	"..\..\h\grspoint.h"\
+	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
 	"..\lg\dbg.h"\
 	"..\lg\lg.h"\
@@ -578,6 +591,7 @@ NODEP_CPP_INIT_=\
 SOURCE=.\object.c
 DEP_CPP_OBJEC=\
 	"..\..\h\grspoint.h"\
+	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
 	"..\lg\dbg.h"\
 	"..\lg\lg.h"\
@@ -652,6 +666,7 @@ NODEP_CPP_POLYT=\
 SOURCE=.\prim.c
 DEP_CPP_PRIM_=\
 	"..\..\h\grspoint.h"\
+	"..\..\h\lg_types.h"\
 	"..\dev2d\dev2d.h"\
 	"..\fix\fix.h"\
 	"..\matrix\matrixs.h"\
@@ -682,6 +697,7 @@ DEP_CPP_PRIM_=\
 SOURCE=.\primconv.c
 DEP_CPP_PRIMC=\
 	"..\..\h\grspoint.h"\
+	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
 	"..\matrix\matrixs.h"\
 	"..\matrix\mxang.h"\
@@ -701,6 +717,7 @@ DEP_CPP_PRIMC=\
 SOURCE=.\primd3d.c
 DEP_CPP_PRIMD=\
 	"..\..\h\grspoint.h"\
+	"..\..\h\lg_types.h"\
 	"..\dev2d\dev2d.h"\
 	"..\fix\fix.h"\
 	"..\g2\g2.h"\
@@ -734,6 +751,7 @@ DEP_CPP_PRIMD=\
 SOURCE=.\primface.c
 DEP_CPP_PRIMF=\
 	"..\..\h\grspoint.h"\
+	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
 	"..\lg\dbg.h"\
 	"..\lg\lg.h"\
@@ -773,6 +791,7 @@ NODEP_CPP_PRIMF=\
 SOURCE=.\primfunc.c
 DEP_CPP_PRIMFU=\
 	"..\..\h\grspoint.h"\
+	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
 	"..\lg\dbg.h"\
 	"..\matrix\matrixs.h"\
@@ -808,6 +827,7 @@ NODEP_CPP_PRIMFU=\
 SOURCE=.\primg2.c
 DEP_CPP_PRIMG=\
 	"..\..\h\grspoint.h"\
+	"..\..\h\lg_types.h"\
 	"..\dev2d\dev2d.h"\
 	"..\fix\fix.h"\
 	"..\g2\g2.h"\
@@ -842,6 +862,7 @@ DEP_CPP_PRIMG=\
 SOURCE=.\primmisc.c
 DEP_CPP_PRIMM=\
 	"..\..\h\grspoint.h"\
+	"..\..\h\lg_types.h"\
 	"..\dev2d\dev2d.h"\
 	"..\fix\fix.h"\
 	"..\lg\dbg.h"\
@@ -883,6 +904,7 @@ NODEP_CPP_PRIMM=\
 SOURCE=.\primnull.c
 DEP_CPP_PRIMN=\
 	"..\..\h\grspoint.h"\
+	"..\..\h\lg_types.h"\
 	"..\dev2d\dev2d.h"\
 	"..\fix\fix.h"\
 	"..\matrix\matrixs.h"\
@@ -903,6 +925,7 @@ DEP_CPP_PRIMN=\
 SOURCE=.\primpoly.c
 DEP_CPP_PRIMP=\
 	"..\..\h\grspoint.h"\
+	"..\..\h\lg_types.h"\
 	"..\dev2d\dev2d.h"\
 	"..\fix\fix.h"\
 	"..\matrix\matrixs.h"\
@@ -934,6 +957,7 @@ DEP_CPP_PRIMP=\
 SOURCE=.\space.c
 DEP_CPP_SPACE=\
 	"..\..\h\grspoint.h"\
+	"..\..\h\lg_types.h"\
 	"..\dev2d\dev2d.h"\
 	"..\fix\fix.h"\
 	"..\lg\dbg.h"\
@@ -977,6 +1001,7 @@ NODEP_CPP_SPACE=\
 SOURCE=.\utils.c
 DEP_CPP_UTILS=\
 	"..\..\h\grspoint.h"\
+	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
 	"..\lg\dbg.h"\
 	"..\lg\lg.h"\
@@ -1017,6 +1042,7 @@ NODEP_CPP_UTILS=\
 SOURCE=.\view.c
 DEP_CPP_VIEW_=\
 	"..\..\h\grspoint.h"\
+	"..\..\h\lg_types.h"\
 	"..\dev2d\dev2d.h"\
 	"..\fix\fix.h"\
 	"..\lg\dbg.h"\
@@ -1058,6 +1084,7 @@ NODEP_CPP_VIEW_=\
 SOURCE=.\xfrmclip.c
 DEP_CPP_XFRMC=\
 	"..\..\h\grspoint.h"\
+	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
 	"..\lg\dbg.h"\
 	"..\lg\lg.h"\
@@ -1098,6 +1125,7 @@ NODEP_CPP_XFRMC=\
 SOURCE=.\xfrmglob.c
 DEP_CPP_XFRMG=\
 	"..\..\h\grspoint.h"\
+	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
 	"..\matrix\matrixs.h"\
 	"..\matrix\mxang.h"\
@@ -1124,6 +1152,7 @@ DEP_CPP_XFRMG=\
 SOURCE=.\xfrmlin.c
 DEP_CPP_XFRML=\
 	"..\..\h\grspoint.h"\
+	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
 	"..\lg\dbg.h"\
 	"..\lg\lg.h"\
@@ -1163,6 +1192,7 @@ NODEP_CPP_XFRML=\
 SOURCE=.\xfrmproj.c
 DEP_CPP_XFRMP=\
 	"..\..\h\grspoint.h"\
+	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
 	"..\lg\dbg.h"\
 	"..\lg\lg.h"\
@@ -1204,6 +1234,7 @@ NODEP_CPP_XFRMP=\
 SOURCE=.\xfrmunsc.c
 DEP_CPP_XFRMU=\
 	"..\..\h\grspoint.h"\
+	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
 	"..\lg\dbg.h"\
 	"..\lg\lg.h"\

@@ -26,7 +26,7 @@
 #ifndef RND_H
 #define RND_H
 
-#include "types.h"
+#include "lg_types.h"
 #include "fix.h"
 
 #ifdef __cplusplus

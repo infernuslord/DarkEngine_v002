@@ -16,10 +16,11 @@
 
 //#pragma once
 
-//#define LG_HOME
+#define LG_HOME
 
-#include <types.h>
-//#include <windows.h>
+#include "lg_types.h"
+#include <windows.h>
+
 #include <lglog.h>
 #include <lglocmsg.h>
 #include <lgassert.h>

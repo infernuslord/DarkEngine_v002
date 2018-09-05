@@ -1,7 +1,7 @@
 #include <lg.h> 
 #include <stdlib.h>
 #include <string.h>
-#include <lgerror.h>
+#include "..\..\h\error.h"
 #include <hash.h> 
 #include <mprintf.h>
 #include <_dstruct.h>

@@ -41,8 +41,8 @@ RSC=rc.exe
 # PROP Intermediate_Dir "..\_Bins\Release"
 # PROP Target_Dir ""
 # ADD BASE CPP /nologo /W3 /GX /O2 /D "NDEBUG" /D "_MBCS" /D "_LIB" /YX /FD /c
-# ADD CPP /nologo /Zp1 /MT /W3 /GX /O2 /I "." /I "..\..\h" /I "..\lg" /I "..\actmovie" /I "..\appcore" /I "..\arq" /I "..\compapis" /I "..\comtools" /I "..\config" /I "..\cpptools" /I "..\darkloop" /I "..\dev2d" /I "..\dispdev" /I "..\dstruct" /I "..\dump" /I "..\fix" /I "..\font" /I "..\g2" /I "..\gadget" /I "..\gameshel" /I "..\gfile" /I "..\inputbnd" /I "..\lgalloc" /I "..\lgd3d" /I "..\matrix" /I "..\md" /I "..\mm" /I "..\mp" /I "..\mprintf" /I "..\namedres" /I "..\net" /I "..\prof" /I "..\r3d" /I "..\random" /I "..\recorder" /I "..\ref" /I "..\res" /I "..\rnd" /I "..\script" /I "..\sdesc" /I "..\skel" /I "..\sndsrc" /I "..\sndutil" /I "..\sound" /I "..\star" /I "..\tagfile" /I "..\templgen" /I "..\timer" /I "..\ui" /I "..\vec2" /I "..\..\winsrc\input" /D "NDEBUG" /D "_MBCS" /D "_LIB" /FR /FI "..\..\h\types.h" /c
-# SUBTRACT CPP /X /u
+# ADD CPP /nologo /Zp1 /MT /W3 /GX /O2 /I "." /I "..\..\h" /I "..\lg" /I "..\actmovie" /I "..\appcore" /I "..\arq" /I "..\compapis" /I "..\comtools" /I "..\config" /I "..\cpptools" /I "..\darkloop" /I "..\dev2d" /I "..\dispdev" /I "..\dstruct" /I "..\dump" /I "..\fix" /I "..\font" /I "..\g2" /I "..\gadget" /I "..\gameshel" /I "..\gfile" /I "..\inputbnd" /I "..\lgalloc" /I "..\lgd3d" /I "..\matrix" /I "..\md" /I "..\mm" /I "..\mp" /I "..\mprintf" /I "..\namedres" /I "..\net" /I "..\prof" /I "..\r3d" /I "..\random" /I "..\recorder" /I "..\ref" /I "..\res" /I "..\rnd" /I "..\script" /I "..\sdesc" /I "..\skel" /I "..\sndsrc" /I "..\sndutil" /I "..\sound" /I "..\star" /I "..\tagfile" /I "..\templgen" /I "..\timer" /I "..\ui" /I "..\vec2" /I "..\..\winsrc\input" /D "NDEBUG" /D "_MBCS" /D "_LIB" /FI "..\..\h\lg_types.h" /c
+# SUBTRACT CPP /X /u /Fr
 # ADD BASE RSC /l 0x816 /d "NDEBUG"
 # ADD RSC /l 0x809 /d "NDEBUG"
 BSC32=bscmake.exe
@@ -65,7 +65,7 @@ LIB32=link.exe -lib
 # PROP Intermediate_Dir "..\_Bins\Debug"
 # PROP Target_Dir ""
 # ADD BASE CPP /nologo /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_WIN32" /D "_WINDOWS" /D "_DEBUG" /D "_MBCS" /D "_LIB" /YX /FD /GZ /c
-# ADD CPP /nologo /Zp1 /ML /W3 /Gm /GX /ZI /Od /I ".\\" /I "..\..\h" /I "..\actmovie" /I "..\appcore" /I "..\arq" /I "..\compapis" /I "..\comtools" /I "..\config" /I "..\cpptools" /I "..\darkloop" /I "..\dev2d" /I "..\dispdev" /I "..\dstruct" /I "..\dump" /I "..\fix" /I "..\font" /I "..\g2" /I "..\gadget" /I "..\gameshel" /I "..\gfile" /I "..\inputbnd" /I "..\lg" /I "..\lgalloc" /I "..\lgd3d" /I "..\matrix" /I "..\md" /I "..\mm" /I "..\mp" /I "..\mprintf" /I "..\namedres" /I "..\net" /I "..\prof" /I "..\r3d" /I "..\random" /I "..\recorder" /I "..\ref" /I "..\res" /I "..\rnd" /I "..\script" /I "..\sdesc" /I "..\skel" /I ".\sndsrc" /I "..\sndutil" /I "..\sound" /I "..\star" /I "..\tagfile" /I "..\templgen" /I "..\timer" /I "..\ui" /I "..\vec2" /I "..\..\winsrc\input" /D "_DEBUG" /D "_MBCS" /D "_LIB" /D "_WINDOWS" /FD /GZ /FI "..\..\h\types.h" /c
+# ADD CPP /nologo /Zp1 /ML /W3 /Gm /GX /ZI /Od /I ".\\" /I "..\..\h" /I "..\actmovie" /I "..\appcore" /I "..\arq" /I "..\compapis" /I "..\comtools" /I "..\config" /I "..\cpptools" /I "..\darkloop" /I "..\dev2d" /I "..\dispdev" /I "..\dstruct" /I "..\dump" /I "..\fix" /I "..\font" /I "..\g2" /I "..\gadget" /I "..\gameshel" /I "..\gfile" /I "..\inputbnd" /I "..\lg" /I "..\lgalloc" /I "..\lgd3d" /I "..\matrix" /I "..\md" /I "..\mm" /I "..\mp" /I "..\mprintf" /I "..\namedres" /I "..\net" /I "..\prof" /I "..\r3d" /I "..\random" /I "..\recorder" /I "..\ref" /I "..\res" /I "..\rnd" /I "..\script" /I "..\sdesc" /I "..\skel" /I ".\sndsrc" /I "..\sndutil" /I "..\sound" /I "..\star" /I "..\tagfile" /I "..\templgen" /I "..\timer" /I "..\ui" /I "..\vec2" /I "..\..\winsrc\input" /D "_DEBUG" /D "_MBCS" /D "_LIB" /D "_WINDOWS" /FD /GZ /FI "..\..\h\lg_types.h" /c
 # ADD BASE RSC /l 0x816 /d "_DEBUG"
 # ADD RSC /l 0x816 /d "_DEBUG"
 BSC32=bscmake.exe
@@ -88,6 +88,7 @@ LIB32=link.exe -lib
 
 SOURCE=.\area.c
 DEP_CPP_AREA_=\
+	"..\..\h\lg_types.h"\
 	"..\dev2d\dev2d.h"\
 	"..\fix\fix.h"\
 	"..\matrix\matrixs.h"\
@@ -111,6 +112,7 @@ DEP_CPP_AREA_=\
 
 SOURCE=.\blend.c
 DEP_CPP_BLEND=\
+	"..\..\h\lg_types.h"\
 	"..\dev2d\dev2d.h"\
 	"..\fix\fix.h"\
 	"..\matrix\matrixs.h"\
@@ -129,6 +131,7 @@ DEP_CPP_BLEND=\
 
 SOURCE=.\cc816.c
 DEP_CPP_CC816=\
+	"..\..\h\lg_types.h"\
 	"..\dev2d\dev2d.h"\
 	"..\fix\fix.h"\
 	"..\matrix\matrixs.h"\
@@ -153,6 +156,7 @@ DEP_CPP_CC816=\
 
 SOURCE=.\chkply.c
 DEP_CPP_CHKPL=\
+	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
 	".\plytyp.h"\
 	".\polyint.h"\
@@ -169,6 +173,7 @@ DEP_CPP_CHKPL=\
 
 SOURCE=.\clip.c
 DEP_CPP_CLIP_=\
+	"..\..\h\lg_types.h"\
 	"..\dev2d\dev2d.h"\
 	"..\fix\fix.h"\
 	"..\lg\lgassert.h"\
@@ -197,6 +202,7 @@ NODEP_CPP_CLIP_=\
 
 SOURCE=.\clplin.c
 DEP_CPP_CLPLI=\
+	"..\..\h\lg_types.h"\
 	"..\dev2d\dev2d.h"\
 	"..\fix\fix.h"\
 	"..\matrix\matrixs.h"\
@@ -217,6 +223,7 @@ DEP_CPP_CLPLI=\
 
 SOURCE=.\co88.c
 DEP_CPP_CO88_=\
+	"..\..\h\lg_types.h"\
 	"..\dev2d\dev2d.h"\
 	"..\fix\fix.h"\
 	"..\matrix\matrixs.h"\
@@ -242,6 +249,7 @@ DEP_CPP_CO88_=\
 
 SOURCE=.\cominit.c
 DEP_CPP_COMIN=\
+	"..\..\h\lg_types.h"\
 	"..\dev2d\dev2d.h"\
 	"..\fix\fix.h"\
 	"..\matrix\matrixs.h"\
@@ -259,6 +267,7 @@ DEP_CPP_COMIN=\
 
 SOURCE=.\dlh816.c
 DEP_CPP_DLH81=\
+	"..\..\h\lg_types.h"\
 	"..\dev2d\dev2d.h"\
 	"..\fix\fix.h"\
 	"..\matrix\matrixs.h"\
@@ -286,6 +295,7 @@ DEP_CPP_DLH81=\
 
 SOURCE=.\drytmap.c
 DEP_CPP_DRYTM=\
+	"..\..\h\lg_types.h"\
 	"..\dev2d\dev2d.h"\
 	"..\fix\fix.h"\
 	"..\matrix\matrixs.h"\
@@ -310,6 +320,7 @@ DEP_CPP_DRYTM=\
 
 SOURCE=.\f16fl8ll.c
 DEP_CPP_F16FL=\
+	"..\..\h\lg_types.h"\
 	"..\dev2d\dev2d.h"\
 	"..\fix\fix.h"\
 	"..\lg\dbg.h"\
@@ -340,6 +351,7 @@ NODEP_CPP_F16FL=\
 
 SOURCE=.\f16fl8s.c
 DEP_CPP_F16FL8=\
+	"..\..\h\lg_types.h"\
 	"..\dev2d\dev2d.h"\
 	"..\fix\fix.h"\
 	"..\matrix\matrixs.h"\
@@ -364,6 +376,7 @@ DEP_CPP_F16FL8=\
 
 SOURCE=.\f16lm.c
 DEP_CPP_F16LM=\
+	"..\..\h\lg_types.h"\
 	"..\dev2d\dev2d.h"\
 	"..\fix\fix.h"\
 	"..\lg\dbg.h"\
@@ -388,6 +401,7 @@ NODEP_CPP_F16LM=\
 
 SOURCE=.\f16pm.c
 DEP_CPP_F16PM=\
+	"..\..\h\lg_types.h"\
 	"..\dev2d\dev2d.h"\
 	"..\fix\fix.h"\
 	"..\lg\lgassert.h"\
@@ -407,6 +421,7 @@ DEP_CPP_F16PM=\
 
 SOURCE=.\f16s.c
 DEP_CPP_F16S_=\
+	"..\..\h\lg_types.h"\
 	"..\dev2d\dev2d.h"\
 	"..\fix\fix.h"\
 	"..\matrix\matrixs.h"\
@@ -425,6 +440,7 @@ DEP_CPP_F16S_=\
 
 SOURCE=.\fl8fl8l.c
 DEP_CPP_FL8FL=\
+	"..\..\h\lg_types.h"\
 	"..\dev2d\dev2d.h"\
 	"..\fix\fix.h"\
 	"..\lg\dbg.h"\
@@ -454,6 +470,7 @@ NODEP_CPP_FL8FL=\
 
 SOURCE=.\fl8fl8ll.c
 DEP_CPP_FL8FL8=\
+	"..\..\h\lg_types.h"\
 	"..\dev2d\dev2d.h"\
 	"..\fix\fix.h"\
 	"..\lg\dbg.h"\
@@ -484,6 +501,7 @@ NODEP_CPP_FL8FL8=\
 
 SOURCE=.\fl8fl8s.c
 DEP_CPP_FL8FL8S=\
+	"..\..\h\lg_types.h"\
 	"..\dev2d\dev2d.h"\
 	"..\fix\fix.h"\
 	"..\matrix\matrixs.h"\
@@ -506,6 +524,7 @@ DEP_CPP_FL8FL8S=\
 
 SOURCE=.\fl8il.c
 DEP_CPP_FL8IL=\
+	"..\..\h\lg_types.h"\
 	"..\dev2d\dev2d.h"\
 	"..\fix\fix.h"\
 	"..\matrix\matrixs.h"\
@@ -528,6 +547,7 @@ DEP_CPP_FL8IL=\
 
 SOURCE=.\fl8l.c
 DEP_CPP_FL8L_=\
+	"..\..\h\lg_types.h"\
 	"..\dev2d\dev2d.h"\
 	"..\fix\fix.h"\
 	"..\matrix\matrixs.h"\
@@ -547,6 +567,7 @@ DEP_CPP_FL8L_=\
 
 SOURCE=.\fl8lin.c
 DEP_CPP_FL8LI=\
+	"..\..\h\lg_types.h"\
 	"..\dev2d\dev2d.h"\
 	"..\fix\fix.h"\
 	"..\matrix\matrixs.h"\
@@ -567,6 +588,7 @@ DEP_CPP_FL8LI=\
 
 SOURCE=.\fl8lm.c
 DEP_CPP_FL8LM=\
+	"..\..\h\lg_types.h"\
 	"..\dev2d\dev2d.h"\
 	"..\fix\fix.h"\
 	"..\lg\lgassert.h"\
@@ -609,6 +631,7 @@ SOURCE=.\fl8nnic.c
 
 SOURCE=.\fl8o2wic.c
 DEP_CPP_FL8O2=\
+	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
 	
 
@@ -623,6 +646,7 @@ DEP_CPP_FL8O2=\
 
 SOURCE=.\fl8pm.c
 DEP_CPP_FL8PM=\
+	"..\..\h\lg_types.h"\
 	"..\dev2d\dev2d.h"\
 	"..\fix\fix.h"\
 	"..\lg\lgassert.h"\
@@ -642,6 +666,7 @@ DEP_CPP_FL8PM=\
 
 SOURCE=.\fl8s.c
 DEP_CPP_FL8S_=\
+	"..\..\h\lg_types.h"\
 	"..\dev2d\dev2d.h"\
 	"..\fix\fix.h"\
 	"..\matrix\matrixs.h"\
@@ -660,6 +685,7 @@ DEP_CPP_FL8S_=\
 
 SOURCE=.\fl8sply.c
 DEP_CPP_FL8SP=\
+	"..\..\h\lg_types.h"\
 	"..\dev2d\dev2d.h"\
 	"..\fix\fix.h"\
 	"..\matrix\matrixs.h"\
@@ -683,6 +709,7 @@ DEP_CPP_FL8SP=\
 
 SOURCE=.\g2circ.c
 DEP_CPP_G2CIR=\
+	"..\..\h\lg_types.h"\
 	"..\dev2d\dev2d.h"\
 	"..\fix\fix.h"\
 	"..\matrix\matrixs.h"\
@@ -712,6 +739,7 @@ SOURCE=.\g2d.c
 
 SOURCE=.\g2el.c
 DEP_CPP_G2EL_=\
+	"..\..\h\lg_types.h"\
 	"..\dev2d\dev2d.h"\
 	"..\fix\fix.h"\
 	"..\lg\tmpalloc.h"\
@@ -738,6 +766,7 @@ NODEP_CPP_G2EL_=\
 
 SOURCE=.\g2makewr.c
 DEP_CPP_G2MAK=\
+	"..\..\h\lg_types.h"\
 	"..\lg\codewrit.h"\
 	"..\lg\dbg.h"\
 	"..\lg\lg.h"\
@@ -763,6 +792,7 @@ NODEP_CPP_G2MAK=\
 
 SOURCE=.\g2ov.c
 DEP_CPP_G2OV_=\
+	"..\..\h\lg_types.h"\
 	"..\dev2d\dev2d.h"\
 	"..\fix\fix.h"\
 	"..\lg\tmpalloc.h"\
@@ -789,6 +819,7 @@ NODEP_CPP_G2OV_=\
 
 SOURCE=.\g2poly.c
 DEP_CPP_G2POL=\
+	"..\..\h\lg_types.h"\
 	"..\dev2d\dev2d.h"\
 	"..\fix\fix.h"\
 	"..\lg\tmpalloc.h"\
@@ -819,6 +850,7 @@ NODEP_CPP_G2POL=\
 
 SOURCE=.\g2ring.c
 DEP_CPP_G2RIN=\
+	"..\..\h\lg_types.h"\
 	"..\dev2d\dev2d.h"\
 	"..\fix\fix.h"\
 	"..\lg\tmpalloc.h"\
@@ -845,6 +877,7 @@ NODEP_CPP_G2RIN=\
 
 SOURCE=.\g2rot.c
 DEP_CPP_G2ROT=\
+	"..\..\h\lg_types.h"\
 	"..\dev2d\dev2d.h"\
 	"..\fix\fix.h"\
 	"..\matrix\matrixs.h"\
@@ -864,6 +897,7 @@ DEP_CPP_G2ROT=\
 
 SOURCE=.\g2tm.c
 DEP_CPP_G2TM_=\
+	"..\..\h\lg_types.h"\
 	"..\dev2d\dev2d.h"\
 	"..\fix\fix.h"\
 	"..\lg\tmpalloc.h"\
@@ -891,6 +925,7 @@ NODEP_CPP_G2TM_=\
 
 SOURCE=.\gen16il.c
 DEP_CPP_GEN16=\
+	"..\..\h\lg_types.h"\
 	"..\dev2d\dev2d.h"\
 	"..\fix\fix.h"\
 	"..\matrix\matrixs.h"\
@@ -912,6 +947,7 @@ DEP_CPP_GEN16=\
 
 SOURCE=.\gen8il.c
 DEP_CPP_GEN8I=\
+	"..\..\h\lg_types.h"\
 	"..\dev2d\dev2d.h"\
 	"..\fix\fix.h"\
 	"..\matrix\matrixs.h"\
@@ -933,6 +969,7 @@ DEP_CPP_GEN8I=\
 
 SOURCE=.\genf16l.c
 DEP_CPP_GENF1=\
+	"..\..\h\lg_types.h"\
 	"..\dev2d\dev2d.h"\
 	"..\fix\fix.h"\
 	"..\matrix\matrixs.h"\
@@ -957,6 +994,7 @@ DEP_CPP_GENF1=\
 
 SOURCE=.\genf16s.c
 DEP_CPP_GENF16=\
+	"..\..\h\lg_types.h"\
 	"..\dev2d\dev2d.h"\
 	"..\fix\fix.h"\
 	"..\matrix\matrixs.h"\
@@ -981,6 +1019,7 @@ DEP_CPP_GENF16=\
 
 SOURCE=.\genfl8l.c
 DEP_CPP_GENFL=\
+	"..\..\h\lg_types.h"\
 	"..\dev2d\dev2d.h"\
 	"..\fix\fix.h"\
 	"..\matrix\matrixs.h"\
@@ -1005,6 +1044,7 @@ DEP_CPP_GENFL=\
 
 SOURCE=.\genfl8s.c
 DEP_CPP_GENFL8=\
+	"..\..\h\lg_types.h"\
 	"..\dev2d\dev2d.h"\
 	"..\fix\fix.h"\
 	"..\matrix\matrixs.h"\
@@ -1026,6 +1066,7 @@ DEP_CPP_GENFL8=\
 
 SOURCE=.\genil.c
 DEP_CPP_GENIL=\
+	"..\..\h\lg_types.h"\
 	"..\dev2d\dev2d.h"\
 	"..\fix\fix.h"\
 	"..\matrix\matrixs.h"\
@@ -1048,6 +1089,7 @@ DEP_CPP_GENIL=\
 
 SOURCE=.\genlil.c
 DEP_CPP_GENLI=\
+	"..\..\h\lg_types.h"\
 	"..\dev2d\dev2d.h"\
 	"..\fix\fix.h"\
 	"..\matrix\matrixs.h"\
@@ -1071,6 +1113,7 @@ DEP_CPP_GENLI=\
 
 SOURCE=.\genline.c
 DEP_CPP_GENLIN=\
+	"..\..\h\lg_types.h"\
 	"..\dev2d\dev2d.h"\
 	"..\fix\fix.h"\
 	"..\matrix\matrixs.h"\
@@ -1091,6 +1134,7 @@ DEP_CPP_GENLIN=\
 
 SOURCE=.\genlm.c
 DEP_CPP_GENLM=\
+	"..\..\h\lg_types.h"\
 	"..\dev2d\dev2d.h"\
 	"..\fix\fix.h"\
 	"..\lg\lgassert.h"\
@@ -1111,6 +1155,7 @@ DEP_CPP_GENLM=\
 
 SOURCE=.\genply.c
 DEP_CPP_GENPL=\
+	"..\..\h\lg_types.h"\
 	"..\dev2d\dev2d.h"\
 	"..\fix\fix.h"\
 	"..\matrix\matrixs.h"\
@@ -1134,6 +1179,7 @@ DEP_CPP_GENPL=\
 
 SOURCE=.\genrast.c
 DEP_CPP_GENRA=\
+	"..\..\h\lg_types.h"\
 	"..\dev2d\dev2d.h"\
 	"..\fix\fix.h"\
 	"..\lg\lgassert.h"\
@@ -1158,6 +1204,7 @@ DEP_CPP_GENRA=\
 
 SOURCE=.\genrsds.c
 DEP_CPP_GENRS=\
+	"..\..\h\lg_types.h"\
 	"..\dev2d\dev2d.h"\
 	"..\fix\fix.h"\
 	"..\matrix\matrixs.h"\
@@ -1179,6 +1226,7 @@ DEP_CPP_GENRS=\
 
 SOURCE=.\genrsdtm.c
 DEP_CPP_GENRSD=\
+	"..\..\h\lg_types.h"\
 	"..\dev2d\dev2d.h"\
 	"..\fix\fix.h"\
 	"..\matrix\matrixs.h"\
@@ -1201,6 +1249,7 @@ DEP_CPP_GENRSD=\
 
 SOURCE=.\gens.c
 DEP_CPP_GENS_=\
+	"..\..\h\lg_types.h"\
 	"..\dev2d\dev2d.h"\
 	"..\fix\fix.h"\
 	"..\lg\dbg.h"\
@@ -1223,6 +1272,7 @@ NODEP_CPP_GENS_=\
 
 SOURCE=.\gensil.c
 DEP_CPP_GENSI=\
+	"..\..\h\lg_types.h"\
 	"..\dev2d\dev2d.h"\
 	"..\fix\fix.h"\
 	"..\matrix\matrixs.h"\
@@ -1245,6 +1295,7 @@ DEP_CPP_GENSI=\
 
 SOURCE=.\gensply.c
 DEP_CPP_GENSP=\
+	"..\..\h\lg_types.h"\
 	"..\dev2d\dev2d.h"\
 	"..\fix\fix.h"\
 	"..\matrix\matrixs.h"\
@@ -1268,6 +1319,7 @@ DEP_CPP_GENSP=\
 
 SOURCE=.\golftmap.c
 DEP_CPP_GOLFT=\
+	"..\..\h\lg_types.h"\
 	"..\dev2d\dev2d.h"\
 	"..\fix\fix.h"\
 	"..\matrix\matrixs.h"\
@@ -1293,6 +1345,7 @@ DEP_CPP_GOLFT=\
 SOURCE=.\grtm.c
 DEP_CPP_GRTM_=\
 	"..\..\h\grspoint.h"\
+	"..\..\h\lg_types.h"\
 	"..\dev2d\dev2d.h"\
 	"..\fix\fix.h"\
 	"..\lg\tmpalloc.h"\
@@ -1321,6 +1374,7 @@ NODEP_CPP_GRTM_=\
 
 SOURCE=.\grwater.c
 DEP_CPP_GRWAT=\
+	"..\..\h\lg_types.h"\
 	"..\dev2d\dev2d.h"\
 	"..\fix\fix.h"\
 	"..\matrix\matrixs.h"\
@@ -1341,6 +1395,7 @@ DEP_CPP_GRWAT=\
 
 SOURCE=.\init.c
 DEP_CPP_INIT_=\
+	"..\..\h\lg_types.h"\
 	"..\dev2d\dev2d.h"\
 	"..\fix\fix.h"\
 	"..\lg\dbg.h"\
@@ -1365,6 +1420,7 @@ NODEP_CPP_INIT_=\
 
 SOURCE=.\lh816.c
 DEP_CPP_LH816=\
+	"..\..\h\lg_types.h"\
 	"..\dev2d\dev2d.h"\
 	"..\fix\fix.h"\
 	"..\matrix\matrixs.h"\
@@ -1393,6 +1449,7 @@ DEP_CPP_LH816=\
 
 SOURCE=.\lht816.c
 DEP_CPP_LHT81=\
+	"..\..\h\lg_types.h"\
 	"..\dev2d\dev2d.h"\
 	"..\fix\fix.h"\
 	"..\matrix\matrixs.h"\
@@ -1416,6 +1473,7 @@ DEP_CPP_LHT81=\
 
 SOURCE=.\lmap.c
 DEP_CPP_LMAP_=\
+	"..\..\h\lg_types.h"\
 	"..\dev2d\dev2d.h"\
 	"..\fix\fix.h"\
 	"..\lg\tmpalloc.h"\
@@ -1449,6 +1507,7 @@ NODEP_CPP_LMAP_=\
 
 SOURCE=.\lo816.c
 DEP_CPP_LO816=\
+	"..\..\h\lg_types.h"\
 	"..\dev2d\dev2d.h"\
 	"..\fix\fix.h"\
 	"..\matrix\matrixs.h"\
@@ -1477,6 +1536,7 @@ DEP_CPP_LO816=\
 
 SOURCE=.\lo88.c
 DEP_CPP_LO88_=\
+	"..\..\h\lg_types.h"\
 	"..\dev2d\dev2d.h"\
 	"..\fix\fix.h"\
 	"..\matrix\matrixs.h"\
@@ -1505,6 +1565,7 @@ DEP_CPP_LO88_=\
 
 SOURCE=.\o88.c
 DEP_CPP_O88_C=\
+	"..\..\h\lg_types.h"\
 	"..\dev2d\dev2d.h"\
 	"..\fix\fix.h"\
 	"..\matrix\matrixs.h"\
@@ -1530,6 +1591,7 @@ DEP_CPP_O88_C=\
 
 SOURCE=.\permap.c
 DEP_CPP_PERMA=\
+	"..\..\h\lg_types.h"\
 	"..\dev2d\dev2d.h"\
 	"..\fix\fix.h"\
 	"..\lg\tmpalloc.h"\
@@ -1562,6 +1624,7 @@ NODEP_CPP_PERMA=\
 
 SOURCE=.\plyshell.c
 DEP_CPP_PLYSH=\
+	"..\..\h\lg_types.h"\
 	"..\dev2d\dev2d.h"\
 	"..\fix\fix.h"\
 	"..\lg\tmpalloc.h"\
@@ -1588,6 +1651,7 @@ NODEP_CPP_PLYSH=\
 
 SOURCE=.\point.c
 DEP_CPP_POINT=\
+	"..\..\h\lg_types.h"\
 	"..\dev2d\dev2d.h"\
 	"..\fix\fix.h"\
 	"..\matrix\matrixs.h"\
@@ -1607,6 +1671,7 @@ DEP_CPP_POINT=\
 
 SOURCE=.\pt_duv.c
 DEP_CPP_PT_DU=\
+	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
 	"..\matrix\matrix.h"\
 	"..\matrix\matrixs.h"\
@@ -1627,6 +1692,7 @@ DEP_CPP_PT_DU=\
 
 SOURCE=.\pt_grad.c
 DEP_CPP_PT_GR=\
+	"..\..\h\lg_types.h"\
 	"..\dev2d\dev2d.h"\
 	"..\fix\fix.h"\
 	"..\matrix\matrixs.h"\
@@ -1649,6 +1715,7 @@ DEP_CPP_PT_GR=\
 
 SOURCE=.\pt_main.c
 DEP_CPP_PT_MA=\
+	"..\..\h\lg_types.h"\
 	"..\dev2d\dev2d.h"\
 	"..\fix\fix.h"\
 	"..\lg\dbg.h"\
@@ -1686,6 +1753,7 @@ NODEP_CPP_PT_MA=\
 SOURCE=.\pt_map.c
 DEP_CPP_PT_MAP=\
 	"..\..\h\grspoint.h"\
+	"..\..\h\lg_types.h"\
 	"..\dev2d\dev2d.h"\
 	"..\fix\fix.h"\
 	"..\lg\dbg.h"\
@@ -1724,6 +1792,7 @@ NODEP_CPP_PT_MAP=\
 
 SOURCE=.\r88.c
 DEP_CPP_R88_C=\
+	"..\..\h\lg_types.h"\
 	"..\dev2d\dev2d.h"\
 	"..\fix\fix.h"\
 	"..\matrix\matrixs.h"\
@@ -1748,6 +1817,7 @@ DEP_CPP_R88_C=\
 SOURCE=.\rastel.c
 DEP_CPP_RASTE=\
 	"..\..\h\fixreal.h"\
+	"..\..\h\lg_types.h"\
 	"..\dev2d\dev2d.h"\
 	"..\fix\altfix.h"\
 	"..\fix\fix.h"\
@@ -1774,6 +1844,7 @@ NODEP_CPP_RASTE=\
 
 SOURCE=.\raster.c
 DEP_CPP_RASTER=\
+	"..\..\h\lg_types.h"\
 	"..\dev2d\dev2d.h"\
 	"..\fix\fix.h"\
 	"..\lg\tmpalloc.h"\
@@ -1799,6 +1870,7 @@ NODEP_CPP_RASTER=\
 
 SOURCE=.\scshell.c
 DEP_CPP_SCSHE=\
+	"..\..\h\lg_types.h"\
 	"..\dev2d\dev2d.h"\
 	"..\fix\fix.h"\
 	"..\lg\dbg.h"\
@@ -1840,6 +1912,7 @@ DEP_CPP_SETDR=\
 
 SOURCE=.\shadhack.c
 DEP_CPP_SHADH=\
+	"..\..\h\lg_types.h"\
 	"..\dev2d\dev2d.h"\
 	"..\fix\fix.h"\
 	"..\matrix\matrixs.h"\
@@ -1866,6 +1939,7 @@ DEP_CPP_SHADH=\
 
 SOURCE=.\shadtmap.c
 DEP_CPP_SHADT=\
+	"..\..\h\lg_types.h"\
 	"..\dev2d\dev2d.h"\
 	"..\fix\fix.h"\
 	"..\matrix\matrixs.h"\
@@ -1890,6 +1964,7 @@ DEP_CPP_SHADT=\
 
 SOURCE=.\svgainit.c
 DEP_CPP_SVGAI=\
+	"..\..\h\lg_types.h"\
 	"..\dev2d\dev2d.h"\
 	"..\fix\fix.h"\
 	"..\matrix\matrixs.h"\
@@ -1907,6 +1982,7 @@ DEP_CPP_SVGAI=\
 
 SOURCE=.\t816oc.c
 DEP_CPP_T816O=\
+	"..\..\h\lg_types.h"\
 	"..\dev2d\dev2d.h"\
 	"..\fix\fix.h"\
 	"..\matrix\matrixs.h"\
@@ -1934,6 +2010,7 @@ DEP_CPP_T816O=\
 
 SOURCE=.\t88oc.c
 DEP_CPP_T88OC=\
+	"..\..\h\lg_types.h"\
 	"..\dev2d\dev2d.h"\
 	"..\fix\fix.h"\
 	"..\matrix\matrixs.h"\
@@ -1961,6 +2038,7 @@ DEP_CPP_T88OC=\
 
 SOURCE=.\tf.c
 DEP_CPP_TF_C9c=\
+	"..\..\h\lg_types.h"\
 	"..\dev2d\dev2d.h"\
 	"..\fix\fix.h"\
 	"..\matrix\matrixs.h"\
@@ -1985,6 +2063,7 @@ DEP_CPP_TF_C9c=\
 
 SOURCE=.\tmapd.c
 DEP_CPP_TMAPD=\
+	"..\..\h\lg_types.h"\
 	"..\dev2d\dev2d.h"\
 	"..\fix\fix.h"\
 	"..\matrix\matrixs.h"\
@@ -2007,6 +2086,7 @@ DEP_CPP_TMAPD=\
 
 SOURCE=.\tmsetup.c
 DEP_CPP_TMSET=\
+	"..\..\h\lg_types.h"\
 	"..\dev2d\dev2d.h"\
 	"..\fix\fix.h"\
 	"..\matrix\matrixs.h"\
@@ -2035,6 +2115,7 @@ DEP_CPP_TMSET=\
 
 SOURCE=.\trifan.c
 DEP_CPP_TRIFA=\
+	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
 	"..\lg\dbg.h"\
 	".\plytyp.h"\
@@ -2054,6 +2135,7 @@ NODEP_CPP_TRIFA=\
 
 SOURCE=.\trigrad.c
 DEP_CPP_TRIGR=\
+	"..\..\h\lg_types.h"\
 	"..\dev2d\dev2d.h"\
 	"..\fix\fix.h"\
 	"..\matrix\matrixs.h"\
@@ -2077,6 +2159,7 @@ DEP_CPP_TRIGR=\
 
 SOURCE=.\trirast.c
 DEP_CPP_TRIRA=\
+	"..\..\h\lg_types.h"\
 	"..\dev2d\dev2d.h"\
 	"..\fix\fix.h"\
 	"..\matrix\matrixs.h"\

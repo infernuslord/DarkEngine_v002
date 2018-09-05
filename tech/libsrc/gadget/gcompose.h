@@ -10,7 +10,7 @@
 
 #include <2d.h>
 #include <rect.h>
-#include <lgerror.h>
+#include "..\..\h\error.h"
 
 
 //////////////////////////////////////////////////////////////

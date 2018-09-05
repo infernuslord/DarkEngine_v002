@@ -7,7 +7,7 @@
 #ifndef __FIX_H
 #define __FIX_H
 
-#include <types.h>
+#include "lg_types.h"
 
 //////////////////////////////
 //

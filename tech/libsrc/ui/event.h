@@ -5,7 +5,7 @@
 #pragma once
 
 #include <lg.h>
-#include <lgerror.h>
+#include "..\..\h\error.h"
 #include <slab.h>
 #include <region.h>
 #include <mouse.h>

@@ -3,7 +3,7 @@
 
 #ifdef _MSC_VER
 
-#include <types.h>
+#include "lg_types.h"
 #include <fix.h>
 
 void flat8_flat8_opaque_p2_wrap_il (int x_left, int x_right, fix u, fix v)

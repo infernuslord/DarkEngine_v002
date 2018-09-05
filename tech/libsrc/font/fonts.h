@@ -3,7 +3,7 @@
 #ifndef __FONTS_H
 #define __FONTS_H
 
-#include <types.h>
+#include "lg_types.h"
 #include <dev2d.h>
 
 typedef struct grs_font {

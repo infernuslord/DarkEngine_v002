@@ -21,7 +21,7 @@
 #ifndef SYM_H
 #define SYM_H
 
-#include <types.h>
+#include "lg_types.h"
 #include <fix.h>
 #include <slist.h>
 #include <llist.h>

@@ -21,7 +21,7 @@
  *
 */
 
-#include <types.h>
+#include "lg_types.h"
 #include <stdarg.h>
 
 #ifdef __cplusplus

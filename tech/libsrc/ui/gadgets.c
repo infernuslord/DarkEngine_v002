@@ -16,7 +16,7 @@
 #include <dbg.h>
 #include <_ui.h>
 #include <rect.h>
-#include <lgerror.h>
+#include "..\..\h\error.h"
 #include <kbcook.h>
 #include <2dres.h>
 #include <string.h>

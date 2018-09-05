@@ -6,7 +6,7 @@
 --------------------Configuration: vec2 - Win32 Release--------------------
 </h3>
 <h3>Command Lines</h3>
-Creating command line "link.exe -lib /nologo /out:"..\_Libs\Release\vec2.lib"  \Sources\DarkEngine\prj\tech\libsrc\_Bins\Release\vec2.obj "
+Creating command line "link.exe -lib /nologo /out:"..\_Libs\Release\vec2.lib"  \Source\DarkEngine\prj\tech\libsrc\_Bins\Release\vec2.obj "
 <h3>Output Window</h3>
 Creating library...
 

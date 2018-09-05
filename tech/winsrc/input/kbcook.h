@@ -11,7 +11,7 @@
 
 #ifndef __KBCOOK_H
 #define __KBCOOK_H
-#include <lgerror.h>
+#include "..\..\h\error.h"
 #include <ctype.h>
 #include <kb.h>
 

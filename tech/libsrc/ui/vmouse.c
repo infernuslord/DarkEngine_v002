@@ -1,5 +1,5 @@
 #include <lg.h>
-#include <lgerror.h>
+#include "..\..\h\error.h"
 #include <mouse.h>
 #include <mprintf.h>
 

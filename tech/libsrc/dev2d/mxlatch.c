@@ -10,7 +10,7 @@
  *
  */
 
-#include <types.h>
+#include "lg_types.h"
 volatile uchar modex_wlatch = 0;
 volatile uchar modex_rlatch = 0;
 volatile int wlatch_semaphore = 0;

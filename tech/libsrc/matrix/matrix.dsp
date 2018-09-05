@@ -41,8 +41,8 @@ RSC=rc.exe
 # PROP Intermediate_Dir "..\_Bins\Release"
 # PROP Target_Dir ""
 # ADD BASE CPP /nologo /W3 /GX /O2 /D "NDEBUG" /D "_MBCS" /D "_LIB" /YX /FD /c
-# ADD CPP /nologo /Zp1 /MT /W3 /GX /O2 /I "." /I "..\..\h" /I "..\lg" /I "..\actmovie" /I "..\appcore" /I "..\arq" /I "..\compapis" /I "..\matrix" /I "..\config" /I "..\cpptools" /I "..\darkloop" /I "..\dev2d" /I "..\dispdev" /I "..\dstruct" /I "..\dump" /I "..\fix" /I "..\font" /I "..\g2" /I "..\gadget" /I "..\gameshel" /I "..\gfile" /I "..\inputbnd" /I "..\lgalloc" /I "..\lgd3d" /I "..\md" /I "..\mm" /I "..\mp" /I "..\mprintf" /I "..\namedres" /I "..\net" /I "..\prof" /I "..\r3d" /I "..\random" /I "..\recorder" /I "..\ref" /I "..\res" /I "..\rnd" /I "..\script" /I "..\sdesc" /I "..\skel" /I "..\sndsrc" /I "..\sndutil" /I "..\sound" /I "..\star" /I "..\tagfile" /I "..\templgen" /I "..\timer" /I "..\ui" /I "..\vec2" /I "..\..\winsrc\input" /D "NDEBUG" /D "_MBCS" /D "_LIB" /FR /FI "..\..\h\types.h" /c
-# SUBTRACT CPP /X /u
+# ADD CPP /nologo /Zp1 /MT /W3 /GX /O2 /I "." /I "..\..\h" /I "..\lg" /I "..\actmovie" /I "..\appcore" /I "..\arq" /I "..\compapis" /I "..\matrix" /I "..\config" /I "..\cpptools" /I "..\darkloop" /I "..\dev2d" /I "..\dispdev" /I "..\dstruct" /I "..\dump" /I "..\fix" /I "..\font" /I "..\g2" /I "..\gadget" /I "..\gameshel" /I "..\gfile" /I "..\inputbnd" /I "..\lgalloc" /I "..\lgd3d" /I "..\md" /I "..\mm" /I "..\mp" /I "..\mprintf" /I "..\namedres" /I "..\net" /I "..\prof" /I "..\r3d" /I "..\random" /I "..\recorder" /I "..\ref" /I "..\res" /I "..\rnd" /I "..\script" /I "..\sdesc" /I "..\skel" /I "..\sndsrc" /I "..\sndutil" /I "..\sound" /I "..\star" /I "..\tagfile" /I "..\templgen" /I "..\timer" /I "..\ui" /I "..\vec2" /I "..\..\winsrc\input" /D "NDEBUG" /D "_MBCS" /D "_LIB" /FI "..\..\h\lg_types.h" /c
+# SUBTRACT CPP /X /u /Fr
 # ADD BASE RSC /l 0x816 /d "NDEBUG"
 # ADD RSC /l 0x809 /d "NDEBUG"
 BSC32=bscmake.exe
@@ -65,7 +65,7 @@ LIB32=link.exe -lib
 # PROP Intermediate_Dir "..\_Bins\Debug"
 # PROP Target_Dir ""
 # ADD BASE CPP /nologo /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_WIN32" /D "_WINDOWS" /D "_DEBUG" /D "_MBCS" /D "_LIB" /YX /FD /GZ /c
-# ADD CPP /nologo /Zp1 /ML /W3 /Gm /GX /ZI /Od /I ".\\" /I "..\..\h" /I "..\actmovie" /I "..\appcore" /I "..\arq" /I "..\compapis" /I "..\matrix" /I "..\config" /I "..\cpptools" /I "..\darkloop" /I "..\dev2d" /I "..\dispdev" /I "..\dstruct" /I "..\dump" /I "..\fix" /I "..\font" /I "..\g2" /I "..\gadget" /I "..\gameshel" /I "..\gfile" /I "..\inputbnd" /I "..\lg" /I "..\lgalloc" /I "..\lgd3d" /I "..\md" /I "..\mm" /I "..\mp" /I "..\mprintf" /I "..\namedres" /I "..\net" /I "..\prof" /I "..\r3d" /I "..\random" /I "..\recorder" /I "..\ref" /I "..\res" /I "..\rnd" /I "..\script" /I "..\sdesc" /I "..\skel" /I ".\sndsrc" /I "..\sndutil" /I "..\sound" /I "..\star" /I "..\tagfile" /I "..\templgen" /I "..\timer" /I "..\ui" /I "..\vec2" /I "..\..\winsrc\input" /D "_DEBUG" /D "_MBCS" /D "_LIB" /D "_WINDOWS" /FD /GZ /FI "..\..\h\types.h" /c
+# ADD CPP /nologo /Zp1 /ML /W3 /Gm /GX /ZI /Od /I ".\\" /I "..\..\h" /I "..\actmovie" /I "..\appcore" /I "..\arq" /I "..\compapis" /I "..\matrix" /I "..\config" /I "..\cpptools" /I "..\darkloop" /I "..\dev2d" /I "..\dispdev" /I "..\dstruct" /I "..\dump" /I "..\fix" /I "..\font" /I "..\g2" /I "..\gadget" /I "..\gameshel" /I "..\gfile" /I "..\inputbnd" /I "..\lg" /I "..\lgalloc" /I "..\lgd3d" /I "..\md" /I "..\mm" /I "..\mp" /I "..\mprintf" /I "..\namedres" /I "..\net" /I "..\prof" /I "..\r3d" /I "..\random" /I "..\recorder" /I "..\ref" /I "..\res" /I "..\rnd" /I "..\script" /I "..\sdesc" /I "..\skel" /I ".\sndsrc" /I "..\sndutil" /I "..\sound" /I "..\star" /I "..\tagfile" /I "..\templgen" /I "..\timer" /I "..\ui" /I "..\vec2" /I "..\..\winsrc\input" /D "_DEBUG" /D "_MBCS" /D "_LIB" /D "_WINDOWS" /FD /GZ /FI "..\..\h\lg_types.h" /c
 # ADD BASE RSC /l 0x816 /d "_DEBUG"
 # ADD RSC /l 0x816 /d "_DEBUG"
 BSC32=bscmake.exe
@@ -88,6 +88,7 @@ LIB32=link.exe -lib
 
 SOURCE=.\dmat.c
 DEP_CPP_DMAT_=\
+	"..\..\h\lg_types.h"\
 	"..\lg\dbg.h"\
 	"..\lg\lg.h"\
 	"..\lg\lgalt.h"\
@@ -114,6 +115,7 @@ NODEP_CPP_DMAT_=\
 
 SOURCE=.\matang.c
 DEP_CPP_MATAN=\
+	"..\..\h\lg_types.h"\
 	".\matrix.h"\
 	".\matrixs.h"\
 	".\mxang.h"\
@@ -131,6 +133,7 @@ DEP_CPP_MATAN=\
 
 SOURCE=.\matangd.c
 DEP_CPP_MATANG=\
+	"..\..\h\lg_types.h"\
 	".\matrixd.h"\
 	".\matrixds.h"\
 	".\mxang.h"\
@@ -148,6 +151,7 @@ DEP_CPP_MATANG=\
 
 SOURCE=.\matmat.c
 DEP_CPP_MATMA=\
+	"..\..\h\lg_types.h"\
 	".\matrix.h"\
 	".\matrixs.h"\
 	".\mxang.h"\
@@ -164,6 +168,7 @@ DEP_CPP_MATMA=\
 
 SOURCE=.\matmatd.c
 DEP_CPP_MATMAT=\
+	"..\..\h\lg_types.h"\
 	".\matrixd.h"\
 	".\matrixds.h"\
 	".\mxang.h"\
@@ -180,6 +185,7 @@ DEP_CPP_MATMAT=\
 
 SOURCE=.\matvec.c
 DEP_CPP_MATVE=\
+	"..\..\h\lg_types.h"\
 	".\matrix.h"\
 	".\matrixs.h"\
 	".\mxang.h"\
@@ -196,6 +202,7 @@ DEP_CPP_MATVE=\
 
 SOURCE=.\matvecd.c
 DEP_CPP_MATVEC=\
+	"..\..\h\lg_types.h"\
 	".\matrixd.h"\
 	".\matrixds.h"\
 	".\mxang.h"\
@@ -212,6 +219,7 @@ DEP_CPP_MATVEC=\
 
 SOURCE=.\trans.c
 DEP_CPP_TRANS=\
+	"..\..\h\lg_types.h"\
 	".\matrix.h"\
 	".\matrixs.h"\
 	".\mxang.h"\
@@ -228,6 +236,7 @@ DEP_CPP_TRANS=\
 
 SOURCE=.\transd.c
 DEP_CPP_TRANSD=\
+	"..\..\h\lg_types.h"\
 	".\matrixd.h"\
 	".\matrixds.h"\
 	".\mxang.h"\
@@ -244,6 +253,7 @@ DEP_CPP_TRANSD=\
 
 SOURCE=.\vec2.c
 DEP_CPP_VEC2_=\
+	"..\..\h\lg_types.h"\
 	".\matrix.h"\
 	".\matrixs.h"\
 	".\mxang.h"\
@@ -260,6 +270,7 @@ DEP_CPP_VEC2_=\
 
 SOURCE=.\vec2d.c
 DEP_CPP_VEC2D=\
+	"..\..\h\lg_types.h"\
 	".\matrixd.h"\
 	".\matrixds.h"\
 	".\mxang.h"\
@@ -276,6 +287,7 @@ DEP_CPP_VEC2D=\
 
 SOURCE=.\vecang.c
 DEP_CPP_VECAN=\
+	"..\..\h\lg_types.h"\
 	"..\lg\dbg.h"\
 	"..\lg\lg.h"\
 	"..\lg\lgalt.h"\
@@ -305,6 +317,7 @@ NODEP_CPP_VECAN=\
 
 SOURCE=.\vecangd.c
 DEP_CPP_VECANG=\
+	"..\..\h\lg_types.h"\
 	"..\lg\dbg.h"\
 	"..\lg\lg.h"\
 	"..\lg\lgalt.h"\
@@ -334,6 +347,7 @@ NODEP_CPP_VECANG=\
 
 SOURCE=.\vecvec.c
 DEP_CPP_VECVE=\
+	"..\..\h\lg_types.h"\
 	".\matrix.h"\
 	".\matrixs.h"\
 	".\mxang.h"\
@@ -350,6 +364,7 @@ DEP_CPP_VECVE=\
 
 SOURCE=.\vecvecd.c
 DEP_CPP_VECVEC=\
+	"..\..\h\lg_types.h"\
 	".\matrixd.h"\
 	".\matrixds.h"\
 	".\mxang.h"\

@@ -33,7 +33,7 @@
 #include <conio.h>
 #include <assert.h>
 
-#include <types.h>
+#include "lg_types.h"
 
 typedef struct {
    short x;

@@ -9,7 +9,7 @@
 #include <inpguid.h>
 
 #include <event.h>
-#include <types.h>
+#include "lg_types.h"
 
 
 #define GAME_VAR 0

@@ -26,7 +26,7 @@
 
 // Includes
 #include "lg.h"  // every file should have this
-#include "lgerror.h"
+#include "..\..\h\error.h" 
 
 // Defines
 // Comparson function, works like strcmp

@@ -11,7 +11,7 @@
 // C Library Includes
 
 // System Library Includes
-#include <lgerror.h>
+#include "..\..\h\error.h"
 #include <hash.h> 
 #include <kbcook.h> 
 #include <array.h>

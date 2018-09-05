@@ -6,9 +6,9 @@
 --------------------Configuration: dev2d - Win32 Release--------------------
 </h3>
 <h3>Command Lines</h3>
-Creating temporary file "C:\Users\Infernus\AppData\Local\Temp\RSPF844.tmp" with contents
+Creating temporary file "C:\Users\Infernus\AppData\Local\Temp\RSP6CC3.tmp" with contents
 [
-/nologo /Zp1 /MT /W3 /GX /O2 /I "." /I "..\..\h" /I "..\lg" /I "..\actmovie" /I "..\appcore" /I "..\arq" /I "..\compapis" /I "..\comtools" /I "..\config" /I "..\cpptools" /I "..\darkloop" /I "..\dev2d" /I "..\dispdev" /I "..\dstruct" /I "..\dump" /I "..\fix" /I "..\font" /I "..\g2" /I "..\gadget" /I "..\gameshel" /I "..\gfile" /I "..\inputbnd" /I "..\lgalloc" /I "..\lgd3d" /I "..\matrix" /I "..\md" /I "..\mm" /I "..\mp" /I "..\mprintf" /I "..\namedres" /I "..\net" /I "..\prof" /I "..\r3d" /I "..\random" /I "..\recorder" /I "..\ref" /I "..\res" /I "..\rnd" /I "..\script" /I "..\sdesc" /I "..\skel" /I "..\sndsrc" /I "..\sndutil" /I "..\sound" /I "..\star" /I "..\tagfile" /I "..\templgen" /I "..\timer" /I "..\ui" /I "..\vec2" /I "..\..\winsrc\input" /D "NDEBUG" /D "_MBCS" /D "_LIB" /FR"..\_Bins\Release/" /Fp"..\_Bins\Release/dev2d.pch" /YX"..\..\types.h" /Fo"..\_Bins\Release/" /FI "..\..\h\types.h" /c 
+/nologo /Zp1 /MT /W3 /GX /O2 /I "." /I "..\..\h" /I "..\lg" /I "..\actmovie" /I "..\appcore" /I "..\arq" /I "..\compapis" /I "..\comtools" /I "..\config" /I "..\cpptools" /I "..\darkloop" /I "..\dev2d" /I "..\dispdev" /I "..\dstruct" /I "..\dump" /I "..\fix" /I "..\font" /I "..\g2" /I "..\gadget" /I "..\gameshel" /I "..\gfile" /I "..\inputbnd" /I "..\lgalloc" /I "..\lgd3d" /I "..\matrix" /I "..\md" /I "..\mm" /I "..\mp" /I "..\mprintf" /I "..\namedres" /I "..\net" /I "..\prof" /I "..\r3d" /I "..\random" /I "..\recorder" /I "..\ref" /I "..\res" /I "..\rnd" /I "..\script" /I "..\sdesc" /I "..\skel" /I "..\sndsrc" /I "..\sndutil" /I "..\sound" /I "..\star" /I "..\tagfile" /I "..\templgen" /I "..\timer" /I "..\ui" /I "..\vec2" /I "..\..\winsrc\input" /D "NDEBUG" /D "_MBCS" /D "_LIB" /Fo"..\_Bins\Release/" /FI "..\..\h\lg_types.h" /c 
 "D:\Source\DarkEngine\prj\tech\libsrc\dev2d\astring.c"
 "D:\Source\DarkEngine\prj\tech\libsrc\dev2d\bank.c"
 "D:\Source\DarkEngine\prj\tech\libsrc\dev2d\bitmap.c"
@@ -103,8 +103,8 @@ Creating temporary file "C:\Users\Infernus\AppData\Local\Temp\RSPF844.tmp" with 
 "D:\Source\DarkEngine\prj\tech\libsrc\dev2d\vgastate.c"
 "D:\Source\DarkEngine\prj\tech\libsrc\dev2d\vsastate.c"
 ]
-Creating command line "cl.exe @C:\Users\Infernus\AppData\Local\Temp\RSPF844.tmp" 
-Creating temporary file "C:\Users\Infernus\AppData\Local\Temp\RSPF845.tmp" with contents
+Creating command line "cl.exe @C:\Users\Infernus\AppData\Local\Temp\RSP6CC3.tmp" 
+Creating temporary file "C:\Users\Infernus\AppData\Local\Temp\RSP6CC4.tmp" with contents
 [
 /nologo /out:"..\_Libs\Release\dev2d.lib" 
 \Source\DarkEngine\prj\tech\libsrc\_Bins\Release\astring.obj
@@ -201,7 +201,7 @@ Creating temporary file "C:\Users\Infernus\AppData\Local\Temp\RSPF845.tmp" with 
 \Source\DarkEngine\prj\tech\libsrc\_Bins\Release\vgastate.obj
 \Source\DarkEngine\prj\tech\libsrc\_Bins\Release\vsastate.obj
 ]
-Creating command line "link.exe -lib @C:\Users\Infernus\AppData\Local\Temp\RSPF845.tmp"
+Creating command line "link.exe -lib @C:\Users\Infernus\AppData\Local\Temp\RSP6CC4.tmp"
 <h3>Output Window</h3>
 Compiling...
 astring.c
@@ -230,6 +230,8 @@ devstubs.c
 f16bm.c
 f16f16.c
 D:\Source\DarkEngine\prj\tech\libsrc\dev2d\f16f16.c(32) : warning C4554: '&' : check operator precedence for possible error; use parentheses to clarify precedence
+Generating Code...
+Compiling...
 f16fl8.c
 f16hlin.c
 f16lin.c
@@ -254,6 +256,8 @@ fl8pix.c
 D:\Source\DarkEngine\prj\tech\libsrc\dev2d\fl8pix.c(31) : warning C4550: expression evaluates to a function which is missing an argument list
 fl8pix8.c
 fl8rsd8.c
+Generating Code...
+Compiling...
 fl8vlin.c
 gdbm.c
 gdgbm.c
@@ -274,6 +278,8 @@ genrsd8.c
 gpal.c
 gpix.c
 gr.c
+Generating Code...
+Compiling...
 grd.c
 grmalloc.c
 D:\Source\DarkEngine\prj\tech\libsrc\dev2d\grmalloc.c(18) : warning C4028: formal parameter 1 different from declaration
@@ -298,6 +304,8 @@ mxvlin.c
 novinit.c
 nulcnv.c
 nulldfcn.c
+Generating Code...
+Compiling...
 pal.c
 pal16.c
 rsdcvt.c
@@ -311,6 +319,7 @@ valloc.c
 vesac.c
 vgastate.c
 vsastate.c
+Generating Code...
 Creating library...
 
 

@@ -106,7 +106,7 @@
 #ifndef DBG_H
 #define DBG_H
 
-#include "types.h"
+#include "lg_types.h"
 #include <stdio.h>
 
 

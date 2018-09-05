@@ -5,7 +5,7 @@
 
 #include <lg.h>
 #include <hashfunc.h>
-#include <lgerror.h>
+#include "..\..\h\error.h"
 
 #define DEFAULT_SIZE 10
 

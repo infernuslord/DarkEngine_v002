@@ -15,7 +15,7 @@
 #ifndef __COMTOOLS_H
 #define __COMTOOLS_H
 
-#include <types.h>
+#include "lg_types.h"
 #include <string.h>
 
 //////////////////////////////////////////////////////////////////////////////

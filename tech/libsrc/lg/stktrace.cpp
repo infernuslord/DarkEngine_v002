@@ -5,7 +5,7 @@
 // $Revision: 1.8 $
 //
 
-#include <types.h>
+#include "lg_types.h"
 
 #if defined(_WIN32) && defined(_MSC_VER)
 

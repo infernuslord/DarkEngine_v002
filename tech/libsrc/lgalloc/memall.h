@@ -18,7 +18,7 @@
 #define MEMALL_H
 
 #include <malloc.h>
-#include "types.h"
+#include "lg_types.h"
 
 //	Setting, pushing, & popping allocator sets
 

@@ -12,7 +12,7 @@
 #define __MATRIXDS_H
 #pragma once
 
-#include <types.h>
+#include "lg_types.h"
 
 #include <mxang.h>
 

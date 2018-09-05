@@ -14,7 +14,7 @@
 #ifndef __DMATS_H
 #define __DMATS_H
 
-#include <types.h>
+#include "lg_types.h"
 #include <float.h>
 
 

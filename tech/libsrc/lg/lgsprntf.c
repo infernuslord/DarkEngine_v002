@@ -7,7 +7,7 @@
 
 #include <stdlib.h>
 
-#include <types.h>
+#include "lg_types.h"
 #include <stdarg.h>
 #include <string.h>
 #include <limits.h>

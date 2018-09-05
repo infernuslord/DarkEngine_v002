@@ -21,7 +21,7 @@
 
 // Includes
 #include <lg.h>  // every file should have this
-#include <lgerror.h>
+#include "..\..\h\error.h"
 #include <array.h>
 #include <region.h>
 #include <cursors.h>

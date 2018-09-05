@@ -32,7 +32,7 @@
 // C Library Includes
 
 // System Library Includes
-#include "lgerror.h" 
+#include "..\..\h\error.h" 
 
 
 #ifdef __cplusplus

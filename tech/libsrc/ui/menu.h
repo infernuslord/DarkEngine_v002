@@ -6,7 +6,7 @@
 
 // Includes
 #include <lg.h>  // every file should have this
-#include <lgerror.h>
+#include "..\..\h\error.h"
 #include <hotkey.h>
 #include <tng.h>
 

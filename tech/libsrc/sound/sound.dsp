@@ -41,8 +41,8 @@ RSC=rc.exe
 # PROP Intermediate_Dir "..\_Bins\Release"
 # PROP Target_Dir ""
 # ADD BASE CPP /nologo /W3 /GX /O2 /D "NDEBUG" /D "_MBCS" /D "_LIB" /YX /FD /c
-# ADD CPP /nologo /Zp1 /MT /W3 /GX /O2 /I "." /I "..\..\h" /I "..\lg" /I "..\actmovie" /I "..\appcore" /I "..\arq" /I "..\compapis" /I "..\comtools" /I "..\config" /I "..\cpptools" /I "..\darkloop" /I "..\dev2d" /I "..\dispdev" /I "..\dstruct" /I "..\dump" /I "..\fix" /I "..\font" /I "..\g2" /I "..\gadget" /I "..\gameshel" /I "..\gfile" /I "..\inputbnd" /I "..\lgalloc" /I "..\lgd3d" /I "..\matrix" /I "..\md" /I "..\mm" /I "..\mp" /I "..\mprintf" /I "..\namedres" /I "..\net" /I "..\prof" /I "..\r3d" /I "..\random" /I "..\recorder" /I "..\ref" /I "..\res" /I "..\rnd" /I "..\script" /I "..\sdesc" /I "..\skel" /I "..\sndsrc" /I "..\sndutil" /I "..\sound" /I "..\star" /I "..\tagfile" /I "..\templgen" /I "..\timer" /I "..\ui" /I "..\vec2" /I "..\..\winsrc\input" /I "..\..\..\3rdsrc\Qmix413" /I "..\..\..\3rdsrc\Aureal3d" /D "NDEBUG" /D "_MBCS" /D "_LIB" /FR /FI "..\..\h\types.h" /c
-# SUBTRACT CPP /X /u
+# ADD CPP /nologo /Zp1 /MT /W3 /GX /O2 /I "." /I "..\..\h" /I "..\lg" /I "..\actmovie" /I "..\appcore" /I "..\arq" /I "..\compapis" /I "..\comtools" /I "..\config" /I "..\cpptools" /I "..\darkloop" /I "..\dev2d" /I "..\dispdev" /I "..\dstruct" /I "..\dump" /I "..\fix" /I "..\font" /I "..\g2" /I "..\gadget" /I "..\gameshel" /I "..\gfile" /I "..\inputbnd" /I "..\lgalloc" /I "..\lgd3d" /I "..\matrix" /I "..\md" /I "..\mm" /I "..\mp" /I "..\mprintf" /I "..\namedres" /I "..\net" /I "..\prof" /I "..\r3d" /I "..\random" /I "..\recorder" /I "..\ref" /I "..\res" /I "..\rnd" /I "..\script" /I "..\sdesc" /I "..\skel" /I "..\sndsrc" /I "..\sndutil" /I "..\sound" /I "..\star" /I "..\tagfile" /I "..\templgen" /I "..\timer" /I "..\ui" /I "..\vec2" /I "..\..\winsrc\input" /I "..\..\..\3rdsrc\Qmix413" /I "..\..\..\3rdsrc\Aureal3d" /D "NDEBUG" /D "_MBCS" /D "_LIB" /FI "..\..\h\lg_types.h" /c
+# SUBTRACT CPP /X /u /Fr
 # ADD BASE RSC /l 0x816 /d "NDEBUG"
 # ADD RSC /l 0x809 /d "NDEBUG"
 BSC32=bscmake.exe
@@ -65,7 +65,7 @@ LIB32=link.exe -lib
 # PROP Intermediate_Dir "..\_Bins\Debug"
 # PROP Target_Dir ""
 # ADD BASE CPP /nologo /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_WIN32" /D "_WINDOWS" /D "_DEBUG" /D "_MBCS" /D "_LIB" /YX /FD /GZ /c
-# ADD CPP /nologo /Zp1 /ML /W3 /Gm /GX /ZI /Od /I "." /I "..\..\h" /I "..\lg" /I "..\actmovie" /I "..\appcore" /I "..\arq" /I "..\compapis" /I "..\comtools" /I "..\config" /I "..\cpptools" /I "..\darkloop" /I "..\dev2d" /I "..\dispdev" /I "..\dstruct" /I "..\dump" /I "..\fix" /I "..\font" /I "..\g2" /I "..\gadget" /I "..\gameshel" /I "..\gfile" /I "..\inputbnd" /I "..\lgalloc" /I "..\lgd3d" /I "..\matrix" /I "..\md" /I "..\mm" /I "..\mp" /I "..\mprintf" /I "..\namedres" /I "..\net" /I "..\prof" /I "..\r3d" /I "..\random" /I "..\recorder" /I "..\ref" /I "..\res" /I "..\rnd" /I "..\script" /I "..\sdesc" /I "..\skel" /I "..\sndsrc" /I "..\sndutil" /I "..\sound" /I "..\star" /I "..\tagfile" /I "..\templgen" /I "..\timer" /I "..\ui" /I "..\vec2" /I "..\..\winsrc\input" /I "..\..\..\3rdsrc\Qmix413" /I "..\..\..\3rdsrc\Aureal3d" /D "_DEBUG" /D "_MBCS" /D "_LIB" /D "_WINDOWS" /FD /GZ /FI "..\..\h\types.h" /c
+# ADD CPP /nologo /Zp1 /ML /W3 /Gm /GX /ZI /Od /I "." /I "..\..\h" /I "..\lg" /I "..\actmovie" /I "..\appcore" /I "..\arq" /I "..\compapis" /I "..\comtools" /I "..\config" /I "..\cpptools" /I "..\darkloop" /I "..\dev2d" /I "..\dispdev" /I "..\dstruct" /I "..\dump" /I "..\fix" /I "..\font" /I "..\g2" /I "..\gadget" /I "..\gameshel" /I "..\gfile" /I "..\inputbnd" /I "..\lgalloc" /I "..\lgd3d" /I "..\matrix" /I "..\md" /I "..\mm" /I "..\mp" /I "..\mprintf" /I "..\namedres" /I "..\net" /I "..\prof" /I "..\r3d" /I "..\random" /I "..\recorder" /I "..\ref" /I "..\res" /I "..\rnd" /I "..\script" /I "..\sdesc" /I "..\skel" /I "..\sndsrc" /I "..\sndutil" /I "..\sound" /I "..\star" /I "..\tagfile" /I "..\templgen" /I "..\timer" /I "..\ui" /I "..\vec2" /I "..\..\winsrc\input" /I "..\..\..\3rdsrc\Qmix413" /I "..\..\..\3rdsrc\Aureal3d" /D "_DEBUG" /D "_MBCS" /D "_LIB" /D "_WINDOWS" /FD /GZ /FI "..\..\h\lg_types.h" /c
 # ADD BASE RSC /l 0x816 /d "_DEBUG"
 # ADD RSC /l 0x816 /d "_DEBUG"
 BSC32=bscmake.exe
@@ -90,6 +90,7 @@ SOURCE=.\dmixer.cpp
 DEP_CPP_DMIXE=\
 	"..\..\..\3rdsrc\Aureal3d\ia3d.h"\
 	"..\..\..\3rdsrc\Qmix413\qmixer.h"\
+	"..\..\h\lg_types.h"\
 	"..\compapis\appagg.h"\
 	"..\compapis\dispapi.h"\
 	"..\compapis\dispguid.h"\
@@ -131,6 +132,7 @@ NODEP_CPP_DMIXE=\
 SOURCE=.\dsample.cpp
 DEP_CPP_DSAMP=\
 	"..\..\..\3rdsrc\Qmix413\qmixer.h"\
+	"..\..\h\lg_types.h"\
 	"..\comtools\comtools.h"\
 	"..\fix\fix.h"\
 	"..\lg\dbg.h"\
@@ -184,6 +186,7 @@ DEP_CPP_DSNDD=\
 
 SOURCE=.\fade.cpp
 DEP_CPP_FADE_=\
+	"..\..\h\lg_types.h"\
 	"..\comtools\comtools.h"\
 	"..\fix\fix.h"\
 	"..\lg\dbg.h"\
@@ -216,6 +219,7 @@ NODEP_CPP_FADE_=\
 
 SOURCE=.\lgsndid.cpp
 DEP_CPP_LGSND=\
+	"..\..\h\lg_types.h"\
 	"..\comtools\comtools.h"\
 	".\lgsndid.h"\
 	
@@ -231,6 +235,7 @@ DEP_CPP_LGSND=\
 
 SOURCE=.\midiplay.cpp
 DEP_CPP_MIDIP=\
+	"..\..\h\lg_types.h"\
 	"..\..\h\prikind.h"\
 	"..\comtools\comtools.h"\
 	"..\cpptools\dynfunc.h"\
@@ -266,6 +271,7 @@ NODEP_CPP_MIDIP=\
 
 SOURCE=.\mixer.cpp
 DEP_CPP_MIXER=\
+	"..\..\h\lg_types.h"\
 	"..\compapis\appagg.h"\
 	"..\compapis\dispapi.h"\
 	"..\compapis\dispguid.h"\
@@ -309,6 +315,7 @@ NODEP_CPP_MIXER=\
 SOURCE=.\qmixer.cpp
 DEP_CPP_QMIXE=\
 	"..\..\..\3rdsrc\Qmix413\qmixer.h"\
+	"..\..\h\lg_types.h"\
 	"..\compapis\appagg.h"\
 	"..\compapis\dispapi.h"\
 	"..\compapis\dispguid.h"\
@@ -348,6 +355,7 @@ NODEP_CPP_QMIXE=\
 SOURCE=.\qsample.cpp
 DEP_CPP_QSAMP=\
 	"..\..\..\3rdsrc\Qmix413\qmixer.h"\
+	"..\..\h\lg_types.h"\
 	"..\comtools\comtools.h"\
 	"..\fix\fix.h"\
 	"..\lg\dbg.h"\
@@ -383,6 +391,7 @@ NODEP_CPP_QSAMP=\
 
 SOURCE=.\sample.cpp
 DEP_CPP_SAMPL=\
+	"..\..\h\lg_types.h"\
 	"..\comtools\comtools.h"\
 	"..\fix\fix.h"\
 	"..\lg\dbg.h"\
@@ -417,6 +426,7 @@ NODEP_CPP_SAMPL=\
 
 SOURCE=.\sndfmt.cpp
 DEP_CPP_SNDFM=\
+	"..\..\h\lg_types.h"\
 	"..\comtools\comtools.h"\
 	"..\fix\fix.h"\
 	"..\lg\dbg.h"\
@@ -478,6 +488,7 @@ SOURCE=.\testsnd1.c
 
 SOURCE=.\timelog.cpp
 DEP_CPP_TIMEL=\
+	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
 	"..\timer\timer.h"\
 	".\timelog.h"\
@@ -494,6 +505,7 @@ DEP_CPP_TIMEL=\
 
 SOURCE=.\waildynf.cpp
 DEP_CPP_WAILD=\
+	"..\..\h\lg_types.h"\
 	"..\cpptools\dynfunc.h"\
 	"..\lg\dbg.h"\
 	"..\lg\lg.h"\

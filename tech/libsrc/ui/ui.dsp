@@ -41,8 +41,8 @@ RSC=rc.exe
 # PROP Intermediate_Dir "..\_Bins\Release"
 # PROP Target_Dir ""
 # ADD BASE CPP /nologo /W3 /GX /O2 /D "NDEBUG" /D "_MBCS" /D "_LIB" /YX /FD /c
-# ADD CPP /nologo /Zp1 /MT /W3 /GX /O2 /I "." /I "..\..\h" /I "..\lg" /I "..\actmovie" /I "..\appcore" /I "..\arq" /I "..\compapis" /I "..\comtools" /I "..\config" /I "..\cpptools" /I "..\darkloop" /I "..\dev2d" /I "..\dispdev" /I "..\dstruct" /I "..\dump" /I "..\fix" /I "..\font" /I "..\g2" /I "..\gadget" /I "..\gameshel" /I "..\gfile" /I "..\inputbnd" /I "..\lgalloc" /I "..\lgd3d" /I "..\matrix" /I "..\md" /I "..\mm" /I "..\mp" /I "..\mprintf" /I "..\namedres" /I "..\net" /I "..\prof" /I "..\r3d" /I "..\random" /I "..\recorder" /I "..\ref" /I "..\res" /I "..\rnd" /I "..\script" /I "..\sdesc" /I "..\skel" /I "..\sndsrc" /I "..\sndutil" /I "..\sound" /I "..\star" /I "..\tagfile" /I "..\templgen" /I "..\timer" /I "..\ui" /I "..\vec2" /I "..\..\winsrc\input" /D "NDEBUG" /D "_MBCS" /D "_LIB" /FR /FI "..\..\h\types.h" /c
-# SUBTRACT CPP /X /u
+# ADD CPP /nologo /Zp1 /MT /W3 /GX /O2 /I "." /I "..\..\h" /I "..\lg" /I "..\actmovie" /I "..\appcore" /I "..\arq" /I "..\compapis" /I "..\comtools" /I "..\config" /I "..\cpptools" /I "..\darkloop" /I "..\dev2d" /I "..\dispdev" /I "..\dstruct" /I "..\dump" /I "..\fix" /I "..\font" /I "..\g2" /I "..\gadget" /I "..\gameshel" /I "..\gfile" /I "..\inputbnd" /I "..\lgalloc" /I "..\lgd3d" /I "..\matrix" /I "..\md" /I "..\mm" /I "..\mp" /I "..\mprintf" /I "..\namedres" /I "..\net" /I "..\prof" /I "..\r3d" /I "..\random" /I "..\recorder" /I "..\ref" /I "..\res" /I "..\rnd" /I "..\script" /I "..\sdesc" /I "..\skel" /I "..\sndsrc" /I "..\sndutil" /I "..\sound" /I "..\star" /I "..\tagfile" /I "..\templgen" /I "..\timer" /I "..\ui" /I "..\vec2" /I "..\..\winsrc\input" /D "NDEBUG" /D "_MBCS" /D "_LIB" /FI "..\..\h\lg_types.h" /c
+# SUBTRACT CPP /X /u /Fr
 # ADD BASE RSC /l 0x816 /d "NDEBUG"
 # ADD RSC /l 0x809 /d "NDEBUG"
 BSC32=bscmake.exe
@@ -65,7 +65,7 @@ LIB32=link.exe -lib
 # PROP Intermediate_Dir "..\_Bins\Debug"
 # PROP Target_Dir ""
 # ADD BASE CPP /nologo /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_WIN32" /D "_WINDOWS" /D "_DEBUG" /D "_MBCS" /D "_LIB" /YX /FD /GZ /c
-# ADD CPP /nologo /Zp1 /ML /W3 /Gm /GX /ZI /Od /I ".\\" /I "..\..\h" /I "..\actmovie" /I "..\appcore" /I "..\arq" /I "..\compapis" /I "..\comtools" /I "..\config" /I "..\cpptools" /I "..\darkloop" /I "..\dev2d" /I "..\dispdev" /I "..\dstruct" /I "..\dump" /I "..\fix" /I "..\font" /I "..\g2" /I "..\gadget" /I "..\gameshel" /I "..\gfile" /I "..\inputbnd" /I "..\lg" /I "..\lgalloc" /I "..\lgd3d" /I "..\matrix" /I "..\md" /I "..\mm" /I "..\mp" /I "..\mprintf" /I "..\namedres" /I "..\net" /I "..\prof" /I "..\r3d" /I "..\random" /I "..\recorder" /I "..\ref" /I "..\res" /I "..\rnd" /I "..\script" /I "..\sdesc" /I "..\skel" /I ".\sndsrc" /I "..\sndutil" /I "..\sound" /I "..\star" /I "..\tagfile" /I "..\templgen" /I "..\timer" /I "..\ui" /I "..\vec2" /I "..\..\winsrc\input" /D "_DEBUG" /D "_MBCS" /D "_LIB" /D "_WINDOWS" /FD /GZ /FI "..\..\h\types.h" /c
+# ADD CPP /nologo /Zp1 /ML /W3 /Gm /GX /ZI /Od /I ".\\" /I "..\..\h" /I "..\actmovie" /I "..\appcore" /I "..\arq" /I "..\compapis" /I "..\comtools" /I "..\config" /I "..\cpptools" /I "..\darkloop" /I "..\dev2d" /I "..\dispdev" /I "..\dstruct" /I "..\dump" /I "..\fix" /I "..\font" /I "..\g2" /I "..\gadget" /I "..\gameshel" /I "..\gfile" /I "..\inputbnd" /I "..\lg" /I "..\lgalloc" /I "..\lgd3d" /I "..\matrix" /I "..\md" /I "..\mm" /I "..\mp" /I "..\mprintf" /I "..\namedres" /I "..\net" /I "..\prof" /I "..\r3d" /I "..\random" /I "..\recorder" /I "..\ref" /I "..\res" /I "..\rnd" /I "..\script" /I "..\sdesc" /I "..\skel" /I ".\sndsrc" /I "..\sndutil" /I "..\sound" /I "..\star" /I "..\tagfile" /I "..\templgen" /I "..\timer" /I "..\ui" /I "..\vec2" /I "..\..\winsrc\input" /D "_DEBUG" /D "_MBCS" /D "_LIB" /D "_WINDOWS" /FD /GZ /FI "..\..\h\lg_types.h" /c
 # ADD BASE RSC /l 0x816 /d "_DEBUG"
 # ADD RSC /l 0x816 /d "_DEBUG"
 BSC32=bscmake.exe
@@ -89,7 +89,8 @@ LIB32=link.exe -lib
 SOURCE=.\butarray.c
 DEP_CPP_BUTAR=\
 	"..\..\h\2dres.h"\
-	"..\..\h\lgerror.h"\
+	"..\..\h\error.h"\
+	"..\..\h\lg_types.h"\
 	"..\..\h\prikind.h"\
 	"..\..\winsrc\input\kb.h"\
 	"..\..\winsrc\input\kbcook.h"\
@@ -143,7 +144,8 @@ NODEP_CPP_BUTAR=\
 
 SOURCE=.\curdrw.c
 DEP_CPP_CURDR=\
-	"..\..\h\lgerror.h"\
+	"..\..\h\error.h"\
+	"..\..\h\lg_types.h"\
 	"..\..\winsrc\input\mouse.h"\
 	"..\compapis\2d.h"\
 	"..\compapis\dispapi.h"\
@@ -187,7 +189,8 @@ NODEP_CPP_CURDR=\
 SOURCE=.\cursors.c
 DEP_CPP_CURSO=\
 	"..\..\h\_ui.h"\
-	"..\..\h\lgerror.h"\
+	"..\..\h\error.h"\
+	"..\..\h\lg_types.h"\
 	"..\..\winsrc\input\mouse.h"\
 	"..\compapis\2d.h"\
 	"..\dev2d\dev2d.h"\
@@ -228,7 +231,8 @@ NODEP_CPP_CURSO=\
 SOURCE=.\event.c
 DEP_CPP_EVENT=\
 	"..\..\h\_ui.h"\
-	"..\..\h\lgerror.h"\
+	"..\..\h\error.h"\
+	"..\..\h\lg_types.h"\
 	"..\..\winsrc\input\joystick.h"\
 	"..\..\winsrc\input\kb.h"\
 	"..\..\winsrc\input\kbcook.h"\
@@ -278,7 +282,8 @@ SOURCE=.\gadgets.c
 DEP_CPP_GADGE=\
 	"..\..\h\2dres.h"\
 	"..\..\h\_ui.h"\
-	"..\..\h\lgerror.h"\
+	"..\..\h\error.h"\
+	"..\..\h\lg_types.h"\
 	"..\..\h\prikind.h"\
 	"..\..\winsrc\input\kb.h"\
 	"..\..\winsrc\input\kbcook.h"\
@@ -331,7 +336,8 @@ SOURCE=.\hotkey.c
 DEP_CPP_HOTKE=\
 	"..\..\h\_dstruct.h"\
 	"..\..\h\_ui.h"\
-	"..\..\h\lgerror.h"\
+	"..\..\h\error.h"\
+	"..\..\h\lg_types.h"\
 	"..\..\winsrc\input\kb.h"\
 	"..\..\winsrc\input\kbcook.h"\
 	"..\dstruct\array.h"\
@@ -364,7 +370,8 @@ DEP_CPP_MENU_=\
 	"..\..\h\2dres.h"\
 	"..\..\h\_dstruct.h"\
 	"..\..\h\_ui.h"\
-	"..\..\h\lgerror.h"\
+	"..\..\h\error.h"\
+	"..\..\h\lg_types.h"\
 	"..\..\h\prikind.h"\
 	"..\..\winsrc\input\kb.h"\
 	"..\..\winsrc\input\kbcook.h"\
@@ -422,7 +429,8 @@ SOURCE=.\plain.c
 DEP_CPP_PLAIN=\
 	"..\..\h\2dres.h"\
 	"..\..\h\_ui.h"\
-	"..\..\h\lgerror.h"\
+	"..\..\h\error.h"\
+	"..\..\h\lg_types.h"\
 	"..\..\h\prikind.h"\
 	"..\..\winsrc\input\mouse.h"\
 	"..\compapis\2d.h"\
@@ -474,7 +482,8 @@ SOURCE=.\pushbutt.c
 DEP_CPP_PUSHB=\
 	"..\..\h\2dres.h"\
 	"..\..\h\_ui.h"\
-	"..\..\h\lgerror.h"\
+	"..\..\h\error.h"\
+	"..\..\h\lg_types.h"\
 	"..\..\h\prikind.h"\
 	"..\..\winsrc\input\mouse.h"\
 	"..\compapis\2d.h"\
@@ -526,7 +535,8 @@ SOURCE=.\qboxgadg.c
 DEP_CPP_QBOXG=\
 	"..\..\h\2dres.h"\
 	"..\..\h\_ui.h"\
-	"..\..\h\lgerror.h"\
+	"..\..\h\error.h"\
+	"..\..\h\lg_types.h"\
 	"..\..\h\prikind.h"\
 	"..\..\winsrc\input\kb.h"\
 	"..\..\winsrc\input\kbcook.h"\
@@ -580,7 +590,8 @@ SOURCE=.\region.c
 DEP_CPP_REGIO=\
 	"..\..\h\2dres.h"\
 	"..\..\h\_ui.h"\
-	"..\..\h\lgerror.h"\
+	"..\..\h\error.h"\
+	"..\..\h\lg_types.h"\
 	"..\..\h\prikind.h"\
 	"..\..\winsrc\input\mouse.h"\
 	"..\compapis\2d.h"\
@@ -629,7 +640,8 @@ NODEP_CPP_REGIO=\
 
 SOURCE=.\slab.c
 DEP_CPP_SLAB_=\
-	"..\..\h\lgerror.h"\
+	"..\..\h\error.h"\
+	"..\..\h\lg_types.h"\
 	"..\..\winsrc\input\mouse.h"\
 	"..\compapis\2d.h"\
 	"..\dev2d\dev2d.h"\
@@ -669,7 +681,8 @@ SOURCE=.\slider.c
 DEP_CPP_SLIDE=\
 	"..\..\h\2dres.h"\
 	"..\..\h\_ui.h"\
-	"..\..\h\lgerror.h"\
+	"..\..\h\error.h"\
+	"..\..\h\lg_types.h"\
 	"..\..\h\prikind.h"\
 	"..\..\winsrc\input\mouse.h"\
 	"..\compapis\2d.h"\
@@ -721,7 +734,8 @@ SOURCE=.\textgadg.c
 DEP_CPP_TEXTG=\
 	"..\..\h\2dres.h"\
 	"..\..\h\_ui.h"\
-	"..\..\h\lgerror.h"\
+	"..\..\h\error.h"\
+	"..\..\h\lg_types.h"\
 	"..\..\h\prikind.h"\
 	"..\..\winsrc\input\mouse.h"\
 	"..\compapis\2d.h"\
@@ -775,6 +789,7 @@ NODEP_CPP_TEXTG=\
 
 SOURCE=.\texttool.c
 DEP_CPP_TEXTT=\
+	"..\..\h\lg_types.h"\
 	"..\dstruct\rect.h"\
 	"..\lg\dbg.h"\
 	"..\lg\lg.h"\
@@ -806,7 +821,8 @@ SOURCE=.\tng.c
 DEP_CPP_TNG_C=\
 	"..\..\h\2dres.h"\
 	"..\..\h\_ui.h"\
-	"..\..\h\lgerror.h"\
+	"..\..\h\error.h"\
+	"..\..\h\lg_types.h"\
 	"..\..\h\prikind.h"\
 	"..\..\winsrc\input\mouse.h"\
 	"..\compapis\2d.h"\
@@ -856,7 +872,8 @@ SOURCE=.\tngbarry.c
 DEP_CPP_TNGBA=\
 	"..\..\h\2dres.h"\
 	"..\..\h\_ui.h"\
-	"..\..\h\lgerror.h"\
+	"..\..\h\error.h"\
+	"..\..\h\lg_types.h"\
 	"..\..\h\prikind.h"\
 	"..\..\winsrc\input\kb.h"\
 	"..\..\winsrc\input\kbcook.h"\
@@ -912,7 +929,8 @@ NODEP_CPP_TNGBA=\
 SOURCE=.\tngfont.c
 DEP_CPP_TNGFO=\
 	"..\..\h\2dres.h"\
-	"..\..\h\lgerror.h"\
+	"..\..\h\error.h"\
+	"..\..\h\lg_types.h"\
 	"..\..\h\prikind.h"\
 	"..\..\winsrc\input\mouse.h"\
 	"..\compapis\2d.h"\
@@ -967,7 +985,8 @@ DEP_CPP_TNGME=\
 	"..\..\h\2dres.h"\
 	"..\..\h\_dstruct.h"\
 	"..\..\h\_ui.h"\
-	"..\..\h\lgerror.h"\
+	"..\..\h\error.h"\
+	"..\..\h\lg_types.h"\
 	"..\..\h\prikind.h"\
 	"..\..\winsrc\input\kb.h"\
 	"..\..\winsrc\input\kbcook.h"\
@@ -1027,7 +1046,8 @@ SOURCE=.\tngplain.c
 DEP_CPP_TNGPL=\
 	"..\..\h\2dres.h"\
 	"..\..\h\_ui.h"\
-	"..\..\h\lgerror.h"\
+	"..\..\h\error.h"\
+	"..\..\h\lg_types.h"\
 	"..\..\h\prikind.h"\
 	"..\..\winsrc\input\mouse.h"\
 	"..\compapis\2d.h"\
@@ -1078,7 +1098,8 @@ SOURCE=.\tngpushb.c
 DEP_CPP_TNGPU=\
 	"..\..\h\2dres.h"\
 	"..\..\h\_ui.h"\
-	"..\..\h\lgerror.h"\
+	"..\..\h\error.h"\
+	"..\..\h\lg_types.h"\
 	"..\..\h\prikind.h"\
 	"..\..\winsrc\input\mouse.h"\
 	"..\compapis\2d.h"\
@@ -1129,7 +1150,8 @@ SOURCE=.\tngqbox.c
 DEP_CPP_TNGQB=\
 	"..\..\h\2dres.h"\
 	"..\..\h\_ui.h"\
-	"..\..\h\lgerror.h"\
+	"..\..\h\error.h"\
+	"..\..\h\lg_types.h"\
 	"..\..\h\prikind.h"\
 	"..\..\winsrc\input\mouse.h"\
 	"..\compapis\2d.h"\
@@ -1183,7 +1205,8 @@ SOURCE=.\tngslidr.c
 DEP_CPP_TNGSL=\
 	"..\..\h\2dres.h"\
 	"..\..\h\_ui.h"\
-	"..\..\h\lgerror.h"\
+	"..\..\h\error.h"\
+	"..\..\h\lg_types.h"\
 	"..\..\h\prikind.h"\
 	"..\..\winsrc\input\mouse.h"\
 	"..\compapis\2d.h"\
@@ -1234,7 +1257,8 @@ SOURCE=.\tngtextg.c
 DEP_CPP_TNGTE=\
 	"..\..\h\2dres.h"\
 	"..\..\h\_ui.h"\
-	"..\..\h\lgerror.h"\
+	"..\..\h\error.h"\
+	"..\..\h\lg_types.h"\
 	"..\..\h\prikind.h"\
 	"..\..\winsrc\input\mouse.h"\
 	"..\compapis\2d.h"\
@@ -1289,7 +1313,8 @@ SOURCE=.\uires.c
 DEP_CPP_UIRES=\
 	"..\..\h\2dres.h"\
 	"..\..\h\_ui.h"\
-	"..\..\h\lgerror.h"\
+	"..\..\h\error.h"\
+	"..\..\h\lg_types.h"\
 	"..\..\h\prikind.h"\
 	"..\..\winsrc\input\mouse.h"\
 	"..\compapis\2d.h"\
@@ -1332,7 +1357,8 @@ NODEP_CPP_UIRES=\
 
 SOURCE=.\vmouse.c
 DEP_CPP_VMOUS=\
-	"..\..\h\lgerror.h"\
+	"..\..\h\error.h"\
+	"..\..\h\lg_types.h"\
 	"..\..\winsrc\input\mouse.h"\
 	"..\lg\dbg.h"\
 	"..\lg\lg.h"\

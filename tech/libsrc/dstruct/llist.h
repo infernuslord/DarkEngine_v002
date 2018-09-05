@@ -52,7 +52,7 @@
 #ifndef LLIST_H
 #define LLIST_H
 
-#include <types.h>
+#include "lg_types.h"
 
 #ifdef __cplusplus
 extern "C"  {

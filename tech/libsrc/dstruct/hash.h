@@ -1,7 +1,7 @@
 #ifndef _HASH_H
 #define _HASH_H
 #include "lg.h" 
-#include "lgerror.h" 
+#include "..\..\h\error.h" 
 #include "_dstruct.h"
 
 /*
