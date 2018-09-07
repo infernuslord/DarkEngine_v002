@@ -1,5 +1,5 @@
 #include <grd.h>
-#include <bitmap.h>
+#include "lg_bitmap.h"
 #include <idevice.h>
 
 #define gri_set_focus \

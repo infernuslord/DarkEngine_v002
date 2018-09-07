@@ -11,7 +11,7 @@
  */
 
 #include <lg.h>
-#include <bitmap.h>
+#include "lg_bitmap.h"
 #include <canvas.h>
 #include <context.h>
 #include <grd.h>

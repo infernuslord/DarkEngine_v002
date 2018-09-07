@@ -19,7 +19,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include <dbg.h>
+#include "lg_dbg.h"
 #include <huff.h>
 
 void HuffWalk1(HuffNode *htree, HuffNode *hnode, ulong *pcode, int *pnumBits,

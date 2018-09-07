@@ -6,10 +6,10 @@
 #include <string.h>
 
 #include <memall.h>
-#include <dbg.h>
+#include "lg_dbg.h"
 #include <lgassert.h>
 
-#include <bitmap.h>
+#include "lg_bitmap.h"
 #include <gdbm.h>
 #include <rsd.h>
 #include <rsdcfg.h>

@@ -3,7 +3,7 @@
 #ifndef __CONTEXT_H
 #define __CONTEXT_H
 #include <grd.h>
-#include <bitmap.h>
+#include "lg_bitmap.h"
 
 #ifdef __cplusplus
 extern "C" {

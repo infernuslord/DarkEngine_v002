@@ -1,6 +1,6 @@
 // $Header: x:/prj/tech/libsrc/dev2d/RCS/ltab.c 1.2 1998/04/03 13:29:38 KEVIN Exp $
 
-#include <dbg.h>
+#include "lg_dbg.h"
 #include <grs.h>
 #include <pal16.h>
 

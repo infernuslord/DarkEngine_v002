@@ -2,7 +2,7 @@
 #include <pushbutt.h>
 #include <tngpushb.h>
 #include <_ui.h>
-#include <dbg.h>
+#include "lg_dbg.h"
 #include <string.h>
 
 Gadget *gad_pushbutton_create(Gadget *parent, Rect *dim, int z, int type, void *disp_data, TNGStyle *sty, char *name)

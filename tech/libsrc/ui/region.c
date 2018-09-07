@@ -2,7 +2,7 @@
 //#include <mem.h>
 
 #include <lg.h>
-#include <dbg.h>
+#include "lg_dbg.h"
 #include <_ui.h>
 #include <region.h>
 #include <slist.h>

@@ -2,9 +2,9 @@
 
 #include <string.h>
 
-#include <dbg.h>
+#include "lg_dbg.h"
 #include <grd.h>
-#include <bitmap.h>
+#include "lg_bitmap.h"
 #include <grmalloc.h>
 #include <valloc.h>
 

@@ -5,9 +5,9 @@
 
 #include <string.h>
 
-#include <dbg.h>
+#include "lg_dbg.h"
 
-#include <bitmap.h>
+#include "lg_bitmap.h"
 #include <context.h>
 #include <fill.h>
 #include <grd.h>

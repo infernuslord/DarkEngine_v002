@@ -9,7 +9,7 @@
 
 #include <io.h>
 #include <stdarg.h>
-#include <dbg.h>
+#include "lg_dbg.h"
 #include <lgsprntf.h>
 #include <memall.h>
 #include <tmpalloc.h>

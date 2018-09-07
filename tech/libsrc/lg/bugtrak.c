@@ -2,7 +2,7 @@
 
 #include "bugtrak.h"
 #include "lgsprntf.h"
-#include "dbg.h"
+#include "lg_dbg.h"
 #ifdef __WATCOMC__
 #include "env.h"
 #else

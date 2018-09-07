@@ -8,7 +8,7 @@
  *
  */
 
-#include <dbg.h>
+#include "lg_dbg.h"
 #include <dev2d.h>
 #include <g2d.h>
 #include <setdrv.h>

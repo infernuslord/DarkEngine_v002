@@ -19,23 +19,23 @@
 #include <wdispapi.h>
 
 #ifdef _WIN32
-#include <strmif.h>
+#include "lg_strmif.h"
 
 #include <actmovie.h>
 #include <getlgvid.h>
 
 #include <ddraw.h>
 
-#include <control.h>
-#include <evcode.h>
-#include <uuids.h>
+#include "lg_control.h"
+#include "lg_evcode.h"
+#include "lg_uuids.h"
 extern "C"
 {
 #include <2d.h>
 };
 #include <imutil.h>
 #include <limits.h>
-#include <vfwmsgs.h>
+#include "lg_vfwmsgs.h"
 #include <util2d.h>
 
 #include <mouse.h>

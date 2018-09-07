@@ -10,7 +10,7 @@
  *
  */
 
-#include <dbg.h>
+#include "lg_dbg.h"
 
 void gr_null (void) {}
 

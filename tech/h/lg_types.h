@@ -8,8 +8,8 @@
  *
  */
 
-#ifndef __TYPES_H
-#define __TYPES_H
+#ifndef __LGTYPES_H
+#define __LGTYPES_H
 
 /*
 //#define _MSC_VER 0x01200
@@ -26,12 +26,26 @@
 
 //#define WIN32
 //#define _WIN32
-#define _WIN32_IE 0x0400
-#define _WIN32_WINNT 0x0501
-#define _WIN32_WINDOWS 0x0501
-#define WINVER 0x0400
 
-#define SHIP
+#ifndef _WIN32_IE
+#define _WIN32_IE 0x0400
+#endif
+
+#ifndef _WIN32_WINNT
+#define _WIN32_WINNT 0x0501
+#endif
+
+#ifndef _WIN32_WINDOWS
+#define _WIN32_WINDOWS 0x0501
+#endif
+
+#ifndef WINVER
+#define WINVER 0x0400
+#endif
+
+#include <windows.h>
+
+//#define SHIP
 
 //#ifndef _MSC_VER
 //#define _MSC_VER 0x1200
@@ -92,7 +106,7 @@ THIEFTWODEMO=
 
 
 
-#include <windows.h>
+
 
 //
 // Include any compiler headers that get messed up by this file...
@@ -503,4 +517,4 @@ typedef unsigned char   tResultCode;
     ((HRESULT) (((unsigned long)(sev)<<31) | ((unsigned long)(fac)<<16) | ((unsigned long)(code))) )
 
 
-#endif /* !__TYPES_H */
+#endif /* !__LGTYPES_H */

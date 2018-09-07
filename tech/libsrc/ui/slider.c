@@ -3,7 +3,7 @@
 #include <slider.h>
 #include <event.h>
 #include <_ui.h>
-#include <dbg.h>
+#include "lg_dbg.h"
 #include <tngslidr.h>
 
 Gadget *gad_slider_create(Gadget *parent, Rect *dim, int z, int alignment, int increment,

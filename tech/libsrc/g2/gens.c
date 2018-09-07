@@ -9,7 +9,7 @@
  */
 
 #include <sftype.h>
-#include <dbg.h>
+#include "lg_dbg.h"
 
 extern void (*gen_uscale_func[])();
 extern void (*gen_scale_func[])();

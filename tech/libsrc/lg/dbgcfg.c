@@ -72,7 +72,7 @@
 #include <conio.h>
 #include <ctype.h>
 
-#include <dbg.h>
+#include "lg_dbg.h"
 #include <lgdatapath.h>
 #include <kb.h>
 #include <kbcook.h>

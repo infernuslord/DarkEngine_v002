@@ -41,7 +41,7 @@
 #include <dos.h>
 #include <memall.h>
 #include <mallocdb.h>
-#include <dbg.h>
+#include "lg_dbg.h"
 #include <_lg.h>
 
 #pragma code_seg("lgalloc")

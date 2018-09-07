@@ -6,7 +6,7 @@
  */
 
 #include <grs.h>
-#include <bitmap.h>
+#include "lg_bitmap.h"
 #include <string.h>
 
 void gd_hflip_in_place(grs_bitmap *bm)

@@ -38,11 +38,11 @@ RSC=rc.exe
 # PROP Use_MFC 0
 # PROP Use_Debug_Libraries 0
 # PROP Output_Dir "..\_Libs\Release"
-# PROP Intermediate_Dir "..\_Bins\Release"
+# PROP Intermediate_Dir "..\_Bins\Release\ui"
 # PROP Target_Dir ""
 # ADD BASE CPP /nologo /W3 /GX /O2 /D "NDEBUG" /D "_MBCS" /D "_LIB" /YX /FD /c
-# ADD CPP /nologo /Zp1 /MT /W3 /GX /O2 /I "." /I "..\..\h" /I "..\lg" /I "..\actmovie" /I "..\appcore" /I "..\arq" /I "..\compapis" /I "..\comtools" /I "..\config" /I "..\cpptools" /I "..\darkloop" /I "..\dev2d" /I "..\dispdev" /I "..\dstruct" /I "..\dump" /I "..\fix" /I "..\font" /I "..\g2" /I "..\gadget" /I "..\gameshel" /I "..\gfile" /I "..\inputbnd" /I "..\lgalloc" /I "..\lgd3d" /I "..\matrix" /I "..\md" /I "..\mm" /I "..\mp" /I "..\mprintf" /I "..\namedres" /I "..\net" /I "..\prof" /I "..\r3d" /I "..\random" /I "..\recorder" /I "..\ref" /I "..\res" /I "..\rnd" /I "..\script" /I "..\sdesc" /I "..\skel" /I "..\sndsrc" /I "..\sndutil" /I "..\sound" /I "..\star" /I "..\tagfile" /I "..\templgen" /I "..\timer" /I "..\ui" /I "..\vec2" /I "..\..\winsrc\input" /D "NDEBUG" /D "_MBCS" /D "_LIB" /FI "..\..\h\lg_types.h" /c
-# SUBTRACT CPP /X /u /Fr
+# ADD CPP /nologo /Zp1 /MT /W3 /GX /O2 /I "." /I "..\..\h" /I "..\lg" /I "..\actmovie" /I "..\appcore" /I "..\arq" /I "..\compapis" /I "..\comtools" /I "..\config" /I "..\cpptools" /I "..\darkloop" /I "..\dev2d" /I "..\dispdev" /I "..\dstruct" /I "..\dump" /I "..\fix" /I "..\font" /I "..\g2" /I "..\gadget" /I "..\gameshel" /I "..\gfile" /I "..\inputbnd" /I "..\lgalloc" /I "..\lgd3d" /I "..\matrix" /I "..\md" /I "..\mm" /I "..\mp" /I "..\mprintf" /I "..\namedres" /I "..\net" /I "..\prof" /I "..\r3d" /I "..\random" /I "..\recorder" /I "..\ref" /I "..\res" /I "..\rnd" /I "..\script" /I "..\sdesc" /I "..\skel" /I "..\sndsrc" /I "..\sndutil" /I "..\sound" /I "..\star" /I "..\tagfile" /I "..\templgen" /I "..\timer" /I "..\ui" /I "..\vec2" /I "..\..\winsrc\input" /D "NDEBUG" /D "_MBCS" /D "_LIB" /Fr /FI "..\..\h\lg_types.h" /c
+# SUBTRACT CPP /X /u
 # ADD BASE RSC /l 0x816 /d "NDEBUG"
 # ADD RSC /l 0x809 /d "NDEBUG"
 BSC32=bscmake.exe
@@ -103,8 +103,8 @@ DEP_CPP_BUTAR=\
 	"..\fix\fix.h"\
 	"..\font\font.h"\
 	"..\g2\g2.h"\
-	"..\lg\dbg.h"\
 	"..\lg\lg.h"\
+	"..\lg\lg_dbg.h"\
 	"..\lg\lgalt.h"\
 	"..\lg\lgassert.h"\
 	"..\lg\lgdatapath.h"\
@@ -157,8 +157,8 @@ DEP_CPP_CURDR=\
 	"..\fix\fix.h"\
 	"..\font\font.h"\
 	"..\g2\g2.h"\
-	"..\lg\dbg.h"\
 	"..\lg\lg.h"\
+	"..\lg\lg_dbg.h"\
 	"..\lg\lgalt.h"\
 	"..\lg\lgassert.h"\
 	"..\lg\lglocmsg.h"\
@@ -199,8 +199,8 @@ DEP_CPP_CURSO=\
 	"..\fix\fix.h"\
 	"..\font\font.h"\
 	"..\g2\g2.h"\
-	"..\lg\dbg.h"\
 	"..\lg\lg.h"\
+	"..\lg\lg_dbg.h"\
 	"..\lg\lgalt.h"\
 	"..\lg\lgassert.h"\
 	"..\lg\lglocmsg.h"\
@@ -249,8 +249,8 @@ DEP_CPP_EVENT=\
 	"..\fix\fix.h"\
 	"..\font\font.h"\
 	"..\g2\g2.h"\
-	"..\lg\dbg.h"\
 	"..\lg\lg.h"\
+	"..\lg\lg_dbg.h"\
 	"..\lg\lgalt.h"\
 	"..\lg\lgassert.h"\
 	"..\lg\lglocmsg.h"\
@@ -296,8 +296,8 @@ DEP_CPP_GADGE=\
 	"..\fix\fix.h"\
 	"..\font\font.h"\
 	"..\g2\g2.h"\
-	"..\lg\dbg.h"\
 	"..\lg\lg.h"\
+	"..\lg\lg_dbg.h"\
 	"..\lg\lgalt.h"\
 	"..\lg\lgassert.h"\
 	"..\lg\lgdatapath.h"\
@@ -342,8 +342,8 @@ DEP_CPP_HOTKE=\
 	"..\..\winsrc\input\kbcook.h"\
 	"..\dstruct\array.h"\
 	"..\dstruct\hash.h"\
-	"..\lg\dbg.h"\
 	"..\lg\lg.h"\
+	"..\lg\lg_dbg.h"\
 	"..\lg\lgalt.h"\
 	"..\lg\lgassert.h"\
 	"..\lg\lglocmsg.h"\
@@ -386,8 +386,8 @@ DEP_CPP_MENU_=\
 	"..\fix\fix.h"\
 	"..\font\font.h"\
 	"..\g2\g2.h"\
-	"..\lg\dbg.h"\
 	"..\lg\lg.h"\
+	"..\lg\lg_dbg.h"\
 	"..\lg\lgalt.h"\
 	"..\lg\lgassert.h"\
 	"..\lg\lgdatapath.h"\
@@ -441,8 +441,8 @@ DEP_CPP_PLAIN=\
 	"..\fix\fix.h"\
 	"..\font\font.h"\
 	"..\g2\g2.h"\
-	"..\lg\dbg.h"\
 	"..\lg\lg.h"\
+	"..\lg\lg_dbg.h"\
 	"..\lg\lgalt.h"\
 	"..\lg\lgassert.h"\
 	"..\lg\lgdatapath.h"\
@@ -494,8 +494,8 @@ DEP_CPP_PUSHB=\
 	"..\fix\fix.h"\
 	"..\font\font.h"\
 	"..\g2\g2.h"\
-	"..\lg\dbg.h"\
 	"..\lg\lg.h"\
+	"..\lg\lg_dbg.h"\
 	"..\lg\lgalt.h"\
 	"..\lg\lgassert.h"\
 	"..\lg\lgdatapath.h"\
@@ -549,8 +549,8 @@ DEP_CPP_QBOXG=\
 	"..\fix\fix.h"\
 	"..\font\font.h"\
 	"..\g2\g2.h"\
-	"..\lg\dbg.h"\
 	"..\lg\lg.h"\
+	"..\lg\lg_dbg.h"\
 	"..\lg\lgalt.h"\
 	"..\lg\lgassert.h"\
 	"..\lg\lgdatapath.h"\
@@ -603,8 +603,8 @@ DEP_CPP_REGIO=\
 	"..\fix\fix.h"\
 	"..\font\font.h"\
 	"..\g2\g2.h"\
-	"..\lg\dbg.h"\
 	"..\lg\lg.h"\
+	"..\lg\lg_dbg.h"\
 	"..\lg\lgalt.h"\
 	"..\lg\lgassert.h"\
 	"..\lg\lgdatapath.h"\
@@ -650,8 +650,8 @@ DEP_CPP_SLAB_=\
 	"..\fix\fix.h"\
 	"..\font\font.h"\
 	"..\g2\g2.h"\
-	"..\lg\dbg.h"\
 	"..\lg\lg.h"\
+	"..\lg\lg_dbg.h"\
 	"..\lg\lgalt.h"\
 	"..\lg\lgassert.h"\
 	"..\lg\lglocmsg.h"\
@@ -693,8 +693,8 @@ DEP_CPP_SLIDE=\
 	"..\fix\fix.h"\
 	"..\font\font.h"\
 	"..\g2\g2.h"\
-	"..\lg\dbg.h"\
 	"..\lg\lg.h"\
+	"..\lg\lg_dbg.h"\
 	"..\lg\lgalt.h"\
 	"..\lg\lgassert.h"\
 	"..\lg\lgdatapath.h"\
@@ -746,8 +746,8 @@ DEP_CPP_TEXTG=\
 	"..\fix\fix.h"\
 	"..\font\font.h"\
 	"..\g2\g2.h"\
-	"..\lg\dbg.h"\
 	"..\lg\lg.h"\
+	"..\lg\lg_dbg.h"\
 	"..\lg\lgalt.h"\
 	"..\lg\lgassert.h"\
 	"..\lg\lgdatapath.h"\
@@ -791,8 +791,8 @@ SOURCE=.\texttool.c
 DEP_CPP_TEXTT=\
 	"..\..\h\lg_types.h"\
 	"..\dstruct\rect.h"\
-	"..\lg\dbg.h"\
 	"..\lg\lg.h"\
+	"..\lg\lg_dbg.h"\
 	"..\lg\lgalt.h"\
 	"..\lg\lgassert.h"\
 	"..\lg\lglocmsg.h"\
@@ -833,8 +833,8 @@ DEP_CPP_TNG_C=\
 	"..\fix\fix.h"\
 	"..\font\font.h"\
 	"..\g2\g2.h"\
-	"..\lg\dbg.h"\
 	"..\lg\lg.h"\
+	"..\lg\lg_dbg.h"\
 	"..\lg\lgalt.h"\
 	"..\lg\lgassert.h"\
 	"..\lg\lgdatapath.h"\
@@ -887,8 +887,8 @@ DEP_CPP_TNGBA=\
 	"..\fix\fix.h"\
 	"..\font\font.h"\
 	"..\g2\g2.h"\
-	"..\lg\dbg.h"\
 	"..\lg\lg.h"\
+	"..\lg\lg_dbg.h"\
 	"..\lg\lgalt.h"\
 	"..\lg\lgassert.h"\
 	"..\lg\lgdatapath.h"\
@@ -941,8 +941,8 @@ DEP_CPP_TNGFO=\
 	"..\fix\fix.h"\
 	"..\font\font.h"\
 	"..\g2\g2.h"\
-	"..\lg\dbg.h"\
 	"..\lg\lg.h"\
+	"..\lg\lg_dbg.h"\
 	"..\lg\lgalt.h"\
 	"..\lg\lgassert.h"\
 	"..\lg\lgdatapath.h"\
@@ -1002,8 +1002,8 @@ DEP_CPP_TNGME=\
 	"..\fix\fix.h"\
 	"..\font\font.h"\
 	"..\g2\g2.h"\
-	"..\lg\dbg.h"\
 	"..\lg\lg.h"\
+	"..\lg\lg_dbg.h"\
 	"..\lg\lgalt.h"\
 	"..\lg\lgassert.h"\
 	"..\lg\lgdatapath.h"\
@@ -1058,8 +1058,8 @@ DEP_CPP_TNGPL=\
 	"..\fix\fix.h"\
 	"..\font\font.h"\
 	"..\g2\g2.h"\
-	"..\lg\dbg.h"\
 	"..\lg\lg.h"\
+	"..\lg\lg_dbg.h"\
 	"..\lg\lgalt.h"\
 	"..\lg\lgassert.h"\
 	"..\lg\lgdatapath.h"\
@@ -1110,8 +1110,8 @@ DEP_CPP_TNGPU=\
 	"..\fix\fix.h"\
 	"..\font\font.h"\
 	"..\g2\g2.h"\
-	"..\lg\dbg.h"\
 	"..\lg\lg.h"\
+	"..\lg\lg_dbg.h"\
 	"..\lg\lgalt.h"\
 	"..\lg\lgassert.h"\
 	"..\lg\lgdatapath.h"\
@@ -1162,8 +1162,8 @@ DEP_CPP_TNGQB=\
 	"..\fix\fix.h"\
 	"..\font\font.h"\
 	"..\g2\g2.h"\
-	"..\lg\dbg.h"\
 	"..\lg\lg.h"\
+	"..\lg\lg_dbg.h"\
 	"..\lg\lgalt.h"\
 	"..\lg\lgassert.h"\
 	"..\lg\lgdatapath.h"\
@@ -1217,8 +1217,8 @@ DEP_CPP_TNGSL=\
 	"..\fix\fix.h"\
 	"..\font\font.h"\
 	"..\g2\g2.h"\
-	"..\lg\dbg.h"\
 	"..\lg\lg.h"\
+	"..\lg\lg_dbg.h"\
 	"..\lg\lgalt.h"\
 	"..\lg\lgassert.h"\
 	"..\lg\lgdatapath.h"\
@@ -1269,8 +1269,8 @@ DEP_CPP_TNGTE=\
 	"..\fix\fix.h"\
 	"..\font\font.h"\
 	"..\g2\g2.h"\
-	"..\lg\dbg.h"\
 	"..\lg\lg.h"\
+	"..\lg\lg_dbg.h"\
 	"..\lg\lgalt.h"\
 	"..\lg\lgassert.h"\
 	"..\lg\lgdatapath.h"\
@@ -1324,8 +1324,8 @@ DEP_CPP_UIRES=\
 	"..\fix\fix.h"\
 	"..\font\font.h"\
 	"..\g2\g2.h"\
-	"..\lg\dbg.h"\
 	"..\lg\lg.h"\
+	"..\lg\lg_dbg.h"\
 	"..\lg\lgalt.h"\
 	"..\lg\lgassert.h"\
 	"..\lg\lgdatapath.h"\
@@ -1360,8 +1360,8 @@ DEP_CPP_VMOUS=\
 	"..\..\h\error.h"\
 	"..\..\h\lg_types.h"\
 	"..\..\winsrc\input\mouse.h"\
-	"..\lg\dbg.h"\
 	"..\lg\lg.h"\
+	"..\lg\lg_dbg.h"\
 	"..\lg\lgalt.h"\
 	"..\lg\lgassert.h"\
 	"..\lg\lglocmsg.h"\

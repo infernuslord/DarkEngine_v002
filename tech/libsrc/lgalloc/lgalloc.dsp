@@ -38,11 +38,11 @@ RSC=rc.exe
 # PROP Use_MFC 0
 # PROP Use_Debug_Libraries 0
 # PROP Output_Dir "..\_Libs\Release"
-# PROP Intermediate_Dir "..\_Bins\Release"
+# PROP Intermediate_Dir "..\_Bins\Release\lgalloc"
 # PROP Target_Dir ""
 # ADD BASE CPP /nologo /W3 /GX /O2 /D "NDEBUG" /D "_MBCS" /D "_LIB" /YX /FD /c
-# ADD CPP /nologo /Zp1 /MT /W3 /GX /O2 /I "." /I "..\..\h" /I "..\lg" /I "..\actmovie" /I "..\appcore" /I "..\arq" /I "..\compapis" /I "..\comtools" /I "..\config" /I "..\cpptools" /I "..\darkloop" /I "..\dev2d" /I "..\dispdev" /I "..\dstruct" /I "..\dump" /I "..\fix" /I "..\font" /I "..\g2" /I "..\gadget" /I "..\gameshel" /I "..\gfile" /I "..\inputbnd" /I "..\lgalloc" /I "..\lgd3d" /I "..\matrix" /I "..\md" /I "..\mm" /I "..\mp" /I "..\mprintf" /I "..\namedres" /I "..\net" /I "..\prof" /I "..\r3d" /I "..\random" /I "..\recorder" /I "..\ref" /I "..\res" /I "..\rnd" /I "..\script" /I "..\sdesc" /I "..\skel" /I "..\sndsrc" /I "..\sndutil" /I "..\sound" /I "..\star" /I "..\tagfile" /I "..\templgen" /I "..\timer" /I "..\ui" /I "..\vec2" /I "..\..\winsrc\input" /D "NDEBUG" /D "_MBCS" /D "_LIB" /FI "..\..\h\lg_types.h" /c
-# SUBTRACT CPP /X /u /Fr
+# ADD CPP /nologo /Zp1 /MT /W3 /GX /O2 /I "." /I "..\..\h" /I "..\lg" /I "..\actmovie" /I "..\appcore" /I "..\arq" /I "..\compapis" /I "..\comtools" /I "..\config" /I "..\cpptools" /I "..\darkloop" /I "..\dev2d" /I "..\dispdev" /I "..\dstruct" /I "..\dump" /I "..\fix" /I "..\font" /I "..\g2" /I "..\gadget" /I "..\gameshel" /I "..\gfile" /I "..\inputbnd" /I "..\lgalloc" /I "..\lgd3d" /I "..\matrix" /I "..\md" /I "..\mm" /I "..\mp" /I "..\mprintf" /I "..\namedres" /I "..\net" /I "..\prof" /I "..\r3d" /I "..\random" /I "..\recorder" /I "..\ref" /I "..\res" /I "..\rnd" /I "..\script" /I "..\sdesc" /I "..\skel" /I "..\sndsrc" /I "..\sndutil" /I "..\sound" /I "..\star" /I "..\tagfile" /I "..\templgen" /I "..\timer" /I "..\ui" /I "..\vec2" /I "..\..\winsrc\input" /D "NDEBUG" /D "_MBCS" /D "_LIB" /Fr /FI "..\..\h\lg_types.h" /c
+# SUBTRACT CPP /X /u
 # ADD BASE RSC /l 0x816 /d "NDEBUG"
 # ADD RSC /l 0x809 /d "NDEBUG"
 BSC32=bscmake.exe
@@ -104,9 +104,9 @@ SOURCE=.\dbgalloc.cpp
 DEP_CPP_DBGAL=\
 	"..\..\h\lg_types.h"\
 	"..\comtools\comtools.h"\
-	"..\lg\dbg.h"\
 	"..\lg\hashfns.h"\
 	"..\lg\lg.h"\
+	"..\lg\lg_dbg.h"\
 	"..\lg\lgalt.h"\
 	"..\lg\lgassert.h"\
 	"..\lg\lglocmsg.h"\
@@ -138,8 +138,8 @@ SOURCE=.\heap.cpp
 DEP_CPP_HEAP_=\
 	"..\..\h\lg_types.h"\
 	"..\comtools\comtools.h"\
-	"..\lg\dbg.h"\
 	"..\lg\lg.h"\
+	"..\lg\lg_dbg.h"\
 	"..\lg\lgalt.h"\
 	"..\lg\lgassert.h"\
 	"..\lg\lglocmsg.h"\
@@ -169,7 +169,7 @@ SOURCE=.\memall.c
 DEP_CPP_MEMAL=\
 	"..\..\h\_lg.h"\
 	"..\..\h\lg_types.h"\
-	"..\lg\dbg.h"\
+	"..\lg\lg_dbg.h"\
 	".\mallocdb.h"\
 	".\memall.h"\
 	
@@ -261,8 +261,8 @@ SOURCE=.\multpool.cpp
 DEP_CPP_MULTP=\
 	"..\..\h\lg_types.h"\
 	"..\comtools\comtools.h"\
-	"..\lg\dbg.h"\
 	"..\lg\lg.h"\
+	"..\lg\lg_dbg.h"\
 	"..\lg\lgalt.h"\
 	"..\lg\lgassert.h"\
 	"..\lg\lglocmsg.h"\
@@ -319,8 +319,8 @@ DEP_CPP_NULLA=\
 SOURCE=.\pool.cpp
 DEP_CPP_POOL_=\
 	"..\..\h\lg_types.h"\
-	"..\lg\dbg.h"\
 	"..\lg\lg.h"\
+	"..\lg\lg_dbg.h"\
 	"..\lg\lgalt.h"\
 	"..\lg\lgassert.h"\
 	"..\lg\lglocmsg.h"\
@@ -347,8 +347,8 @@ NODEP_CPP_POOL_=\
 SOURCE=.\poolimp.cpp
 DEP_CPP_POOLI=\
 	"..\..\h\lg_types.h"\
-	"..\lg\dbg.h"\
 	"..\lg\lg.h"\
+	"..\lg\lg_dbg.h"\
 	"..\lg\lgalt.h"\
 	"..\lg\lgassert.h"\
 	"..\lg\lglocmsg.h"\
@@ -378,8 +378,8 @@ SOURCE=.\primallc.cpp
 DEP_CPP_PRIMA=\
 	"..\..\h\lg_types.h"\
 	"..\comtools\comtools.h"\
-	"..\lg\dbg.h"\
 	"..\lg\lg.h"\
+	"..\lg\lg_dbg.h"\
 	"..\lg\lgalt.h"\
 	"..\lg\lgassert.h"\
 	"..\lg\lglocmsg.h"\
@@ -524,13 +524,6 @@ SOURCE=.\virtmem.h
 # Begin Source File
 
 SOURCE=.\memtest.cpp
-DEP_CPP_MEMTE=\
-	"..\..\h\lg_types.h"\
-	"..\comtools\comtools.h"\
-	".\allocapi.h"\
-	".\allocovr.h"\
-	".\mallocdb.h"\
-	
 
 !IF  "$(CFG)" == "lgalloc - Win32 Release"
 

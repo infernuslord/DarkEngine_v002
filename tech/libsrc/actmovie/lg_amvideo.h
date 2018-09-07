@@ -1,14 +1,18 @@
-//------------------------------------------------------------------------------
-// File: AMVideo.h
+//==========================================================================;
 //
-// Desc: Video related definitions and interfaces for ActiveMovie.
+//  THIS CODE AND INFORMATION IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY
+//  KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE
+//  IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR A PARTICULAR
+//  PURPOSE.
 //
-// Copyright (c) 1992 - 2001, Microsoft Corporation.  All rights reserved.
-//------------------------------------------------------------------------------
+//  Copyright (c) 1992 - 1996  Microsoft Corporation.  All Rights Reserved.
+//
+//--------------------------------------------------------------------------;
 
+// Video related definitions and interfaces for ActiveMovie
 
-#ifndef __AMVIDEO__
-#define __AMVIDEO__
+#ifndef __LGAMVIDEO__
+#define __LGAMVIDEO__
 
 #ifdef __cplusplus
 extern "C" {
@@ -45,10 +49,6 @@ extern "C" {
 #define AMDDS_RGB (AMDDS_RGBOFF | AMDDS_RGBOVR | AMDDS_RGBFLP)
 #define AMDDS_PRIMARY (AMDDS_DCIPS | AMDDS_PS)
 
-// be nice to our friends in C
-#undef INTERFACE
-#define INTERFACE IDirectDrawVideo
-
 DECLARE_INTERFACE_(IDirectDrawVideo, IUnknown)
 {
     // IUnknown methods
@@ -77,10 +77,6 @@ DECLARE_INTERFACE_(IDirectDrawVideo, IUnknown)
     STDMETHOD(WillUseFullScreen)(THIS_ long *UseWhenFullScreen) PURE;
 };
 
-
-// be nice to our friends in C
-#undef INTERFACE
-#define INTERFACE IQualProp
 
 DECLARE_INTERFACE_(IQualProp, IUnknown)
 {
@@ -118,10 +114,6 @@ DECLARE_INTERFACE_(IQualProp, IUnknown)
 // the image. The clip loss factor specifies the upper range permissible.
 // To allow typical MPEG video to be played in 320x200 it defaults to 25%
 
-// be nice to our friends in C
-#undef INTERFACE
-#define INTERFACE IFullScreenVideo
-
 DECLARE_INTERFACE_(IFullScreenVideo, IUnknown)
 {
     // IUnknown methods
@@ -152,53 +144,6 @@ DECLARE_INTERFACE_(IFullScreenVideo, IUnknown)
 };
 
 
-// This adds the accelerator table capabilities in fullscreen. This is being
-// added between the original runtime release and the full SDK release. We
-// cannot just add the method to IFullScreenVideo as we don't want to force
-// applications to have to ship the ActiveMovie support DLLs - this is very
-// important to applications that plan on being downloaded over the Internet
-
-// be nice to our friends in C
-#undef INTERFACE
-#define INTERFACE IFullScreenVideoEx
-
-DECLARE_INTERFACE_(IFullScreenVideoEx, IFullScreenVideo)
-{
-    // IUnknown methods
-
-    STDMETHOD(QueryInterface)(THIS_ REFIID riid, LPVOID *ppvObj) PURE;
-    STDMETHOD_(ULONG,AddRef)(THIS) PURE;
-    STDMETHOD_(ULONG,Release)(THIS) PURE;
-
-    // IFullScreenVideo methods
-
-    STDMETHOD(CountModes)(THIS_ long *pModes) PURE;
-    STDMETHOD(GetModeInfo)(THIS_ long Mode,long *pWidth,long *pHeight,long *pDepth) PURE;
-    STDMETHOD(GetCurrentMode)(THIS_ long *pMode) PURE;
-    STDMETHOD(IsModeAvailable)(THIS_ long Mode) PURE;
-    STDMETHOD(IsModeEnabled)(THIS_ long Mode) PURE;
-    STDMETHOD(SetEnabled)(THIS_ long Mode,long bEnabled) PURE;
-    STDMETHOD(GetClipFactor)(THIS_ long *pClipFactor) PURE;
-    STDMETHOD(SetClipFactor)(THIS_ long ClipFactor) PURE;
-    STDMETHOD(SetMessageDrain)(THIS_ HWND hwnd) PURE;
-    STDMETHOD(GetMessageDrain)(THIS_ HWND *hwnd) PURE;
-    STDMETHOD(SetMonitor)(THIS_ long Monitor) PURE;
-    STDMETHOD(GetMonitor)(THIS_ long *Monitor) PURE;
-    STDMETHOD(HideOnDeactivate)(THIS_ long Hide) PURE;
-    STDMETHOD(IsHideOnDeactivate)(THIS) PURE;
-    STDMETHOD(SetCaption)(THIS_ BSTR strCaption) PURE;
-    STDMETHOD(GetCaption)(THIS_ BSTR *pstrCaption) PURE;
-    STDMETHOD(SetDefault)(THIS) PURE;
-
-    // IFullScreenVideoEx
-
-    STDMETHOD(SetAcceleratorTable)(THIS_ HWND hwnd,HACCEL hAccel) PURE;
-    STDMETHOD(GetAcceleratorTable)(THIS_ HWND *phwnd,HACCEL *phAccel) PURE;
-    STDMETHOD(KeepPixelAspectRatio)(THIS_ long KeepAspect) PURE;
-    STDMETHOD(IsKeepPixelAspectRatio)(THIS_ long *pKeepAspect) PURE;
-};
-
-
 // The SDK base classes contain a base video mixer class. Video mixing in a
 // software environment is tricky because we typically have multiple streams
 // each sending data at unpredictable times. To work with this we defined a
@@ -206,10 +151,6 @@ DECLARE_INTERFACE_(IFullScreenVideoEx, IFullScreenVideo)
 // an alternative we may not want to have a lead pin but output samples at
 // predefined spaces, like one every 1/15 of a second, this interfaces also
 // supports that mode of operations (there is a working video mixer sample)
-
-// be nice to our friends in C
-#undef INTERFACE
-#define INTERFACE IBaseVideoMixer
 
 DECLARE_INTERFACE_(IBaseVideoMixer, IUnknown)
 {
@@ -267,14 +208,6 @@ typedef struct tagVIDEOINFOHEADER {
 
 } VIDEOINFOHEADER;
 
-// make sure the pbmi is initialized before using these macros
-#define TRUECOLOR(pbmi)  ((TRUECOLORINFO *)(((LPBYTE)&((pbmi)->bmiHeader)) \
-					+ (pbmi)->bmiHeader.biSize))
-#define COLORS(pbmi)	((RGBQUAD *)(((LPBYTE)&((pbmi)->bmiHeader)) 	\
-					+ (pbmi)->bmiHeader.biSize))
-#define BITMASKS(pbmi)	((DWORD *)(((LPBYTE)&((pbmi)->bmiHeader)) 	\
-					+ (pbmi)->bmiHeader.biSize))
-
 // All the image based filters use this to communicate their media types. It's
 // centred principally around the BITMAPINFO. This structure always contains a
 // BITMAPINFOHEADER followed by a number of other fields depending on what the
@@ -293,11 +226,6 @@ typedef struct tagVIDEOINFOHEADER {
 // using for example the primary surface the video renderer may ask a filter
 // to place the video images in a destination position of (100,100,452,388)
 // on the display since that's where the window is positioned on the display
-
-// !!! WARNING !!!
-// DO NOT use this structure unless you are sure that the BITMAPINFOHEADER
-// has a normal biSize == sizeof(BITMAPINFOHEADER) !
-// !!! WARNING !!!
 
 typedef struct tagVIDEOINFO {
 
@@ -322,10 +250,8 @@ typedef struct tagVIDEOINFO {
 #define SIZE_EGA_PALETTE (iEGA_COLORS * sizeof(RGBQUAD))
 #define SIZE_PALETTE (iPALETTE_COLORS * sizeof(RGBQUAD))
 #define SIZE_MASKS (iMASK_COLORS * sizeof(DWORD))
-#define SIZE_PREHEADER (FIELD_OFFSET(VIDEOINFOHEADER,bmiHeader))
+#define SIZE_PREHEADER (FIELD_OFFSET(VIDEOINFO,bmiHeader))
 #define SIZE_VIDEOHEADER (sizeof(BITMAPINFOHEADER) + SIZE_PREHEADER)
-// !!! for abnormal biSizes
-// #define SIZE_VIDEOHEADER(pbmi) ((pbmi)->bmiHeader.biSize + SIZE_PREHEADER)
 
 // DIBSIZE calculates the number of bytes required by an image
 
@@ -334,37 +260,26 @@ typedef struct tagVIDEOINFO {
 #define _DIBSIZE(bi) (DIBWIDTHBYTES(bi) * (DWORD)(bi).biHeight)
 #define DIBSIZE(bi) ((bi).biHeight < 0 ? (-1)*(_DIBSIZE(bi)) : _DIBSIZE(bi))
 
-// This compares the bit masks between two VIDEOINFOHEADERs
+// This compares the bit masks between two VIDEOINFOs
 
 #define BIT_MASKS_MATCH(pbmi1,pbmi2)                                \
     (((pbmi1)->dwBitMasks[iRED] == (pbmi2)->dwBitMasks[iRED]) &&        \
      ((pbmi1)->dwBitMasks[iGREEN] == (pbmi2)->dwBitMasks[iGREEN]) &&    \
      ((pbmi1)->dwBitMasks[iBLUE] == (pbmi2)->dwBitMasks[iBLUE]))
 
-// These zero fill different parts of the VIDEOINFOHEADER structure
+// These zero fill different parts of the VIDEOINFO structure
 
-// Only use these macros for pbmi's with a normal BITMAPINFOHEADER biSize
 #define RESET_MASKS(pbmi) (ZeroMemory((PVOID)(pbmi)->dwBitFields,SIZE_MASKS))
 #define RESET_HEADER(pbmi) (ZeroMemory((PVOID)(pbmi),SIZE_VIDEOHEADER))
 #define RESET_PALETTE(pbmi) (ZeroMemory((PVOID)(pbmi)->bmiColors,SIZE_PALETTE));
 
-#if 0
-// !!! This is the right way to do it, but may break existing code
-#define RESET_MASKS(pbmi) (ZeroMemory((PVOID)(((LPBYTE)(pbmi)->bmiHeader) + \
-			(pbmi)->bmiHeader.biSize,SIZE_MASKS)))
-#define RESET_HEADER(pbmi) (ZeroMemory((PVOID)(pbmi), SIZE_PREHEADER +	    \
-			sizeof(BITMAPINFOHEADER)))
-#define RESET_PALETTE(pbmi) (ZeroMemory((PVOID)(((LPBYTE)(pbmi)->bmiHeader) + \
-			(pbmi)->bmiHeader.biSize,SIZE_PALETTE))
-#endif
-
 // Other (hopefully) useful bits and bobs
 
-#define PALETTISED(pbmi) ((pbmi)->bmiHeader.biBitCount <= iPALETTE)
+#define PALETTISED(pbmi) (!!(((pbmi)->bmiHeader.biBitCount) <= (iPALETTE)))
 #define PALETTE_ENTRIES(pbmi) ((DWORD) 1 << (pbmi)->bmiHeader.biBitCount)
 
-// Returns the address of the BITMAPINFOHEADER from the VIDEOINFOHEADER
-#define HEADER(pVideoInfo) (&(((VIDEOINFOHEADER *) (pVideoInfo))->bmiHeader))
+// Returns the address of the BITMAPINFOHEADER from the VIDEOINFO
+#define HEADER(pVideoInfo) (&(((VIDEOINFO *) (pVideoInfo))->bmiHeader))
 
 
 // MPEG variant - includes a DWORD length followed by the
@@ -405,29 +320,9 @@ typedef struct tagAnalogVideoInfo {
     REFERENCE_TIME  AvgTimePerFrame;    // Normal ActiveMovie units (100 nS)
 } ANALOGVIDEOINFO;
 
-//
-// AM_KSPROPSETID_FrameStep property set definitions
-//
-typedef enum {
-        //  Step
-	AM_PROPERTY_FRAMESTEP_STEP   = 0x01,
-	AM_PROPERTY_FRAMESTEP_CANCEL = 0x02,
-
-        //  S_OK for these 2 means we can - S_FALSE if we can't
-        AM_PROPERTY_FRAMESTEP_CANSTEP = 0x03,
-        AM_PROPERTY_FRAMESTEP_CANSTEPMULTIPLE = 0x04
-} AM_PROPERTY_FRAMESTEP;
-
-typedef struct _AM_FRAMESTEP_STEP
-{
-    //  1 means step 1 frame forward
-    //  0 is invalid
-    //  n (n > 1) means skip n - 1 frames and show the nth
-    DWORD dwFramesToStep;
-} AM_FRAMESTEP_STEP;
 
 #ifdef __cplusplus
 }
 #endif // __cplusplus
-#endif // __AMVIDEO__
+#endif // __LGAMVIDEO__
 

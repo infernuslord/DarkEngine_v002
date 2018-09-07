@@ -6,9 +6,9 @@
 --------------------Configuration: lgalloc - Win32 Release--------------------
 </h3>
 <h3>Command Lines</h3>
-Creating temporary file "C:\Users\Infernus\AppData\Local\Temp\RSPCBDF.tmp" with contents
+Creating temporary file "C:\Users\Infernus\AppData\Local\Temp\RSPE383.tmp" with contents
 [
-/nologo /Zp1 /MT /W3 /GX /O2 /I "." /I "..\..\h" /I "..\lg" /I "..\actmovie" /I "..\appcore" /I "..\arq" /I "..\compapis" /I "..\comtools" /I "..\config" /I "..\cpptools" /I "..\darkloop" /I "..\dev2d" /I "..\dispdev" /I "..\dstruct" /I "..\dump" /I "..\fix" /I "..\font" /I "..\g2" /I "..\gadget" /I "..\gameshel" /I "..\gfile" /I "..\inputbnd" /I "..\lgalloc" /I "..\lgd3d" /I "..\matrix" /I "..\md" /I "..\mm" /I "..\mp" /I "..\mprintf" /I "..\namedres" /I "..\net" /I "..\prof" /I "..\r3d" /I "..\random" /I "..\recorder" /I "..\ref" /I "..\res" /I "..\rnd" /I "..\script" /I "..\sdesc" /I "..\skel" /I "..\sndsrc" /I "..\sndutil" /I "..\sound" /I "..\star" /I "..\tagfile" /I "..\templgen" /I "..\timer" /I "..\ui" /I "..\vec2" /I "..\..\winsrc\input" /D "NDEBUG" /D "_MBCS" /D "_LIB" /Fo"..\_Bins\Release/" /FI "..\..\h\lg_types.h" /c 
+/nologo /Zp1 /MT /W3 /GX /O2 /I "." /I "..\..\h" /I "..\lg" /I "..\actmovie" /I "..\appcore" /I "..\arq" /I "..\compapis" /I "..\comtools" /I "..\config" /I "..\cpptools" /I "..\darkloop" /I "..\dev2d" /I "..\dispdev" /I "..\dstruct" /I "..\dump" /I "..\fix" /I "..\font" /I "..\g2" /I "..\gadget" /I "..\gameshel" /I "..\gfile" /I "..\inputbnd" /I "..\lgalloc" /I "..\lgd3d" /I "..\matrix" /I "..\md" /I "..\mm" /I "..\mp" /I "..\mprintf" /I "..\namedres" /I "..\net" /I "..\prof" /I "..\r3d" /I "..\random" /I "..\recorder" /I "..\ref" /I "..\res" /I "..\rnd" /I "..\script" /I "..\sdesc" /I "..\skel" /I "..\sndsrc" /I "..\sndutil" /I "..\sound" /I "..\star" /I "..\tagfile" /I "..\templgen" /I "..\timer" /I "..\ui" /I "..\vec2" /I "..\..\winsrc\input" /D "NDEBUG" /D "_MBCS" /D "_LIB" /Fr"..\_Bins\Release\lgalloc/" /Fo"..\_Bins\Release\lgalloc/" /FI "..\..\h\lg_types.h" /c 
 "D:\Source\DarkEngine\prj\tech\libsrc\lgalloc\allcguid.cpp"
 "D:\Source\DarkEngine\prj\tech\libsrc\lgalloc\dbgalloc.cpp"
 "D:\Source\DarkEngine\prj\tech\libsrc\lgalloc\heap.cpp"
@@ -24,30 +24,31 @@ Creating temporary file "C:\Users\Infernus\AppData\Local\Temp\RSPCBDF.tmp" with 
 "D:\Source\DarkEngine\prj\tech\libsrc\lgalloc\primallc.cpp"
 "D:\Source\DarkEngine\prj\tech\libsrc\lgalloc\stdalloc.cpp"
 ]
-Creating command line "cl.exe @C:\Users\Infernus\AppData\Local\Temp\RSPCBDF.tmp" 
-Creating temporary file "C:\Users\Infernus\AppData\Local\Temp\RSPCBE0.tmp" with contents
+Creating command line "cl.exe @C:\Users\Infernus\AppData\Local\Temp\RSPE383.tmp" 
+Creating temporary file "C:\Users\Infernus\AppData\Local\Temp\RSPE393.tmp" with contents
 [
 /nologo /out:"..\_Libs\Release\lgalloc.lib" 
-\Source\DarkEngine\prj\tech\libsrc\_Bins\Release\allcguid.obj
-\Source\DarkEngine\prj\tech\libsrc\_Bins\Release\dbgalloc.obj
-\Source\DarkEngine\prj\tech\libsrc\_Bins\Release\heap.obj
-\Source\DarkEngine\prj\tech\libsrc\_Bins\Release\memall.obj
-\Source\DarkEngine\prj\tech\libsrc\_Bins\Release\membase.obj
-\Source\DarkEngine\prj\tech\libsrc\_Bins\Release\memcore.obj
-\Source\DarkEngine\prj\tech\libsrc\_Bins\Release\memtimer.obj
-\Source\DarkEngine\prj\tech\libsrc\_Bins\Release\multpool.obj
-\Source\DarkEngine\prj\tech\libsrc\_Bins\Release\nonover.obj
-\Source\DarkEngine\prj\tech\libsrc\_Bins\Release\nullallc.obj
-\Source\DarkEngine\prj\tech\libsrc\_Bins\Release\pool.obj
-\Source\DarkEngine\prj\tech\libsrc\_Bins\Release\poolimp.obj
-\Source\DarkEngine\prj\tech\libsrc\_Bins\Release\primallc.obj
-\Source\DarkEngine\prj\tech\libsrc\_Bins\Release\stdalloc.obj
+\Source\DarkEngine\prj\tech\libsrc\_Bins\Release\lgalloc\allcguid.obj
+\Source\DarkEngine\prj\tech\libsrc\_Bins\Release\lgalloc\dbgalloc.obj
+\Source\DarkEngine\prj\tech\libsrc\_Bins\Release\lgalloc\heap.obj
+\Source\DarkEngine\prj\tech\libsrc\_Bins\Release\lgalloc\memall.obj
+\Source\DarkEngine\prj\tech\libsrc\_Bins\Release\lgalloc\membase.obj
+\Source\DarkEngine\prj\tech\libsrc\_Bins\Release\lgalloc\memcore.obj
+\Source\DarkEngine\prj\tech\libsrc\_Bins\Release\lgalloc\memtimer.obj
+\Source\DarkEngine\prj\tech\libsrc\_Bins\Release\lgalloc\multpool.obj
+\Source\DarkEngine\prj\tech\libsrc\_Bins\Release\lgalloc\nonover.obj
+\Source\DarkEngine\prj\tech\libsrc\_Bins\Release\lgalloc\nullallc.obj
+\Source\DarkEngine\prj\tech\libsrc\_Bins\Release\lgalloc\pool.obj
+\Source\DarkEngine\prj\tech\libsrc\_Bins\Release\lgalloc\poolimp.obj
+\Source\DarkEngine\prj\tech\libsrc\_Bins\Release\lgalloc\primallc.obj
+\Source\DarkEngine\prj\tech\libsrc\_Bins\Release\lgalloc\stdalloc.obj
 ]
-Creating command line "link.exe -lib @C:\Users\Infernus\AppData\Local\Temp\RSPCBE0.tmp"
+Creating command line "link.exe -lib @C:\Users\Infernus\AppData\Local\Temp\RSPE393.tmp"
 <h3>Output Window</h3>
 Compiling...
 allcguid.cpp
 dbgalloc.cpp
+D:\Source\DarkEngine\prj\tech\libsrc\lgalloc\dbgalloc.cpp(31) : warning C4073: initializers put in library initialization area
 heap.cpp
 D:\Source\DarkEngine\prj\tech\libsrc\lgalloc\heap.cpp(405) : warning C4291: 'void *__cdecl operator new(unsigned int,void *)' : no matching operator delete found; memory will not be freed if initialization throws an exception
         D:\Source\DarkEngine\prj\tech\libsrc\lgalloc\heap.cpp(110) : see declaration of 'new'
@@ -61,6 +62,7 @@ Compiling...
 membase.cpp
 memcore.cpp
 memtimer.cpp
+D:\Source\DarkEngine\prj\tech\libsrc\lgalloc\memtimer.cpp(21) : warning C4073: initializers put in library initialization area
 multpool.cpp
 D:\Source\DarkEngine\prj\tech\libsrc\lgalloc\multpool.cpp(280) : warning C4291: 'void *__cdecl operator new(unsigned int,class cPoolAllocator *)' : no matching operator delete found; memory will not be freed if initialization throws an exception
         D:\Source\DarkEngine\prj\tech\libsrc\lgalloc\multpool.cpp(35) : see declaration of 'new'
@@ -87,7 +89,7 @@ Creating library...
 
 
 <h3>Results</h3>
-lgalloc.lib - 0 error(s), 9 warning(s)
+lgalloc.lib - 0 error(s), 11 warning(s)
 </pre>
 </body>
 </html>

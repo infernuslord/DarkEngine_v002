@@ -11,7 +11,7 @@
 
 #include <string.h>
 
-#include <dbg.h>
+#include "lg_dbg.h"
 #include <huff.h>
 
 //	----------------------------------------------------------------

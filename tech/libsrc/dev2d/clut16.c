@@ -1,8 +1,8 @@
 // $Header: x:/prj/tech/libsrc/dev2d/RCS/clut16.c 1.4 1996/12/06 14:29:56 KEVIN Exp $
 // Routines to construct 16 bit cluts.
 
-#include <dbg.h>
-#include <bitmap.h>
+#include "lg_dbg.h"
+#include "lg_bitmap.h"
 #include <alpha.h>
 
 #define b_mask  0x1f

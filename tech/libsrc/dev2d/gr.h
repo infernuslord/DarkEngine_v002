@@ -1,7 +1,7 @@
 #ifndef __GR_H
 #define __GR_H
 
-#include <bitmap.h>
+#include "lg_bitmap.h"
 #include <canvas.h>
 #include <screen.h>
 #include <mode.h>

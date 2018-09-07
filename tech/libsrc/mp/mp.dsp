@@ -38,11 +38,11 @@ RSC=rc.exe
 # PROP Use_MFC 0
 # PROP Use_Debug_Libraries 0
 # PROP Output_Dir "..\_Libs\Release"
-# PROP Intermediate_Dir "..\_Bins\Release"
+# PROP Intermediate_Dir "..\_Bins\Release\mp"
 # PROP Target_Dir ""
 # ADD BASE CPP /nologo /W3 /GX /O2 /D "NDEBUG" /D "_MBCS" /D "_LIB" /YX /FD /c
-# ADD CPP /nologo /Zp1 /MT /W3 /GX /O2 /I "." /I "..\..\h" /I "..\lg" /I "..\actmovie" /I "..\appcore" /I "..\arq" /I "..\compapis" /I "..\comtools" /I "..\config" /I "..\cpptools" /I "..\darkloop" /I "..\dev2d" /I "..\dispdev" /I "..\dstruct" /I "..\dump" /I "..\fix" /I "..\font" /I "..\g2" /I "..\gadget" /I "..\gameshel" /I "..\gfile" /I "..\inputbnd" /I "..\lgalloc" /I "..\lgd3d" /I "..\matrix" /I "..\md" /I "..\mm" /I "..\mp" /I "..\mprintf" /I "..\namedres" /I "..\net" /I "..\prof" /I "..\r3d" /I "..\random" /I "..\recorder" /I "..\ref" /I "..\res" /I "..\rnd" /I "..\script" /I "..\sdesc" /I "..\skel" /I "..\sndsrc" /I "..\sndutil" /I "..\sound" /I "..\star" /I "..\tagfile" /I "..\templgen" /I "..\timer" /I "..\ui" /I "..\vec2" /I "..\..\winsrc\input" /D "NDEBUG" /D "_MBCS" /D "_LIB" /FI "..\..\h\lg_types.h" /c
-# SUBTRACT CPP /X /u /Fr
+# ADD CPP /nologo /Zp1 /MT /W3 /GX /O2 /I "." /I "..\..\h" /I "..\lg" /I "..\actmovie" /I "..\appcore" /I "..\arq" /I "..\compapis" /I "..\comtools" /I "..\config" /I "..\cpptools" /I "..\darkloop" /I "..\dev2d" /I "..\dispdev" /I "..\dstruct" /I "..\dump" /I "..\fix" /I "..\font" /I "..\g2" /I "..\gadget" /I "..\gameshel" /I "..\gfile" /I "..\inputbnd" /I "..\lgalloc" /I "..\lgd3d" /I "..\matrix" /I "..\md" /I "..\mm" /I "..\mp" /I "..\mprintf" /I "..\namedres" /I "..\net" /I "..\prof" /I "..\r3d" /I "..\random" /I "..\recorder" /I "..\ref" /I "..\res" /I "..\rnd" /I "..\script" /I "..\sdesc" /I "..\skel" /I "..\sndsrc" /I "..\sndutil" /I "..\sound" /I "..\star" /I "..\tagfile" /I "..\templgen" /I "..\timer" /I "..\ui" /I "..\vec2" /I "..\..\winsrc\input" /D "NDEBUG" /D "_MBCS" /D "_LIB" /Fr /FI "..\..\h\lg_types.h" /c
+# SUBTRACT CPP /X /u
 # ADD BASE RSC /l 0x816 /d "NDEBUG"
 # ADD RSC /l 0x809 /d "NDEBUG"
 BSC32=bscmake.exe
@@ -95,8 +95,8 @@ DEP_CPP_ABMP_=\
 	"..\dev2d\dev2d.h"\
 	"..\fix\fix.h"\
 	"..\g2\g2.h"\
-	"..\lg\dbg.h"\
 	"..\lg\lg.h"\
+	"..\lg\lg_dbg.h"\
 	"..\lg\lgalt.h"\
 	"..\lg\lgassert.h"\
 	"..\lg\lgdatapath.h"\
@@ -134,61 +134,13 @@ NODEP_CPP_ABMP_=\
 # End Source File
 # Begin Source File
 
-SOURCE=.\abvm.c
-DEP_CPP_ABVM_=\
-	"..\..\h\grspoint.h"\
-	"..\..\h\lg_types.h"\
-	"..\..\h\prikind.h"\
-	"..\comtools\comtools.h"\
-	"..\dev2d\dev2d.h"\
-	"..\fix\fix.h"\
-	"..\g2\g2.h"\
-	"..\lg\dbg.h"\
-	"..\lg\lg.h"\
-	"..\lg\lgalt.h"\
-	"..\lg\lgassert.h"\
-	"..\lg\lgdatapath.h"\
-	"..\lg\lglocmsg.h"\
-	"..\lg\lglog.h"\
-	"..\lgalloc\memall.h"\
-	"..\matrix\matrix.h"\
-	"..\matrix\matrixs.h"\
-	"..\matrix\mxang.h"\
-	"..\md\md.h"\
-	"..\md\mds.h"\
-	"..\r3d\r3d.h"\
-	"..\r3d\r3ds.h"\
-	"..\res\res.h"\
-	"..\res\restypes.h"\
-	"..\skel\skel.h"\
-	".\appbiped.h"\
-	".\motion.h"\
-	".\mplist.h"\
-	".\mpstack.h"\
-	".\multiped.h"\
-	".\qt.h"\
-	
-NODEP_CPP_ABVM_=\
-	"..\lg\dbgmacro.h"\
-	"..\lgalloc\memmacro.h"\
-	
-
-!IF  "$(CFG)" == "mp - Win32 Release"
-
-!ELSEIF  "$(CFG)" == "mp - Win32 Debug"
-
-!ENDIF 
-
-# End Source File
-# Begin Source File
-
 SOURCE=.\mpinit.c
 DEP_CPP_MPINI=\
 	"..\..\h\lg_types.h"\
 	"..\..\h\prikind.h"\
 	"..\comtools\comtools.h"\
-	"..\lg\dbg.h"\
 	"..\lg\lg.h"\
+	"..\lg\lg_dbg.h"\
 	"..\lg\lgalt.h"\
 	"..\lg\lgassert.h"\
 	"..\lg\lgdatapath.h"\
@@ -226,8 +178,8 @@ DEP_CPP_MPLIS=\
 	"..\..\h\lg_types.h"\
 	"..\..\h\prikind.h"\
 	"..\comtools\comtools.h"\
-	"..\lg\dbg.h"\
 	"..\lg\lg.h"\
+	"..\lg\lg_dbg.h"\
 	"..\lg\lgalt.h"\
 	"..\lg\lgassert.h"\
 	"..\lg\lgdatapath.h"\
@@ -264,8 +216,8 @@ DEP_CPP_MPLOC=\
 	"..\..\h\lg_types.h"\
 	"..\..\h\prikind.h"\
 	"..\comtools\comtools.h"\
-	"..\lg\dbg.h"\
 	"..\lg\lg.h"\
+	"..\lg\lg_dbg.h"\
 	"..\lg\lgalt.h"\
 	"..\lg\lgassert.h"\
 	"..\lg\lgdatapath.h"\
@@ -302,8 +254,8 @@ DEP_CPP_MPMOT=\
 	"..\..\h\lg_types.h"\
 	"..\..\h\prikind.h"\
 	"..\comtools\comtools.h"\
-	"..\lg\dbg.h"\
 	"..\lg\lg.h"\
+	"..\lg\lg_dbg.h"\
 	"..\lg\lgalt.h"\
 	"..\lg\lgassert.h"\
 	"..\lg\lgdatapath.h"\
@@ -341,8 +293,8 @@ DEP_CPP_MPSTA=\
 	"..\..\h\prikind.h"\
 	"..\comtools\comtools.h"\
 	"..\fix\fix.h"\
-	"..\lg\dbg.h"\
 	"..\lg\lg.h"\
+	"..\lg\lg_dbg.h"\
 	"..\lg\lgalt.h"\
 	"..\lg\lgassert.h"\
 	"..\lg\lgdatapath.h"\
@@ -379,8 +331,8 @@ DEP_CPP_MPUPD=\
 	"..\..\h\lg_types.h"\
 	"..\..\h\prikind.h"\
 	"..\comtools\comtools.h"\
-	"..\lg\dbg.h"\
 	"..\lg\lg.h"\
+	"..\lg\lg_dbg.h"\
 	"..\lg\lgalt.h"\
 	"..\lg\lgassert.h"\
 	"..\lg\lgdatapath.h"\
@@ -418,8 +370,8 @@ DEP_CPP_MPVM_=\
 	"..\..\h\lg_types.h"\
 	"..\..\h\prikind.h"\
 	"..\comtools\comtools.h"\
-	"..\lg\dbg.h"\
 	"..\lg\lg.h"\
+	"..\lg\lg_dbg.h"\
 	"..\lg\lgalt.h"\
 	"..\lg\lgassert.h"\
 	"..\lg\lgdatapath.h"\
@@ -463,8 +415,8 @@ DEP_CPP_MULTI=\
 	"..\fix\fix.h"\
 	"..\font\font.h"\
 	"..\g2\g2.h"\
-	"..\lg\dbg.h"\
 	"..\lg\lg.h"\
+	"..\lg\lg_dbg.h"\
 	"..\lg\lgalt.h"\
 	"..\lg\lgassert.h"\
 	"..\lg\lgdatapath.h"\
@@ -498,15 +450,15 @@ NODEP_CPP_MULTI=\
 # Begin Source File
 
 SOURCE=.\qt.c
-DEP_CPP_QT_C14=\
+DEP_CPP_QT_C12=\
 	"..\..\h\lg_types.h"\
-	"..\lg\dbg.h"\
+	"..\lg\lg_dbg.h"\
 	"..\matrix\matrix.h"\
 	"..\matrix\matrixs.h"\
 	"..\matrix\mxang.h"\
 	".\qt.h"\
 	
-NODEP_CPP_QT_C14=\
+NODEP_CPP_QT_C12=\
 	"..\lg\dbgmacro.h"\
 	
 
@@ -565,6 +517,60 @@ SOURCE=.\qt.h
 # Begin Group "Asm Inc Files"
 
 # PROP Default_Filter "inc"
+# End Group
+# Begin Group "Tests"
+
+# PROP Default_Filter ""
+# Begin Source File
+
+SOURCE=.\abvm.c
+DEP_CPP_ABVM_=\
+	"..\..\h\grspoint.h"\
+	"..\..\h\lg_types.h"\
+	"..\..\h\prikind.h"\
+	"..\comtools\comtools.h"\
+	"..\dev2d\dev2d.h"\
+	"..\fix\fix.h"\
+	"..\g2\g2.h"\
+	"..\lg\lg.h"\
+	"..\lg\lg_dbg.h"\
+	"..\lg\lgalt.h"\
+	"..\lg\lgassert.h"\
+	"..\lg\lgdatapath.h"\
+	"..\lg\lglocmsg.h"\
+	"..\lg\lglog.h"\
+	"..\lgalloc\memall.h"\
+	"..\matrix\matrix.h"\
+	"..\matrix\matrixs.h"\
+	"..\matrix\mxang.h"\
+	"..\md\md.h"\
+	"..\md\mds.h"\
+	"..\r3d\r3d.h"\
+	"..\r3d\r3ds.h"\
+	"..\res\res.h"\
+	"..\res\restypes.h"\
+	"..\skel\skel.h"\
+	".\appbiped.h"\
+	".\motion.h"\
+	".\mplist.h"\
+	".\mpstack.h"\
+	".\multiped.h"\
+	".\qt.h"\
+	
+NODEP_CPP_ABVM_=\
+	"..\lg\dbgmacro.h"\
+	"..\lgalloc\memmacro.h"\
+	
+
+!IF  "$(CFG)" == "mp - Win32 Release"
+
+# PROP Exclude_From_Build 1
+
+!ELSEIF  "$(CFG)" == "mp - Win32 Debug"
+
+!ENDIF 
+
+# End Source File
 # End Group
 # End Target
 # End Project

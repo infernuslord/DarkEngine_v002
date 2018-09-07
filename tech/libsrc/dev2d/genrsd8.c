@@ -6,7 +6,7 @@
  *
  */
 
-#include <bitmap.h>
+#include "lg_bitmap.h"
 #include <clip.h>
 #include <gdbm.h>
 #include <rsd.h>

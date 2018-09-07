@@ -1,11 +1,11 @@
 // $Header: x:/prj/tech/libsrc/dev2d/RCS/fl8fl8.c 1.6 1997/02/07 11:21:45 KEVIN Exp $
 // Routines for drawing flat8 bitmaps into a flat8 canvas.
 
-#include <dbg.h>
-#include <astring.h>
+#include "lg_dbg.h"
+#include "lg_astring.h"
 
 #include <grd.h>
-#include <bitmap.h>
+#include "lg_bitmap.h"
 #include <context.h>
 
 void flat8_flat8_opaque_ubitmap (grs_bitmap *bm, int x, int y)

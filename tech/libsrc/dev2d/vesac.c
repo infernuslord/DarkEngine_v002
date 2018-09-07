@@ -16,7 +16,7 @@
 #include <string.h>
 #include <memall.h>
 #include <dpmidat.h>
-#include <dbg.h>
+#include "lg_dbg.h"
 
 #include <grd.h>
 #include <vesa.h>
@@ -26,7 +26,7 @@
 #include <mode.h>
 #include <idevice.h>
 #include <devtab.h>
-#include <bitmap.h>
+#include "lg_bitmap.h"
 
 //
 // NOTE:

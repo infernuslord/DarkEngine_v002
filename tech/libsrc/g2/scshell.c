@@ -3,7 +3,7 @@
 #include <plyrast.h>
 #include <trirast.h>
 #include <tmapd.h>
-#include <dbg.h>
+#include "lg_dbg.h"
 
 #pragma off(unreferenced)
 int gr_scale_warn(grs_bitmap *bm, int x, int y, int w, int h)

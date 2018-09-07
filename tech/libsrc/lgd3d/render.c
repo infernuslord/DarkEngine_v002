@@ -15,7 +15,7 @@
 #include <lgd3d.h>
 #include <tmgr.h>
 #include <tdrv.h>
-#include <dbg.h>
+#include "lg_dbg.h"
 
 #include <setup.h>
 #include <texture.h>

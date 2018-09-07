@@ -9,7 +9,7 @@
 #include <lgassert.h>
 #include <dev2d.h>
 #include <mprintf.h>
-#include <dbg.h>
+#include "lg_dbg.h"
 
 #include <lgd3d.h>
 #include <texture.h>

@@ -10,7 +10,7 @@
 #include <g2d.h>
 #include <tmapd.h>
 #include <tmapfcn.h>
-#include <dbg.h>
+#include "lg_dbg.h"
 
 extern void flat8_flat8_lit_opaque_p2_wrap_il();
 extern void flat8_flat8_lit_opaque_p2_wrap_dither_il();

@@ -12,11 +12,11 @@
 
 #include <actmovie.h>
 
-#include <control.h>
-#include <strmif.h>
-#include <evcode.h>
-#include <uuids.h>
-#include <vfwmsgs.h>
+#include "lg_control.h"
+#include "lg_strmif.h"
+#include "lg_evcode.h"
+#include "lg_uuids.h"
+#include "lg_vfwmsgs.h"
 
 #include <amalloc.h>
 

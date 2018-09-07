@@ -11,7 +11,7 @@
  */
 
 #include <plytyp.h>
-#include <dbg.h>
+#include "lg_dbg.h"
 
 void do_lmap(int n, grs_vertex **vpl, void (*shell)())
 {

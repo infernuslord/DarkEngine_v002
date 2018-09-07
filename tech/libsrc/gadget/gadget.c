@@ -2,6 +2,7 @@
 
 // library includes
 #include <lg.h>
+
 #ifdef _WIN32
 #include <comtools.h>
 #include <appagg.h>

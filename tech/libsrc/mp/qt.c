@@ -2,7 +2,7 @@
 // qt.c -- Quaternion functions.
 //
 
-#include <dbg.h>
+#include "lg_dbg.h"
 #include <math.h>
 #include <qt.h>
 

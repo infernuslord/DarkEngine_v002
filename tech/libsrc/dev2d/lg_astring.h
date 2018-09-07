@@ -1,7 +1,7 @@
 // $Header: x:/prj/tech/libsrc/dev2d/RCS/astring.h 1.4 1997/02/07 11:22:04 KEVIN Exp $
 
-#ifndef __ASTRING_H
-#define __ASTRING_H
+#ifndef __LGASTRING_H
+#define __LGASTRING_H
 
 #ifdef __cplusplus
 extern "C" {

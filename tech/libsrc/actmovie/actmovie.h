@@ -14,7 +14,7 @@
 #include <movieapi.h>
 #include <lgvidapi.h>
 #include <amalloc.h>
-#include <amvideo.h>
+#include <lg_amvideo.h>
 #include <dev2d.h>
 #include <thrdtool.h>
 

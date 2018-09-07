@@ -25,7 +25,7 @@
 #include <dispapi.h>
 
 #include <mprintf.h>
-#include <dbg.h>
+#include "lg_dbg.h"
 
 #include <mixerlck.h>
 

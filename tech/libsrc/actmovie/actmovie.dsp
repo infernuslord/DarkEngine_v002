@@ -38,11 +38,10 @@ RSC=rc.exe
 # PROP Use_MFC 0
 # PROP Use_Debug_Libraries 0
 # PROP Output_Dir "..\_Libs\Release"
-# PROP Intermediate_Dir "..\_Bins\Release"
+# PROP Intermediate_Dir "..\_Bins\Release\actmovie"
 # PROP Target_Dir ""
 # ADD BASE CPP /nologo /W3 /GX /O2 /D "NDEBUG" /D "_MBCS" /D "_LIB" /YX /FD /c
-# ADD CPP /nologo /Zp1 /MT /W3 /GX /O2 /I "." /I "..\..\h" /I "..\lg" /I "..\actmovie" /I "..\appcore" /I "..\arq" /I "..\compapis" /I "..\comtools" /I "..\config" /I "..\cpptools" /I "..\darkloop" /I "..\dev2d" /I "..\dispdev" /I "..\dstruct" /I "..\dump" /I "..\fix" /I "..\font" /I "..\g2" /I "..\gadget" /I "..\gameshel" /I "..\gfile" /I "..\inputbnd" /I "..\lgalloc" /I "..\lgd3d" /I "..\matrix" /I "..\md" /I "..\mm" /I "..\mp" /I "..\mprintf" /I "..\namedres" /I "..\net" /I "..\prof" /I "..\r3d" /I "..\random" /I "..\recorder" /I "..\ref" /I "..\res" /I "..\rnd" /I "..\script" /I "..\sdesc" /I "..\skel" /I "..\sndsrc" /I "..\sndutil" /I "..\sound" /I "..\star" /I "..\tagfile" /I "..\templgen" /I "..\timer" /I "..\ui" /I "..\vec2" /I "..\..\winsrc\input" /D "NDEBUG" /D "_MBCS" /D "_LIB" /FI "..\..\h\lg_types.h" /c
-# SUBTRACT CPP /X /u /Fr
+# ADD CPP /nologo /Zp1 /MT /W3 /GX /O2 /I "." /I "..\..\h" /I "..\lg" /I "..\actmovie" /I "..\appcore" /I "..\arq" /I "..\compapis" /I "..\comtools" /I "..\config" /I "..\cpptools" /I "..\darkloop" /I "..\dev2d" /I "..\dispdev" /I "..\dstruct" /I "..\dump" /I "..\fix" /I "..\font" /I "..\g2" /I "..\gadget" /I "..\gameshel" /I "..\gfile" /I "..\inputbnd" /I "..\lgalloc" /I "..\lgd3d" /I "..\matrix" /I "..\md" /I "..\mm" /I "..\mp" /I "..\mprintf" /I "..\namedres" /I "..\net" /I "..\prof" /I "..\r3d" /I "..\random" /I "..\recorder" /I "..\ref" /I "..\res" /I "..\rnd" /I "..\script" /I "..\sdesc" /I "..\skel" /I "..\sndsrc" /I "..\sndutil" /I "..\sound" /I "..\star" /I "..\tagfile" /I "..\templgen" /I "..\timer" /I "..\ui" /I "..\vec2" /I "..\..\winsrc\input" /FI"..\..\h\lg_types.h" /D "NDEBUG" /D "_MBCS" /D "_LIB" /FR /c
 # ADD BASE RSC /l 0x816 /d "NDEBUG"
 # ADD RSC /l 0x809 /d "NDEBUG"
 BSC32=bscmake.exe
@@ -118,8 +117,8 @@ DEP_CPP_ACTMO=\
 	"..\g2\g2.h"\
 	"..\gadget\util2d.h"\
 	"..\gadget\utilcomp.h"\
-	"..\lg\dbg.h"\
 	"..\lg\lg.h"\
+	"..\lg\lg_dbg.h"\
 	"..\lg\lgalt.h"\
 	"..\lg\lgassert.h"\
 	"..\lg\lgdatapath.h"\
@@ -135,17 +134,17 @@ DEP_CPP_ACTMO=\
 	"..\res\restypes.h"\
 	".\actmovie.h"\
 	".\amalloc.h"\
-	".\amvideo.h"\
-	".\control.h"\
-	".\evcode.h"\
 	".\getlgvid.h"\
 	".\imutil.h"\
+	".\lg_amvideo.h"\
+	".\lg_control.h"\
+	".\lg_evcode.h"\
+	".\lg_mtype.h"\
+	".\lg_strmif.h"\
+	".\lg_uuids.h"\
+	".\lg_vfwmsgs.h"\
 	".\lgvdguid.h"\
 	".\lgvidapi.h"\
-	".\mtype.h"\
-	".\strmif.h"\
-	".\uuids.h"\
-	".\vfwmsgs.h"\
 	
 NODEP_CPP_ACTMO=\
 	"..\lg\dbgmacro.h"\
@@ -170,8 +169,8 @@ DEP_CPP_AMALL=\
 	"..\comtools\comtools.h"\
 	"..\dev2d\dev2d.h"\
 	"..\fix\fix.h"\
-	"..\lg\dbg.h"\
 	"..\lg\lg.h"\
+	"..\lg\lg_dbg.h"\
 	"..\lg\lgalt.h"\
 	"..\lg\lgassert.h"\
 	"..\lg\lglocmsg.h"\
@@ -182,14 +181,14 @@ DEP_CPP_AMALL=\
 	"..\matrix\mxang.h"\
 	".\actmovie.h"\
 	".\amalloc.h"\
-	".\amvideo.h"\
-	".\control.h"\
-	".\evcode.h"\
+	".\lg_amvideo.h"\
+	".\lg_control.h"\
+	".\lg_evcode.h"\
+	".\lg_mtype.h"\
+	".\lg_strmif.h"\
+	".\lg_uuids.h"\
+	".\lg_vfwmsgs.h"\
 	".\lgvidapi.h"\
-	".\mtype.h"\
-	".\strmif.h"\
-	".\uuids.h"\
-	".\vfwmsgs.h"\
 	
 NODEP_CPP_AMALL=\
 	"..\lg\dbgmacro.h"\
@@ -207,7 +206,7 @@ NODEP_CPP_AMALL=\
 
 SOURCE=.\amguids.cpp
 DEP_CPP_AMGUI=\
-	".\uuids.h"\
+	".\lg_uuids.h"\
 	
 
 !IF  "$(CFG)" == "actmovie - Win32 Release"
@@ -227,8 +226,8 @@ DEP_CPP_GETLG=\
 	"..\cpptools\filespec.h"\
 	"..\cpptools\fnamutil.h"\
 	"..\cpptools\str.h"\
-	"..\lg\dbg.h"\
 	"..\lg\lg.h"\
+	"..\lg\lg_dbg.h"\
 	"..\lg\lgalt.h"\
 	"..\lg\lgassert.h"\
 	"..\lg\lglocmsg.h"\
@@ -253,19 +252,19 @@ NODEP_CPP_GETLG=\
 SOURCE=.\imutil.cpp
 DEP_CPP_IMUTI=\
 	"..\..\h\lg_types.h"\
-	"..\dev2d\astring.h"\
 	"..\dev2d\dev2d.h"\
+	"..\dev2d\lg_astring.h"\
 	"..\fix\fix.h"\
 	"..\lg\lgassert.h"\
 	"..\lg\lglog.h"\
 	"..\matrix\matrixs.h"\
 	"..\matrix\mxang.h"\
 	"..\mprintf\mprintf.h"\
-	".\amvideo.h"\
 	".\imutil.h"\
-	".\mtype.h"\
-	".\strmif.h"\
-	".\uuids.h"\
+	".\lg_amvideo.h"\
+	".\lg_mtype.h"\
+	".\lg_strmif.h"\
+	".\lg_uuids.h"\
 	
 
 !IF  "$(CFG)" == "actmovie - Win32 Release"
@@ -281,8 +280,8 @@ SOURCE=.\mtype.cpp
 DEP_CPP_MTYPE=\
 	"..\lg\lgassert.h"\
 	"..\lg\lglog.h"\
-	".\mtype.h"\
-	".\strmif.h"\
+	".\lg_mtype.h"\
+	".\lg_strmif.h"\
 	
 
 !IF  "$(CFG)" == "actmovie - Win32 Release"
@@ -306,18 +305,6 @@ SOURCE=.\amalloc.h
 # End Source File
 # Begin Source File
 
-SOURCE=.\amvideo.h
-# End Source File
-# Begin Source File
-
-SOURCE=.\control.h
-# End Source File
-# Begin Source File
-
-SOURCE=.\evcode.h
-# End Source File
-# Begin Source File
-
 SOURCE=.\getlgvid.h
 # End Source File
 # Begin Source File
@@ -326,27 +313,39 @@ SOURCE=.\imutil.h
 # End Source File
 # Begin Source File
 
+SOURCE=.\lg_amvideo.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\lg_control.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\lg_evcode.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\lg_mtype.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\lg_strmif.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\lg_uuids.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\lg_vfwmsgs.h
+# End Source File
+# Begin Source File
+
 SOURCE=.\lgvdguid.h
 # End Source File
 # Begin Source File
 
 SOURCE=.\lgvidapi.h
-# End Source File
-# Begin Source File
-
-SOURCE=.\mtype.h
-# End Source File
-# Begin Source File
-
-SOURCE=.\strmif.h
-# End Source File
-# Begin Source File
-
-SOURCE=.\uuids.h
-# End Source File
-# Begin Source File
-
-SOURCE=.\vfwmsgs.h
 # End Source File
 # End Group
 # Begin Group "Asm Source Files"

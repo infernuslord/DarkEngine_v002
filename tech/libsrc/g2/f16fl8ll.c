@@ -10,7 +10,7 @@
 #include <g2d.h>
 #include <tmapd.h>
 #include <tmapfcn.h>
-#include <dbg.h>
+#include "lg_dbg.h"
 
 extern ulong g2d_o2wi_mask_u[];
 extern ulong g2d_o2wi_last_mask_u;

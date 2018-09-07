@@ -38,11 +38,11 @@ RSC=rc.exe
 # PROP Use_MFC 0
 # PROP Use_Debug_Libraries 0
 # PROP Output_Dir "..\_Libs\Release"
-# PROP Intermediate_Dir "..\_Bins\Release"
+# PROP Intermediate_Dir "..\_Bins\Release\g2"
 # PROP Target_Dir ""
 # ADD BASE CPP /nologo /W3 /GX /O2 /D "NDEBUG" /D "_MBCS" /D "_LIB" /YX /FD /c
-# ADD CPP /nologo /Zp1 /MT /W3 /GX /O2 /I "." /I "..\..\h" /I "..\lg" /I "..\actmovie" /I "..\appcore" /I "..\arq" /I "..\compapis" /I "..\comtools" /I "..\config" /I "..\cpptools" /I "..\darkloop" /I "..\dev2d" /I "..\dispdev" /I "..\dstruct" /I "..\dump" /I "..\fix" /I "..\font" /I "..\g2" /I "..\gadget" /I "..\gameshel" /I "..\gfile" /I "..\inputbnd" /I "..\lgalloc" /I "..\lgd3d" /I "..\matrix" /I "..\md" /I "..\mm" /I "..\mp" /I "..\mprintf" /I "..\namedres" /I "..\net" /I "..\prof" /I "..\r3d" /I "..\random" /I "..\recorder" /I "..\ref" /I "..\res" /I "..\rnd" /I "..\script" /I "..\sdesc" /I "..\skel" /I "..\sndsrc" /I "..\sndutil" /I "..\sound" /I "..\star" /I "..\tagfile" /I "..\templgen" /I "..\timer" /I "..\ui" /I "..\vec2" /I "..\..\winsrc\input" /D "NDEBUG" /D "_MBCS" /D "_LIB" /FI "..\..\h\lg_types.h" /c
-# SUBTRACT CPP /X /u /Fr
+# ADD CPP /nologo /Zp1 /MT /W3 /GX /O2 /I "." /I "..\..\h" /I "..\lg" /I "..\actmovie" /I "..\appcore" /I "..\arq" /I "..\compapis" /I "..\comtools" /I "..\config" /I "..\cpptools" /I "..\darkloop" /I "..\dev2d" /I "..\dispdev" /I "..\dstruct" /I "..\dump" /I "..\fix" /I "..\font" /I "..\g2" /I "..\gadget" /I "..\gameshel" /I "..\gfile" /I "..\inputbnd" /I "..\lgalloc" /I "..\lgd3d" /I "..\matrix" /I "..\md" /I "..\mm" /I "..\mp" /I "..\mprintf" /I "..\namedres" /I "..\net" /I "..\prof" /I "..\r3d" /I "..\random" /I "..\recorder" /I "..\ref" /I "..\res" /I "..\rnd" /I "..\script" /I "..\sdesc" /I "..\skel" /I "..\sndsrc" /I "..\sndutil" /I "..\sound" /I "..\star" /I "..\tagfile" /I "..\templgen" /I "..\timer" /I "..\ui" /I "..\vec2" /I "..\..\winsrc\input" /D "NDEBUG" /D "_MBCS" /D "_LIB" /Fr /FI "..\..\h\lg_types.h" /c
+# SUBTRACT CPP /X /u
 # ADD BASE RSC /l 0x816 /d "NDEBUG"
 # ADD RSC /l 0x809 /d "NDEBUG"
 BSC32=bscmake.exe
@@ -323,7 +323,6 @@ DEP_CPP_F16FL=\
 	"..\..\h\lg_types.h"\
 	"..\dev2d\dev2d.h"\
 	"..\fix\fix.h"\
-	"..\lg\dbg.h"\
 	"..\matrix\matrixs.h"\
 	"..\matrix\mxang.h"\
 	".\g2d.h"\
@@ -337,10 +336,12 @@ DEP_CPP_F16FL=\
 	".\tmaps.h"\
 	
 NODEP_CPP_F16FL=\
-	"..\lg\dbgmacro.h"\
+	".\lg_dbg.h"\
 	
 
 !IF  "$(CFG)" == "g2 - Win32 Release"
+
+# PROP Exclude_From_Build 1
 
 !ELSEIF  "$(CFG)" == "g2 - Win32 Debug"
 
@@ -367,6 +368,8 @@ DEP_CPP_F16FL8=\
 
 !IF  "$(CFG)" == "g2 - Win32 Release"
 
+# PROP Exclude_From_Build 1
+
 !ELSEIF  "$(CFG)" == "g2 - Win32 Debug"
 
 !ENDIF 
@@ -379,7 +382,7 @@ DEP_CPP_F16LM=\
 	"..\..\h\lg_types.h"\
 	"..\dev2d\dev2d.h"\
 	"..\fix\fix.h"\
-	"..\lg\dbg.h"\
+	"..\lg\lg_dbg.h"\
 	"..\lg\lgassert.h"\
 	"..\lg\lglog.h"\
 	"..\matrix\matrixs.h"\
@@ -431,6 +434,8 @@ DEP_CPP_F16S_=\
 
 !IF  "$(CFG)" == "g2 - Win32 Release"
 
+# PROP Exclude_From_Build 1
+
 !ELSEIF  "$(CFG)" == "g2 - Win32 Debug"
 
 !ENDIF 
@@ -443,7 +448,6 @@ DEP_CPP_FL8FL=\
 	"..\..\h\lg_types.h"\
 	"..\dev2d\dev2d.h"\
 	"..\fix\fix.h"\
-	"..\lg\dbg.h"\
 	"..\matrix\matrixs.h"\
 	"..\matrix\mxang.h"\
 	".\g2spoint.h"\
@@ -456,10 +460,12 @@ DEP_CPP_FL8FL=\
 	".\tmaps.h"\
 	
 NODEP_CPP_FL8FL=\
-	"..\lg\dbgmacro.h"\
+	".\lg_dbg.h"\
 	
 
 !IF  "$(CFG)" == "g2 - Win32 Release"
+
+# PROP Exclude_From_Build 1
 
 !ELSEIF  "$(CFG)" == "g2 - Win32 Debug"
 
@@ -473,7 +479,6 @@ DEP_CPP_FL8FL8=\
 	"..\..\h\lg_types.h"\
 	"..\dev2d\dev2d.h"\
 	"..\fix\fix.h"\
-	"..\lg\dbg.h"\
 	"..\matrix\matrixs.h"\
 	"..\matrix\mxang.h"\
 	".\g2d.h"\
@@ -487,10 +492,12 @@ DEP_CPP_FL8FL8=\
 	".\tmaps.h"\
 	
 NODEP_CPP_FL8FL8=\
-	"..\lg\dbgmacro.h"\
+	".\lg_dbg.h"\
 	
 
 !IF  "$(CFG)" == "g2 - Win32 Release"
+
+# PROP Exclude_From_Build 1
 
 !ELSEIF  "$(CFG)" == "g2 - Win32 Debug"
 
@@ -537,6 +544,8 @@ DEP_CPP_FL8IL=\
 	
 
 !IF  "$(CFG)" == "g2 - Win32 Release"
+
+# PROP Exclude_From_Build 1
 
 !ELSEIF  "$(CFG)" == "g2 - Win32 Debug"
 
@@ -611,6 +620,8 @@ SOURCE=.\fl8lo2wc.c
 
 !IF  "$(CFG)" == "g2 - Win32 Release"
 
+# PROP Exclude_From_Build 1
+
 !ELSEIF  "$(CFG)" == "g2 - Win32 Debug"
 
 !ENDIF 
@@ -621,6 +632,8 @@ SOURCE=.\fl8lo2wc.c
 SOURCE=.\fl8nnic.c
 
 !IF  "$(CFG)" == "g2 - Win32 Release"
+
+# PROP Exclude_From_Build 1
 
 !ELSEIF  "$(CFG)" == "g2 - Win32 Debug"
 
@@ -636,6 +649,8 @@ DEP_CPP_FL8O2=\
 	
 
 !IF  "$(CFG)" == "g2 - Win32 Release"
+
+# PROP Exclude_From_Build 1
 
 !ELSEIF  "$(CFG)" == "g2 - Win32 Debug"
 
@@ -730,6 +745,8 @@ SOURCE=.\g2d.c
 
 !IF  "$(CFG)" == "g2 - Win32 Release"
 
+# PROP Exclude_From_Build 1
+
 !ELSEIF  "$(CFG)" == "g2 - Win32 Debug"
 
 !ENDIF 
@@ -768,8 +785,8 @@ SOURCE=.\g2makewr.c
 DEP_CPP_G2MAK=\
 	"..\..\h\lg_types.h"\
 	"..\lg\codewrit.h"\
-	"..\lg\dbg.h"\
 	"..\lg\lg.h"\
+	"..\lg\lg_dbg.h"\
 	"..\lg\lgalt.h"\
 	"..\lg\lgassert.h"\
 	"..\lg\lglocmsg.h"\
@@ -841,6 +858,8 @@ NODEP_CPP_G2POL=\
 
 !IF  "$(CFG)" == "g2 - Win32 Release"
 
+# PROP Exclude_From_Build 1
+
 !ELSEIF  "$(CFG)" == "g2 - Win32 Debug"
 
 !ENDIF 
@@ -868,6 +887,8 @@ NODEP_CPP_G2RIN=\
 
 !IF  "$(CFG)" == "g2 - Win32 Release"
 
+# PROP Exclude_From_Build 1
+
 !ELSEIF  "$(CFG)" == "g2 - Win32 Debug"
 
 !ENDIF 
@@ -887,6 +908,8 @@ DEP_CPP_G2ROT=\
 	
 
 !IF  "$(CFG)" == "g2 - Win32 Release"
+
+# PROP Exclude_From_Build 1
 
 !ELSEIF  "$(CFG)" == "g2 - Win32 Debug"
 
@@ -915,6 +938,8 @@ NODEP_CPP_G2TM_=\
 	
 
 !IF  "$(CFG)" == "g2 - Win32 Release"
+
+# PROP Exclude_From_Build 1
 
 !ELSEIF  "$(CFG)" == "g2 - Win32 Debug"
 
@@ -1080,6 +1105,8 @@ DEP_CPP_GENIL=\
 
 !IF  "$(CFG)" == "g2 - Win32 Release"
 
+# PROP Exclude_From_Build 1
+
 !ELSEIF  "$(CFG)" == "g2 - Win32 Debug"
 
 !ENDIF 
@@ -1103,6 +1130,8 @@ DEP_CPP_GENLI=\
 	
 
 !IF  "$(CFG)" == "g2 - Win32 Release"
+
+# PROP Exclude_From_Build 1
 
 !ELSEIF  "$(CFG)" == "g2 - Win32 Debug"
 
@@ -1252,7 +1281,7 @@ DEP_CPP_GENS_=\
 	"..\..\h\lg_types.h"\
 	"..\dev2d\dev2d.h"\
 	"..\fix\fix.h"\
-	"..\lg\dbg.h"\
+	"..\lg\lg_dbg.h"\
 	"..\matrix\matrixs.h"\
 	"..\matrix\mxang.h"\
 	".\sftype.h"\
@@ -1285,6 +1314,8 @@ DEP_CPP_GENSI=\
 	
 
 !IF  "$(CFG)" == "g2 - Win32 Release"
+
+# PROP Exclude_From_Build 1
 
 !ELSEIF  "$(CFG)" == "g2 - Win32 Debug"
 
@@ -1398,7 +1429,7 @@ DEP_CPP_INIT_=\
 	"..\..\h\lg_types.h"\
 	"..\dev2d\dev2d.h"\
 	"..\fix\fix.h"\
-	"..\lg\dbg.h"\
+	"..\lg\lg_dbg.h"\
 	"..\matrix\matrixs.h"\
 	"..\matrix\mxang.h"\
 	".\g2d.h"\
@@ -1497,6 +1528,8 @@ NODEP_CPP_LMAP_=\
 	
 
 !IF  "$(CFG)" == "g2 - Win32 Release"
+
+# PROP Exclude_From_Build 1
 
 !ELSEIF  "$(CFG)" == "g2 - Win32 Debug"
 
@@ -1642,6 +1675,8 @@ NODEP_CPP_PLYSH=\
 
 !IF  "$(CFG)" == "g2 - Win32 Release"
 
+# PROP Exclude_From_Build 1
+
 !ELSEIF  "$(CFG)" == "g2 - Win32 Debug"
 
 !ENDIF 
@@ -1718,8 +1753,8 @@ DEP_CPP_PT_MA=\
 	"..\..\h\lg_types.h"\
 	"..\dev2d\dev2d.h"\
 	"..\fix\fix.h"\
-	"..\lg\dbg.h"\
 	"..\lg\lg.h"\
+	"..\lg\lg_dbg.h"\
 	"..\lg\lgalt.h"\
 	"..\lg\lgassert.h"\
 	"..\lg\lglocmsg.h"\
@@ -1756,8 +1791,8 @@ DEP_CPP_PT_MAP=\
 	"..\..\h\lg_types.h"\
 	"..\dev2d\dev2d.h"\
 	"..\fix\fix.h"\
-	"..\lg\dbg.h"\
 	"..\lg\lg.h"\
+	"..\lg\lg_dbg.h"\
 	"..\lg\lgalt.h"\
 	"..\lg\lgassert.h"\
 	"..\lg\lglocmsg.h"\
@@ -1873,7 +1908,7 @@ DEP_CPP_SCSHE=\
 	"..\..\h\lg_types.h"\
 	"..\dev2d\dev2d.h"\
 	"..\fix\fix.h"\
-	"..\lg\dbg.h"\
+	"..\lg\lg_dbg.h"\
 	"..\matrix\matrixs.h"\
 	"..\matrix\mxang.h"\
 	".\g2spoint.h"\
@@ -2117,7 +2152,7 @@ SOURCE=.\trifan.c
 DEP_CPP_TRIFA=\
 	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
-	"..\lg\dbg.h"\
+	"..\lg\lg_dbg.h"\
 	".\plytyp.h"\
 	
 NODEP_CPP_TRIFA=\
@@ -2444,7 +2479,7 @@ SOURCE=.\chkedgeb.asm
 
 # PROP Ignore_Default_Tool 1
 # Begin Custom Build
-IntDir=.\..\_Bins\Release
+IntDir=.\..\_Bins\Release\g2
 InputPath=.\chkedgeb.asm
 InputName=chkedgeb
 
@@ -2468,7 +2503,7 @@ SOURCE=.\chkedges.asm
 
 # PROP Ignore_Default_Tool 1
 # Begin Custom Build
-IntDir=.\..\_Bins\Release
+IntDir=.\..\_Bins\Release\g2
 InputPath=.\chkedges.asm
 InputName=chkedges
 
@@ -2492,7 +2527,7 @@ SOURCE=.\co88il.asm
 
 # PROP Ignore_Default_Tool 1
 # Begin Custom Build
-IntDir=.\..\_Bins\Release
+IntDir=.\..\_Bins\Release\g2
 InputPath=.\co88il.asm
 InputName=co88il
 
@@ -2511,98 +2546,22 @@ InputName=co88il
 # Begin Source File
 
 SOURCE=.\fl8lo2wi.asm
-
-!IF  "$(CFG)" == "g2 - Win32 Release"
-
-# PROP Ignore_Default_Tool 1
-# Begin Custom Build
-IntDir=.\..\_Bins\Release
-InputPath=.\fl8lo2wi.asm
-InputName=fl8lo2wi
-
-"$(IntDir)\$(InputName).obj" : $(SOURCE) "$(INTDIR)" "$(OUTDIR)"
-	"C:\Program Files (x86)\Microsoft Visual Studio\VC98\Bin\ml.exe" /nologo /I"..\..\inc" /I"..\dev2d" /I"..\fix" /c /Zi /Fo$(IntDir)\$(InputName).obj $(InputName).asm
-
-# End Custom Build
-
-!ELSEIF  "$(CFG)" == "g2 - Win32 Debug"
-
 # PROP Exclude_From_Build 1
-
-!ENDIF 
-
 # End Source File
 # Begin Source File
 
 SOURCE=.\fl8nni.asm
-
-!IF  "$(CFG)" == "g2 - Win32 Release"
-
-# PROP Ignore_Default_Tool 1
-# Begin Custom Build
-IntDir=.\..\_Bins\Release
-InputPath=.\fl8nni.asm
-InputName=fl8nni
-
-"$(IntDir)\$(InputName).obj" : $(SOURCE) "$(INTDIR)" "$(OUTDIR)"
-	"C:\Program Files (x86)\Microsoft Visual Studio\VC98\Bin\ml.exe" /nologo /I"..\..\inc" /I"..\dev2d" /I"..\fix" /c /Zi /Fo$(IntDir)\$(InputName).obj $(InputName).asm
-
-# End Custom Build
-
-!ELSEIF  "$(CFG)" == "g2 - Win32 Debug"
-
 # PROP Exclude_From_Build 1
-
-!ENDIF 
-
 # End Source File
 # Begin Source File
 
 SOURCE=.\fl8o2ni.asm
-
-!IF  "$(CFG)" == "g2 - Win32 Release"
-
-# PROP Ignore_Default_Tool 1
-# Begin Custom Build
-IntDir=.\..\_Bins\Release
-InputPath=.\fl8o2ni.asm
-InputName=fl8o2ni
-
-"$(IntDir)\$(InputName).obj" : $(SOURCE) "$(INTDIR)" "$(OUTDIR)"
-	"C:\Program Files (x86)\Microsoft Visual Studio\VC98\Bin\ml.exe" /nologo /I"..\..\inc" /I"..\dev2d" /I"..\fix" /c /Zi /Fo$(IntDir)\$(InputName).obj $(InputName).asm
-
-# End Custom Build
-
-!ELSEIF  "$(CFG)" == "g2 - Win32 Debug"
-
 # PROP Exclude_From_Build 1
-
-!ENDIF 
-
 # End Source File
 # Begin Source File
 
 SOURCE=.\fl8o2wi.asm
-
-!IF  "$(CFG)" == "g2 - Win32 Release"
-
-# PROP Ignore_Default_Tool 1
-# Begin Custom Build
-IntDir=.\..\_Bins\Release
-InputPath=.\fl8o2wi.asm
-InputName=fl8o2wi
-
-"$(IntDir)\$(InputName).obj" : $(SOURCE) "$(INTDIR)" "$(OUTDIR)"
-	"C:\Program Files (x86)\Microsoft Visual Studio\VC98\Bin\ml.exe" /nologo /I"..\..\inc" /I"..\dev2d" /I"..\fix" /c /Zi /Fo$(IntDir)\$(InputName).obj $(InputName).asm
-
-# End Custom Build
-
-!ELSEIF  "$(CFG)" == "g2 - Win32 Debug"
-
 # PROP Exclude_From_Build 1
-
-!ENDIF 
-
 # End Source File
 # Begin Source File
 
@@ -2612,7 +2571,7 @@ SOURCE=.\lo816il.asm
 
 # PROP Ignore_Default_Tool 1
 # Begin Custom Build
-IntDir=.\..\_Bins\Release
+IntDir=.\..\_Bins\Release\g2
 InputPath=.\lo816il.asm
 InputName=lo816il
 
@@ -2636,7 +2595,7 @@ SOURCE=.\lo88il.asm
 
 # PROP Ignore_Default_Tool 1
 # Begin Custom Build
-IntDir=.\..\_Bins\Release
+IntDir=.\..\_Bins\Release\g2
 InputPath=.\lo88il.asm
 InputName=lo88il
 
@@ -2660,7 +2619,7 @@ SOURCE=.\n88il.asm
 
 # PROP Ignore_Default_Tool 1
 # Begin Custom Build
-IntDir=.\..\_Bins\Release
+IntDir=.\..\_Bins\Release\g2
 InputPath=.\n88il.asm
 InputName=n88il
 
@@ -2684,7 +2643,7 @@ SOURCE=.\o2w88i.asm
 
 # PROP Ignore_Default_Tool 1
 # Begin Custom Build
-IntDir=.\..\_Bins\Release
+IntDir=.\..\_Bins\Release\g2
 InputPath=.\o2w88i.asm
 InputName=o2w88i
 
@@ -2708,7 +2667,7 @@ SOURCE=.\o88bil.asm
 
 # PROP Ignore_Default_Tool 1
 # Begin Custom Build
-IntDir=.\..\_Bins\Release
+IntDir=.\..\_Bins\Release\g2
 InputPath=.\o88bil.asm
 InputName=o88bil
 
@@ -2732,7 +2691,7 @@ SOURCE=.\o88il.asm
 
 # PROP Ignore_Default_Tool 1
 # Begin Custom Build
-IntDir=.\..\_Bins\Release
+IntDir=.\..\_Bins\Release\g2
 InputPath=.\o88il.asm
 InputName=o88il
 
@@ -2756,7 +2715,7 @@ SOURCE=.\ptfloat.asm
 
 # PROP Ignore_Default_Tool 1
 # Begin Custom Build
-IntDir=.\..\_Bins\Release
+IntDir=.\..\_Bins\Release\g2
 InputPath=.\ptfloat.asm
 InputName=ptfloat
 
@@ -2780,7 +2739,7 @@ SOURCE=.\ptlinear.asm
 
 # PROP Ignore_Default_Tool 1
 # Begin Custom Build
-IntDir=.\..\_Bins\Release
+IntDir=.\..\_Bins\Release\g2
 InputPath=.\ptlinear.asm
 InputName=ptlinear
 
@@ -2804,7 +2763,7 @@ SOURCE=.\ptmap.asm
 
 # PROP Ignore_Default_Tool 1
 # Begin Custom Build
-IntDir=.\..\_Bins\Release
+IntDir=.\..\_Bins\Release\g2
 InputPath=.\ptmap.asm
 InputName=ptmap
 
@@ -2828,7 +2787,7 @@ SOURCE=.\ptmap_8.asm
 
 # PROP Ignore_Default_Tool 1
 # Begin Custom Build
-IntDir=.\..\_Bins\Release
+IntDir=.\..\_Bins\Release\g2
 InputPath=.\ptmap_8.asm
 InputName=ptmap_8
 
@@ -2852,7 +2811,7 @@ SOURCE=.\ptmap_n.asm
 
 # PROP Ignore_Default_Tool 1
 # Begin Custom Build
-IntDir=.\..\_Bins\Release
+IntDir=.\..\_Bins\Release\g2
 InputPath=.\ptmap_n.asm
 InputName=ptmap_n
 
@@ -2876,7 +2835,7 @@ SOURCE=.\ptmapper.asm
 
 # PROP Ignore_Default_Tool 1
 # Begin Custom Build
-IntDir=.\..\_Bins\Release
+IntDir=.\..\_Bins\Release\g2
 InputPath=.\ptmapper.asm
 InputName=ptmapper
 
@@ -2900,7 +2859,7 @@ SOURCE=.\ptpersp.asm
 
 # PROP Ignore_Default_Tool 1
 # Begin Custom Build
-IntDir=.\..\_Bins\Release
+IntDir=.\..\_Bins\Release\g2
 InputPath=.\ptpersp.asm
 InputName=ptpersp
 
@@ -2924,7 +2883,7 @@ SOURCE=.\uvgrad.asm
 
 # PROP Ignore_Default_Tool 1
 # Begin Custom Build
-IntDir=.\..\_Bins\Release
+IntDir=.\..\_Bins\Release\g2
 InputPath=.\uvgrad.asm
 InputName=uvgrad
 

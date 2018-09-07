@@ -1,6 +1,6 @@
 // $Header: x:/prj/tech/libsrc/dev2d/RCS/init.c 1.7 1998/03/12 10:42:15 KEVIN Exp $
 
-#include <dbg.h>
+#include "lg_dbg.h"
 #include <grd.h>
 #include <grdev.h>
 #include <detect.h>

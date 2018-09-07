@@ -38,11 +38,11 @@ RSC=rc.exe
 # PROP Use_MFC 0
 # PROP Use_Debug_Libraries 0
 # PROP Output_Dir "..\_Libs\Release"
-# PROP Intermediate_Dir "..\_Bins\Release"
+# PROP Intermediate_Dir "..\_Bins\Release\dstruct"
 # PROP Target_Dir ""
 # ADD BASE CPP /nologo /W3 /GX /O2 /D "NDEBUG" /D "_MBCS" /D "_LIB" /YX /FD /c
-# ADD CPP /nologo /Zp1 /MT /W3 /GX /O2 /I "." /I "..\..\h" /I "..\lg" /I "..\actmovie" /I "..\appcore" /I "..\arq" /I "..\compapis" /I "..\dstruct" /I "..\config" /I "..\comtools" /I "..\cpptools" /I "..\darkloop" /I "..\dev2d" /I "..\dispdev" /I "..\dump" /I "..\fix" /I "..\font" /I "..\g2" /I "..\gadget" /I "..\gameshel" /I "..\gfile" /I "..\inputbnd" /I "..\lgalloc" /I "..\lgd3d" /I "..\matrix" /I "..\md" /I "..\mm" /I "..\mp" /I "..\mprintf" /I "..\namedres" /I "..\net" /I "..\prof" /I "..\r3d" /I "..\random" /I "..\recorder" /I "..\ref" /I "..\res" /I "..\rnd" /I "..\script" /I "..\sdesc" /I "..\skel" /I "..\sndsrc" /I "..\sndutil" /I "..\sound" /I "..\star" /I "..\tagfile" /I "..\templgen" /I "..\timer" /I "..\ui" /I "..\vec2" /I "..\..\winsrc\input" /D "NDEBUG" /D "_MBCS" /D "_LIB" /FI "..\..\h\lg_types.h" /c
-# SUBTRACT CPP /X /u /Fr
+# ADD CPP /nologo /Zp1 /MT /W3 /GX /O2 /I "." /I "..\..\h" /I "..\lg" /I "..\actmovie" /I "..\appcore" /I "..\arq" /I "..\compapis" /I "..\dstruct" /I "..\config" /I "..\comtools" /I "..\cpptools" /I "..\darkloop" /I "..\dev2d" /I "..\dispdev" /I "..\dump" /I "..\fix" /I "..\font" /I "..\g2" /I "..\gadget" /I "..\gameshel" /I "..\gfile" /I "..\inputbnd" /I "..\lgalloc" /I "..\lgd3d" /I "..\matrix" /I "..\md" /I "..\mm" /I "..\mp" /I "..\mprintf" /I "..\namedres" /I "..\net" /I "..\prof" /I "..\r3d" /I "..\random" /I "..\recorder" /I "..\ref" /I "..\res" /I "..\rnd" /I "..\script" /I "..\sdesc" /I "..\skel" /I "..\sndsrc" /I "..\sndutil" /I "..\sound" /I "..\star" /I "..\tagfile" /I "..\templgen" /I "..\timer" /I "..\ui" /I "..\vec2" /I "..\..\winsrc\input" /D "NDEBUG" /D "_MBCS" /D "_LIB" /Fr /FI "..\..\h\lg_types.h" /c
+# SUBTRACT CPP /X /u
 # ADD BASE RSC /l 0x816 /d "NDEBUG"
 # ADD RSC /l 0x809 /d "NDEBUG"
 BSC32=bscmake.exe
@@ -90,8 +90,8 @@ SOURCE=.\array.c
 DEP_CPP_ARRAY=\
 	"..\..\h\error.h"\
 	"..\..\h\lg_types.h"\
-	"..\lg\dbg.h"\
 	"..\lg\lg.h"\
+	"..\lg\lg_dbg.h"\
 	"..\lg\lgalt.h"\
 	"..\lg\lgassert.h"\
 	"..\lg\lglocmsg.h"\
@@ -133,8 +133,8 @@ DEP_CPP_HASH_=\
 	"..\..\h\_dstruct.h"\
 	"..\..\h\error.h"\
 	"..\..\h\lg_types.h"\
-	"..\lg\dbg.h"\
 	"..\lg\lg.h"\
+	"..\lg\lg_dbg.h"\
 	"..\lg\lgalt.h"\
 	"..\lg\lgassert.h"\
 	"..\lg\lglocmsg.h"\
@@ -160,8 +160,8 @@ NODEP_CPP_HASH_=\
 SOURCE=.\hheap.c
 DEP_CPP_HHEAP=\
 	"..\..\h\lg_types.h"\
-	"..\lg\dbg.h"\
 	"..\lg\lg.h"\
+	"..\lg\lg_dbg.h"\
 	"..\lg\lgalt.h"\
 	"..\lg\lgassert.h"\
 	"..\lg\lglocmsg.h"\
@@ -187,7 +187,7 @@ NODEP_CPP_HHEAP=\
 SOURCE=.\huffde.c
 DEP_CPP_HUFFD=\
 	"..\..\h\lg_types.h"\
-	"..\lg\dbg.h"\
+	"..\lg\lg_dbg.h"\
 	".\huff.h"\
 	
 NODEP_CPP_HUFFD=\
@@ -206,7 +206,7 @@ NODEP_CPP_HUFFD=\
 SOURCE=.\huffen.c
 DEP_CPP_HUFFE=\
 	"..\..\h\lg_types.h"\
-	"..\lg\dbg.h"\
+	"..\lg\lg_dbg.h"\
 	".\huff.h"\
 	
 NODEP_CPP_HUFFE=\
@@ -260,8 +260,8 @@ SOURCE=.\message.c
 DEP_CPP_MESSA=\
 	"..\..\h\_dstruct.h"\
 	"..\..\h\lg_types.h"\
-	"..\lg\dbg.h"\
 	"..\lg\lg.h"\
+	"..\lg\lg_dbg.h"\
 	"..\lg\lgalt.h"\
 	"..\lg\lgassert.h"\
 	"..\lg\lglocmsg.h"\
@@ -288,8 +288,8 @@ SOURCE=.\pqueue.c
 DEP_CPP_PQUEU=\
 	"..\..\h\error.h"\
 	"..\..\h\lg_types.h"\
-	"..\lg\dbg.h"\
 	"..\lg\lg.h"\
+	"..\lg\lg_dbg.h"\
 	"..\lg\lgalt.h"\
 	"..\lg\lgassert.h"\
 	"..\lg\lglocmsg.h"\
@@ -328,8 +328,8 @@ DEP_CPP_RECT_=\
 SOURCE=.\strall.c
 DEP_CPP_STRAL=\
 	"..\..\h\lg_types.h"\
-	"..\lg\dbg.h"\
 	"..\lg\lg.h"\
+	"..\lg\lg_dbg.h"\
 	"..\lg\lgalt.h"\
 	"..\lg\lgassert.h"\
 	"..\lg\lglocmsg.h"\
@@ -357,8 +357,8 @@ SOURCE=.\symdump.c
 DEP_CPP_SYMDU=\
 	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
-	"..\lg\dbg.h"\
 	"..\lg\lg.h"\
+	"..\lg\lg_dbg.h"\
 	"..\lg\lgalt.h"\
 	"..\lg\lgassert.h"\
 	"..\lg\lglocmsg.h"\
@@ -387,8 +387,8 @@ SOURCE=.\symtab.c
 DEP_CPP_SYMTA=\
 	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
-	"..\lg\dbg.h"\
 	"..\lg\lg.h"\
+	"..\lg\lg_dbg.h"\
 	"..\lg\lgalt.h"\
 	"..\lg\lgassert.h"\
 	"..\lg\lglocmsg.h"\
@@ -481,6 +481,23 @@ SOURCE=.\symtab.h
 # Begin Group "Asm Inc Files"
 
 # PROP Default_Filter "inc"
+# End Group
+# Begin Group "Lex/Yacc"
+
+# PROP Default_Filter "lex;y"
+# Begin Source File
+
+SOURCE=.\hashlex.lex
+
+!IF  "$(CFG)" == "dstruct - Win32 Release"
+
+# PROP Exclude_From_Build 1
+
+!ELSEIF  "$(CFG)" == "dstruct - Win32 Debug"
+
+!ENDIF 
+
+# End Source File
 # End Group
 # End Target
 # End Project

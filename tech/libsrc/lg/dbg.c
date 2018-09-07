@@ -424,7 +424,7 @@
 #include <string.h>
 #include <conio.h>
 
-#include <dbg.h>
+#include "lg_dbg.h"
 #include <lgsprntf.h>
 #include <mprintf.h>
 #include <memall.h>

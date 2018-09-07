@@ -1,15 +1,20 @@
-//------------------------------------------------------------------------------
-// File: MtType.h
+//==========================================================================;
 //
-// Desc: DirectShow base classes - defines a class that holds and manages
-//       media type information.
+//  THIS CODE AND INFORMATION IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY
+//  KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE
+//  IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR A PARTICULAR
+//  PURPOSE.
 //
-// Copyright (c) Microsoft Corporation.  All rights reserved.
-//------------------------------------------------------------------------------
+//  Copyright (c) 1992 - 1996  Microsoft Corporation.  All Rights Reserved.
+//
+//--------------------------------------------------------------------------;
 
+// Class that holds and manages media type information, December 1994
 
-#ifndef __MTYPE__
-#define __MTYPE__
+#ifndef __LGMTYPE__
+#define __LGMTYPE__
+
+#include "lg_strmif.h"
 
 /* Helper class that derived pin objects can use to compare media
    types etc. Has same data members as the struct AM_MEDIA_TYPE defined
@@ -22,17 +27,14 @@ public:
     ~CMediaType();
     CMediaType();
     CMediaType(const GUID * majortype);
-    CMediaType(const AM_MEDIA_TYPE&, HRESULT* phr = NULL);
-    CMediaType(const CMediaType&, HRESULT* phr = NULL);
+    CMediaType(const AM_MEDIA_TYPE&);
+    CMediaType(const CMediaType&);
 
     CMediaType& operator=(const CMediaType&);
     CMediaType& operator=(const AM_MEDIA_TYPE&);
 
     BOOL operator == (const CMediaType&) const;
     BOOL operator != (const CMediaType&) const;
-
-    HRESULT Set(const CMediaType& rt);
-    HRESULT Set(const AM_MEDIA_TYPE& rt);
 
     BOOL IsValid() const;
 
@@ -73,17 +75,10 @@ public:
    structure which is useful when using the IEnumMediaFormats interface as
    the implementation allocates the structures which you must later delete */
 
-void WINAPI DeleteMediaType(AM_MEDIA_TYPE *pmt);
-AM_MEDIA_TYPE * WINAPI CreateMediaType(AM_MEDIA_TYPE const *pSrc);
-HRESULT WINAPI CopyMediaType(AM_MEDIA_TYPE *pmtTarget, const AM_MEDIA_TYPE *pmtSource);
-void WINAPI FreeMediaType(AM_MEDIA_TYPE& mt);
+void DeleteMediaType(AM_MEDIA_TYPE *pmt);
+AM_MEDIA_TYPE *CreateMediaType(AM_MEDIA_TYPE *pSrc);
+void CopyMediaType(AM_MEDIA_TYPE *pmtTarget, const AM_MEDIA_TYPE *pmtSource);
+void FreeMediaType(AM_MEDIA_TYPE& mt);
 
-//  Initialize a media type from a WAVEFORMATEX
-
-STDAPI CreateAudioMediaType(
-    const WAVEFORMATEX *pwfx,
-    AM_MEDIA_TYPE *pmt,
-    BOOL bSetFormat);
-
-#endif /* __MTYPE__ */
+#endif /* __LGMTYPE__ */
 

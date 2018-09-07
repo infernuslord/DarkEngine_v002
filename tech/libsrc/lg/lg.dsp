@@ -38,11 +38,11 @@ RSC=rc.exe
 # PROP Use_MFC 0
 # PROP Use_Debug_Libraries 0
 # PROP Output_Dir "..\_Libs\Release"
-# PROP Intermediate_Dir "..\_Bins\Release"
+# PROP Intermediate_Dir "..\_Bins\Release\lg"
 # PROP Target_Dir ""
 # ADD BASE CPP /nologo /W3 /GX /O2 /D "NDEBUG" /D "_MBCS" /D "_LIB" /YX /FD /c
-# ADD CPP /nologo /Zp1 /MT /W3 /GX /O2 /I "." /I "..\..\h" /I "..\lg" /I "..\actmovie" /I "..\appcore" /I "..\arq" /I "..\compapis" /I "..\comtools" /I "..\config" /I "..\cpptools" /I "..\darkloop" /I "..\dev2d" /I "..\dispdev" /I "..\dstruct" /I "..\dump" /I "..\fix" /I "..\font" /I "..\g2" /I "..\gadget" /I "..\gameshel" /I "..\gfile" /I "..\inputbnd" /I "..\lgalloc" /I "..\lgd3d" /I "..\matrix" /I "..\md" /I "..\mm" /I "..\mp" /I "..\mprintf" /I "..\namedres" /I "..\net" /I "..\prof" /I "..\r3d" /I "..\random" /I "..\recorder" /I "..\ref" /I "..\res" /I "..\rnd" /I "..\script" /I "..\sdesc" /I "..\skel" /I "..\sndsrc" /I "..\sndutil" /I "..\sound" /I "..\star" /I "..\tagfile" /I "..\templgen" /I "..\timer" /I "..\ui" /I "..\vec2" /I "..\..\winsrc\input" /D "NDEBUG" /D "_MBCS" /D "_LIB" /FI "..\..\h\lg_types.h" /c
-# SUBTRACT CPP /X /u /Fr
+# ADD CPP /nologo /Zp1 /MT /W3 /GX /O2 /I "." /I "..\..\h" /I "..\lg" /I "..\actmovie" /I "..\appcore" /I "..\arq" /I "..\compapis" /I "..\comtools" /I "..\config" /I "..\cpptools" /I "..\darkloop" /I "..\dev2d" /I "..\dispdev" /I "..\dstruct" /I "..\dump" /I "..\fix" /I "..\font" /I "..\g2" /I "..\gadget" /I "..\gameshel" /I "..\gfile" /I "..\inputbnd" /I "..\lgalloc" /I "..\lgd3d" /I "..\matrix" /I "..\md" /I "..\mm" /I "..\mp" /I "..\mprintf" /I "..\namedres" /I "..\net" /I "..\prof" /I "..\r3d" /I "..\random" /I "..\recorder" /I "..\ref" /I "..\res" /I "..\rnd" /I "..\script" /I "..\sdesc" /I "..\skel" /I "..\sndsrc" /I "..\sndutil" /I "..\sound" /I "..\star" /I "..\tagfile" /I "..\templgen" /I "..\timer" /I "..\ui" /I "..\vec2" /I "..\..\winsrc\input" /D "NDEBUG" /D "_MBCS" /D "_LIB" /Fr /FI "..\..\h\lg_types.h" /c
+# SUBTRACT CPP /X /u
 # ADD BASE RSC /l 0x816 /d "NDEBUG"
 # ADD RSC /l 0x809 /d "NDEBUG"
 BSC32=bscmake.exe
@@ -92,8 +92,8 @@ DEP_CPP_APPAG=\
 	"..\compapis\appagg.h"\
 	"..\comtools\comtools.h"\
 	"..\lgalloc\memall.h"\
-	".\dbg.h"\
 	".\lg.h"\
+	".\lg_dbg.h"\
 	".\lgalt.h"\
 	".\lgassert.h"\
 	".\lglocmsg.h"\
@@ -118,8 +118,8 @@ DEP_CPP_BREAK=\
 	"..\..\h\lg_types.h"\
 	"..\lgalloc\memall.h"\
 	".\breakkey.h"\
-	".\dbg.h"\
 	".\lg.h"\
+	".\lg_dbg.h"\
 	".\lgalt.h"\
 	".\lgassert.h"\
 	".\lglocmsg.h"\
@@ -146,8 +146,8 @@ DEP_CPP_BUGTR=\
 	"..\dstruct\array.h"\
 	"..\lgalloc\memall.h"\
 	".\bugtrak.h"\
-	".\dbg.h"\
 	".\lg.h"\
+	".\lg_dbg.h"\
 	".\lgalt.h"\
 	".\lgassert.h"\
 	".\lglocmsg.h"\
@@ -174,8 +174,8 @@ DEP_CPP_CODEW=\
 	"..\..\h\lg_types.h"\
 	"..\lgalloc\memall.h"\
 	".\codewrit.h"\
-	".\dbg.h"\
 	".\lg.h"\
+	".\lg_dbg.h"\
 	".\lgalt.h"\
 	".\lgassert.h"\
 	".\lglocmsg.h"\
@@ -227,8 +227,8 @@ SOURCE=.\datapath.cpp
 DEP_CPP_DATAP=\
 	"..\..\h\lg_types.h"\
 	"..\lgalloc\memall.h"\
-	".\dbg.h"\
 	".\lg.h"\
+	".\lg_dbg.h"\
 	".\lgalt.h"\
 	".\lgassert.h"\
 	".\lgdatapath.h"\
@@ -260,7 +260,7 @@ DEP_CPP_DBG_C=\
 	"..\lgalloc\memall.h"\
 	"..\mprintf\mprintf.h"\
 	".\coremutx.h"\
-	".\dbg.h"\
+	".\lg_dbg.h"\
 	".\lgassert.h"\
 	".\lglog.h"\
 	".\lgsprntf.h"\
@@ -287,7 +287,7 @@ DEP_CPP_DBGCF=\
 	"..\..\winsrc\input\kbcook.h"\
 	"..\..\winsrc\input\keydefs.h"\
 	"..\mprintf\mprintf.h"\
-	".\dbg.h"\
+	".\lg_dbg.h"\
 	".\lgdatapath.h"\
 	
 NODEP_CPP_DBGCF=\
@@ -311,8 +311,8 @@ SOURCE=.\dpathdir.c
 DEP_CPP_DPATH=\
 	"..\..\h\lg_types.h"\
 	"..\lgalloc\memall.h"\
-	".\dbg.h"\
 	".\lg.h"\
+	".\lg_dbg.h"\
 	".\lgalt.h"\
 	".\lgassert.h"\
 	".\lgdatapath.h"\
@@ -350,8 +350,8 @@ SOURCE=.\exit.c
 DEP_CPP_EXIT_=\
 	"..\..\h\lg_types.h"\
 	"..\lgalloc\memall.h"\
-	".\dbg.h"\
 	".\lg.h"\
+	".\lg_dbg.h"\
 	".\lgalt.h"\
 	".\lgassert.h"\
 	".\lglocmsg.h"\
@@ -389,9 +389,9 @@ SOURCE=.\hashfns.cpp
 DEP_CPP_HASHF=\
 	"..\..\h\lg_types.h"\
 	"..\lgalloc\memall.h"\
-	".\dbg.h"\
 	".\hashfns.h"\
 	".\lg.h"\
+	".\lg_dbg.h"\
 	".\lgalt.h"\
 	".\lgassert.h"\
 	".\lglocmsg.h"\
@@ -417,8 +417,8 @@ DEP_CPP_LGASS=\
 	"..\lgalloc\memall.h"\
 	"..\mprintf\mprintf.h"\
 	".\coremutx.h"\
-	".\dbg.h"\
 	".\lg.h"\
+	".\lg_dbg.h"\
 	".\lgalt.h"\
 	".\lgassert.h"\
 	".\lglocmsg.h"\
@@ -444,8 +444,8 @@ DEP_CPP_LGLOG=\
 	"..\lgalloc\memall.h"\
 	"..\mprintf\mprintf.h"\
 	".\coremutx.h"\
-	".\dbg.h"\
 	".\lg.h"\
+	".\lg_dbg.h"\
 	".\lgalt.h"\
 	".\lgassert.h"\
 	".\lglocmsg.h"\
@@ -469,7 +469,7 @@ SOURCE=.\lgprntf.c
 DEP_CPP_LGPRN=\
 	"..\..\h\lg_types.h"\
 	"..\lgalloc\memall.h"\
-	".\dbg.h"\
+	".\lg_dbg.h"\
 	".\lgsprntf.h"\
 	".\tmpalloc.h"\
 	
@@ -517,8 +517,8 @@ SOURCE=.\memreq.cpp
 DEP_CPP_MEMRE=\
 	"..\..\h\lg_types.h"\
 	"..\lgalloc\memall.h"\
-	".\dbg.h"\
 	".\lg.h"\
+	".\lg_dbg.h"\
 	".\lgalt.h"\
 	".\lgassert.h"\
 	".\lglocmsg.h"\
@@ -546,8 +546,8 @@ DEP_CPP_MEMST=\
 	"..\..\h\lg_types.h"\
 	"..\lgalloc\memall.h"\
 	"..\mprintf\mprintf.h"\
-	".\dbg.h"\
 	".\lg.h"\
+	".\lg_dbg.h"\
 	".\lgalt.h"\
 	".\lgassert.h"\
 	".\lglocmsg.h"\
@@ -572,7 +572,7 @@ SOURCE=.\stack.c
 DEP_CPP_STACK=\
 	"..\..\h\lg_types.h"\
 	"..\lgalloc\memall.h"\
-	".\dbg.h"\
+	".\lg_dbg.h"\
 	
 NODEP_CPP_STACK=\
 	"..\lgalloc\memmacro.h"\
@@ -607,8 +607,8 @@ SOURCE=.\thrdtool.cpp
 DEP_CPP_THRDT=\
 	"..\..\h\lg_types.h"\
 	"..\lgalloc\memall.h"\
-	".\dbg.h"\
 	".\lg.h"\
+	".\lg_dbg.h"\
 	".\lgalt.h"\
 	".\lgassert.h"\
 	".\lglocmsg.h"\
@@ -649,7 +649,7 @@ DEP_CPP_TMPAL=\
 	"..\..\h\_lg.h"\
 	"..\..\h\lg_types.h"\
 	"..\lgalloc\memall.h"\
-	".\dbg.h"\
+	".\lg_dbg.h"\
 	".\tmpalloc.h"\
 	
 NODEP_CPP_TMPAL=\
@@ -772,7 +772,7 @@ SOURCE=.\oheapwal.asm
 
 # PROP Ignore_Default_Tool 1
 # Begin Custom Build
-IntDir=.\..\_Bins\Release
+IntDir=.\..\_Bins\Release\lg
 InputPath=.\oheapwal.asm
 InputName=oheapwal
 

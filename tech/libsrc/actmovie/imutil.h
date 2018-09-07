@@ -10,9 +10,9 @@
 #ifndef __IMUTIL__
 #define __IMUTIL__
 
-#include <strmif.h>
-#include <amvideo.h>
-#include "mtype.h"
+#include "lg_strmif.h"
+#include "lg_amvideo.h"
+#include "lg_mtype.h"
 #include <dev2d.h>
 
 DWORD CountSetBits(const DWORD Field);

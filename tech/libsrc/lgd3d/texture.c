@@ -5,7 +5,7 @@
 
 #include <appagg.h>
 #include <cbchain.h>
-#include <dbg.h>
+#include "lg_dbg.h"
 #include <dispapi.h>
 #include <g2.h>
 #include <lgassert.h>

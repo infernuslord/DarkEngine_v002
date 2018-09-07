@@ -13,7 +13,7 @@
 
 #ifndef __INDEXMAC_H
 #define __INDEXMAC_H
-#include <bitmap.h>
+#include "lg_bitmap.h"
 #include <fill.h>
 #include <grd.h>
 

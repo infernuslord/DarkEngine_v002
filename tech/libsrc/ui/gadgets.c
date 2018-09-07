@@ -13,7 +13,7 @@
 #include <event.h>
 #include <mouse.h>
 #include <2d.h>
-#include <dbg.h>
+#include "lg_dbg.h"
 #include <_ui.h>
 #include <rect.h>
 #include "..\..\h\error.h"

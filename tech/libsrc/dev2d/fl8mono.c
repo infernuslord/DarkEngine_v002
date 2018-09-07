@@ -10,7 +10,7 @@
  *
  */
 
-#include <bitmap.h>
+#include "lg_bitmap.h"
 #include <grd.h>
 
 void flat8_mono_trans_ubitmap (grs_bitmap *bm, int x, int y)

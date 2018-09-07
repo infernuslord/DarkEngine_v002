@@ -2,7 +2,7 @@
 #include <plain.h>
 #include <tngplain.h>
 #include <_ui.h>
-#include <dbg.h>
+#include "lg_dbg.h"
 
 Gadget *gad_plain_create(Gadget *parent, Rect *dim, int z, char *name)
 {

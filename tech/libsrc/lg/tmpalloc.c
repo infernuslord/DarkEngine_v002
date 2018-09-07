@@ -9,7 +9,7 @@
  * This file is part of the 2d library.
  */
 
-#include <dbg.h>
+#include "lg_dbg.h"
 #include <memall.h>
 #include <tmpalloc.h>
 #include <_lg.h>

@@ -1,7 +1,7 @@
 // $Header: x:/prj/tech/libsrc/g2/RCS/f16lm.c 1.2 1998/04/09 10:00:13 KEVIN Exp $
 
 #include <lgassert.h>
-#include <dbg.h>
+#include "lg_dbg.h"
 
 #include <tftype.h>
 

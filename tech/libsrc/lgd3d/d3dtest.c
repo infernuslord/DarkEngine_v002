@@ -3,7 +3,7 @@
 #include <stdlib.h>  // for atexit
 
 #include <appagg.h>
-#include <dbg.h>
+#include "lg_dbg.h"
 #include <dispapi.h>
 #include <grtb.h>    // gr testbed library headers
 #include <g2.h>      // g2 library headers

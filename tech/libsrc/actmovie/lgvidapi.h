@@ -1,8 +1,8 @@
 #ifndef __LGVIDAPI_H
 #define __LGVIDAPI_H
 
-#include <strmif.h>
-#include <mtype.h>
+#include "lg_strmif.h"
+#include "lg_mtype.h"
 
 /*
   Interface that must be provided by the app that wants to use the 

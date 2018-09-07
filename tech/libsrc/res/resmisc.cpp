@@ -1,6 +1,6 @@
 // Miscellaneous Res Utilities, all off in their own private module...
 
-#include <dbg.h>
+#include "lg_dbg.h"
 #include <res.h>
 #include <res_.h>
 

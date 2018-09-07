@@ -11,8 +11,8 @@
 #include <lgassert.h>
 #include <lglog.h>
 #include <limits.h>
-#include <uuids.h>
-#include <astring.h>
+#include "lg_uuids.h"
+#include <lg_astring.h>
 #include <mprintf.h>
 
 // These are bit field masks for true colour devices

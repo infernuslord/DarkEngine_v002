@@ -1,7 +1,7 @@
 // $Header: x:/prj/tech/libsrc/lgd3d/RCS/tmgr.c 1.33 1998/06/30 18:36:56 buzzard Exp $
 #include <string.h>
 
-#include <dbg.h>
+#include "lg_dbg.h"
 #include <dev2d.h>
 #include <lgassert.h>
 #include <memall.h>

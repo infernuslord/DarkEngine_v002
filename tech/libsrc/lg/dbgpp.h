@@ -22,7 +22,7 @@
 #include <iostream.h>
 #include <strstrea.h>
 extern "C" {
-#include <dbg.h>
+#include "lg_dbg.h"
 }
 #ifdef __cplusplus
 extern "C"  {

@@ -12,7 +12,7 @@
 
 #include <math.h>
 
-#include <dbg.h>
+#include "lg_dbg.h"
 
 
 char *true_names[6];

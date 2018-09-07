@@ -7,4 +7,4 @@
 
 #include <objbase.h>
 #include <initguid.h>
-#include <uuids.h>
+#include "lg_uuids.h"

@@ -16,7 +16,7 @@
 #include <timelog.h>
 #include <mprintf.h>
 #include <memall.h>
-#include <dbg.h>
+#include "lg_dbg.h"
 
 //
 // get data from a file

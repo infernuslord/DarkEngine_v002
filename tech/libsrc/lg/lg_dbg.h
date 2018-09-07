@@ -103,12 +103,13 @@
  *
 */
 
-#ifndef DBG_H
-#define DBG_H
+//XXX Chaos - renamed from dbg.h to lg_dbg.h
 
-#include "types.h"
+#ifndef LGDBG_H
+#define LGDBG_H
+
 #include <stdio.h>
-
+#include <lg_types.h>
 
 #ifdef __cplusplus
 extern "C"  {

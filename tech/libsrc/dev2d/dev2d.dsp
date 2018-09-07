@@ -38,11 +38,11 @@ RSC=rc.exe
 # PROP Use_MFC 0
 # PROP Use_Debug_Libraries 0
 # PROP Output_Dir "..\_Libs\Release"
-# PROP Intermediate_Dir "..\_Bins\Release"
+# PROP Intermediate_Dir "..\_Bins\Release\dev2d"
 # PROP Target_Dir ""
 # ADD BASE CPP /nologo /W3 /GX /O2 /D "NDEBUG" /D "_MBCS" /D "_LIB" /YX /FD /c
-# ADD CPP /nologo /Zp1 /MT /W3 /GX /O2 /I "." /I "..\..\h" /I "..\lg" /I "..\actmovie" /I "..\appcore" /I "..\arq" /I "..\compapis" /I "..\comtools" /I "..\config" /I "..\cpptools" /I "..\darkloop" /I "..\dev2d" /I "..\dispdev" /I "..\dstruct" /I "..\dump" /I "..\fix" /I "..\font" /I "..\g2" /I "..\gadget" /I "..\gameshel" /I "..\gfile" /I "..\inputbnd" /I "..\lgalloc" /I "..\lgd3d" /I "..\matrix" /I "..\md" /I "..\mm" /I "..\mp" /I "..\mprintf" /I "..\namedres" /I "..\net" /I "..\prof" /I "..\r3d" /I "..\random" /I "..\recorder" /I "..\ref" /I "..\res" /I "..\rnd" /I "..\script" /I "..\sdesc" /I "..\skel" /I "..\sndsrc" /I "..\sndutil" /I "..\sound" /I "..\star" /I "..\tagfile" /I "..\templgen" /I "..\timer" /I "..\ui" /I "..\vec2" /I "..\..\winsrc\input" /D "NDEBUG" /D "_MBCS" /D "_LIB" /FI "..\..\h\lg_types.h" /c
-# SUBTRACT CPP /X /u /Fr
+# ADD CPP /nologo /Zp1 /MT /W3 /GX /O2 /I "." /I "..\..\h" /I "..\lg" /I "..\actmovie" /I "..\appcore" /I "..\arq" /I "..\compapis" /I "..\comtools" /I "..\config" /I "..\cpptools" /I "..\darkloop" /I "..\dev2d" /I "..\dispdev" /I "..\dstruct" /I "..\dump" /I "..\fix" /I "..\font" /I "..\g2" /I "..\gadget" /I "..\gameshel" /I "..\gfile" /I "..\inputbnd" /I "..\lgalloc" /I "..\lgd3d" /I "..\matrix" /I "..\md" /I "..\mm" /I "..\mp" /I "..\mprintf" /I "..\namedres" /I "..\net" /I "..\prof" /I "..\r3d" /I "..\random" /I "..\recorder" /I "..\ref" /I "..\res" /I "..\rnd" /I "..\script" /I "..\sdesc" /I "..\skel" /I "..\sndsrc" /I "..\sndutil" /I "..\sound" /I "..\star" /I "..\tagfile" /I "..\templgen" /I "..\timer" /I "..\ui" /I "..\vec2" /I "..\..\winsrc\input" /D "NDEBUG" /D "_MBCS" /D "_LIB" /Fr /FI "..\..\h\lg_types.h" /c
+# SUBTRACT CPP /X /u
 # ADD BASE RSC /l 0x816 /d "NDEBUG"
 # ADD RSC /l 0x809 /d "NDEBUG"
 BSC32=bscmake.exe
@@ -88,7 +88,7 @@ LIB32=link.exe -lib
 
 SOURCE=.\astring.c
 DEP_CPP_ASTRI=\
-	".\astring.h"\
+	".\lg_astring.h"\
 	
 
 !IF  "$(CFG)" == "dev2d - Win32 Release"
@@ -115,12 +115,12 @@ SOURCE=.\bitmap.c
 DEP_CPP_BITMA=\
 	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
-	"..\lg\dbg.h"\
-	".\bitmap.h"\
+	"..\lg\lg_dbg.h"\
 	".\emode.h"\
 	".\grd.h"\
 	".\grmalloc.h"\
 	".\grs.h"\
+	".\lg_bitmap.h"\
 	".\rgb.h"\
 	".\valloc.h"\
 	
@@ -141,13 +141,13 @@ SOURCE=.\bk8bm.c
 DEP_CPP_BK8BM=\
 	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
-	".\bitmap.h"\
 	".\bmftype.h"\
 	".\emode.h"\
 	".\fill.h"\
 	".\grd.h"\
 	".\grs.h"\
 	".\indexmac.h"\
+	".\lg_bitmap.h"\
 	".\rgb.h"\
 	
 
@@ -288,13 +288,13 @@ SOURCE=.\blend.c
 DEP_CPP_BLEND=\
 	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
-	"..\lg\dbg.h"\
+	"..\lg\lg_dbg.h"\
 	"..\matrix\matrixs.h"\
 	"..\matrix\mxang.h"\
 	".\alpha.h"\
-	".\bitmap.h"\
 	".\emode.h"\
 	".\grs.h"\
+	".\lg_bitmap.h"\
 	
 NODEP_CPP_BLEND=\
 	"..\lg\dbgmacro.h"\
@@ -313,14 +313,14 @@ SOURCE=.\canvas.c
 DEP_CPP_CANVA=\
 	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
-	"..\lg\dbg.h"\
-	".\bitmap.h"\
+	"..\lg\lg_dbg.h"\
 	".\context.h"\
 	".\emode.h"\
 	".\fill.h"\
 	".\grd.h"\
 	".\grmalloc.h"\
 	".\grs.h"\
+	".\lg_bitmap.h"\
 	".\rgb.h"\
 	".\valloc.h"\
 	
@@ -361,13 +361,13 @@ SOURCE=.\clut16.c
 DEP_CPP_CLUT1=\
 	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
-	"..\lg\dbg.h"\
+	"..\lg\lg_dbg.h"\
 	"..\matrix\matrixs.h"\
 	"..\matrix\mxang.h"\
 	".\alpha.h"\
-	".\bitmap.h"\
 	".\emode.h"\
 	".\grs.h"\
+	".\lg_bitmap.h"\
 	
 NODEP_CPP_CLUT1=\
 	"..\lg\dbgmacro.h"\
@@ -437,14 +437,13 @@ DEP_CPP_DDEVB=\
 	"..\compapis\dispguid.h"\
 	"..\comtools\comtools.h"\
 	"..\fix\fix.h"\
-	"..\lg\dbg.h"\
 	"..\lg\lg.h"\
+	"..\lg\lg_dbg.h"\
 	"..\lg\lgalt.h"\
 	"..\lg\lgassert.h"\
 	"..\lg\lglocmsg.h"\
 	"..\lg\lglog.h"\
 	"..\lgalloc\memall.h"\
-	".\bitmap.h"\
 	".\bmftype.h"\
 	".\canvas.h"\
 	".\comdfcn.h"\
@@ -455,6 +454,7 @@ DEP_CPP_DDEVB=\
 	".\grs.h"\
 	".\icanvas.h"\
 	".\indexmac.h"\
+	".\lg_bitmap.h"\
 	".\rgb.h"\
 	
 NODEP_CPP_DDEVB=\
@@ -489,13 +489,13 @@ SOURCE=.\f16bm.c
 DEP_CPP_F16BM=\
 	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
-	".\bitmap.h"\
 	".\bmftype.h"\
 	".\emode.h"\
 	".\fill.h"\
 	".\grd.h"\
 	".\grs.h"\
 	".\indexmac.h"\
+	".\lg_bitmap.h"\
 	".\rgb.h"\
 	
 
@@ -512,14 +512,14 @@ SOURCE=.\f16f16.c
 DEP_CPP_F16F1=\
 	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
-	"..\lg\dbg.h"\
-	".\astring.h"\
-	".\bitmap.h"\
+	"..\lg\lg_dbg.h"\
 	".\context.h"\
 	".\emode.h"\
 	".\f16il.h"\
 	".\grd.h"\
 	".\grs.h"\
+	".\lg_astring.h"\
+	".\lg_bitmap.h"\
 	".\rgb.h"\
 	
 NODEP_CPP_F16F1=\
@@ -539,7 +539,7 @@ SOURCE=.\f16fl8.c
 DEP_CPP_F16FL=\
 	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
-	"..\lg\dbg.h"\
+	"..\lg\lg_dbg.h"\
 	".\emode.h"\
 	".\grd.h"\
 	".\grs.h"\
@@ -583,13 +583,13 @@ SOURCE=.\f16lin.c
 DEP_CPP_F16LI=\
 	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
-	".\bitmap.h"\
 	".\context.h"\
 	".\emode.h"\
 	".\gdpix.h"\
 	".\grd.h"\
 	".\grs.h"\
 	".\icanvas.h"\
+	".\lg_bitmap.h"\
 	".\linftype.h"\
 	".\pixftype.h"\
 	".\rgb.h"\
@@ -608,10 +608,10 @@ SOURCE=.\f16mono.c
 DEP_CPP_F16MO=\
 	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
-	".\bitmap.h"\
 	".\emode.h"\
 	".\grd.h"\
 	".\grs.h"\
+	".\lg_bitmap.h"\
 	".\rgb.h"\
 	
 
@@ -727,7 +727,7 @@ SOURCE=.\fcolor.c
 DEP_CPP_FCOLO=\
 	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
-	"..\lg\dbg.h"\
+	"..\lg\lg_dbg.h"\
 	".\emode.h"\
 	".\fcolor.h"\
 	".\grd.h"\
@@ -777,13 +777,13 @@ SOURCE=.\fl8bm.c
 DEP_CPP_FL8BM=\
 	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
-	".\bitmap.h"\
 	".\bmftype.h"\
 	".\emode.h"\
 	".\fill.h"\
 	".\grd.h"\
 	".\grs.h"\
 	".\indexmac.h"\
+	".\lg_bitmap.h"\
 	".\rgb.h"\
 	
 
@@ -800,13 +800,13 @@ SOURCE=.\fl8fl8.c
 DEP_CPP_FL8FL=\
 	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
-	"..\lg\dbg.h"\
-	".\astring.h"\
-	".\bitmap.h"\
+	"..\lg\lg_dbg.h"\
 	".\context.h"\
 	".\emode.h"\
 	".\grd.h"\
 	".\grs.h"\
+	".\lg_astring.h"\
+	".\lg_bitmap.h"\
 	".\rgb.h"\
 	
 NODEP_CPP_FL8FL=\
@@ -865,10 +865,10 @@ SOURCE=.\fl8mono.c
 DEP_CPP_FL8MO=\
 	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
-	".\bitmap.h"\
 	".\emode.h"\
 	".\grd.h"\
 	".\grs.h"\
+	".\lg_bitmap.h"\
 	".\rgb.h"\
 	
 
@@ -1007,7 +1007,6 @@ SOURCE=.\gdgbm.c
 DEP_CPP_GDGBM=\
 	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
-	".\bitmap.h"\
 	".\bmftype.h"\
 	".\canvas.h"\
 	".\emode.h"\
@@ -1015,6 +1014,7 @@ DEP_CPP_GDGBM=\
 	".\grd.h"\
 	".\grs.h"\
 	".\icanvas.h"\
+	".\lg_bitmap.h"\
 	".\rgb.h"\
 	
 
@@ -1054,7 +1054,6 @@ SOURCE=.\gdpix.c
 DEP_CPP_GDPIX=\
 	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
-	".\bitmap.h"\
 	".\clip.h"\
 	".\context.h"\
 	".\emode.h"\
@@ -1062,6 +1061,7 @@ DEP_CPP_GDPIX=\
 	".\grd.h"\
 	".\grs.h"\
 	".\icanvas.h"\
+	".\lg_bitmap.h"\
 	".\pixftype.h"\
 	".\rgb.h"\
 	
@@ -1079,7 +1079,6 @@ SOURCE=.\gdrect.c
 DEP_CPP_GDREC=\
 	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
-	".\bitmap.h"\
 	".\clip.h"\
 	".\context.h"\
 	".\emode.h"\
@@ -1087,6 +1086,7 @@ DEP_CPP_GDREC=\
 	".\grd.h"\
 	".\grs.h"\
 	".\icanvas.h"\
+	".\lg_bitmap.h"\
 	".\linftype.h"\
 	".\rgb.h"\
 	
@@ -1123,12 +1123,12 @@ SOURCE=.\genbm.c
 DEP_CPP_GENBM=\
 	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
-	".\bitmap.h"\
 	".\context.h"\
 	".\emode.h"\
 	".\gdrect.h"\
 	".\grd.h"\
 	".\grs.h"\
+	".\lg_bitmap.h"\
 	".\rgb.h"\
 	
 
@@ -1166,13 +1166,13 @@ SOURCE=.\genf16u.c
 DEP_CPP_GENF16=\
 	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
-	".\bitmap.h"\
 	".\context.h"\
 	".\emode.h"\
 	".\gdpix.h"\
 	".\grd.h"\
 	".\grs.h"\
 	".\icanvas.h"\
+	".\lg_bitmap.h"\
 	".\pixftype.h"\
 	".\rgb.h"\
 	
@@ -1211,13 +1211,13 @@ SOURCE=.\genfl8u.c
 DEP_CPP_GENFL8=\
 	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
-	".\bitmap.h"\
 	".\context.h"\
 	".\emode.h"\
 	".\gdpix.h"\
 	".\grd.h"\
 	".\grs.h"\
 	".\icanvas.h"\
+	".\lg_bitmap.h"\
 	".\pal16.h"\
 	".\pixftype.h"\
 	".\rgb.h"\
@@ -1236,13 +1236,13 @@ SOURCE=.\genlin.c
 DEP_CPP_GENLI=\
 	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
-	".\bitmap.h"\
 	".\context.h"\
 	".\emode.h"\
 	".\gdpix.h"\
 	".\grd.h"\
 	".\grs.h"\
 	".\icanvas.h"\
+	".\lg_bitmap.h"\
 	".\pixftype.h"\
 	".\rgb.h"\
 	
@@ -1281,13 +1281,13 @@ SOURCE=.\genmonou.c
 DEP_CPP_GENMON=\
 	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
-	".\bitmap.h"\
 	".\context.h"\
 	".\emode.h"\
 	".\gdpix.h"\
 	".\grd.h"\
 	".\grs.h"\
 	".\icanvas.h"\
+	".\lg_bitmap.h"\
 	".\pixftype.h"\
 	".\rgb.h"\
 	
@@ -1326,7 +1326,6 @@ SOURCE=.\genrsd8.c
 DEP_CPP_GENRS=\
 	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
-	".\bitmap.h"\
 	".\bmftype.h"\
 	".\clip.h"\
 	".\emode.h"\
@@ -1334,6 +1333,7 @@ DEP_CPP_GENRS=\
 	".\grd.h"\
 	".\grs.h"\
 	".\icanvas.h"\
+	".\lg_bitmap.h"\
 	".\rgb.h"\
 	".\rsd.h"\
 	
@@ -1368,10 +1368,10 @@ SOURCE=.\gpix.c
 DEP_CPP_GPIX_=\
 	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
-	".\bitmap.h"\
 	".\emode.h"\
 	".\grnull.h"\
 	".\grs.h"\
+	".\lg_bitmap.h"\
 	
 
 !IF  "$(CFG)" == "dev2d - Win32 Release"
@@ -1426,7 +1426,7 @@ SOURCE=.\grmalloc.c
 SOURCE=.\grnull.c
 DEP_CPP_GRNUL=\
 	"..\..\h\lg_types.h"\
-	"..\lg\dbg.h"\
+	"..\lg\lg_dbg.h"\
 	
 NODEP_CPP_GRNUL=\
 	"..\lg\dbgmacro.h"\
@@ -1445,9 +1445,9 @@ SOURCE=.\hflip.c
 DEP_CPP_HFLIP=\
 	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
-	".\bitmap.h"\
 	".\emode.h"\
 	".\grs.h"\
+	".\lg_bitmap.h"\
 	
 
 !IF  "$(CFG)" == "dev2d - Win32 Release"
@@ -1463,7 +1463,7 @@ SOURCE=.\init.c
 DEP_CPP_INIT_=\
 	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
-	"..\lg\dbg.h"\
+	"..\lg\lg_dbg.h"\
 	"..\lg\tmpalloc.h"\
 	"..\lgalloc\memall.h"\
 	".\detect.h"\
@@ -1534,7 +1534,7 @@ SOURCE=.\ltab.c
 DEP_CPP_LTAB_=\
 	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
-	"..\lg\dbg.h"\
+	"..\lg\lg_dbg.h"\
 	".\emode.h"\
 	".\grs.h"\
 	".\pal16.h"\
@@ -1576,13 +1576,13 @@ SOURCE=.\mxbm.c
 DEP_CPP_MXBM_=\
 	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
-	".\bitmap.h"\
 	".\bmftype.h"\
 	".\emode.h"\
 	".\fill.h"\
 	".\grd.h"\
 	".\grs.h"\
 	".\indexmac.h"\
+	".\lg_bitmap.h"\
 	".\rgb.h"\
 	
 
@@ -1850,17 +1850,17 @@ SOURCE=.\rsdcvt.c
 DEP_CPP_RSDCV=\
 	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
-	"..\lg\dbg.h"\
+	"..\lg\lg_dbg.h"\
 	"..\lg\lgassert.h"\
 	"..\lg\lglog.h"\
 	"..\lgalloc\memall.h"\
-	".\bitmap.h"\
 	".\bmftype.h"\
 	".\emode.h"\
 	".\gdbm.h"\
 	".\grd.h"\
 	".\grs.h"\
 	".\icanvas.h"\
+	".\lg_bitmap.h"\
 	".\rgb.h"\
 	".\rsd.h"\
 	".\rsdcfg.h"\
@@ -1883,14 +1883,13 @@ SOURCE=.\screen.c
 DEP_CPP_SCREE=\
 	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
-	"..\lg\dbg.h"\
 	"..\lg\lg.h"\
+	"..\lg\lg_dbg.h"\
 	"..\lg\lgalt.h"\
 	"..\lg\lgassert.h"\
 	"..\lg\lglocmsg.h"\
 	"..\lg\lglog.h"\
 	"..\lgalloc\memall.h"\
-	".\bitmap.h"\
 	".\canvas.h"\
 	".\context.h"\
 	".\emode.h"\
@@ -1899,6 +1898,7 @@ DEP_CPP_SCREE=\
 	".\grmalloc.h"\
 	".\grs.h"\
 	".\idevice.h"\
+	".\lg_bitmap.h"\
 	".\mode.h"\
 	".\rgb.h"\
 	".\state.h"\
@@ -1922,11 +1922,11 @@ SOURCE=.\sfoc.c
 DEP_CPP_SFOC_=\
 	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
-	".\bitmap.h"\
 	".\emode.h"\
 	".\grd.h"\
 	".\grs.h"\
 	".\idevice.h"\
+	".\lg_bitmap.h"\
 	".\rgb.h"\
 	
 
@@ -2054,15 +2054,15 @@ DEP_CPP_VESAC=\
 	"..\..\h\dpmi.h"\
 	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
-	"..\lg\dbg.h"\
+	"..\lg\lg_dbg.h"\
 	"..\lgalloc\memall.h"\
-	".\bitmap.h"\
 	".\devtab.h"\
 	".\dpmidat.h"\
 	".\emode.h"\
 	".\grd.h"\
 	".\grs.h"\
 	".\idevice.h"\
+	".\lg_bitmap.h"\
 	".\mode.h"\
 	".\rgb.h"\
 	".\valloc.h"\
@@ -2143,19 +2143,11 @@ SOURCE=.\alpha.h
 # End Source File
 # Begin Source File
 
-SOURCE=.\astring.h
-# End Source File
-# Begin Source File
-
 SOURCE=.\bank.h
 # End Source File
 # Begin Source File
 
 SOURCE=.\bank8.h
-# End Source File
-# Begin Source File
-
-SOURCE=.\bitmap.h
 # End Source File
 # Begin Source File
 
@@ -2363,6 +2355,14 @@ SOURCE=.\init.h
 # End Source File
 # Begin Source File
 
+SOURCE=.\lg_astring.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\lg_bitmap.h
+# End Source File
+# Begin Source File
+
 SOURCE=.\linftype.h
 # End Source File
 # Begin Source File
@@ -2457,7 +2457,7 @@ SOURCE=.\cstring.asm
 
 # PROP Ignore_Default_Tool 1
 # Begin Custom Build
-IntDir=.\..\_Bins\Release
+IntDir=.\..\_Bins\Release\dev2d
 InputPath=.\cstring.asm
 InputName=cstring
 
@@ -2481,7 +2481,7 @@ SOURCE=.\f16f16c.asm
 
 # PROP Ignore_Default_Tool 1
 # Begin Custom Build
-IntDir=.\..\_Bins\Release
+IntDir=.\..\_Bins\Release\dev2d
 InputPath=.\f16f16c.asm
 InputName=f16f16c
 
@@ -2505,7 +2505,7 @@ SOURCE=.\f16f16l.asm
 
 # PROP Ignore_Default_Tool 1
 # Begin Custom Build
-IntDir=.\..\_Bins\Release
+IntDir=.\..\_Bins\Release\dev2d
 InputPath=.\f16f16l.asm
 InputName=f16f16l
 
@@ -2529,7 +2529,7 @@ SOURCE=.\f16fl8il.asm
 
 # PROP Ignore_Default_Tool 1
 # Begin Custom Build
-IntDir=.\..\_Bins\Release
+IntDir=.\..\_Bins\Release\dev2d
 InputPath=.\f16fl8il.asm
 InputName=f16fl8il
 
@@ -2553,7 +2553,7 @@ SOURCE=.\f16il.asm
 
 # PROP Ignore_Default_Tool 1
 # Begin Custom Build
-IntDir=.\..\_Bins\Release
+IntDir=.\..\_Bins\Release\dev2d
 InputPath=.\f16il.asm
 InputName=f16il
 
@@ -2577,7 +2577,7 @@ SOURCE=.\f16set.asm
 
 # PROP Ignore_Default_Tool 1
 # Begin Custom Build
-IntDir=.\..\_Bins\Release
+IntDir=.\..\_Bins\Release\dev2d
 InputPath=.\f16set.asm
 InputName=f16set
 
@@ -2601,7 +2601,7 @@ SOURCE=.\light.asm
 
 # PROP Ignore_Default_Tool 1
 # Begin Custom Build
-IntDir=.\..\_Bins\Release
+IntDir=.\..\_Bins\Release\dev2d
 InputPath=.\light.asm
 InputName=light
 
@@ -2625,7 +2625,7 @@ SOURCE=.\rsdblt.asm
 
 # PROP Ignore_Default_Tool 1
 # Begin Custom Build
-IntDir=.\..\_Bins\Release
+IntDir=.\..\_Bins\Release\dev2d
 InputPath=.\rsdblt.asm
 InputName=rsdblt
 
@@ -2649,7 +2649,7 @@ SOURCE=.\rsdblt16.asm
 
 # PROP Ignore_Default_Tool 1
 # Begin Custom Build
-IntDir=.\..\_Bins\Release
+IntDir=.\..\_Bins\Release\dev2d
 InputPath=.\rsdblt16.asm
 InputName=rsdblt16
 
@@ -2673,7 +2673,7 @@ SOURCE=.\rsdblt8.asm
 
 # PROP Ignore_Default_Tool 1
 # Begin Custom Build
-IntDir=.\..\_Bins\Release
+IntDir=.\..\_Bins\Release\dev2d
 InputPath=.\rsdblt8.asm
 InputName=rsdblt8
 
@@ -2697,7 +2697,7 @@ SOURCE=.\rsdunpck.asm
 
 # PROP Ignore_Default_Tool 1
 # Begin Custom Build
-IntDir=.\..\_Bins\Release
+IntDir=.\..\_Bins\Release\dev2d
 InputPath=.\rsdunpck.asm
 InputName=rsdunpck
 
@@ -2721,7 +2721,7 @@ SOURCE=.\vesaasm.asm
 
 # PROP Ignore_Default_Tool 1
 # Begin Custom Build
-IntDir=.\..\_Bins\Release
+IntDir=.\..\_Bins\Release\dev2d
 InputPath=.\vesaasm.asm
 InputName=vesaasm
 
@@ -2745,7 +2745,7 @@ SOURCE=.\vgaasm.asm
 
 # PROP Ignore_Default_Tool 1
 # Begin Custom Build
-IntDir=.\..\_Bins\Release
+IntDir=.\..\_Bins\Release\dev2d
 InputPath=.\vgaasm.asm
 InputName=vgaasm
 
@@ -2769,7 +2769,7 @@ SOURCE=.\vgasmod.asm
 
 # PROP Ignore_Default_Tool 1
 # Begin Custom Build
-IntDir=.\..\_Bins\Release
+IntDir=.\..\_Bins\Release\dev2d
 InputPath=.\vgasmod.asm
 InputName=vgasmod
 

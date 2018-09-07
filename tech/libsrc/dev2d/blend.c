@@ -1,8 +1,8 @@
 // $Header: x:/prj/tech/libsrc/dev2d/RCS/blend.c 1.5 1996/12/06 15:30:12 KEVIN Exp $
 // Blending routines
 #include <alpha.h>
-#include <bitmap.h>
-#include <dbg.h>
+#include "lg_bitmap.h"
+#include "lg_dbg.h"
 
 // returns (alpha)*c0 + (1-alpha)*c1 using format.  Not for real-time use!
 uint gr_blend_color_vector(uint c0, uint c1, alpha_vector *alpha, int format)

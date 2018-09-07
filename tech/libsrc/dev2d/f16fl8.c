@@ -5,7 +5,7 @@
 #include <string.h>
 #include <grd.h>
 #include <pal16.h>
-#include <dbg.h>
+#include "lg_dbg.h"
 
 typedef void (blit_inner_loop)(uchar *dst, uchar *src, int count);
 

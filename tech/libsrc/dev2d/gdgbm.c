@@ -8,7 +8,7 @@
  *
  */
 
-#include <bitmap.h>
+#include "lg_bitmap.h"
 #include <canvas.h>
 #include <grd.h>
 #include <gdbm.h>

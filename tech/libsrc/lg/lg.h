@@ -19,7 +19,7 @@
 #define LG_HOME
 
 #include "lg_types.h"
-#include <windows.h>
+//#include <windows.h>
 
 #include <lglog.h>
 #include <lglocmsg.h>
@@ -27,7 +27,7 @@
 
 #ifdef LG_HOME
 #include <memall.h>
-#include <dbg.h>
+#include "lg_dbg.h"
 #else
 #include <lgalt.h>
 #endif

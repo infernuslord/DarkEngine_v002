@@ -38,11 +38,11 @@ RSC=rc.exe
 # PROP Use_MFC 0
 # PROP Use_Debug_Libraries 0
 # PROP Output_Dir "..\_Libs\Release"
-# PROP Intermediate_Dir "..\_Bins\Release"
+# PROP Intermediate_Dir "..\_Bins\Release\timer"
 # PROP Target_Dir ""
 # ADD BASE CPP /nologo /W3 /GX /O2 /D "NDEBUG" /D "_MBCS" /D "_LIB" /YX /FD /c
-# ADD CPP /nologo /Zp1 /MT /W3 /GX /O2 /I "." /I "..\..\h" /I "..\lg" /I "..\actmovie" /I "..\appcore" /I "..\arq" /I "..\compapis" /I "..\comtools" /I "..\config" /I "..\cpptools" /I "..\darkloop" /I "..\dev2d" /I "..\dispdev" /I "..\dstruct" /I "..\dump" /I "..\fix" /I "..\font" /I "..\g2" /I "..\gadget" /I "..\gameshel" /I "..\gfile" /I "..\inputbnd" /I "..\lgalloc" /I "..\lgd3d" /I "..\matrix" /I "..\md" /I "..\mm" /I "..\mp" /I "..\mprintf" /I "..\namedres" /I "..\net" /I "..\prof" /I "..\r3d" /I "..\random" /I "..\recorder" /I "..\ref" /I "..\res" /I "..\rnd" /I "..\script" /I "..\sdesc" /I "..\skel" /I "..\sndsrc" /I "..\sndutil" /I "..\sound" /I "..\star" /I "..\tagfile" /I "..\templgen" /I "..\timer" /I "..\ui" /I "..\vec2" /I "..\..\winsrc\input" /D "NDEBUG" /D "_MBCS" /D "_LIB" /FI "..\..\h\lg_types.h" /c
-# SUBTRACT CPP /X /u /Fr
+# ADD CPP /nologo /Zp1 /MT /W3 /GX /O2 /I "." /I "..\..\h" /I "..\lg" /I "..\actmovie" /I "..\appcore" /I "..\arq" /I "..\compapis" /I "..\comtools" /I "..\config" /I "..\cpptools" /I "..\darkloop" /I "..\dev2d" /I "..\dispdev" /I "..\dstruct" /I "..\dump" /I "..\fix" /I "..\font" /I "..\g2" /I "..\gadget" /I "..\gameshel" /I "..\gfile" /I "..\inputbnd" /I "..\lgalloc" /I "..\lgd3d" /I "..\matrix" /I "..\md" /I "..\mm" /I "..\mp" /I "..\mprintf" /I "..\namedres" /I "..\net" /I "..\prof" /I "..\r3d" /I "..\random" /I "..\recorder" /I "..\ref" /I "..\res" /I "..\rnd" /I "..\script" /I "..\sdesc" /I "..\skel" /I "..\sndsrc" /I "..\sndutil" /I "..\sound" /I "..\star" /I "..\tagfile" /I "..\templgen" /I "..\timer" /I "..\ui" /I "..\vec2" /I "..\..\winsrc\input" /D "NDEBUG" /D "_MBCS" /D "_LIB" /Fr /FI "..\..\h\lg_types.h" /c
+# SUBTRACT CPP /X /u
 # ADD BASE RSC /l 0x816 /d "NDEBUG"
 # ADD RSC /l 0x809 /d "NDEBUG"
 BSC32=bscmake.exe
@@ -111,8 +111,8 @@ SOURCE=.\tmftab.c
 DEP_CPP_TMFTA=\
 	"..\..\h\lg_types.h"\
 	"..\fix\fix.h"\
-	"..\lg\dbg.h"\
 	"..\lg\lg.h"\
+	"..\lg\lg_dbg.h"\
 	"..\lg\lgalt.h"\
 	"..\lg\lgassert.h"\
 	"..\lg\lglocmsg.h"\
@@ -180,8 +180,8 @@ DEP_CPP_TMWIN=\
 	"..\compapis\recguid.h"\
 	"..\comtools\comtools.h"\
 	"..\fix\fix.h"\
-	"..\lg\dbg.h"\
 	"..\lg\lg.h"\
+	"..\lg\lg_dbg.h"\
 	"..\lg\lgalt.h"\
 	"..\lg\lgassert.h"\
 	"..\lg\lglocmsg.h"\
@@ -242,7 +242,7 @@ SOURCE=.\tmact.asm
 
 # PROP Ignore_Default_Tool 1
 # Begin Custom Build
-IntDir=.\..\_Bins\Release
+IntDir=.\..\_Bins\Release\timer
 InputPath=.\tmact.asm
 InputName=tmact
 
@@ -266,7 +266,7 @@ SOURCE=.\tmadd.asm
 
 # PROP Ignore_Default_Tool 1
 # Begin Custom Build
-IntDir=.\..\_Bins\Release
+IntDir=.\..\_Bins\Release\timer
 InputPath=.\tmadd.asm
 InputName=tmadd
 
@@ -290,7 +290,7 @@ SOURCE=.\tmclose.asm
 
 # PROP Ignore_Default_Tool 1
 # Begin Custom Build
-IntDir=.\..\_Bins\Release
+IntDir=.\..\_Bins\Release\timer
 InputPath=.\tmclose.asm
 InputName=tmclose
 
@@ -314,7 +314,7 @@ SOURCE=.\tmd.asm
 
 # PROP Ignore_Default_Tool 1
 # Begin Custom Build
-IntDir=.\..\_Bins\Release
+IntDir=.\..\_Bins\Release\timer
 InputPath=.\tmd.asm
 InputName=tmd
 
@@ -338,7 +338,7 @@ SOURCE=.\tmdeact.asm
 
 # PROP Ignore_Default_Tool 1
 # Begin Custom Build
-IntDir=.\..\_Bins\Release
+IntDir=.\..\_Bins\Release\timer
 InputPath=.\tmdeact.asm
 InputName=tmdeact
 
@@ -362,7 +362,7 @@ SOURCE=.\tmfast.asm
 
 # PROP Ignore_Default_Tool 1
 # Begin Custom Build
-IntDir=.\..\_Bins\Release
+IntDir=.\..\_Bins\Release\timer
 InputPath=.\tmfast.asm
 InputName=tmfast
 
@@ -386,7 +386,7 @@ SOURCE=.\tminit.asm
 
 # PROP Ignore_Default_Tool 1
 # Begin Custom Build
-IntDir=.\..\_Bins\Release
+IntDir=.\..\_Bins\Release\timer
 InputPath=.\tminit.asm
 InputName=tminit
 
@@ -410,7 +410,7 @@ SOURCE=.\tmphnd.asm
 
 # PROP Ignore_Default_Tool 1
 # Begin Custom Build
-IntDir=.\..\_Bins\Release
+IntDir=.\..\_Bins\Release\timer
 InputPath=.\tmphnd.asm
 InputName=tmphnd
 
@@ -434,7 +434,7 @@ SOURCE=.\tmrate.asm
 
 # PROP Ignore_Default_Tool 1
 # Begin Custom Build
-IntDir=.\..\_Bins\Release
+IntDir=.\..\_Bins\Release\timer
 InputPath=.\tmrate.asm
 InputName=tmrate
 
@@ -458,7 +458,7 @@ SOURCE=.\tmrem.asm
 
 # PROP Ignore_Default_Tool 1
 # Begin Custom Build
-IntDir=.\..\_Bins\Release
+IntDir=.\..\_Bins\Release\timer
 InputPath=.\tmrem.asm
 InputName=tmrem
 
@@ -482,7 +482,7 @@ SOURCE=.\tmsden.asm
 
 # PROP Ignore_Default_Tool 1
 # Begin Custom Build
-IntDir=.\..\_Bins\Release
+IntDir=.\..\_Bins\Release\timer
 InputPath=.\tmsden.asm
 InputName=tmsden
 
@@ -506,7 +506,7 @@ SOURCE=.\tmsfreq.asm
 
 # PROP Ignore_Default_Tool 1
 # Begin Custom Build
-IntDir=.\..\_Bins\Release
+IntDir=.\..\_Bins\Release\timer
 InputPath=.\tmsfreq.asm
 InputName=tmsfreq
 
@@ -530,7 +530,7 @@ SOURCE=.\tmsper.asm
 
 # PROP Ignore_Default_Tool 1
 # Begin Custom Build
-IntDir=.\..\_Bins\Release
+IntDir=.\..\_Bins\Release\timer
 InputPath=.\tmsper.asm
 InputName=tmsper
 

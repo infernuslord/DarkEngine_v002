@@ -1,11 +1,11 @@
 // $Header: x:/prj/tech/libsrc/dev2d/RCS/f16f16.c 1.8 1997/02/17 14:48:45 KEVIN Exp $
 // Routines for drawing flat16 bitmaps into a flat16 canvas.
 
-#include <dbg.h>
-#include <astring.h>
+#include "lg_dbg.h"
+#include "lg_astring.h"
 
 #include <grd.h>
-#include <bitmap.h>
+#include "lg_bitmap.h"
 #include <context.h>
 #include <f16il.h>
 

@@ -38,11 +38,11 @@ RSC=rc.exe
 # PROP Use_MFC 0
 # PROP Use_Debug_Libraries 0
 # PROP Output_Dir "..\_Libs\Release"
-# PROP Intermediate_Dir "..\_Bins\Release"
+# PROP Intermediate_Dir "..\_Bins\Release\sound"
 # PROP Target_Dir ""
 # ADD BASE CPP /nologo /W3 /GX /O2 /D "NDEBUG" /D "_MBCS" /D "_LIB" /YX /FD /c
-# ADD CPP /nologo /Zp1 /MT /W3 /GX /O2 /I "." /I "..\..\h" /I "..\lg" /I "..\actmovie" /I "..\appcore" /I "..\arq" /I "..\compapis" /I "..\comtools" /I "..\config" /I "..\cpptools" /I "..\darkloop" /I "..\dev2d" /I "..\dispdev" /I "..\dstruct" /I "..\dump" /I "..\fix" /I "..\font" /I "..\g2" /I "..\gadget" /I "..\gameshel" /I "..\gfile" /I "..\inputbnd" /I "..\lgalloc" /I "..\lgd3d" /I "..\matrix" /I "..\md" /I "..\mm" /I "..\mp" /I "..\mprintf" /I "..\namedres" /I "..\net" /I "..\prof" /I "..\r3d" /I "..\random" /I "..\recorder" /I "..\ref" /I "..\res" /I "..\rnd" /I "..\script" /I "..\sdesc" /I "..\skel" /I "..\sndsrc" /I "..\sndutil" /I "..\sound" /I "..\star" /I "..\tagfile" /I "..\templgen" /I "..\timer" /I "..\ui" /I "..\vec2" /I "..\..\winsrc\input" /I "..\..\..\3rdsrc\Qmix413" /I "..\..\..\3rdsrc\Aureal3d" /D "NDEBUG" /D "_MBCS" /D "_LIB" /FI "..\..\h\lg_types.h" /c
-# SUBTRACT CPP /X /u /Fr
+# ADD CPP /nologo /Zp1 /MT /W3 /GX /O2 /I "." /I "..\..\h" /I "..\lg" /I "..\actmovie" /I "..\appcore" /I "..\arq" /I "..\compapis" /I "..\comtools" /I "..\config" /I "..\cpptools" /I "..\darkloop" /I "..\dev2d" /I "..\dispdev" /I "..\dstruct" /I "..\dump" /I "..\fix" /I "..\font" /I "..\g2" /I "..\gadget" /I "..\gameshel" /I "..\gfile" /I "..\inputbnd" /I "..\lgalloc" /I "..\lgd3d" /I "..\matrix" /I "..\md" /I "..\mm" /I "..\mp" /I "..\mprintf" /I "..\namedres" /I "..\net" /I "..\prof" /I "..\r3d" /I "..\random" /I "..\recorder" /I "..\ref" /I "..\res" /I "..\rnd" /I "..\script" /I "..\sdesc" /I "..\skel" /I "..\sndsrc" /I "..\sndutil" /I "..\sound" /I "..\star" /I "..\tagfile" /I "..\templgen" /I "..\timer" /I "..\ui" /I "..\vec2" /I "..\..\winsrc\input" /I "..\..\..\3rdsrc\Qmix413" /I "..\..\..\3rdsrc\Aureal3d" /D "NDEBUG" /D "_MBCS" /D "_LIB" /Fr /FI "..\..\h\lg_types.h" /c
+# SUBTRACT CPP /X /u
 # ADD BASE RSC /l 0x816 /d "NDEBUG"
 # ADD RSC /l 0x809 /d "NDEBUG"
 BSC32=bscmake.exe
@@ -102,7 +102,7 @@ DEP_CPP_DMIXE=\
 	"..\dispdev\wdispapi.h"\
 	"..\dispdev\wdspguid.h"\
 	"..\fix\fix.h"\
-	"..\lg\dbg.h"\
+	"..\lg\lg_dbg.h"\
 	"..\lg\lgassert.h"\
 	"..\lg\lglog.h"\
 	"..\lg\thrdtool.h"\
@@ -135,8 +135,8 @@ DEP_CPP_DSAMP=\
 	"..\..\h\lg_types.h"\
 	"..\comtools\comtools.h"\
 	"..\fix\fix.h"\
-	"..\lg\dbg.h"\
 	"..\lg\lg.h"\
+	"..\lg\lg_dbg.h"\
 	"..\lg\lgalt.h"\
 	"..\lg\lgassert.h"\
 	"..\lg\lglocmsg.h"\
@@ -189,8 +189,8 @@ DEP_CPP_FADE_=\
 	"..\..\h\lg_types.h"\
 	"..\comtools\comtools.h"\
 	"..\fix\fix.h"\
-	"..\lg\dbg.h"\
 	"..\lg\lg.h"\
+	"..\lg\lg_dbg.h"\
 	"..\lg\lgalt.h"\
 	"..\lg\lgassert.h"\
 	"..\lg\lglocmsg.h"\
@@ -239,8 +239,8 @@ DEP_CPP_MIDIP=\
 	"..\..\h\prikind.h"\
 	"..\comtools\comtools.h"\
 	"..\cpptools\dynfunc.h"\
-	"..\lg\dbg.h"\
 	"..\lg\lg.h"\
+	"..\lg\lg_dbg.h"\
 	"..\lg\lgalt.h"\
 	"..\lg\lgassert.h"\
 	"..\lg\lgdatapath.h"\
@@ -283,7 +283,7 @@ DEP_CPP_MIXER=\
 	"..\dispdev\wdispapi.h"\
 	"..\dispdev\wdspguid.h"\
 	"..\fix\fix.h"\
-	"..\lg\dbg.h"\
+	"..\lg\lg_dbg.h"\
 	"..\lg\lgassert.h"\
 	"..\lg\lglog.h"\
 	"..\lg\thrdtool.h"\
@@ -326,7 +326,7 @@ DEP_CPP_QMIXE=\
 	"..\dispdev\wdispapi.h"\
 	"..\dispdev\wdspguid.h"\
 	"..\fix\fix.h"\
-	"..\lg\dbg.h"\
+	"..\lg\lg_dbg.h"\
 	"..\lg\lgassert.h"\
 	"..\lg\lglog.h"\
 	"..\lg\thrdtool.h"\
@@ -358,8 +358,8 @@ DEP_CPP_QSAMP=\
 	"..\..\h\lg_types.h"\
 	"..\comtools\comtools.h"\
 	"..\fix\fix.h"\
-	"..\lg\dbg.h"\
 	"..\lg\lg.h"\
+	"..\lg\lg_dbg.h"\
 	"..\lg\lgalt.h"\
 	"..\lg\lgassert.h"\
 	"..\lg\lglocmsg.h"\
@@ -394,8 +394,8 @@ DEP_CPP_SAMPL=\
 	"..\..\h\lg_types.h"\
 	"..\comtools\comtools.h"\
 	"..\fix\fix.h"\
-	"..\lg\dbg.h"\
 	"..\lg\lg.h"\
+	"..\lg\lg_dbg.h"\
 	"..\lg\lgalt.h"\
 	"..\lg\lgassert.h"\
 	"..\lg\lglocmsg.h"\
@@ -429,8 +429,8 @@ DEP_CPP_SNDFM=\
 	"..\..\h\lg_types.h"\
 	"..\comtools\comtools.h"\
 	"..\fix\fix.h"\
-	"..\lg\dbg.h"\
 	"..\lg\lg.h"\
+	"..\lg\lg_dbg.h"\
 	"..\lg\lgalt.h"\
 	"..\lg\lgassert.h"\
 	"..\lg\lglocmsg.h"\
@@ -481,8 +481,8 @@ SOURCE=.\waildynf.cpp
 DEP_CPP_WAILD=\
 	"..\..\h\lg_types.h"\
 	"..\cpptools\dynfunc.h"\
-	"..\lg\dbg.h"\
 	"..\lg\lg.h"\
+	"..\lg\lg_dbg.h"\
 	"..\lg\lgalt.h"\
 	"..\lg\lgassert.h"\
 	"..\lg\lglocmsg.h"\

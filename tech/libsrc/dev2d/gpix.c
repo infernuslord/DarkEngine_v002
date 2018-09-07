@@ -1,7 +1,7 @@
 // $Header: x:/prj/tech/libsrc/dev2d/RCS/gpix.c 1.1 1996/07/23 09:52:42 KEVIN Exp $
 
 #include <grs.h>
-#include <bitmap.h>
+#include "lg_bitmap.h"
 #include <grnull.h>
 int gr_get_pixel_bm(grs_bitmap *bm, int x, int y)
 {
