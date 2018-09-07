@@ -31,7 +31,7 @@
  */
  
  // XXX Chaos
- // Renamed from error.h lgerror.h
+ // Renamed from error.h lgerror.h and back to error. Include file with "..\..\h\error.h"
 
 #ifndef __ERROR_H
 #define __ERROR_H

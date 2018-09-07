@@ -42,7 +42,7 @@ RSC=rc.exe
 # PROP Target_Dir ""
 # ADD BASE CPP /nologo /W3 /GX /O2 /D "NDEBUG" /D "_MBCS" /D "_LIB" /YX /FD /c
 # ADD CPP /nologo /Zp1 /MT /W3 /GX /O2 /I "." /I "..\..\h" /I "..\lg" /I "..\actmovie" /I "..\appcore" /I "..\arq" /I "..\compapis" /I "..\comtools" /I "..\config" /I "..\cpptools" /I "..\darkloop" /I "..\dev2d" /I "..\dispdev" /I "..\dstruct" /I "..\dump" /I "..\fix" /I "..\font" /I "..\g2" /I "..\gadget" /I "..\gameshel" /I "..\gfile" /I "..\inputbnd" /I "..\lgalloc" /I "..\lgd3d" /I "..\matrix" /I "..\md" /I "..\mm" /I "..\mp" /I "..\mprintf" /I "..\namedres" /I "..\net" /I "..\prof" /I "..\r3d" /I "..\random" /I "..\recorder" /I "..\ref" /I "..\res" /I "..\rnd" /I "..\script" /I "..\sdesc" /I "..\skel" /I "..\sndsrc" /I "..\sndutil" /I "..\sound" /I "..\star" /I "..\tagfile" /I "..\templgen" /I "..\timer" /I "..\ui" /I "..\vec2" /I "..\..\winsrc\input" /D "NDEBUG" /D "_MBCS" /D "_LIB" /FI "..\..\h\lg_types.h" /c
-# SUBTRACT CPP /X /u /FA<none> /Fr
+# SUBTRACT CPP /X /u /Fr
 # ADD BASE RSC /l 0x816 /d "NDEBUG"
 # ADD RSC /l 0x809 /d "NDEBUG"
 BSC32=bscmake.exe
@@ -224,24 +224,6 @@ DEP_CPP_MEMCO=\
 	".\poolimp.h"\
 	".\primallc.h"\
 	".\stdalloc.h"\
-	
-
-!IF  "$(CFG)" == "lgalloc - Win32 Release"
-
-!ELSEIF  "$(CFG)" == "lgalloc - Win32 Debug"
-
-!ENDIF 
-
-# End Source File
-# Begin Source File
-
-SOURCE=.\memtest.cpp
-DEP_CPP_MEMTE=\
-	"..\..\h\lg_types.h"\
-	"..\comtools\comtools.h"\
-	".\allocapi.h"\
-	".\allocovr.h"\
-	".\mallocdb.h"\
 	
 
 !IF  "$(CFG)" == "lgalloc - Win32 Release"
@@ -535,6 +517,30 @@ SOURCE=.\virtmem.h
 # Begin Group "Asm Inc Files"
 
 # PROP Default_Filter "inc"
+# End Group
+# Begin Group "Tests"
+
+# PROP Default_Filter ""
+# Begin Source File
+
+SOURCE=.\memtest.cpp
+DEP_CPP_MEMTE=\
+	"..\..\h\lg_types.h"\
+	"..\comtools\comtools.h"\
+	".\allocapi.h"\
+	".\allocovr.h"\
+	".\mallocdb.h"\
+	
+
+!IF  "$(CFG)" == "lgalloc - Win32 Release"
+
+# PROP Exclude_From_Build 1
+
+!ELSEIF  "$(CFG)" == "lgalloc - Win32 Debug"
+
+!ENDIF 
+
+# End Source File
 # End Group
 # End Target
 # End Project

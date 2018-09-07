@@ -164,6 +164,17 @@ SOURCE=.\star3d.asm
 
 !IF  "$(CFG)" == "star - Win32 Release"
 
+# PROP Ignore_Default_Tool 1
+# Begin Custom Build
+IntDir=.\..\_Bins\Release
+InputPath=.\star3d.asm
+InputName=star3d
+
+"$(IntDir)\$(InputName).obj" : $(SOURCE) "$(INTDIR)" "$(OUTDIR)"
+	"C:\Program Files (x86)\Microsoft Visual Studio\VC98\Bin\ml.exe" /nologo /I"..\..\inc" /I"..\lg" /I"..\lgalloc" /I"..\fix" /I"..\dev2d" /I"..\g2" /c /Zi /Fo$(IntDir)\$(InputName).obj $(InputName).asm
+
+# End Custom Build
+
 !ELSEIF  "$(CFG)" == "star - Win32 Debug"
 
 # PROP Exclude_From_Build 1

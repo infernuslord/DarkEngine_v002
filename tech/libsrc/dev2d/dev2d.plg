@@ -6,105 +6,7 @@
 --------------------Configuration: dev2d - Win32 Release--------------------
 </h3>
 <h3>Command Lines</h3>
-Creating temporary file "C:\Users\Infernus\AppData\Local\Temp\RSP6CC3.tmp" with contents
-[
-/nologo /Zp1 /MT /W3 /GX /O2 /I "." /I "..\..\h" /I "..\lg" /I "..\actmovie" /I "..\appcore" /I "..\arq" /I "..\compapis" /I "..\comtools" /I "..\config" /I "..\cpptools" /I "..\darkloop" /I "..\dev2d" /I "..\dispdev" /I "..\dstruct" /I "..\dump" /I "..\fix" /I "..\font" /I "..\g2" /I "..\gadget" /I "..\gameshel" /I "..\gfile" /I "..\inputbnd" /I "..\lgalloc" /I "..\lgd3d" /I "..\matrix" /I "..\md" /I "..\mm" /I "..\mp" /I "..\mprintf" /I "..\namedres" /I "..\net" /I "..\prof" /I "..\r3d" /I "..\random" /I "..\recorder" /I "..\ref" /I "..\res" /I "..\rnd" /I "..\script" /I "..\sdesc" /I "..\skel" /I "..\sndsrc" /I "..\sndutil" /I "..\sound" /I "..\star" /I "..\tagfile" /I "..\templgen" /I "..\timer" /I "..\ui" /I "..\vec2" /I "..\..\winsrc\input" /D "NDEBUG" /D "_MBCS" /D "_LIB" /Fo"..\_Bins\Release/" /FI "..\..\h\lg_types.h" /c 
-"D:\Source\DarkEngine\prj\tech\libsrc\dev2d\astring.c"
-"D:\Source\DarkEngine\prj\tech\libsrc\dev2d\bank.c"
-"D:\Source\DarkEngine\prj\tech\libsrc\dev2d\bitmap.c"
-"D:\Source\DarkEngine\prj\tech\libsrc\dev2d\bk8bm.c"
-"D:\Source\DarkEngine\prj\tech\libsrc\dev2d\bk8fl8.c"
-"D:\Source\DarkEngine\prj\tech\libsrc\dev2d\bk8hlin.c"
-"D:\Source\DarkEngine\prj\tech\libsrc\dev2d\bk8lin.c"
-"D:\Source\DarkEngine\prj\tech\libsrc\dev2d\bk8pix.c"
-"D:\Source\DarkEngine\prj\tech\libsrc\dev2d\bk8pix8.c"
-"D:\Source\DarkEngine\prj\tech\libsrc\dev2d\bk8vlin.c"
-"D:\Source\DarkEngine\prj\tech\libsrc\dev2d\blend.c"
-"D:\Source\DarkEngine\prj\tech\libsrc\dev2d\canvas.c"
-"D:\Source\DarkEngine\prj\tech\libsrc\dev2d\clpfl8.c"
-"D:\Source\DarkEngine\prj\tech\libsrc\dev2d\clut16.c"
-"D:\Source\DarkEngine\prj\tech\libsrc\dev2d\cominit.c"
-"D:\Source\DarkEngine\prj\tech\libsrc\dev2d\cpal.c"
-"D:\Source\DarkEngine\prj\tech\libsrc\dev2d\ddevblt.c"
-"D:\Source\DarkEngine\prj\tech\libsrc\dev2d\devstubs.c"
-"D:\Source\DarkEngine\prj\tech\libsrc\dev2d\f16bm.c"
-"D:\Source\DarkEngine\prj\tech\libsrc\dev2d\f16f16.c"
-"D:\Source\DarkEngine\prj\tech\libsrc\dev2d\f16fl8.c"
-"D:\Source\DarkEngine\prj\tech\libsrc\dev2d\f16hlin.c"
-"D:\Source\DarkEngine\prj\tech\libsrc\dev2d\f16lin.c"
-"D:\Source\DarkEngine\prj\tech\libsrc\dev2d\f16mono.c"
-"D:\Source\DarkEngine\prj\tech\libsrc\dev2d\f16pix.c"
-"D:\Source\DarkEngine\prj\tech\libsrc\dev2d\f16pix16.c"
-"D:\Source\DarkEngine\prj\tech\libsrc\dev2d\f16pix8.c"
-"D:\Source\DarkEngine\prj\tech\libsrc\dev2d\f16rsd8.c"
-"D:\Source\DarkEngine\prj\tech\libsrc\dev2d\f16vlin.c"
-"D:\Source\DarkEngine\prj\tech\libsrc\dev2d\fcolor.c"
-"D:\Source\DarkEngine\prj\tech\libsrc\dev2d\fl8bk8.c"
-"D:\Source\DarkEngine\prj\tech\libsrc\dev2d\fl8bm.c"
-"D:\Source\DarkEngine\prj\tech\libsrc\dev2d\fl8fl8.c"
-"D:\Source\DarkEngine\prj\tech\libsrc\dev2d\fl8hlin.c"
-"D:\Source\DarkEngine\prj\tech\libsrc\dev2d\fl8lin.c"
-"D:\Source\DarkEngine\prj\tech\libsrc\dev2d\fl8mono.c"
-"D:\Source\DarkEngine\prj\tech\libsrc\dev2d\fl8mx.c"
-"D:\Source\DarkEngine\prj\tech\libsrc\dev2d\fl8pix.c"
-"D:\Source\DarkEngine\prj\tech\libsrc\dev2d\fl8pix8.c"
-"D:\Source\DarkEngine\prj\tech\libsrc\dev2d\fl8rsd8.c"
-"D:\Source\DarkEngine\prj\tech\libsrc\dev2d\fl8vlin.c"
-"D:\Source\DarkEngine\prj\tech\libsrc\dev2d\gdbm.c"
-"D:\Source\DarkEngine\prj\tech\libsrc\dev2d\gdgbm.c"
-"D:\Source\DarkEngine\prj\tech\libsrc\dev2d\gdlin.c"
-"D:\Source\DarkEngine\prj\tech\libsrc\dev2d\gdpix.c"
-"D:\Source\DarkEngine\prj\tech\libsrc\dev2d\gdrect.c"
-"D:\Source\DarkEngine\prj\tech\libsrc\dev2d\gdtest.c"
-"D:\Source\DarkEngine\prj\tech\libsrc\dev2d\genbm.c"
-"D:\Source\DarkEngine\prj\tech\libsrc\dev2d\genf16.c"
-"D:\Source\DarkEngine\prj\tech\libsrc\dev2d\genf16u.c"
-"D:\Source\DarkEngine\prj\tech\libsrc\dev2d\genfl8.c"
-"D:\Source\DarkEngine\prj\tech\libsrc\dev2d\genfl8u.c"
-"D:\Source\DarkEngine\prj\tech\libsrc\dev2d\genlin.c"
-"D:\Source\DarkEngine\prj\tech\libsrc\dev2d\genmono.c"
-"D:\Source\DarkEngine\prj\tech\libsrc\dev2d\genmonou.c"
-"D:\Source\DarkEngine\prj\tech\libsrc\dev2d\genmx.c"
-"D:\Source\DarkEngine\prj\tech\libsrc\dev2d\genrsd8.c"
-"D:\Source\DarkEngine\prj\tech\libsrc\dev2d\gpal.c"
-"D:\Source\DarkEngine\prj\tech\libsrc\dev2d\gpix.c"
-"D:\Source\DarkEngine\prj\tech\libsrc\dev2d\gr.c"
-"D:\Source\DarkEngine\prj\tech\libsrc\dev2d\grd.c"
-"D:\Source\DarkEngine\prj\tech\libsrc\dev2d\grmalloc.c"
-"D:\Source\DarkEngine\prj\tech\libsrc\dev2d\grnull.c"
-"D:\Source\DarkEngine\prj\tech\libsrc\dev2d\hflip.c"
-"D:\Source\DarkEngine\prj\tech\libsrc\dev2d\init.c"
-"D:\Source\DarkEngine\prj\tech\libsrc\dev2d\ipal.c"
-"D:\Source\DarkEngine\prj\tech\libsrc\dev2d\lpix.c"
-"D:\Source\DarkEngine\prj\tech\libsrc\dev2d\ltab.c"
-"D:\Source\DarkEngine\prj\tech\libsrc\dev2d\mode.c"
-"D:\Source\DarkEngine\prj\tech\libsrc\dev2d\mxbm.c"
-"D:\Source\DarkEngine\prj\tech\libsrc\dev2d\mxfl8.c"
-"D:\Source\DarkEngine\prj\tech\libsrc\dev2d\mxhlin.c"
-"D:\Source\DarkEngine\prj\tech\libsrc\dev2d\mxlatch.c"
-"D:\Source\DarkEngine\prj\tech\libsrc\dev2d\mxlin.c"
-"D:\Source\DarkEngine\prj\tech\libsrc\dev2d\mxpix.c"
-"D:\Source\DarkEngine\prj\tech\libsrc\dev2d\mxpix8.c"
-"D:\Source\DarkEngine\prj\tech\libsrc\dev2d\mxvlin.c"
-"D:\Source\DarkEngine\prj\tech\libsrc\dev2d\novinit.c"
-"D:\Source\DarkEngine\prj\tech\libsrc\dev2d\nulcnv.c"
-"D:\Source\DarkEngine\prj\tech\libsrc\dev2d\nulldfcn.c"
-"D:\Source\DarkEngine\prj\tech\libsrc\dev2d\pal.c"
-"D:\Source\DarkEngine\prj\tech\libsrc\dev2d\pal16.c"
-"D:\Source\DarkEngine\prj\tech\libsrc\dev2d\rsdcvt.c"
-"D:\Source\DarkEngine\prj\tech\libsrc\dev2d\screen.c"
-"D:\Source\DarkEngine\prj\tech\libsrc\dev2d\sfoc.c"
-"D:\Source\DarkEngine\prj\tech\libsrc\dev2d\smode.c"
-"D:\Source\DarkEngine\prj\tech\libsrc\dev2d\stastk.c"
-"D:\Source\DarkEngine\prj\tech\libsrc\dev2d\svgainit.c"
-"D:\Source\DarkEngine\prj\tech\libsrc\dev2d\tluctab.c"
-"D:\Source\DarkEngine\prj\tech\libsrc\dev2d\valloc.c"
-"D:\Source\DarkEngine\prj\tech\libsrc\dev2d\vesac.c"
-"D:\Source\DarkEngine\prj\tech\libsrc\dev2d\vgastate.c"
-"D:\Source\DarkEngine\prj\tech\libsrc\dev2d\vsastate.c"
-]
-Creating command line "cl.exe @C:\Users\Infernus\AppData\Local\Temp\RSP6CC3.tmp" 
-Creating temporary file "C:\Users\Infernus\AppData\Local\Temp\RSP6CC4.tmp" with contents
+Creating temporary file "C:\Users\Infernus\AppData\Local\Temp\RSP72F4.tmp" with contents
 [
 /nologo /out:"..\_Libs\Release\dev2d.lib" 
 \Source\DarkEngine\prj\tech\libsrc\_Bins\Release\astring.obj
@@ -200,132 +102,43 @@ Creating temporary file "C:\Users\Infernus\AppData\Local\Temp\RSP6CC4.tmp" with 
 \Source\DarkEngine\prj\tech\libsrc\_Bins\Release\vesac.obj
 \Source\DarkEngine\prj\tech\libsrc\_Bins\Release\vgastate.obj
 \Source\DarkEngine\prj\tech\libsrc\_Bins\Release\vsastate.obj
+\Source\DarkEngine\prj\tech\libsrc\_Bins\Release\cstring.obj
+\Source\DarkEngine\prj\tech\libsrc\_Bins\Release\f16f16c.obj
+\Source\DarkEngine\prj\tech\libsrc\_Bins\Release\f16f16l.obj
+\Source\DarkEngine\prj\tech\libsrc\_Bins\Release\f16fl8il.obj
+\Source\DarkEngine\prj\tech\libsrc\_Bins\Release\f16il.obj
+\Source\DarkEngine\prj\tech\libsrc\_Bins\Release\f16set.obj
+\Source\DarkEngine\prj\tech\libsrc\_Bins\Release\light.obj
+\Source\DarkEngine\prj\tech\libsrc\_Bins\Release\rsdblt.obj
+\Source\DarkEngine\prj\tech\libsrc\_Bins\Release\rsdblt16.obj
+\Source\DarkEngine\prj\tech\libsrc\_Bins\Release\rsdblt8.obj
+\Source\DarkEngine\prj\tech\libsrc\_Bins\Release\rsdunpck.obj
+\Source\DarkEngine\prj\tech\libsrc\_Bins\Release\vesaasm.obj
+\Source\DarkEngine\prj\tech\libsrc\_Bins\Release\vgaasm.obj
+\Source\DarkEngine\prj\tech\libsrc\_Bins\Release\vgasmod.obj
 ]
-Creating command line "link.exe -lib @C:\Users\Infernus\AppData\Local\Temp\RSP6CC4.tmp"
+Creating command line "link.exe -lib @C:\Users\Infernus\AppData\Local\Temp\RSP72F4.tmp"
 <h3>Output Window</h3>
-Compiling...
-astring.c
-bank.c
-bitmap.c
-bk8bm.c
-bk8fl8.c
-bk8hlin.c
-bk8lin.c
-bk8pix.c
-bk8pix8.c
-bk8vlin.c
-blend.c
-canvas.c
-D:\Source\DarkEngine\prj\tech\libsrc\dev2d\canvas.c(177) : warning C4005: 'min' : macro redefinition
-        C:\Platform SDK for Windows Server 2003 R2\Include\windef.h(193) : see previous definition of 'min'
-D:\Source\DarkEngine\prj\tech\libsrc\dev2d\canvas.c(178) : warning C4005: 'max' : macro redefinition
-        C:\Platform SDK for Windows Server 2003 R2\Include\windef.h(189) : see previous definition of 'max'
-clpfl8.c
-clut16.c
-cominit.c
-cpal.c
-ddevblt.c
-D:\Source\DarkEngine\prj\tech\libsrc\dev2d\ddevblt.c(66) : warning C4550: expression evaluates to a function which is missing an argument list
-devstubs.c
-f16bm.c
-f16f16.c
-D:\Source\DarkEngine\prj\tech\libsrc\dev2d\f16f16.c(32) : warning C4554: '&' : check operator precedence for possible error; use parentheses to clarify precedence
-Generating Code...
-Compiling...
-f16fl8.c
-f16hlin.c
-f16lin.c
-f16mono.c
-f16pix.c
-D:\Source\DarkEngine\prj\tech\libsrc\dev2d\f16pix.c(34) : warning C4550: expression evaluates to a function which is missing an argument list
-D:\Source\DarkEngine\prj\tech\libsrc\dev2d\f16pix.c(45) : warning C4550: expression evaluates to a function which is missing an argument list
-f16pix16.c
-f16pix8.c
-f16rsd8.c
-f16vlin.c
-fcolor.c
-fl8bk8.c
-fl8bm.c
-fl8fl8.c
-D:\Source\DarkEngine\prj\tech\libsrc\dev2d\fl8fl8.c(26) : warning C4554: '&' : check operator precedence for possible error; use parentheses to clarify precedence
-fl8hlin.c
-fl8lin.c
-fl8mono.c
-fl8mx.c
-fl8pix.c
-D:\Source\DarkEngine\prj\tech\libsrc\dev2d\fl8pix.c(31) : warning C4550: expression evaluates to a function which is missing an argument list
-fl8pix8.c
-fl8rsd8.c
-Generating Code...
-Compiling...
-fl8vlin.c
-gdbm.c
-gdgbm.c
-gdlin.c
-gdpix.c
-gdrect.c
-gdtest.c
-genbm.c
-genf16.c
-genf16u.c
-genfl8.c
-genfl8u.c
-genlin.c
-genmono.c
-genmonou.c
-genmx.c
-genrsd8.c
-gpal.c
-gpix.c
-gr.c
-Generating Code...
-Compiling...
-grd.c
-grmalloc.c
-D:\Source\DarkEngine\prj\tech\libsrc\dev2d\grmalloc.c(18) : warning C4028: formal parameter 1 different from declaration
-grnull.c
-hflip.c
-init.c
-ipal.c
-lpix.c
-D:\Source\DarkEngine\prj\tech\libsrc\dev2d\lpix.c(49) : warning C4550: expression evaluates to a function which is missing an argument list
-D:\Source\DarkEngine\prj\tech\libsrc\dev2d\lpix.c(55) : warning C4550: expression evaluates to a function which is missing an argument list
-D:\Source\DarkEngine\prj\tech\libsrc\dev2d\lpix.c(60) : warning C4550: expression evaluates to a function which is missing an argument list
-ltab.c
-mode.c
-mxbm.c
-mxfl8.c
-mxhlin.c
-mxlatch.c
-mxlin.c
-mxpix.c
-mxpix8.c
-mxvlin.c
-novinit.c
-nulcnv.c
-nulldfcn.c
-Generating Code...
-Compiling...
-pal.c
-pal16.c
-rsdcvt.c
-screen.c
-sfoc.c
-smode.c
-stastk.c
-svgainit.c
-tluctab.c
-valloc.c
-vesac.c
-vgastate.c
-vsastate.c
-Generating Code...
 Creating library...
+\Source\DarkEngine\prj\tech\libsrc\_Bins\Release\cstring.obj : warning LNK4033: converting object format from OMF to COFF
+\Source\DarkEngine\prj\tech\libsrc\_Bins\Release\f16f16c.obj : warning LNK4033: converting object format from OMF to COFF
+\Source\DarkEngine\prj\tech\libsrc\_Bins\Release\f16f16l.obj : warning LNK4033: converting object format from OMF to COFF
+\Source\DarkEngine\prj\tech\libsrc\_Bins\Release\f16fl8il.obj : warning LNK4033: converting object format from OMF to COFF
+\Source\DarkEngine\prj\tech\libsrc\_Bins\Release\f16il.obj : warning LNK4033: converting object format from OMF to COFF
+\Source\DarkEngine\prj\tech\libsrc\_Bins\Release\f16set.obj : warning LNK4033: converting object format from OMF to COFF
+\Source\DarkEngine\prj\tech\libsrc\_Bins\Release\light.obj : warning LNK4033: converting object format from OMF to COFF
+\Source\DarkEngine\prj\tech\libsrc\_Bins\Release\rsdblt.obj : warning LNK4033: converting object format from OMF to COFF
+\Source\DarkEngine\prj\tech\libsrc\_Bins\Release\rsdblt16.obj : warning LNK4033: converting object format from OMF to COFF
+\Source\DarkEngine\prj\tech\libsrc\_Bins\Release\rsdblt8.obj : warning LNK4033: converting object format from OMF to COFF
+\Source\DarkEngine\prj\tech\libsrc\_Bins\Release\rsdunpck.obj : warning LNK4033: converting object format from OMF to COFF
+\Source\DarkEngine\prj\tech\libsrc\_Bins\Release\vesaasm.obj : warning LNK4033: converting object format from OMF to COFF
+\Source\DarkEngine\prj\tech\libsrc\_Bins\Release\vgaasm.obj : warning LNK4033: converting object format from OMF to COFF
+\Source\DarkEngine\prj\tech\libsrc\_Bins\Release\vgasmod.obj : warning LNK4033: converting object format from OMF to COFF
 
 
 
 <h3>Results</h3>
-dev2d.lib - 0 error(s), 12 warning(s)
+dev2d.lib - 0 error(s), 14 warning(s)
 </pre>
 </body>
 </html>

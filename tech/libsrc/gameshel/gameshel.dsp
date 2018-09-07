@@ -86,45 +86,6 @@ LIB32=link.exe -lib
 # PROP Default_Filter "cpp;c;cxx;rc;def;r;odl;idl;hpj;bat"
 # Begin Source File
 
-SOURCE=.\dgshell.cpp
-DEP_CPP_DGSHE=\
-	"..\..\h\prikind.h"\
-	"..\compapis\gshelapi.h"\
-	"..\compapis\gshlguid.h"\
-	"..\compapis\pumpenum.h"\
-	"..\comtools\aggmemb.h"\
-	"..\comtools\comconn.h"\
-	"..\comtools\comtools.h"\
-	"..\comtools\constrid.h"\
-	"..\comtools\objcguid.h"\
-	"..\comtools\objcoll.h"\
-	"..\cpptools\dynarray.h"\
-	"..\cpptools\pdynarr.h"\
-	"..\lg\dbg.h"\
-	"..\lg\lg.h"\
-	"..\lg\lgalt.h"\
-	"..\lg\lgassert.h"\
-	"..\lg\lglocmsg.h"\
-	"..\lg\lglog.h"\
-	"..\lgalloc\memall.h"\
-	".\dgshell.h"\
-	
-NODEP_CPP_DGSHE=\
-	"..\lg\dbgmacro.h"\
-	"..\lgalloc\memmacro.h"\
-	
-
-!IF  "$(CFG)" == "gameshel - Win32 Release"
-
-# PROP Exclude_From_Build 1
-
-!ELSEIF  "$(CFG)" == "gameshel - Win32 Debug"
-
-!ENDIF 
-
-# End Source File
-# Begin Source File
-
 SOURCE=.\wgscreat.cpp
 DEP_CPP_WGSCR=\
 	"..\..\h\lg_types.h"\
@@ -372,6 +333,49 @@ SOURCE=.\wnshguid.h
 # Begin Group "Asm Inc Files"
 
 # PROP Default_Filter "inc"
+# End Group
+# Begin Group "Tests"
+
+# PROP Default_Filter ""
+# Begin Source File
+
+SOURCE=.\dgshell.cpp
+DEP_CPP_DGSHE=\
+	"..\..\h\prikind.h"\
+	"..\compapis\gshelapi.h"\
+	"..\compapis\gshlguid.h"\
+	"..\compapis\pumpenum.h"\
+	"..\comtools\aggmemb.h"\
+	"..\comtools\comconn.h"\
+	"..\comtools\comtools.h"\
+	"..\comtools\constrid.h"\
+	"..\comtools\objcguid.h"\
+	"..\comtools\objcoll.h"\
+	"..\cpptools\dynarray.h"\
+	"..\cpptools\pdynarr.h"\
+	"..\lg\dbg.h"\
+	"..\lg\lg.h"\
+	"..\lg\lgalt.h"\
+	"..\lg\lgassert.h"\
+	"..\lg\lglocmsg.h"\
+	"..\lg\lglog.h"\
+	"..\lgalloc\memall.h"\
+	".\dgshell.h"\
+	
+NODEP_CPP_DGSHE=\
+	"..\lg\dbgmacro.h"\
+	"..\lgalloc\memmacro.h"\
+	
+
+!IF  "$(CFG)" == "gameshel - Win32 Release"
+
+# PROP Exclude_From_Build 1
+
+!ELSEIF  "$(CFG)" == "gameshel - Win32 Debug"
+
+!ENDIF 
+
+# End Source File
 # End Group
 # End Target
 # End Project

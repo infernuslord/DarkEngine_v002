@@ -256,10 +256,46 @@ SOURCE=.\trigtab.h
 # Begin Source File
 
 SOURCE=.\fix_asm.asm
+
+!IF  "$(CFG)" == "fix - Win32 Release"
+
+# PROP Ignore_Default_Tool 1
+# Begin Custom Build
+IntDir=.\..\_Bins\Release
+InputPath=.\fix_asm.asm
+InputName=fix_asm
+
+"$(IntDir)\$(InputName).obj" : $(SOURCE) "$(INTDIR)" "$(OUTDIR)"
+	"C:\Program Files (x86)\Microsoft Visual Studio\VC98\Bin\ml.exe" /nologo /I"..\..\inc" /c /Zi /Fo$(IntDir)\$(InputName).obj $(InputName).asm
+
+# End Custom Build
+
+!ELSEIF  "$(CFG)" == "fix - Win32 Debug"
+
+!ENDIF 
+
 # End Source File
 # Begin Source File
 
 SOURCE=.\fixdiv.asm
+
+!IF  "$(CFG)" == "fix - Win32 Release"
+
+# PROP Ignore_Default_Tool 1
+# Begin Custom Build
+IntDir=.\..\_Bins\Release
+InputPath=.\fixdiv.asm
+InputName=fixdiv
+
+"$(IntDir)\$(InputName).obj" : $(SOURCE) "$(INTDIR)" "$(OUTDIR)"
+	"C:\Program Files (x86)\Microsoft Visual Studio\VC98\Bin\ml.exe" /nologo /I"..\..\inc" /I"..\dev2d" /c /Zi /Fo$(IntDir)\$(InputName).obj $(InputName).asm
+
+# End Custom Build
+
+!ELSEIF  "$(CFG)" == "fix - Win32 Debug"
+
+!ENDIF 
+
 # End Source File
 # End Group
 # Begin Group "Asm Inc Files"

@@ -88,6 +88,7 @@ LIB32=link.exe -lib
 
 SOURCE=.\aggddraw.cpp
 DEP_CPP_AGGDD=\
+	"..\..\h\lg_types.h"\
 	"..\..\h\prikind.h"\
 	"..\comtools\aggmemb.h"\
 	"..\comtools\comtools.h"\
@@ -108,8 +109,6 @@ NODEP_CPP_AGGDD=\
 	
 
 !IF  "$(CFG)" == "dispdev - Win32 Release"
-
-# PROP Exclude_From_Build 1
 
 !ELSEIF  "$(CFG)" == "dispdev - Win32 Debug"
 
@@ -141,31 +140,6 @@ DEP_CPP_DDDYN=\
 	
 
 !IF  "$(CFG)" == "dispdev - Win32 Release"
-
-!ELSEIF  "$(CFG)" == "dispdev - Win32 Debug"
-
-!ENDIF 
-
-# End Source File
-# Begin Source File
-
-SOURCE=.\ddisp.cpp
-DEP_CPP_DDISP=\
-	"..\..\h\prikind.h"\
-	"..\compapis\dispapi.h"\
-	"..\compapis\dispguid.h"\
-	"..\comtools\aggmemb.h"\
-	"..\comtools\comtools.h"\
-	"..\comtools\constrid.h"\
-	"..\comtools\objcguid.h"\
-	"..\comtools\objcoll.h"\
-	".\ddisp.h"\
-	".\dispbase.h"\
-	
-
-!IF  "$(CFG)" == "dispdev - Win32 Release"
-
-# PROP Exclude_From_Build 1
 
 !ELSEIF  "$(CFG)" == "dispdev - Win32 Debug"
 
@@ -683,6 +657,35 @@ SOURCE=.\wdspprov.h
 # Begin Group "Asm Inc Files"
 
 # PROP Default_Filter "inc"
+# End Group
+# Begin Group "Tests"
+
+# PROP Default_Filter ""
+# Begin Source File
+
+SOURCE=.\ddisp.cpp
+DEP_CPP_DDISP=\
+	"..\..\h\prikind.h"\
+	"..\compapis\dispapi.h"\
+	"..\compapis\dispguid.h"\
+	"..\comtools\aggmemb.h"\
+	"..\comtools\comtools.h"\
+	"..\comtools\constrid.h"\
+	"..\comtools\objcguid.h"\
+	"..\comtools\objcoll.h"\
+	".\ddisp.h"\
+	".\dispbase.h"\
+	
+
+!IF  "$(CFG)" == "dispdev - Win32 Release"
+
+# PROP Exclude_From_Build 1
+
+!ELSEIF  "$(CFG)" == "dispdev - Win32 Debug"
+
+!ENDIF 
+
+# End Source File
 # End Group
 # End Target
 # End Project

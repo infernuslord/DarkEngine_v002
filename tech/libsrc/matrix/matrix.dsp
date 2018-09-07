@@ -451,7 +451,16 @@ SOURCE=.\transasm.asm
 
 !IF  "$(CFG)" == "matrix - Win32 Release"
 
-# PROP Exclude_From_Build 1
+# PROP Ignore_Default_Tool 1
+# Begin Custom Build
+IntDir=.\..\_Bins\Release
+InputPath=.\transasm.asm
+InputName=transasm
+
+"$(IntDir)\$(InputName).obj" : $(SOURCE) "$(INTDIR)" "$(OUTDIR)"
+	"C:\Program Files (x86)\Microsoft Visual Studio\VC98\Bin\ml.exe" /nologo /I"..\..\inc" /I"..\dev2d" /c /Zi /Fo$(IntDir)\$(InputName).obj $(InputName).asm
+
+# End Custom Build
 
 !ELSEIF  "$(CFG)" == "matrix - Win32 Debug"
 

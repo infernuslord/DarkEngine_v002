@@ -87,10 +87,45 @@ LIB32=link.exe -lib
 # Begin Source File
 
 SOURCE=.\abmp.c
+DEP_CPP_ABMP_=\
+	"..\..\h\grspoint.h"\
+	"..\..\h\lg_types.h"\
+	"..\..\h\prikind.h"\
+	"..\comtools\comtools.h"\
+	"..\dev2d\dev2d.h"\
+	"..\fix\fix.h"\
+	"..\g2\g2.h"\
+	"..\lg\dbg.h"\
+	"..\lg\lg.h"\
+	"..\lg\lgalt.h"\
+	"..\lg\lgassert.h"\
+	"..\lg\lgdatapath.h"\
+	"..\lg\lglocmsg.h"\
+	"..\lg\lglog.h"\
+	"..\lgalloc\memall.h"\
+	"..\matrix\matrix.h"\
+	"..\matrix\matrixs.h"\
+	"..\matrix\mxang.h"\
+	"..\md\md.h"\
+	"..\md\mds.h"\
+	"..\r3d\r3d.h"\
+	"..\r3d\r3ds.h"\
+	"..\res\res.h"\
+	"..\res\restypes.h"\
+	"..\skel\skel.h"\
+	".\appbiped.h"\
+	".\motion.h"\
+	".\mplist.h"\
+	".\mpstack.h"\
+	".\multiped.h"\
+	".\qt.h"\
+	
+NODEP_CPP_ABMP_=\
+	"..\lg\dbgmacro.h"\
+	"..\lgalloc\memmacro.h"\
+	
 
 !IF  "$(CFG)" == "mp - Win32 Release"
-
-# PROP Exclude_From_Build 1
 
 !ELSEIF  "$(CFG)" == "mp - Win32 Debug"
 
@@ -100,10 +135,45 @@ SOURCE=.\abmp.c
 # Begin Source File
 
 SOURCE=.\abvm.c
+DEP_CPP_ABVM_=\
+	"..\..\h\grspoint.h"\
+	"..\..\h\lg_types.h"\
+	"..\..\h\prikind.h"\
+	"..\comtools\comtools.h"\
+	"..\dev2d\dev2d.h"\
+	"..\fix\fix.h"\
+	"..\g2\g2.h"\
+	"..\lg\dbg.h"\
+	"..\lg\lg.h"\
+	"..\lg\lgalt.h"\
+	"..\lg\lgassert.h"\
+	"..\lg\lgdatapath.h"\
+	"..\lg\lglocmsg.h"\
+	"..\lg\lglog.h"\
+	"..\lgalloc\memall.h"\
+	"..\matrix\matrix.h"\
+	"..\matrix\matrixs.h"\
+	"..\matrix\mxang.h"\
+	"..\md\md.h"\
+	"..\md\mds.h"\
+	"..\r3d\r3d.h"\
+	"..\r3d\r3ds.h"\
+	"..\res\res.h"\
+	"..\res\restypes.h"\
+	"..\skel\skel.h"\
+	".\appbiped.h"\
+	".\motion.h"\
+	".\mplist.h"\
+	".\mpstack.h"\
+	".\multiped.h"\
+	".\qt.h"\
+	
+NODEP_CPP_ABVM_=\
+	"..\lg\dbgmacro.h"\
+	"..\lgalloc\memmacro.h"\
+	
 
 !IF  "$(CFG)" == "mp - Win32 Release"
-
-# PROP Exclude_From_Build 1
 
 !ELSEIF  "$(CFG)" == "mp - Win32 Debug"
 
@@ -428,7 +498,7 @@ NODEP_CPP_MULTI=\
 # Begin Source File
 
 SOURCE=.\qt.c
-DEP_CPP_QT_C10=\
+DEP_CPP_QT_C14=\
 	"..\..\h\lg_types.h"\
 	"..\lg\dbg.h"\
 	"..\matrix\matrix.h"\
@@ -436,7 +506,7 @@ DEP_CPP_QT_C10=\
 	"..\matrix\mxang.h"\
 	".\qt.h"\
 	
-NODEP_CPP_QT_C10=\
+NODEP_CPP_QT_C14=\
 	"..\lg\dbgmacro.h"\
 	
 

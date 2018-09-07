@@ -213,55 +213,6 @@ NODEP_CPP_PLAYL=\
 # End Source File
 # Begin Source File
 
-SOURCE=.\playsrc.c
-DEP_CPP_PLAYS=\
-	"..\..\h\prikind.h"\
-	"..\compapis\appagg.h"\
-	"..\compapis\appapi.h"\
-	"..\compapis\pumpenum.h"\
-	"..\compapis\wappapi.h"\
-	"..\compapis\wappguid.h"\
-	"..\comtools\comtools.h"\
-	"..\fix\fix.h"\
-	"..\lg\dbg.h"\
-	"..\lg\lg.h"\
-	"..\lg\lgalt.h"\
-	"..\lg\lgassert.h"\
-	"..\lg\lgdatapath.h"\
-	"..\lg\lglocmsg.h"\
-	"..\lg\lglog.h"\
-	"..\lgalloc\memall.h"\
-	"..\mprintf\mprintf.h"\
-	"..\res\res.h"\
-	"..\res\restypes.h"\
-	"..\sndutil\sndutil.h"\
-	"..\sound\lgsndid.h"\
-	"..\sound\lgsound.h"\
-	"..\sound\sndfmt.h"\
-	"..\sound\timelog.h"\
-	"..\timer\timer.h"\
-	".\lgplaylist.h"\
-	".\sndsrc.h"\
-	".\sndsrcid.h"\
-	".\utilmain.h"\
-	
-NODEP_CPP_PLAYS=\
-	"..\..\h\resapilg.h"\
-	"..\lg\dbgmacro.h"\
-	"..\lgalloc\memmacro.h"\
-	
-
-!IF  "$(CFG)" == "sndsrc - Win32 Release"
-
-# PROP Exclude_From_Build 1
-
-!ELSEIF  "$(CFG)" == "sndsrc - Win32 Debug"
-
-!ENDIF 
-
-# End Source File
-# Begin Source File
-
 SOURCE=.\refill.cpp
 DEP_CPP_REFIL=\
 	"..\..\h\lg_types.h"\
@@ -423,36 +374,6 @@ DEP_CPP_SNDSRC=\
 !ENDIF 
 
 # End Source File
-# Begin Source File
-
-SOURCE=.\utilmain.c
-DEP_CPP_UTILM=\
-	"..\..\h\lg_types.h"\
-	"..\comtools\comtools.h"\
-	"..\lg\dbg.h"\
-	"..\lg\lg.h"\
-	"..\lg\lgalt.h"\
-	"..\lg\lgassert.h"\
-	"..\lg\lglocmsg.h"\
-	"..\lg\lglog.h"\
-	"..\lgalloc\memall.h"\
-	"..\mprintf\mprintf.h"\
-	"..\sound\lgsndid.h"\
-	"..\sound\lgsound.h"\
-	".\utilmain.h"\
-	
-NODEP_CPP_UTILM=\
-	"..\lg\dbgmacro.h"\
-	"..\lgalloc\memmacro.h"\
-	
-
-!IF  "$(CFG)" == "sndsrc - Win32 Release"
-
-!ELSEIF  "$(CFG)" == "sndsrc - Win32 Debug"
-
-!ENDIF 
-
-# End Source File
 # End Group
 # Begin Group "Header Files"
 
@@ -497,6 +418,92 @@ SOURCE=.\utilmain.h
 # Begin Group "Asm Inc Files"
 
 # PROP Default_Filter "inc"
+# End Group
+# Begin Group "Tests"
+
+# PROP Default_Filter ""
+# Begin Source File
+
+SOURCE=.\playsrc.c
+DEP_CPP_PLAYS=\
+	"..\..\h\lg_types.h"\
+	"..\..\h\prikind.h"\
+	"..\compapis\appagg.h"\
+	"..\compapis\appapi.h"\
+	"..\compapis\pumpenum.h"\
+	"..\compapis\wappapi.h"\
+	"..\compapis\wappguid.h"\
+	"..\comtools\comtools.h"\
+	"..\fix\fix.h"\
+	"..\lg\dbg.h"\
+	"..\lg\lg.h"\
+	"..\lg\lgalt.h"\
+	"..\lg\lgassert.h"\
+	"..\lg\lgdatapath.h"\
+	"..\lg\lglocmsg.h"\
+	"..\lg\lglog.h"\
+	"..\lgalloc\memall.h"\
+	"..\mprintf\mprintf.h"\
+	"..\namedres\resapilg.h"\
+	"..\res\res.h"\
+	"..\res\restypes.h"\
+	"..\sndutil\sndutil.h"\
+	"..\sound\lgsndid.h"\
+	"..\sound\lgsound.h"\
+	"..\sound\sndfmt.h"\
+	"..\sound\timelog.h"\
+	"..\timer\timer.h"\
+	".\lgplaylist.h"\
+	".\sndsrc.h"\
+	".\sndsrcid.h"\
+	".\utilmain.h"\
+	
+NODEP_CPP_PLAYS=\
+	"..\lg\dbgmacro.h"\
+	"..\lgalloc\memmacro.h"\
+	
+
+!IF  "$(CFG)" == "sndsrc - Win32 Release"
+
+# PROP Exclude_From_Build 1
+
+!ELSEIF  "$(CFG)" == "sndsrc - Win32 Debug"
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\utilmain.c
+DEP_CPP_UTILM=\
+	"..\..\h\lg_types.h"\
+	"..\comtools\comtools.h"\
+	"..\lg\dbg.h"\
+	"..\lg\lg.h"\
+	"..\lg\lgalt.h"\
+	"..\lg\lgassert.h"\
+	"..\lg\lglocmsg.h"\
+	"..\lg\lglog.h"\
+	"..\lgalloc\memall.h"\
+	"..\mprintf\mprintf.h"\
+	"..\sound\lgsndid.h"\
+	"..\sound\lgsound.h"\
+	".\utilmain.h"\
+	
+NODEP_CPP_UTILM=\
+	"..\lg\dbgmacro.h"\
+	"..\lgalloc\memmacro.h"\
+	
+
+!IF  "$(CFG)" == "sndsrc - Win32 Release"
+
+# PROP Exclude_From_Build 1
+
+!ELSEIF  "$(CFG)" == "sndsrc - Win32 Debug"
+
+!ENDIF 
+
+# End Source File
 # End Group
 # End Target
 # End Project

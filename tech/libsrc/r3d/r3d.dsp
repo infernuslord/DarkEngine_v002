@@ -629,40 +629,6 @@ NODEP_CPP_OBJEC=\
 # End Source File
 # Begin Source File
 
-SOURCE=.\polytest.c
-DEP_CPP_POLYT=\
-	"..\..\h\fault.h"\
-	"..\..\h\grspoint.h"\
-	"..\fix\fix.h"\
-	"..\lg\dbg.h"\
-	"..\lg\lg.h"\
-	"..\lg\lgalt.h"\
-	"..\lg\lgassert.h"\
-	"..\lg\lglocmsg.h"\
-	"..\lg\lglog.h"\
-	"..\lgalloc\memall.h"\
-	"..\matrix\matrix.h"\
-	"..\matrix\matrixs.h"\
-	"..\matrix\mxang.h"\
-	".\r3d.h"\
-	".\r3ds.h"\
-	
-NODEP_CPP_POLYT=\
-	"..\lg\dbgmacro.h"\
-	"..\lgalloc\memmacro.h"\
-	
-
-!IF  "$(CFG)" == "r3d - Win32 Release"
-
-# PROP Exclude_From_Build 1
-
-!ELSEIF  "$(CFG)" == "r3d - Win32 Debug"
-
-!ENDIF 
-
-# End Source File
-# Begin Source File
-
 SOURCE=.\prim.c
 DEP_CPP_PRIM_=\
 	"..\..\h\grspoint.h"\
@@ -1428,6 +1394,17 @@ SOURCE=.\projfast.asm
 
 !IF  "$(CFG)" == "r3d - Win32 Release"
 
+# PROP Ignore_Default_Tool 1
+# Begin Custom Build
+IntDir=.\..\_Bins\Release
+InputPath=.\projfast.asm
+InputName=projfast
+
+"$(IntDir)\$(InputName).obj" : $(SOURCE) "$(INTDIR)" "$(OUTDIR)"
+	"C:\Program Files (x86)\Microsoft Visual Studio\VC98\Bin\ml.exe" /nologo /I"..\..\inc" /I"..\dev2d" /c /Zi /Fo$(IntDir)\$(InputName).obj $(InputName).asm
+
+# End Custom Build
+
 !ELSEIF  "$(CFG)" == "r3d - Win32 Debug"
 
 # PROP Exclude_From_Build 1
@@ -1446,6 +1423,44 @@ SOURCE=.\ctxts.inc
 # Begin Source File
 
 SOURCE=.\r3spoint.inc
+# End Source File
+# End Group
+# Begin Group "Tests"
+
+# PROP Default_Filter ""
+# Begin Source File
+
+SOURCE=.\polytest.c
+DEP_CPP_POLYT=\
+	"..\..\h\fault.h"\
+	"..\..\h\grspoint.h"\
+	"..\fix\fix.h"\
+	"..\lg\dbg.h"\
+	"..\lg\lg.h"\
+	"..\lg\lgalt.h"\
+	"..\lg\lgassert.h"\
+	"..\lg\lglocmsg.h"\
+	"..\lg\lglog.h"\
+	"..\lgalloc\memall.h"\
+	"..\matrix\matrix.h"\
+	"..\matrix\matrixs.h"\
+	"..\matrix\mxang.h"\
+	".\r3d.h"\
+	".\r3ds.h"\
+	
+NODEP_CPP_POLYT=\
+	"..\lg\dbgmacro.h"\
+	"..\lgalloc\memmacro.h"\
+	
+
+!IF  "$(CFG)" == "r3d - Win32 Release"
+
+# PROP Exclude_From_Build 1
+
+!ELSEIF  "$(CFG)" == "r3d - Win32 Debug"
+
+!ENDIF 
+
 # End Source File
 # End Group
 # End Target

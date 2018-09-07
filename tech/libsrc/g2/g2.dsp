@@ -2442,6 +2442,17 @@ SOURCE=.\chkedgeb.asm
 
 !IF  "$(CFG)" == "g2 - Win32 Release"
 
+# PROP Ignore_Default_Tool 1
+# Begin Custom Build
+IntDir=.\..\_Bins\Release
+InputPath=.\chkedgeb.asm
+InputName=chkedgeb
+
+"$(IntDir)\$(InputName).obj" : $(SOURCE) "$(INTDIR)" "$(OUTDIR)"
+	"C:\Program Files (x86)\Microsoft Visual Studio\VC98\Bin\ml.exe" /nologo /I"..\..\inc" /I"..\dev2d" /I"..\fix" /c /Zi /Fo$(IntDir)\$(InputName).obj $(InputName).asm
+
+# End Custom Build
+
 !ELSEIF  "$(CFG)" == "g2 - Win32 Debug"
 
 # PROP Exclude_From_Build 1
@@ -2454,6 +2465,17 @@ SOURCE=.\chkedgeb.asm
 SOURCE=.\chkedges.asm
 
 !IF  "$(CFG)" == "g2 - Win32 Release"
+
+# PROP Ignore_Default_Tool 1
+# Begin Custom Build
+IntDir=.\..\_Bins\Release
+InputPath=.\chkedges.asm
+InputName=chkedges
+
+"$(IntDir)\$(InputName).obj" : $(SOURCE) "$(INTDIR)" "$(OUTDIR)"
+	"C:\Program Files (x86)\Microsoft Visual Studio\VC98\Bin\ml.exe" /nologo /I"..\..\inc" /I"..\dev2d" /I"..\fix" /c /Zi /Fo$(IntDir)\$(InputName).obj $(InputName).asm
+
+# End Custom Build
 
 !ELSEIF  "$(CFG)" == "g2 - Win32 Debug"
 
@@ -2468,6 +2490,17 @@ SOURCE=.\co88il.asm
 
 !IF  "$(CFG)" == "g2 - Win32 Release"
 
+# PROP Ignore_Default_Tool 1
+# Begin Custom Build
+IntDir=.\..\_Bins\Release
+InputPath=.\co88il.asm
+InputName=co88il
+
+"$(IntDir)\$(InputName).obj" : $(SOURCE) "$(INTDIR)" "$(OUTDIR)"
+	"C:\Program Files (x86)\Microsoft Visual Studio\VC98\Bin\ml.exe" /nologo /I"..\..\inc" /I"..\dev2d" /I"..\fix" /c /Zi /Fo$(IntDir)\$(InputName).obj $(InputName).asm
+
+# End Custom Build
+
 !ELSEIF  "$(CFG)" == "g2 - Win32 Debug"
 
 # PROP Exclude_From_Build 1
@@ -2480,6 +2513,17 @@ SOURCE=.\co88il.asm
 SOURCE=.\fl8lo2wi.asm
 
 !IF  "$(CFG)" == "g2 - Win32 Release"
+
+# PROP Ignore_Default_Tool 1
+# Begin Custom Build
+IntDir=.\..\_Bins\Release
+InputPath=.\fl8lo2wi.asm
+InputName=fl8lo2wi
+
+"$(IntDir)\$(InputName).obj" : $(SOURCE) "$(INTDIR)" "$(OUTDIR)"
+	"C:\Program Files (x86)\Microsoft Visual Studio\VC98\Bin\ml.exe" /nologo /I"..\..\inc" /I"..\dev2d" /I"..\fix" /c /Zi /Fo$(IntDir)\$(InputName).obj $(InputName).asm
+
+# End Custom Build
 
 !ELSEIF  "$(CFG)" == "g2 - Win32 Debug"
 
@@ -2494,6 +2538,17 @@ SOURCE=.\fl8nni.asm
 
 !IF  "$(CFG)" == "g2 - Win32 Release"
 
+# PROP Ignore_Default_Tool 1
+# Begin Custom Build
+IntDir=.\..\_Bins\Release
+InputPath=.\fl8nni.asm
+InputName=fl8nni
+
+"$(IntDir)\$(InputName).obj" : $(SOURCE) "$(INTDIR)" "$(OUTDIR)"
+	"C:\Program Files (x86)\Microsoft Visual Studio\VC98\Bin\ml.exe" /nologo /I"..\..\inc" /I"..\dev2d" /I"..\fix" /c /Zi /Fo$(IntDir)\$(InputName).obj $(InputName).asm
+
+# End Custom Build
+
 !ELSEIF  "$(CFG)" == "g2 - Win32 Debug"
 
 # PROP Exclude_From_Build 1
@@ -2506,6 +2561,17 @@ SOURCE=.\fl8nni.asm
 SOURCE=.\fl8o2ni.asm
 
 !IF  "$(CFG)" == "g2 - Win32 Release"
+
+# PROP Ignore_Default_Tool 1
+# Begin Custom Build
+IntDir=.\..\_Bins\Release
+InputPath=.\fl8o2ni.asm
+InputName=fl8o2ni
+
+"$(IntDir)\$(InputName).obj" : $(SOURCE) "$(INTDIR)" "$(OUTDIR)"
+	"C:\Program Files (x86)\Microsoft Visual Studio\VC98\Bin\ml.exe" /nologo /I"..\..\inc" /I"..\dev2d" /I"..\fix" /c /Zi /Fo$(IntDir)\$(InputName).obj $(InputName).asm
+
+# End Custom Build
 
 !ELSEIF  "$(CFG)" == "g2 - Win32 Debug"
 
@@ -2520,6 +2586,17 @@ SOURCE=.\fl8o2wi.asm
 
 !IF  "$(CFG)" == "g2 - Win32 Release"
 
+# PROP Ignore_Default_Tool 1
+# Begin Custom Build
+IntDir=.\..\_Bins\Release
+InputPath=.\fl8o2wi.asm
+InputName=fl8o2wi
+
+"$(IntDir)\$(InputName).obj" : $(SOURCE) "$(INTDIR)" "$(OUTDIR)"
+	"C:\Program Files (x86)\Microsoft Visual Studio\VC98\Bin\ml.exe" /nologo /I"..\..\inc" /I"..\dev2d" /I"..\fix" /c /Zi /Fo$(IntDir)\$(InputName).obj $(InputName).asm
+
+# End Custom Build
+
 !ELSEIF  "$(CFG)" == "g2 - Win32 Debug"
 
 # PROP Exclude_From_Build 1
@@ -2532,6 +2609,17 @@ SOURCE=.\fl8o2wi.asm
 SOURCE=.\lo816il.asm
 
 !IF  "$(CFG)" == "g2 - Win32 Release"
+
+# PROP Ignore_Default_Tool 1
+# Begin Custom Build
+IntDir=.\..\_Bins\Release
+InputPath=.\lo816il.asm
+InputName=lo816il
+
+"$(IntDir)\$(InputName).obj" : $(SOURCE) "$(INTDIR)" "$(OUTDIR)"
+	"C:\Program Files (x86)\Microsoft Visual Studio\VC98\Bin\ml.exe" /nologo /I"..\..\inc" /I"..\dev2d" /I"..\fix" /c /Zi /Fo$(IntDir)\$(InputName).obj $(InputName).asm
+
+# End Custom Build
 
 !ELSEIF  "$(CFG)" == "g2 - Win32 Debug"
 
@@ -2546,6 +2634,17 @@ SOURCE=.\lo88il.asm
 
 !IF  "$(CFG)" == "g2 - Win32 Release"
 
+# PROP Ignore_Default_Tool 1
+# Begin Custom Build
+IntDir=.\..\_Bins\Release
+InputPath=.\lo88il.asm
+InputName=lo88il
+
+"$(IntDir)\$(InputName).obj" : $(SOURCE) "$(INTDIR)" "$(OUTDIR)"
+	"C:\Program Files (x86)\Microsoft Visual Studio\VC98\Bin\ml.exe" /nologo /I"..\..\inc" /I"..\dev2d" /I"..\fix" /c /Zi /Fo$(IntDir)\$(InputName).obj $(InputName).asm
+
+# End Custom Build
+
 !ELSEIF  "$(CFG)" == "g2 - Win32 Debug"
 
 # PROP Exclude_From_Build 1
@@ -2558,6 +2657,17 @@ SOURCE=.\lo88il.asm
 SOURCE=.\n88il.asm
 
 !IF  "$(CFG)" == "g2 - Win32 Release"
+
+# PROP Ignore_Default_Tool 1
+# Begin Custom Build
+IntDir=.\..\_Bins\Release
+InputPath=.\n88il.asm
+InputName=n88il
+
+"$(IntDir)\$(InputName).obj" : $(SOURCE) "$(INTDIR)" "$(OUTDIR)"
+	"C:\Program Files (x86)\Microsoft Visual Studio\VC98\Bin\ml.exe" /nologo /I"..\..\inc" /I"..\dev2d" /I"..\fix" /c /Zi /Fo$(IntDir)\$(InputName).obj $(InputName).asm
+
+# End Custom Build
 
 !ELSEIF  "$(CFG)" == "g2 - Win32 Debug"
 
@@ -2572,6 +2682,17 @@ SOURCE=.\o2w88i.asm
 
 !IF  "$(CFG)" == "g2 - Win32 Release"
 
+# PROP Ignore_Default_Tool 1
+# Begin Custom Build
+IntDir=.\..\_Bins\Release
+InputPath=.\o2w88i.asm
+InputName=o2w88i
+
+"$(IntDir)\$(InputName).obj" : $(SOURCE) "$(INTDIR)" "$(OUTDIR)"
+	"C:\Program Files (x86)\Microsoft Visual Studio\VC98\Bin\ml.exe" /nologo /I"..\..\inc" /I"..\dev2d" /I"..\fix" /c /Zi /Fo$(IntDir)\$(InputName).obj $(InputName).asm
+
+# End Custom Build
+
 !ELSEIF  "$(CFG)" == "g2 - Win32 Debug"
 
 # PROP Exclude_From_Build 1
@@ -2584,6 +2705,17 @@ SOURCE=.\o2w88i.asm
 SOURCE=.\o88bil.asm
 
 !IF  "$(CFG)" == "g2 - Win32 Release"
+
+# PROP Ignore_Default_Tool 1
+# Begin Custom Build
+IntDir=.\..\_Bins\Release
+InputPath=.\o88bil.asm
+InputName=o88bil
+
+"$(IntDir)\$(InputName).obj" : $(SOURCE) "$(INTDIR)" "$(OUTDIR)"
+	"C:\Program Files (x86)\Microsoft Visual Studio\VC98\Bin\ml.exe" /nologo /I"..\..\inc" /I"..\dev2d" /I"..\fix" /c /Zi /Fo$(IntDir)\$(InputName).obj $(InputName).asm
+
+# End Custom Build
 
 !ELSEIF  "$(CFG)" == "g2 - Win32 Debug"
 
@@ -2598,6 +2730,17 @@ SOURCE=.\o88il.asm
 
 !IF  "$(CFG)" == "g2 - Win32 Release"
 
+# PROP Ignore_Default_Tool 1
+# Begin Custom Build
+IntDir=.\..\_Bins\Release
+InputPath=.\o88il.asm
+InputName=o88il
+
+"$(IntDir)\$(InputName).obj" : $(SOURCE) "$(INTDIR)" "$(OUTDIR)"
+	"C:\Program Files (x86)\Microsoft Visual Studio\VC98\Bin\ml.exe" /nologo /I"..\..\inc" /I"..\dev2d" /I"..\fix" /c /Zi /Fo$(IntDir)\$(InputName).obj $(InputName).asm
+
+# End Custom Build
+
 !ELSEIF  "$(CFG)" == "g2 - Win32 Debug"
 
 # PROP Exclude_From_Build 1
@@ -2610,6 +2753,17 @@ SOURCE=.\o88il.asm
 SOURCE=.\ptfloat.asm
 
 !IF  "$(CFG)" == "g2 - Win32 Release"
+
+# PROP Ignore_Default_Tool 1
+# Begin Custom Build
+IntDir=.\..\_Bins\Release
+InputPath=.\ptfloat.asm
+InputName=ptfloat
+
+"$(IntDir)\$(InputName).obj" : $(SOURCE) "$(INTDIR)" "$(OUTDIR)"
+	"C:\Program Files (x86)\Microsoft Visual Studio\VC98\Bin\ml.exe" /nologo /I"..\..\inc" /I"..\dev2d" /I"..\fix" /I"..\lg" /I"..\lgalloc" /c /Zi /Fo$(IntDir)\$(InputName).obj $(InputName).asm
+
+# End Custom Build
 
 !ELSEIF  "$(CFG)" == "g2 - Win32 Debug"
 
@@ -2624,6 +2778,17 @@ SOURCE=.\ptlinear.asm
 
 !IF  "$(CFG)" == "g2 - Win32 Release"
 
+# PROP Ignore_Default_Tool 1
+# Begin Custom Build
+IntDir=.\..\_Bins\Release
+InputPath=.\ptlinear.asm
+InputName=ptlinear
+
+"$(IntDir)\$(InputName).obj" : $(SOURCE) "$(INTDIR)" "$(OUTDIR)"
+	"C:\Program Files (x86)\Microsoft Visual Studio\VC98\Bin\ml.exe" /nologo /I"..\..\inc" /I"..\dev2d" /I"..\fix" /I"..\lg" /I"..\lgalloc" /c /Zi /Fo$(IntDir)\$(InputName).obj $(InputName).asm
+
+# End Custom Build
+
 !ELSEIF  "$(CFG)" == "g2 - Win32 Debug"
 
 # PROP Exclude_From_Build 1
@@ -2636,6 +2801,17 @@ SOURCE=.\ptlinear.asm
 SOURCE=.\ptmap.asm
 
 !IF  "$(CFG)" == "g2 - Win32 Release"
+
+# PROP Ignore_Default_Tool 1
+# Begin Custom Build
+IntDir=.\..\_Bins\Release
+InputPath=.\ptmap.asm
+InputName=ptmap
+
+"$(IntDir)\$(InputName).obj" : $(SOURCE) "$(INTDIR)" "$(OUTDIR)"
+	"C:\Program Files (x86)\Microsoft Visual Studio\VC98\Bin\ml.exe" /nologo /I"..\..\inc" /I"..\dev2d" /I"..\fix" /I"..\lg" /I"..\lgalloc" /c /Zi /Fo$(IntDir)\$(InputName).obj $(InputName).asm
+
+# End Custom Build
 
 !ELSEIF  "$(CFG)" == "g2 - Win32 Debug"
 
@@ -2650,6 +2826,17 @@ SOURCE=.\ptmap_8.asm
 
 !IF  "$(CFG)" == "g2 - Win32 Release"
 
+# PROP Ignore_Default_Tool 1
+# Begin Custom Build
+IntDir=.\..\_Bins\Release
+InputPath=.\ptmap_8.asm
+InputName=ptmap_8
+
+"$(IntDir)\$(InputName).obj" : $(SOURCE) "$(INTDIR)" "$(OUTDIR)"
+	"C:\Program Files (x86)\Microsoft Visual Studio\VC98\Bin\ml.exe" /nologo /I"..\..\inc" /I"..\dev2d" /I"..\fix" /c /Zi /Fo$(IntDir)\$(InputName).obj $(InputName).asm
+
+# End Custom Build
+
 !ELSEIF  "$(CFG)" == "g2 - Win32 Debug"
 
 # PROP Exclude_From_Build 1
@@ -2662,6 +2849,17 @@ SOURCE=.\ptmap_8.asm
 SOURCE=.\ptmap_n.asm
 
 !IF  "$(CFG)" == "g2 - Win32 Release"
+
+# PROP Ignore_Default_Tool 1
+# Begin Custom Build
+IntDir=.\..\_Bins\Release
+InputPath=.\ptmap_n.asm
+InputName=ptmap_n
+
+"$(IntDir)\$(InputName).obj" : $(SOURCE) "$(INTDIR)" "$(OUTDIR)"
+	"C:\Program Files (x86)\Microsoft Visual Studio\VC98\Bin\ml.exe" /nologo /I"..\..\inc" /I"..\dev2d" /I"..\fix" /c /Zi /Fo$(IntDir)\$(InputName).obj $(InputName).asm
+
+# End Custom Build
 
 !ELSEIF  "$(CFG)" == "g2 - Win32 Debug"
 
@@ -2676,6 +2874,17 @@ SOURCE=.\ptmapper.asm
 
 !IF  "$(CFG)" == "g2 - Win32 Release"
 
+# PROP Ignore_Default_Tool 1
+# Begin Custom Build
+IntDir=.\..\_Bins\Release
+InputPath=.\ptmapper.asm
+InputName=ptmapper
+
+"$(IntDir)\$(InputName).obj" : $(SOURCE) "$(INTDIR)" "$(OUTDIR)"
+	"C:\Program Files (x86)\Microsoft Visual Studio\VC98\Bin\ml.exe" /nologo /I"..\..\inc" /I"..\dev2d" /I"..\fix" /I "..\lg" /I "..\lgalloc" /c /Zi /Fo$(IntDir)\$(InputName).obj $(InputName).asm
+
+# End Custom Build
+
 !ELSEIF  "$(CFG)" == "g2 - Win32 Debug"
 
 # PROP Exclude_From_Build 1
@@ -2689,6 +2898,17 @@ SOURCE=.\ptpersp.asm
 
 !IF  "$(CFG)" == "g2 - Win32 Release"
 
+# PROP Ignore_Default_Tool 1
+# Begin Custom Build
+IntDir=.\..\_Bins\Release
+InputPath=.\ptpersp.asm
+InputName=ptpersp
+
+"$(IntDir)\$(InputName).obj" : $(SOURCE) "$(INTDIR)" "$(OUTDIR)"
+	"C:\Program Files (x86)\Microsoft Visual Studio\VC98\Bin\ml.exe" /nologo /I"..\..\inc" /I"..\dev2d" /I"..\fix" /c /Zi /Fo$(IntDir)\$(InputName).obj $(InputName).asm
+
+# End Custom Build
+
 !ELSEIF  "$(CFG)" == "g2 - Win32 Debug"
 
 # PROP Exclude_From_Build 1
@@ -2701,6 +2921,17 @@ SOURCE=.\ptpersp.asm
 SOURCE=.\uvgrad.asm
 
 !IF  "$(CFG)" == "g2 - Win32 Release"
+
+# PROP Ignore_Default_Tool 1
+# Begin Custom Build
+IntDir=.\..\_Bins\Release
+InputPath=.\uvgrad.asm
+InputName=uvgrad
+
+"$(IntDir)\$(InputName).obj" : $(SOURCE) "$(INTDIR)" "$(OUTDIR)"
+	"C:\Program Files (x86)\Microsoft Visual Studio\VC98\Bin\ml.exe" /nologo /I"..\..\inc" /I"..\dev2d" /I"..\fix" /c /Zi /Fo$(IntDir)\$(InputName).obj $(InputName).asm
+
+# End Custom Build
 
 !ELSEIF  "$(CFG)" == "g2 - Win32 Debug"
 

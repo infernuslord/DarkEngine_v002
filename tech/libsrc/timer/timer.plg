@@ -6,17 +6,7 @@
 --------------------Configuration: timer - Win32 Release--------------------
 </h3>
 <h3>Command Lines</h3>
-Creating temporary file "C:\Users\Infernus\AppData\Local\Temp\RSP7983.tmp" with contents
-[
-/nologo /Zp1 /MT /W3 /GX /O2 /I "." /I "..\..\h" /I "..\lg" /I "..\actmovie" /I "..\appcore" /I "..\arq" /I "..\compapis" /I "..\comtools" /I "..\config" /I "..\cpptools" /I "..\darkloop" /I "..\dev2d" /I "..\dispdev" /I "..\dstruct" /I "..\dump" /I "..\fix" /I "..\font" /I "..\g2" /I "..\gadget" /I "..\gameshel" /I "..\gfile" /I "..\inputbnd" /I "..\lgalloc" /I "..\lgd3d" /I "..\matrix" /I "..\md" /I "..\mm" /I "..\mp" /I "..\mprintf" /I "..\namedres" /I "..\net" /I "..\prof" /I "..\r3d" /I "..\random" /I "..\recorder" /I "..\ref" /I "..\res" /I "..\rnd" /I "..\script" /I "..\sdesc" /I "..\skel" /I "..\sndsrc" /I "..\sndutil" /I "..\sound" /I "..\star" /I "..\tagfile" /I "..\templgen" /I "..\timer" /I "..\ui" /I "..\vec2" /I "..\..\winsrc\input" /D "NDEBUG" /D "_MBCS" /D "_LIB" /Fo"..\_Bins\Release/" /FI "..\..\h\lg_types.h" /c 
-"D:\Source\DarkEngine\prj\tech\libsrc\timer\tmail.c"
-"D:\Source\DarkEngine\prj\tech\libsrc\timer\tmftab.c"
-"D:\Source\DarkEngine\prj\tech\libsrc\timer\tmlibt.c"
-"D:\Source\DarkEngine\prj\tech\libsrc\timer\tmrt.c"
-"D:\Source\DarkEngine\prj\tech\libsrc\timer\tmwin32.c"
-]
-Creating command line "cl.exe @C:\Users\Infernus\AppData\Local\Temp\RSP7983.tmp" 
-Creating temporary file "C:\Users\Infernus\AppData\Local\Temp\RSP7984.tmp" with contents
+Creating temporary file "C:\Users\Infernus\AppData\Local\Temp\RSP25A8.tmp" with contents
 [
 /nologo /out:"..\_Libs\Release\timer.lib" 
 \Source\DarkEngine\prj\tech\libsrc\_Bins\Release\tmail.obj
@@ -24,29 +14,33 @@ Creating temporary file "C:\Users\Infernus\AppData\Local\Temp\RSP7984.tmp" with 
 \Source\DarkEngine\prj\tech\libsrc\_Bins\Release\tmlibt.obj
 \Source\DarkEngine\prj\tech\libsrc\_Bins\Release\tmrt.obj
 \Source\DarkEngine\prj\tech\libsrc\_Bins\Release\tmwin32.obj
+\Source\DarkEngine\prj\tech\libsrc\_Bins\Release\tmact.obj
+\Source\DarkEngine\prj\tech\libsrc\_Bins\Release\tmadd.obj
+\Source\DarkEngine\prj\tech\libsrc\_Bins\Release\tmclose.obj
+\Source\DarkEngine\prj\tech\libsrc\_Bins\Release\tmd.obj
+\Source\DarkEngine\prj\tech\libsrc\_Bins\Release\tmdeact.obj
+\Source\DarkEngine\prj\tech\libsrc\_Bins\Release\tmfast.obj
+\Source\DarkEngine\prj\tech\libsrc\_Bins\Release\tminit.obj
+\Source\DarkEngine\prj\tech\libsrc\_Bins\Release\tmphnd.obj
+\Source\DarkEngine\prj\tech\libsrc\_Bins\Release\tmrate.obj
+\Source\DarkEngine\prj\tech\libsrc\_Bins\Release\tmrem.obj
+\Source\DarkEngine\prj\tech\libsrc\_Bins\Release\tmsden.obj
+\Source\DarkEngine\prj\tech\libsrc\_Bins\Release\tmsfreq.obj
+\Source\DarkEngine\prj\tech\libsrc\_Bins\Release\tmsper.obj
 ]
-Creating command line "link.exe -lib @C:\Users\Infernus\AppData\Local\Temp\RSP7984.tmp"
+Creating command line "link.exe -lib @C:\Users\Infernus\AppData\Local\Temp\RSP25A8.tmp"
 <h3>Output Window</h3>
-Compiling...
-tmail.c
-D:\Source\DarkEngine\prj\tech\libsrc\timer\tmail.c(20) : warning C4013: 'AIL_register_timer' undefined; assuming extern returning int
-D:\Source\DarkEngine\prj\tech\libsrc\timer\tmail.c(21) : warning C4013: 'AIL_set_timer_divisor' undefined; assuming extern returning int
-D:\Source\DarkEngine\prj\tech\libsrc\timer\tmail.c(34) : warning C4013: 'AIL_release_timer_handle' undefined; assuming extern returning int
-D:\Source\DarkEngine\prj\tech\libsrc\timer\tmail.c(40) : warning C4013: 'AIL_start_timer' undefined; assuming extern returning int
-D:\Source\DarkEngine\prj\tech\libsrc\timer\tmail.c(46) : warning C4013: 'AIL_stop_timer' undefined; assuming extern returning int
-D:\Source\DarkEngine\prj\tech\libsrc\timer\tmail.c(57) : warning C4013: 'AIL_set_timer_frequency' undefined; assuming extern returning int
-D:\Source\DarkEngine\prj\tech\libsrc\timer\tmail.c(62) : warning C4013: 'AIL_set_timer_period' undefined; assuming extern returning int
-tmftab.c
-tmlibt.c
-tmrt.c
-tmwin32.c
-Generating Code...
 Creating library...
+\Source\DarkEngine\prj\tech\libsrc\_Bins\Release\tmact.obj : warning LNK4033: converting object format from OMF to COFF
+\Source\DarkEngine\prj\tech\libsrc\_Bins\Release\tmadd.obj : warning LNK4033: converting object format from OMF to COFF
+LINK : error : Segment reference in fixup record
+\Source\DarkEngine\prj\tech\libsrc\_Bins\Release\tmclose.obj : fatal error LNK1123: failure during conversion to COFF: file invalid or corrupt
+Error executing link.exe.
 
 
 
 <h3>Results</h3>
-timer.lib - 0 error(s), 7 warning(s)
+timer.lib - 2 error(s), 2 warning(s)
 </pre>
 </body>
 </html>

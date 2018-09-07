@@ -382,6 +382,10 @@ NODEP_CPP_CLUT1=\
 # End Source File
 # Begin Source File
 
+SOURCE=.\comdfcn.cc
+# End Source File
+# Begin Source File
+
 SOURCE=.\cominit.c
 DEP_CPP_COMIN=\
 	"..\..\h\lg_types.h"\
@@ -2451,6 +2455,17 @@ SOURCE=.\cstring.asm
 
 !IF  "$(CFG)" == "dev2d - Win32 Release"
 
+# PROP Ignore_Default_Tool 1
+# Begin Custom Build
+IntDir=.\..\_Bins\Release
+InputPath=.\cstring.asm
+InputName=cstring
+
+"$(IntDir)\$(InputName).obj" : $(SOURCE) "$(INTDIR)" "$(OUTDIR)"
+	"C:\Program Files (x86)\Microsoft Visual Studio\VC98\Bin\ml.exe" /nologo /I"..\..\inc" /c /Zi /Fo$(IntDir)\$(InputName).obj $(InputName).asm
+
+# End Custom Build
+
 !ELSEIF  "$(CFG)" == "dev2d - Win32 Debug"
 
 # PROP Exclude_From_Build 1
@@ -2463,6 +2478,17 @@ SOURCE=.\cstring.asm
 SOURCE=.\f16f16c.asm
 
 !IF  "$(CFG)" == "dev2d - Win32 Release"
+
+# PROP Ignore_Default_Tool 1
+# Begin Custom Build
+IntDir=.\..\_Bins\Release
+InputPath=.\f16f16c.asm
+InputName=f16f16c
+
+"$(IntDir)\$(InputName).obj" : $(SOURCE) "$(INTDIR)" "$(OUTDIR)"
+	"C:\Program Files (x86)\Microsoft Visual Studio\VC98\Bin\ml.exe" /nologo /I"..\..\inc" /c /Zi /Fo$(IntDir)\$(InputName).obj $(InputName).asm
+
+# End Custom Build
 
 !ELSEIF  "$(CFG)" == "dev2d - Win32 Debug"
 
@@ -2477,6 +2503,17 @@ SOURCE=.\f16f16l.asm
 
 !IF  "$(CFG)" == "dev2d - Win32 Release"
 
+# PROP Ignore_Default_Tool 1
+# Begin Custom Build
+IntDir=.\..\_Bins\Release
+InputPath=.\f16f16l.asm
+InputName=f16f16l
+
+"$(IntDir)\$(InputName).obj" : $(SOURCE) "$(INTDIR)" "$(OUTDIR)"
+	"C:\Program Files (x86)\Microsoft Visual Studio\VC98\Bin\ml.exe" /nologo /I"..\..\inc" /c /Zi /Fo$(IntDir)\$(InputName).obj $(InputName).asm
+
+# End Custom Build
+
 !ELSEIF  "$(CFG)" == "dev2d - Win32 Debug"
 
 # PROP Exclude_From_Build 1
@@ -2489,6 +2526,17 @@ SOURCE=.\f16f16l.asm
 SOURCE=.\f16fl8il.asm
 
 !IF  "$(CFG)" == "dev2d - Win32 Release"
+
+# PROP Ignore_Default_Tool 1
+# Begin Custom Build
+IntDir=.\..\_Bins\Release
+InputPath=.\f16fl8il.asm
+InputName=f16fl8il
+
+"$(IntDir)\$(InputName).obj" : $(SOURCE) "$(INTDIR)" "$(OUTDIR)"
+	"C:\Program Files (x86)\Microsoft Visual Studio\VC98\Bin\ml.exe" /nologo /I"..\..\inc" /c /Zi /Fo$(IntDir)\$(InputName).obj $(InputName).asm
+
+# End Custom Build
 
 !ELSEIF  "$(CFG)" == "dev2d - Win32 Debug"
 
@@ -2503,6 +2551,17 @@ SOURCE=.\f16il.asm
 
 !IF  "$(CFG)" == "dev2d - Win32 Release"
 
+# PROP Ignore_Default_Tool 1
+# Begin Custom Build
+IntDir=.\..\_Bins\Release
+InputPath=.\f16il.asm
+InputName=f16il
+
+"$(IntDir)\$(InputName).obj" : $(SOURCE) "$(INTDIR)" "$(OUTDIR)"
+	"C:\Program Files (x86)\Microsoft Visual Studio\VC98\Bin\ml.exe" /nologo /I"..\..\inc" /c /Zi /Fo$(IntDir)\$(InputName).obj $(InputName).asm
+
+# End Custom Build
+
 !ELSEIF  "$(CFG)" == "dev2d - Win32 Debug"
 
 # PROP Exclude_From_Build 1
@@ -2515,6 +2574,17 @@ SOURCE=.\f16il.asm
 SOURCE=.\f16set.asm
 
 !IF  "$(CFG)" == "dev2d - Win32 Release"
+
+# PROP Ignore_Default_Tool 1
+# Begin Custom Build
+IntDir=.\..\_Bins\Release
+InputPath=.\f16set.asm
+InputName=f16set
+
+"$(IntDir)\$(InputName).obj" : $(SOURCE) "$(INTDIR)" "$(OUTDIR)"
+	"C:\Program Files (x86)\Microsoft Visual Studio\VC98\Bin\ml.exe" /nologo /I"..\..\inc" /c /Zi /Fo$(IntDir)\$(InputName).obj $(InputName).asm
+
+# End Custom Build
 
 !ELSEIF  "$(CFG)" == "dev2d - Win32 Debug"
 
@@ -2529,6 +2599,17 @@ SOURCE=.\light.asm
 
 !IF  "$(CFG)" == "dev2d - Win32 Release"
 
+# PROP Ignore_Default_Tool 1
+# Begin Custom Build
+IntDir=.\..\_Bins\Release
+InputPath=.\light.asm
+InputName=light
+
+"$(IntDir)\$(InputName).obj" : $(SOURCE) "$(INTDIR)" "$(OUTDIR)"
+	"C:\Program Files (x86)\Microsoft Visual Studio\VC98\Bin\ml.exe" /nologo /I"..\..\inc" /c /Zi /Fo$(IntDir)\$(InputName).obj $(InputName).asm
+
+# End Custom Build
+
 !ELSEIF  "$(CFG)" == "dev2d - Win32 Debug"
 
 # PROP Exclude_From_Build 1
@@ -2541,6 +2622,17 @@ SOURCE=.\light.asm
 SOURCE=.\rsdblt.asm
 
 !IF  "$(CFG)" == "dev2d - Win32 Release"
+
+# PROP Ignore_Default_Tool 1
+# Begin Custom Build
+IntDir=.\..\_Bins\Release
+InputPath=.\rsdblt.asm
+InputName=rsdblt
+
+"$(IntDir)\$(InputName).obj" : $(SOURCE) "$(INTDIR)" "$(OUTDIR)"
+	"C:\Program Files (x86)\Microsoft Visual Studio\VC98\Bin\ml.exe" /nologo /I"..\..\inc" /c /Zi /Fo$(IntDir)\$(InputName).obj $(InputName).asm
+
+# End Custom Build
 
 !ELSEIF  "$(CFG)" == "dev2d - Win32 Debug"
 
@@ -2555,6 +2647,17 @@ SOURCE=.\rsdblt16.asm
 
 !IF  "$(CFG)" == "dev2d - Win32 Release"
 
+# PROP Ignore_Default_Tool 1
+# Begin Custom Build
+IntDir=.\..\_Bins\Release
+InputPath=.\rsdblt16.asm
+InputName=rsdblt16
+
+"$(IntDir)\$(InputName).obj" : $(SOURCE) "$(INTDIR)" "$(OUTDIR)"
+	"C:\Program Files (x86)\Microsoft Visual Studio\VC98\Bin\ml.exe" /nologo /I"..\..\inc" /c /Zi /Fo$(IntDir)\$(InputName).obj $(InputName).asm
+
+# End Custom Build
+
 !ELSEIF  "$(CFG)" == "dev2d - Win32 Debug"
 
 # PROP Exclude_From_Build 1
@@ -2567,6 +2670,17 @@ SOURCE=.\rsdblt16.asm
 SOURCE=.\rsdblt8.asm
 
 !IF  "$(CFG)" == "dev2d - Win32 Release"
+
+# PROP Ignore_Default_Tool 1
+# Begin Custom Build
+IntDir=.\..\_Bins\Release
+InputPath=.\rsdblt8.asm
+InputName=rsdblt8
+
+"$(IntDir)\$(InputName).obj" : $(SOURCE) "$(INTDIR)" "$(OUTDIR)"
+	"C:\Program Files (x86)\Microsoft Visual Studio\VC98\Bin\ml.exe" /nologo /I"..\..\inc" /c /Zi /Fo$(IntDir)\$(InputName).obj $(InputName).asm
+
+# End Custom Build
 
 !ELSEIF  "$(CFG)" == "dev2d - Win32 Debug"
 
@@ -2581,6 +2695,17 @@ SOURCE=.\rsdunpck.asm
 
 !IF  "$(CFG)" == "dev2d - Win32 Release"
 
+# PROP Ignore_Default_Tool 1
+# Begin Custom Build
+IntDir=.\..\_Bins\Release
+InputPath=.\rsdunpck.asm
+InputName=rsdunpck
+
+"$(IntDir)\$(InputName).obj" : $(SOURCE) "$(INTDIR)" "$(OUTDIR)"
+	"C:\Program Files (x86)\Microsoft Visual Studio\VC98\Bin\ml.exe" /nologo /I"..\..\inc" /c /Zi /Fo$(IntDir)\$(InputName).obj $(InputName).asm
+
+# End Custom Build
+
 !ELSEIF  "$(CFG)" == "dev2d - Win32 Debug"
 
 # PROP Exclude_From_Build 1
@@ -2593,6 +2718,17 @@ SOURCE=.\rsdunpck.asm
 SOURCE=.\vesaasm.asm
 
 !IF  "$(CFG)" == "dev2d - Win32 Release"
+
+# PROP Ignore_Default_Tool 1
+# Begin Custom Build
+IntDir=.\..\_Bins\Release
+InputPath=.\vesaasm.asm
+InputName=vesaasm
+
+"$(IntDir)\$(InputName).obj" : $(SOURCE) "$(INTDIR)" "$(OUTDIR)"
+	"C:\Program Files (x86)\Microsoft Visual Studio\VC98\Bin\ml.exe" /nologo /I"..\..\inc" /c /Zi /Fo$(IntDir)\$(InputName).obj $(InputName).asm
+
+# End Custom Build
 
 !ELSEIF  "$(CFG)" == "dev2d - Win32 Debug"
 
@@ -2607,6 +2743,17 @@ SOURCE=.\vgaasm.asm
 
 !IF  "$(CFG)" == "dev2d - Win32 Release"
 
+# PROP Ignore_Default_Tool 1
+# Begin Custom Build
+IntDir=.\..\_Bins\Release
+InputPath=.\vgaasm.asm
+InputName=vgaasm
+
+"$(IntDir)\$(InputName).obj" : $(SOURCE) "$(INTDIR)" "$(OUTDIR)"
+	"C:\Program Files (x86)\Microsoft Visual Studio\VC98\Bin\ml.exe" /nologo /I"..\..\inc" /c /Zi /Fo$(IntDir)\$(InputName).obj $(InputName).asm
+
+# End Custom Build
+
 !ELSEIF  "$(CFG)" == "dev2d - Win32 Debug"
 
 # PROP Exclude_From_Build 1
@@ -2619,6 +2766,17 @@ SOURCE=.\vgaasm.asm
 SOURCE=.\vgasmod.asm
 
 !IF  "$(CFG)" == "dev2d - Win32 Release"
+
+# PROP Ignore_Default_Tool 1
+# Begin Custom Build
+IntDir=.\..\_Bins\Release
+InputPath=.\vgasmod.asm
+InputName=vgasmod
+
+"$(IntDir)\$(InputName).obj" : $(SOURCE) "$(INTDIR)" "$(OUTDIR)"
+	"C:\Program Files (x86)\Microsoft Visual Studio\VC98\Bin\ml.exe" /nologo /I"..\..\inc" /c /Zi /Fo$(IntDir)\$(InputName).obj $(InputName).asm
+
+# End Custom Build
 
 !ELSEIF  "$(CFG)" == "dev2d - Win32 Debug"
 
@@ -2713,10 +2871,6 @@ SOURCE=.\bk8vlinf.tbl
 # End Source File
 # Begin Source File
 
-SOURCE=.\comdfcn.cc
-# End Source File
-# Begin Source File
-
 SOURCE=.\comdtab.tbl
 # End Source File
 # Begin Source File
@@ -2805,10 +2959,6 @@ SOURCE=.\novdtab.tbl
 # End Source File
 # Begin Source File
 
-SOURCE=.\vesa.h.new
-# End Source File
-# Begin Source File
-
 SOURCE=.\vgadtab.tbl
 # End Source File
 # Begin Source File
@@ -2818,6 +2968,14 @@ SOURCE=.\vsadtab.tbl
 # Begin Source File
 
 SOURCE=.\w32dtab.tbl
+# End Source File
+# End Group
+# Begin Group "Misc"
+
+# PROP Default_Filter ""
+# Begin Source File
+
+SOURCE=.\vesa.h.new
 # End Source File
 # End Group
 # End Target

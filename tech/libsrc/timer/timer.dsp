@@ -240,6 +240,17 @@ SOURCE=.\tmact.asm
 
 !IF  "$(CFG)" == "timer - Win32 Release"
 
+# PROP Ignore_Default_Tool 1
+# Begin Custom Build
+IntDir=.\..\_Bins\Release
+InputPath=.\tmact.asm
+InputName=tmact
+
+"$(IntDir)\$(InputName).obj" : $(SOURCE) "$(INTDIR)" "$(OUTDIR)"
+	"C:\Program Files (x86)\Microsoft Visual Studio\VC98\Bin\ml.exe" /nologo /I"..\..\inc" /c /Zi /Fo$(IntDir)\$(InputName).obj $(InputName).asm
+
+# End Custom Build
+
 !ELSEIF  "$(CFG)" == "timer - Win32 Debug"
 
 # PROP Exclude_From_Build 1
@@ -252,6 +263,17 @@ SOURCE=.\tmact.asm
 SOURCE=.\tmadd.asm
 
 !IF  "$(CFG)" == "timer - Win32 Release"
+
+# PROP Ignore_Default_Tool 1
+# Begin Custom Build
+IntDir=.\..\_Bins\Release
+InputPath=.\tmadd.asm
+InputName=tmadd
+
+"$(IntDir)\$(InputName).obj" : $(SOURCE) "$(INTDIR)" "$(OUTDIR)"
+	"C:\Program Files (x86)\Microsoft Visual Studio\VC98\Bin\ml.exe" /nologo /I"..\..\inc" /c /Zi /Fo$(IntDir)\$(InputName).obj $(InputName).asm
+
+# End Custom Build
 
 !ELSEIF  "$(CFG)" == "timer - Win32 Debug"
 
@@ -266,6 +288,17 @@ SOURCE=.\tmclose.asm
 
 !IF  "$(CFG)" == "timer - Win32 Release"
 
+# PROP Ignore_Default_Tool 1
+# Begin Custom Build
+IntDir=.\..\_Bins\Release
+InputPath=.\tmclose.asm
+InputName=tmclose
+
+"$(IntDir)\$(InputName).obj" : $(SOURCE) "$(INTDIR)" "$(OUTDIR)"
+	"C:\Program Files (x86)\Microsoft Visual Studio\VC98\Bin\ml.exe" /nologo /I"..\..\inc" /c /Zi /Fo$(IntDir)\$(InputName).obj $(InputName).asm
+
+# End Custom Build
+
 !ELSEIF  "$(CFG)" == "timer - Win32 Debug"
 
 # PROP Exclude_From_Build 1
@@ -278,6 +311,17 @@ SOURCE=.\tmclose.asm
 SOURCE=.\tmd.asm
 
 !IF  "$(CFG)" == "timer - Win32 Release"
+
+# PROP Ignore_Default_Tool 1
+# Begin Custom Build
+IntDir=.\..\_Bins\Release
+InputPath=.\tmd.asm
+InputName=tmd
+
+"$(IntDir)\$(InputName).obj" : $(SOURCE) "$(INTDIR)" "$(OUTDIR)"
+	"C:\Program Files (x86)\Microsoft Visual Studio\VC98\Bin\ml.exe" /nologo /I"..\..\inc" /c /Zi /Fo$(IntDir)\$(InputName).obj $(InputName).asm
+
+# End Custom Build
 
 !ELSEIF  "$(CFG)" == "timer - Win32 Debug"
 
@@ -292,6 +336,17 @@ SOURCE=.\tmdeact.asm
 
 !IF  "$(CFG)" == "timer - Win32 Release"
 
+# PROP Ignore_Default_Tool 1
+# Begin Custom Build
+IntDir=.\..\_Bins\Release
+InputPath=.\tmdeact.asm
+InputName=tmdeact
+
+"$(IntDir)\$(InputName).obj" : $(SOURCE) "$(INTDIR)" "$(OUTDIR)"
+	"C:\Program Files (x86)\Microsoft Visual Studio\VC98\Bin\ml.exe" /nologo /I"..\..\inc" /c /Zi /Fo$(IntDir)\$(InputName).obj $(InputName).asm
+
+# End Custom Build
+
 !ELSEIF  "$(CFG)" == "timer - Win32 Debug"
 
 # PROP Exclude_From_Build 1
@@ -304,6 +359,17 @@ SOURCE=.\tmdeact.asm
 SOURCE=.\tmfast.asm
 
 !IF  "$(CFG)" == "timer - Win32 Release"
+
+# PROP Ignore_Default_Tool 1
+# Begin Custom Build
+IntDir=.\..\_Bins\Release
+InputPath=.\tmfast.asm
+InputName=tmfast
+
+"$(IntDir)\$(InputName).obj" : $(SOURCE) "$(INTDIR)" "$(OUTDIR)"
+	"C:\Program Files (x86)\Microsoft Visual Studio\VC98\Bin\ml.exe" /nologo /I"..\..\inc" /c /Zi /Fo$(IntDir)\$(InputName).obj $(InputName).asm
+
+# End Custom Build
 
 !ELSEIF  "$(CFG)" == "timer - Win32 Debug"
 
@@ -318,6 +384,17 @@ SOURCE=.\tminit.asm
 
 !IF  "$(CFG)" == "timer - Win32 Release"
 
+# PROP Ignore_Default_Tool 1
+# Begin Custom Build
+IntDir=.\..\_Bins\Release
+InputPath=.\tminit.asm
+InputName=tminit
+
+"$(IntDir)\$(InputName).obj" : $(SOURCE) "$(INTDIR)" "$(OUTDIR)"
+	"C:\Program Files (x86)\Microsoft Visual Studio\VC98\Bin\ml.exe" /nologo /I"..\..\inc" /c /Zi /Fo$(IntDir)\$(InputName).obj $(InputName).asm
+
+# End Custom Build
+
 !ELSEIF  "$(CFG)" == "timer - Win32 Debug"
 
 # PROP Exclude_From_Build 1
@@ -330,6 +407,17 @@ SOURCE=.\tminit.asm
 SOURCE=.\tmphnd.asm
 
 !IF  "$(CFG)" == "timer - Win32 Release"
+
+# PROP Ignore_Default_Tool 1
+# Begin Custom Build
+IntDir=.\..\_Bins\Release
+InputPath=.\tmphnd.asm
+InputName=tmphnd
+
+"$(IntDir)\$(InputName).obj" : $(SOURCE) "$(INTDIR)" "$(OUTDIR)"
+	"C:\Program Files (x86)\Microsoft Visual Studio\VC98\Bin\ml.exe" /nologo /I"..\..\inc" /c /Zi /Fo$(IntDir)\$(InputName).obj $(InputName).asm
+
+# End Custom Build
 
 !ELSEIF  "$(CFG)" == "timer - Win32 Debug"
 
@@ -344,6 +432,17 @@ SOURCE=.\tmrate.asm
 
 !IF  "$(CFG)" == "timer - Win32 Release"
 
+# PROP Ignore_Default_Tool 1
+# Begin Custom Build
+IntDir=.\..\_Bins\Release
+InputPath=.\tmrate.asm
+InputName=tmrate
+
+"$(IntDir)\$(InputName).obj" : $(SOURCE) "$(INTDIR)" "$(OUTDIR)"
+	"C:\Program Files (x86)\Microsoft Visual Studio\VC98\Bin\ml.exe" /nologo /I"..\..\inc" /c /Zi /Fo$(IntDir)\$(InputName).obj $(InputName).asm
+
+# End Custom Build
+
 !ELSEIF  "$(CFG)" == "timer - Win32 Debug"
 
 # PROP Exclude_From_Build 1
@@ -356,6 +455,17 @@ SOURCE=.\tmrate.asm
 SOURCE=.\tmrem.asm
 
 !IF  "$(CFG)" == "timer - Win32 Release"
+
+# PROP Ignore_Default_Tool 1
+# Begin Custom Build
+IntDir=.\..\_Bins\Release
+InputPath=.\tmrem.asm
+InputName=tmrem
+
+"$(IntDir)\$(InputName).obj" : $(SOURCE) "$(INTDIR)" "$(OUTDIR)"
+	"C:\Program Files (x86)\Microsoft Visual Studio\VC98\Bin\ml.exe" /nologo /I"..\..\inc" /c /Zi /Fo$(IntDir)\$(InputName).obj $(InputName).asm
+
+# End Custom Build
 
 !ELSEIF  "$(CFG)" == "timer - Win32 Debug"
 
@@ -370,6 +480,17 @@ SOURCE=.\tmsden.asm
 
 !IF  "$(CFG)" == "timer - Win32 Release"
 
+# PROP Ignore_Default_Tool 1
+# Begin Custom Build
+IntDir=.\..\_Bins\Release
+InputPath=.\tmsden.asm
+InputName=tmsden
+
+"$(IntDir)\$(InputName).obj" : $(SOURCE) "$(INTDIR)" "$(OUTDIR)"
+	"C:\Program Files (x86)\Microsoft Visual Studio\VC98\Bin\ml.exe" /nologo /I"..\..\inc" /c /Zi /Fo$(IntDir)\$(InputName).obj $(InputName).asm
+
+# End Custom Build
+
 !ELSEIF  "$(CFG)" == "timer - Win32 Debug"
 
 # PROP Exclude_From_Build 1
@@ -383,6 +504,17 @@ SOURCE=.\tmsfreq.asm
 
 !IF  "$(CFG)" == "timer - Win32 Release"
 
+# PROP Ignore_Default_Tool 1
+# Begin Custom Build
+IntDir=.\..\_Bins\Release
+InputPath=.\tmsfreq.asm
+InputName=tmsfreq
+
+"$(IntDir)\$(InputName).obj" : $(SOURCE) "$(INTDIR)" "$(OUTDIR)"
+	"C:\Program Files (x86)\Microsoft Visual Studio\VC98\Bin\ml.exe" /nologo /I"..\..\inc" /c /Zi /Fo$(IntDir)\$(InputName).obj $(InputName).asm
+
+# End Custom Build
+
 !ELSEIF  "$(CFG)" == "timer - Win32 Debug"
 
 # PROP Exclude_From_Build 1
@@ -395,6 +527,17 @@ SOURCE=.\tmsfreq.asm
 SOURCE=.\tmsper.asm
 
 !IF  "$(CFG)" == "timer - Win32 Release"
+
+# PROP Ignore_Default_Tool 1
+# Begin Custom Build
+IntDir=.\..\_Bins\Release
+InputPath=.\tmsper.asm
+InputName=tmsper
+
+"$(IntDir)\$(InputName).obj" : $(SOURCE) "$(INTDIR)" "$(OUTDIR)"
+	"C:\Program Files (x86)\Microsoft Visual Studio\VC98\Bin\ml.exe" /nologo /I"..\..\inc" /c /Zi /Fo$(IntDir)\$(InputName).obj $(InputName).asm
+
+# End Custom Build
 
 !ELSEIF  "$(CFG)" == "timer - Win32 Debug"
 

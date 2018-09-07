@@ -6,7 +6,7 @@
 --------------------Configuration: lgalloc - Win32 Release--------------------
 </h3>
 <h3>Command Lines</h3>
-Creating temporary file "C:\Users\Infernus\AppData\Local\Temp\RSPC74E.tmp" with contents
+Creating temporary file "C:\Users\Infernus\AppData\Local\Temp\RSPCBDF.tmp" with contents
 [
 /nologo /Zp1 /MT /W3 /GX /O2 /I "." /I "..\..\h" /I "..\lg" /I "..\actmovie" /I "..\appcore" /I "..\arq" /I "..\compapis" /I "..\comtools" /I "..\config" /I "..\cpptools" /I "..\darkloop" /I "..\dev2d" /I "..\dispdev" /I "..\dstruct" /I "..\dump" /I "..\fix" /I "..\font" /I "..\g2" /I "..\gadget" /I "..\gameshel" /I "..\gfile" /I "..\inputbnd" /I "..\lgalloc" /I "..\lgd3d" /I "..\matrix" /I "..\md" /I "..\mm" /I "..\mp" /I "..\mprintf" /I "..\namedres" /I "..\net" /I "..\prof" /I "..\r3d" /I "..\random" /I "..\recorder" /I "..\ref" /I "..\res" /I "..\rnd" /I "..\script" /I "..\sdesc" /I "..\skel" /I "..\sndsrc" /I "..\sndutil" /I "..\sound" /I "..\star" /I "..\tagfile" /I "..\templgen" /I "..\timer" /I "..\ui" /I "..\vec2" /I "..\..\winsrc\input" /D "NDEBUG" /D "_MBCS" /D "_LIB" /Fo"..\_Bins\Release/" /FI "..\..\h\lg_types.h" /c 
 "D:\Source\DarkEngine\prj\tech\libsrc\lgalloc\allcguid.cpp"
@@ -15,7 +15,6 @@ Creating temporary file "C:\Users\Infernus\AppData\Local\Temp\RSPC74E.tmp" with 
 "D:\Source\DarkEngine\prj\tech\libsrc\lgalloc\memall.c"
 "D:\Source\DarkEngine\prj\tech\libsrc\lgalloc\membase.cpp"
 "D:\Source\DarkEngine\prj\tech\libsrc\lgalloc\memcore.cpp"
-"D:\Source\DarkEngine\prj\tech\libsrc\lgalloc\memtest.cpp"
 "D:\Source\DarkEngine\prj\tech\libsrc\lgalloc\memtimer.cpp"
 "D:\Source\DarkEngine\prj\tech\libsrc\lgalloc\multpool.cpp"
 "D:\Source\DarkEngine\prj\tech\libsrc\lgalloc\nonover.cpp"
@@ -25,8 +24,8 @@ Creating temporary file "C:\Users\Infernus\AppData\Local\Temp\RSPC74E.tmp" with 
 "D:\Source\DarkEngine\prj\tech\libsrc\lgalloc\primallc.cpp"
 "D:\Source\DarkEngine\prj\tech\libsrc\lgalloc\stdalloc.cpp"
 ]
-Creating command line "cl.exe @C:\Users\Infernus\AppData\Local\Temp\RSPC74E.tmp" 
-Creating temporary file "C:\Users\Infernus\AppData\Local\Temp\RSPC74F.tmp" with contents
+Creating command line "cl.exe @C:\Users\Infernus\AppData\Local\Temp\RSPCBDF.tmp" 
+Creating temporary file "C:\Users\Infernus\AppData\Local\Temp\RSPCBE0.tmp" with contents
 [
 /nologo /out:"..\_Libs\Release\lgalloc.lib" 
 \Source\DarkEngine\prj\tech\libsrc\_Bins\Release\allcguid.obj
@@ -35,7 +34,6 @@ Creating temporary file "C:\Users\Infernus\AppData\Local\Temp\RSPC74F.tmp" with 
 \Source\DarkEngine\prj\tech\libsrc\_Bins\Release\memall.obj
 \Source\DarkEngine\prj\tech\libsrc\_Bins\Release\membase.obj
 \Source\DarkEngine\prj\tech\libsrc\_Bins\Release\memcore.obj
-\Source\DarkEngine\prj\tech\libsrc\_Bins\Release\memtest.obj
 \Source\DarkEngine\prj\tech\libsrc\_Bins\Release\memtimer.obj
 \Source\DarkEngine\prj\tech\libsrc\_Bins\Release\multpool.obj
 \Source\DarkEngine\prj\tech\libsrc\_Bins\Release\nonover.obj
@@ -45,7 +43,7 @@ Creating temporary file "C:\Users\Infernus\AppData\Local\Temp\RSPC74F.tmp" with 
 \Source\DarkEngine\prj\tech\libsrc\_Bins\Release\primallc.obj
 \Source\DarkEngine\prj\tech\libsrc\_Bins\Release\stdalloc.obj
 ]
-Creating command line "link.exe -lib @C:\Users\Infernus\AppData\Local\Temp\RSPC74F.tmp"
+Creating command line "link.exe -lib @C:\Users\Infernus\AppData\Local\Temp\RSPCBE0.tmp"
 <h3>Output Window</h3>
 Compiling...
 allcguid.cpp
@@ -62,7 +60,6 @@ Generating Code...
 Compiling...
 membase.cpp
 memcore.cpp
-memtest.cpp
 memtimer.cpp
 multpool.cpp
 D:\Source\DarkEngine\prj\tech\libsrc\lgalloc\multpool.cpp(280) : warning C4291: 'void *__cdecl operator new(unsigned int,class cPoolAllocator *)' : no matching operator delete found; memory will not be freed if initialization throws an exception
@@ -86,12 +83,11 @@ primallc.cpp
 stdalloc.cpp
 Generating Code...
 Creating library...
-memtest.obj : warning LNK4006: _LGAllocOverride already defined in nonover.obj; second definition ignored
 
 
 
 <h3>Results</h3>
-lgalloc.lib - 0 error(s), 10 warning(s)
+lgalloc.lib - 0 error(s), 9 warning(s)
 </pre>
 </body>
 </html>

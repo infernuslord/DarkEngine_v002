@@ -460,32 +460,6 @@ NODEP_CPP_SNDFM=\
 # End Source File
 # Begin Source File
 
-SOURCE=.\sndtest.cpp
-
-!IF  "$(CFG)" == "sound - Win32 Release"
-
-# PROP Exclude_From_Build 1
-
-!ELSEIF  "$(CFG)" == "sound - Win32 Debug"
-
-!ENDIF 
-
-# End Source File
-# Begin Source File
-
-SOURCE=.\testsnd1.c
-
-!IF  "$(CFG)" == "sound - Win32 Release"
-
-# PROP Exclude_From_Build 1
-
-!ELSEIF  "$(CFG)" == "sound - Win32 Debug"
-
-!ENDIF 
-
-# End Source File
-# Begin Source File
-
 SOURCE=.\timelog.cpp
 DEP_CPP_TIMEL=\
 	"..\..\h\lg_types.h"\
@@ -612,6 +586,36 @@ SOURCE=.\waildynf.h
 # Begin Source File
 
 SOURCE=.\sndtest.rc
+# End Source File
+# End Group
+# Begin Group "Tests"
+
+# PROP Default_Filter ""
+# Begin Source File
+
+SOURCE=.\sndtest.cpp
+
+!IF  "$(CFG)" == "sound - Win32 Release"
+
+# PROP Exclude_From_Build 1
+
+!ELSEIF  "$(CFG)" == "sound - Win32 Debug"
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\testsnd1.c
+
+!IF  "$(CFG)" == "sound - Win32 Release"
+
+# PROP Exclude_From_Build 1
+
+!ELSEIF  "$(CFG)" == "sound - Win32 Debug"
+
+!ENDIF 
+
 # End Source File
 # End Group
 # End Target

@@ -143,109 +143,7 @@ NODEP_CPP_APPFL=\
 # End Source File
 # Begin Source File
 
-SOURCE=.\dappcore.cpp
-DEP_CPP_DAPPC=\
-	"..\..\h\lg_types.h"\
-	"..\..\h\prikind.h"\
-	"..\compapis\appagg.h"\
-	"..\compapis\appapi.h"\
-	"..\comtools\comconn.h"\
-	"..\comtools\comtools.h"\
-	"..\cpptools\dynarray.h"\
-	"..\cpptools\pdynarr.h"\
-	"..\lg\dbg.h"\
-	"..\lg\lg.h"\
-	"..\lg\lgalt.h"\
-	"..\lg\lgassert.h"\
-	"..\lg\lglocmsg.h"\
-	"..\lg\lglog.h"\
-	"..\lgalloc\memall.h"\
-	
-NODEP_CPP_DAPPC=\
-	"..\lg\dbgmacro.h"\
-	"..\lgalloc\memmacro.h"\
-	
-
-!IF  "$(CFG)" == "appcore - Win32 Release"
-
-!ELSEIF  "$(CFG)" == "appcore - Win32 Debug"
-
-!ENDIF 
-
-# End Source File
-# Begin Source File
-
-SOURCE=.\defcreat.cpp
-DEP_CPP_DEFCR=\
-	"..\..\h\lg_types.h"\
-	"..\compapis\appagg.h"\
-	"..\comtools\comtools.h"\
-	"..\lg\dbg.h"\
-	"..\lg\lg.h"\
-	"..\lg\lgalt.h"\
-	"..\lg\lgassert.h"\
-	"..\lg\lglocmsg.h"\
-	"..\lg\lglog.h"\
-	"..\lgalloc\memall.h"\
-	
-NODEP_CPP_DEFCR=\
-	"..\lg\dbgmacro.h"\
-	"..\lgalloc\memmacro.h"\
-	
-
-!IF  "$(CFG)" == "appcore - Win32 Release"
-
-!ELSEIF  "$(CFG)" == "appcore - Win32 Debug"
-
-!ENDIF 
-
-# End Source File
-# Begin Source File
-
-SOURCE=.\defexit.cpp
-DEP_CPP_DEFEX=\
-	"..\..\h\lg_types.h"\
-	"..\compapis\appagg.h"\
-	"..\comtools\comtools.h"\
-	"..\lg\dbg.h"\
-	"..\lg\lg.h"\
-	"..\lg\lgalt.h"\
-	"..\lg\lgassert.h"\
-	"..\lg\lglocmsg.h"\
-	"..\lg\lglog.h"\
-	"..\lgalloc\memall.h"\
-	
-NODEP_CPP_DEFEX=\
-	"..\lg\dbgmacro.h"\
-	"..\lgalloc\memmacro.h"\
-	
-
-!IF  "$(CFG)" == "appcore - Win32 Release"
-
-!ELSEIF  "$(CFG)" == "appcore - Win32 Debug"
-
-!ENDIF 
-
-# End Source File
-# Begin Source File
-
-SOURCE=.\definit.cpp
-DEP_CPP_DEFIN=\
-	"..\..\h\lg_types.h"\
-	"..\compapis\appagg.h"\
-	"..\comtools\comtools.h"\
-	"..\lg\dbg.h"\
-	"..\lg\lg.h"\
-	"..\lg\lgalt.h"\
-	"..\lg\lgassert.h"\
-	"..\lg\lglocmsg.h"\
-	"..\lg\lglog.h"\
-	"..\lgalloc\memall.h"\
-	
-NODEP_CPP_DEFIN=\
-	"..\lg\dbgmacro.h"\
-	"..\lgalloc\memmacro.h"\
-	
+SOURCE=.\exceptio.cpp
 
 !IF  "$(CFG)" == "appcore - Win32 Release"
 
@@ -312,6 +210,131 @@ SOURCE=.\wappcore.h
 # Begin Group "Asm Inc Files"
 
 # PROP Default_Filter "inc"
+# End Group
+# Begin Group "Tests"
+
+# PROP Default_Filter ""
+# Begin Source File
+
+SOURCE=.\dappcore.cpp
+DEP_CPP_DAPPC=\
+	"..\..\h\lg_types.h"\
+	"..\..\h\prikind.h"\
+	"..\compapis\appagg.h"\
+	"..\compapis\appapi.h"\
+	"..\comtools\comconn.h"\
+	"..\comtools\comtools.h"\
+	"..\cpptools\dynarray.h"\
+	"..\cpptools\pdynarr.h"\
+	"..\lg\dbg.h"\
+	"..\lg\lg.h"\
+	"..\lg\lgalt.h"\
+	"..\lg\lgassert.h"\
+	"..\lg\lglocmsg.h"\
+	"..\lg\lglog.h"\
+	"..\lgalloc\memall.h"\
+	
+NODEP_CPP_DAPPC=\
+	"..\lg\dbgmacro.h"\
+	"..\lgalloc\memmacro.h"\
+	
+
+!IF  "$(CFG)" == "appcore - Win32 Release"
+
+# PROP Exclude_From_Build 1
+
+!ELSEIF  "$(CFG)" == "appcore - Win32 Debug"
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\defcreat.cpp
+DEP_CPP_DEFCR=\
+	"..\..\h\lg_types.h"\
+	"..\compapis\appagg.h"\
+	"..\comtools\comtools.h"\
+	"..\lg\dbg.h"\
+	"..\lg\lg.h"\
+	"..\lg\lgalt.h"\
+	"..\lg\lgassert.h"\
+	"..\lg\lglocmsg.h"\
+	"..\lg\lglog.h"\
+	"..\lgalloc\memall.h"\
+	
+NODEP_CPP_DEFCR=\
+	"..\lg\dbgmacro.h"\
+	"..\lgalloc\memmacro.h"\
+	
+
+!IF  "$(CFG)" == "appcore - Win32 Release"
+
+# PROP Exclude_From_Build 1
+
+!ELSEIF  "$(CFG)" == "appcore - Win32 Debug"
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\defexit.cpp
+DEP_CPP_DEFEX=\
+	"..\..\h\lg_types.h"\
+	"..\compapis\appagg.h"\
+	"..\comtools\comtools.h"\
+	"..\lg\dbg.h"\
+	"..\lg\lg.h"\
+	"..\lg\lgalt.h"\
+	"..\lg\lgassert.h"\
+	"..\lg\lglocmsg.h"\
+	"..\lg\lglog.h"\
+	"..\lgalloc\memall.h"\
+	
+NODEP_CPP_DEFEX=\
+	"..\lg\dbgmacro.h"\
+	"..\lgalloc\memmacro.h"\
+	
+
+!IF  "$(CFG)" == "appcore - Win32 Release"
+
+# PROP Exclude_From_Build 1
+
+!ELSEIF  "$(CFG)" == "appcore - Win32 Debug"
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\definit.cpp
+DEP_CPP_DEFIN=\
+	"..\..\h\lg_types.h"\
+	"..\compapis\appagg.h"\
+	"..\comtools\comtools.h"\
+	"..\lg\dbg.h"\
+	"..\lg\lg.h"\
+	"..\lg\lgalt.h"\
+	"..\lg\lgassert.h"\
+	"..\lg\lglocmsg.h"\
+	"..\lg\lglog.h"\
+	"..\lgalloc\memall.h"\
+	
+NODEP_CPP_DEFIN=\
+	"..\lg\dbgmacro.h"\
+	"..\lgalloc\memmacro.h"\
+	
+
+!IF  "$(CFG)" == "appcore - Win32 Release"
+
+# PROP Exclude_From_Build 1
+
+!ELSEIF  "$(CFG)" == "appcore - Win32 Debug"
+
+!ENDIF 
+
+# End Source File
 # End Group
 # End Target
 # End Project

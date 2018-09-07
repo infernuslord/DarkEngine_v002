@@ -211,6 +211,34 @@ NODEP_CPP_RECTE=\
 !ENDIF 
 
 # End Source File
+# End Group
+# Begin Group "Header Files"
+
+# PROP Default_Filter "h;hpp;hxx;hm;inl"
+# Begin Source File
+
+SOURCE=.\fdesc.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\recorder.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\recprmpt.h
+# End Source File
+# End Group
+# Begin Group "Asm Source Files"
+
+# PROP Default_Filter "asm"
+# End Group
+# Begin Group "Asm Inc Files"
+
+# PROP Default_Filter "inc"
+# End Group
+# Begin Group "Tests"
+
+# PROP Default_Filter ""
 # Begin Source File
 
 SOURCE=.\rectest.cpp
@@ -242,30 +270,6 @@ NODEP_CPP_RECTES=\
 !ENDIF 
 
 # End Source File
-# End Group
-# Begin Group "Header Files"
-
-# PROP Default_Filter "h;hpp;hxx;hm;inl"
-# Begin Source File
-
-SOURCE=.\fdesc.h
-# End Source File
-# Begin Source File
-
-SOURCE=.\recorder.h
-# End Source File
-# Begin Source File
-
-SOURCE=.\recprmpt.h
-# End Source File
-# End Group
-# Begin Group "Asm Source Files"
-
-# PROP Default_Filter "asm"
-# End Group
-# Begin Group "Asm Inc Files"
-
-# PROP Default_Filter "inc"
 # End Group
 # End Target
 # End Project
